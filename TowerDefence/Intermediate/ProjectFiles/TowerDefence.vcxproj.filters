@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\TowerDefence.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{BAC27D35-ACD0-49E5-A8DC-D36A7BF868BE}</UniqueIdentifier>
+      <UniqueIdentifier>{3478743F-D93F-4AD7-A864-A6AAFB26E6FA}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\TowerDefence.Target.cs">
       <Filter>Source</Filter>
@@ -12,7 +12,7 @@
       <Filter>Source</Filter>
     </None>
     <Filter Include="Config">
-      <UniqueIdentifier>{6D8EC987-427D-4AA6-95B9-32DCE81ACE22}</UniqueIdentifier>
+      <UniqueIdentifier>{92C890C8-D704-40F9-9D9D-055D13A89D5F}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -24,8 +24,14 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\TowerDefence">
-      <UniqueIdentifier>{3890E91D-5795-4D1A-A073-D0C49F01E1A5}</UniqueIdentifier>
+      <UniqueIdentifier>{640124CB-4E22-4781-BD27-2A6D8FDDB013}</UniqueIdentifier>
     </Filter>
+    <ClCompile Include="..\..\Source\TowerDefence\AIMovementComponent.cpp">
+      <Filter>Source\TowerDefence</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\TowerDefence\AIMovementComponent.h">
+      <Filter>Source\TowerDefence</Filter>
+    </ClInclude>
     <None Include="..\..\Source\TowerDefence\TowerDefence.Build.cs">
       <Filter>Source\TowerDefence</Filter>
     </None>

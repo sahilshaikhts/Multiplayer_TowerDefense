@@ -1,0 +1,23 @@
+﻿  Using 'git status' to determine working set for adaptive non-unity build (C:\Users\sethg\Desktop\W21_GAM1528_NoNameYet).
+  Creating makefile for TowerDefenceEditor (no existing makefile)
+  Parsing headers for TowerDefenceEditor
+    Running UnrealHeaderTool "C:\Users\sethg\Desktop\W21_GAM1528_NoNameYet\TowerDefence\TowerDefence.uproject" "C:\Users\sethg\Desktop\W21_GAM1528_NoNameYet\TowerDefence\Intermediate\Build\Win64\TowerDefenceEditor\Development\TowerDefenceEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -abslog="C:\Users\sethg\AppData\Local\UnrealBuildTool\Log_UHT.txt" -installed
+  Reflection code generated for TowerDefenceEditor in 12.9465573 seconds
+  Building TowerDefenceEditor...
+  Using Visual Studio 2019 14.22.27905 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.22.27905) and Windows 10.0.18362.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+  Building 11 actions with 12 processes...
+    [1/11] Default.rc2
+    [2/11] SharedPCH.Engine.ShadowErrors.cpp
+    [3/11] TowerDefence.cpp
+    [4/11] AIMovementComponent.cpp
+    [5/11] TowerDefence.init.gen.cpp
+    [6/11] AIMovementComponent.gen.cpp
+    [7/11] TowerDefenceGameModeBase.cpp
+    [8/11] TowerDefenceGameModeBase.gen.cpp
+    [9/11] UE4Editor-TowerDefence.lib
+       Creating library C:\Users\sethg\Desktop\W21_GAM1528_NoNameYet\TowerDefence\Intermediate\Build\Win64\UE4Editor\Development\TowerDefence\UE4Editor-TowerDefence.lib and object C:\Users\sethg\Desktop\W21_GAM1528_NoNameYet\TowerDefence\Intermediate\Build\Win64\UE4Editor\Development\TowerDefence\UE4Editor-TowerDefence.exp
+    [10/11] UE4Editor-TowerDefence.dll
+       Creating library C:\Users\sethg\Desktop\W21_GAM1528_NoNameYet\TowerDefence\Intermediate\Build\Win64\UE4Editor\Development\TowerDefence\UE4Editor-TowerDefence.suppressed.lib and object C:\Users\sethg\Desktop\W21_GAM1528_NoNameYet\TowerDefence\Intermediate\Build\Win64\UE4Editor\Development\TowerDefence\UE4Editor-TowerDefence.suppressed.exp
+AIMovementComponent.cpp.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) public: static void __cdecl UAIBlueprintHelperLibrary::SimpleMoveToActor(class AController *,class AActor const *)" (__imp_?SimpleMoveToActor@UAIBlueprintHelperLibrary@@SAXPEAVAController@@PEBVAActor@@@Z) referenced in function "protected: void __cdecl UAIMovementComponent::MoveToNextPatrolPoint(void)" (?MoveToNextPatrolPoint@UAIMovementComponent@@IEAAXXZ)
+C:\Users\sethg\Desktop\W21_GAM1528_NoNameYet\TowerDefence\Binaries\Win64\UE4Editor-TowerDefence.dll : fatal error LNK1120: 1 unresolved externals
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.MakeFile.Targets(44,5): error MSB3073: The command ""D:\Epic Games Files\UE_4.25\Engine\Build\BatchFiles\Build.bat" TowerDefenceEditor Win64 Development -Project="C:\Users\sethg\Desktop\W21_GAM1528_NoNameYet\TowerDefence\TowerDefence.uproject" -WaitMutex -FromMsBuild" exited with code 6.

@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\TowerDefence.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{E87E6417-06B3-4A0F-A7D4-2A303E02C474}</UniqueIdentifier>
+      <UniqueIdentifier>{82094B68-DBA8-48AB-8C8E-4C1A1064736C}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\TowerDefence.Target.cs">
       <Filter>Source</Filter>
@@ -12,7 +12,7 @@
       <Filter>Source</Filter>
     </None>
     <Filter Include="Config">
-      <UniqueIdentifier>{B38BA17C-DE89-4089-99C0-51C55A620540}</UniqueIdentifier>
+      <UniqueIdentifier>{FDAC4814-8401-401A-A6EB-1F18B2195FBA}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -24,7 +24,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\TowerDefence">
-      <UniqueIdentifier>{1AFFAD39-6B66-4873-9EA0-6FCF7EA65766}</UniqueIdentifier>
+      <UniqueIdentifier>{01AF9C39-DFF4-4E20-AD06-15681F45E253}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\TowerDefence\TowerDefence.Build.cs">
       <Filter>Source\TowerDefence</Filter>
@@ -42,36 +42,42 @@
       <Filter>Source\TowerDefence</Filter>
     </ClInclude>
     <Filter Include="Source\TowerDefence\Private">
-      <UniqueIdentifier>{B54C481D-CF62-43D6-B61F-6E3DBA91DA95}</UniqueIdentifier>
+      <UniqueIdentifier>{45EE211B-104B-48C2-837A-960B45998B8A}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\TowerDefence\Private\MyUserWidget.cpp">
       <Filter>Source\TowerDefence\Private</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Source\TowerDefence\Private\Tower_1.cpp">
+    <ClCompile Include="..\..\Source\TowerDefence\Private\Projectile_canon.cpp">
+      <Filter>Source\TowerDefence\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\TowerDefence\Private\TowerBase.cpp">
+      <Filter>Source\TowerDefence\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\TowerDefence\Private\Tower_Canon.cpp">
       <Filter>Source\TowerDefence\Private</Filter>
     </ClCompile>
     <ClCompile Include="..\..\Source\TowerDefence\Private\TroopBase.cpp">
-      <Filter>Source\TowerDefence\Private</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\TowerDefence\Private\TroopMelee.cpp">
       <Filter>Source\TowerDefence\Private</Filter>
     </ClCompile>
     <ClCompile Include="..\..\Source\TowerDefence\Private\Troop_melee.cpp">
       <Filter>Source\TowerDefence\Private</Filter>
     </ClCompile>
     <Filter Include="Source\TowerDefence\Public">
-      <UniqueIdentifier>{77B22E5A-3B72-4478-B683-939AC7F9F608}</UniqueIdentifier>
+      <UniqueIdentifier>{B537CC5A-D2CC-49C0-8550-3E9D5444AAF8}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Source\TowerDefence\Public\MyUserWidget.h">
       <Filter>Source\TowerDefence\Public</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Source\TowerDefence\Public\Tower_1.h">
+    <ClInclude Include="..\..\Source\TowerDefence\Public\Projectile_canon.h">
+      <Filter>Source\TowerDefence\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\TowerDefence\Public\TowerBase.h">
+      <Filter>Source\TowerDefence\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\TowerDefence\Public\Tower_Canon.h">
       <Filter>Source\TowerDefence\Public</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Source\TowerDefence\Public\TroopBase.h">
-      <Filter>Source\TowerDefence\Public</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\TowerDefence\Public\TroopMelee.h">
       <Filter>Source\TowerDefence\Public</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Source\TowerDefence\Public\Troop_melee.h">

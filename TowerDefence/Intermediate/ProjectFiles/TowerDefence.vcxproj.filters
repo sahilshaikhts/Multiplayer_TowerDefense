@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\TowerDefence.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{82094B68-DBA8-48AB-8C8E-4C1A1064736C}</UniqueIdentifier>
+      <UniqueIdentifier>{CDE04AFC-B722-4A66-B862-8D893003FC94}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\TowerDefence.Target.cs">
       <Filter>Source</Filter>
@@ -12,7 +12,7 @@
       <Filter>Source</Filter>
     </None>
     <Filter Include="Config">
-      <UniqueIdentifier>{FDAC4814-8401-401A-A6EB-1F18B2195FBA}</UniqueIdentifier>
+      <UniqueIdentifier>{2F3E3CDA-D8DD-4DE7-898F-A39A32205602}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -24,7 +24,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\TowerDefence">
-      <UniqueIdentifier>{01AF9C39-DFF4-4E20-AD06-15681F45E253}</UniqueIdentifier>
+      <UniqueIdentifier>{55C4CC10-615F-463F-B239-F5EA38EE7861}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\TowerDefence\TowerDefence.Build.cs">
       <Filter>Source\TowerDefence</Filter>
@@ -42,8 +42,11 @@
       <Filter>Source\TowerDefence</Filter>
     </ClInclude>
     <Filter Include="Source\TowerDefence\Private">
-      <UniqueIdentifier>{45EE211B-104B-48C2-837A-960B45998B8A}</UniqueIdentifier>
+      <UniqueIdentifier>{ECD15D8C-9179-405D-9E73-EFAE8CCEF1CA}</UniqueIdentifier>
     </Filter>
+    <ClCompile Include="..\..\Source\TowerDefence\Private\MyPlayer.cpp">
+      <Filter>Source\TowerDefence\Private</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\Source\TowerDefence\Private\MyUserWidget.cpp">
       <Filter>Source\TowerDefence\Private</Filter>
     </ClCompile>
@@ -59,12 +62,18 @@
     <ClCompile Include="..\..\Source\TowerDefence\Private\TroopBase.cpp">
       <Filter>Source\TowerDefence\Private</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\Source\TowerDefence\Private\TroopSpawnPoint.cpp">
+      <Filter>Source\TowerDefence\Private</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\Source\TowerDefence\Private\Troop_melee.cpp">
       <Filter>Source\TowerDefence\Private</Filter>
     </ClCompile>
     <Filter Include="Source\TowerDefence\Public">
-      <UniqueIdentifier>{B537CC5A-D2CC-49C0-8550-3E9D5444AAF8}</UniqueIdentifier>
+      <UniqueIdentifier>{8B148FD6-B3B2-419D-9FC2-23275C91DCEF}</UniqueIdentifier>
     </Filter>
+    <ClInclude Include="..\..\Source\TowerDefence\Public\MyPlayer.h">
+      <Filter>Source\TowerDefence\Public</Filter>
+    </ClInclude>
     <ClInclude Include="..\..\Source\TowerDefence\Public\MyUserWidget.h">
       <Filter>Source\TowerDefence\Public</Filter>
     </ClInclude>
@@ -78,6 +87,9 @@
       <Filter>Source\TowerDefence\Public</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Source\TowerDefence\Public\TroopBase.h">
+      <Filter>Source\TowerDefence\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\TowerDefence\Public\TroopSpawnPoint.h">
       <Filter>Source\TowerDefence\Public</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Source\TowerDefence\Public\Troop_melee.h">

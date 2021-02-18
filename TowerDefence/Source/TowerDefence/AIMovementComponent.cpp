@@ -29,7 +29,7 @@ void UAIMovementComponent::BeginPlay()
 
 void UAIMovementComponent::MoveToNextPatrolPoint()
 {
-	if (CurrentPatrolPoint == nullptr || CurrentPatrolPoint == PatrolPoints.Last())
+	if (CurrentPatrolPoint == nullptr)
 	{
 		CurrentPatrolPoint = PatrolPoints[0];
 	}
@@ -44,10 +44,7 @@ void UAIMovementComponent::MoveToNextPatrolPoint()
 		}
 	}
 
-	//if (pController)
-	{
-		UAIBlueprintHelperLibrary::SimpleMoveToActor(pController, CurrentPatrolPoint);
-	}
+	
 }
 
 
@@ -64,6 +61,11 @@ void UAIMovementComponent::TickComponent(float DeltaTime, ELevelTick TickType, F
 		{
 			MoveToNextPatrolPoint();
 		}
+
+		FVector pos = GetOwner()->GetActorLocation();
+		FVector dir = Delta.GetSafeNormal();
+
+		pos += 200.0f * DeltaTime * dir;
 	}
 }
 

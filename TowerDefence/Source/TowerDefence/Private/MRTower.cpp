@@ -48,31 +48,15 @@ void AMRTower::Fire()
 	SpawnInfo.Instigator = Cast<APawn>(GetOwner());
 
 
-	FVector startPos = GetActorLocation() + FVector(0, 0, 150);
-	FVector TargetPosition = currentTarget->GetActorLocation();
+	FVector startPos = GetActorLocation();
+	FVector dir = startPos - currentTarget->GetActorLocation();
+	dir.Normalize();
 
-	const FRotator newrot = UKismetMathLibrary::FindLookAtRotation(startPos, TargetPosition);
-
-	const float Gravity = GetWorld()->GetGravityZ() * -1;
-
-	const float Theta = (40 * PI / 180);
-
-	FVector dir = TargetPosition - startPos;
-	float Sz = dir.Z;
-	dir.Z = 0;
-	float Sx = dir.Size();
-
-	const float V = (Sx / cos(Theta)) * FMath::Sqrt((Gravity * 1) / (2 * (Sx * tan(Theta) - Sz)));
-	FVector VelocityOutput = FVector(V * cos(Theta), 0, V * sin(Theta));
-
-	FVector rotation = VelocityOutput;
-	rotation.Normalize();
-
-	AMRProjectile* spwndObj = GetWorld()->SpawnActor<AMRProjectile>(ProjectileClass, startPos, newrot, SpawnInfo);
+	AMRProjectile* spwndObj = GetWorld()->SpawnActor<AMRProjectile>(ProjectileClass, startPos, dir.Rotation(), SpawnInfo);
 
 	if (spwndObj != nullptr)
 	{
-		spwndObj->SetFireDirection(newrot.Vector());
+		spwndObj->SetFireDirection(dir);
 	}
 
 	currentTarget = nullptr;

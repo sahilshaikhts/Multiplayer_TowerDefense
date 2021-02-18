@@ -44,7 +44,7 @@ void UAIMovementComponent::MoveToNextPatrolPoint()
 		}
 	}
 
-	if (pController)
+	//if (pController)
 	{
 		UAIBlueprintHelperLibrary::SimpleMoveToActor(pController, CurrentPatrolPoint);
 	}

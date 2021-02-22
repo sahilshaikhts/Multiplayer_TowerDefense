@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="..\..\TowerDefence.uproject" />
+    <Filter Include="Source">
+      <UniqueIdentifier>{BD9DD38C-DF8F-4A69-9143-C697E45E1347}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\TowerDefence.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\Source\TowerDefenceEditor.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <Filter Include="Config">
+      <UniqueIdentifier>{81631B83-41A8-41ED-9BEA-C879972C09F0}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\DefaultEditor.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEngine.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultGame.ini">
+      <Filter>Config</Filter>
+    </None>
+    <Filter Include="Source\TowerDefence">
+      <UniqueIdentifier>{EA1CC1AC-1D6C-4F5D-A900-549B0A7E3C51}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\TowerDefence\TowerDefence.Build.cs">
+      <Filter>Source\TowerDefence</Filter>
+    </None>
+    <ClCompile Include="..\..\Source\TowerDefence\TowerDefence.cpp">
+      <Filter>Source\TowerDefence</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\TowerDefence\TowerDefence.h">
+      <Filter>Source\TowerDefence</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\TowerDefence\TowerDefenceGameModeBase.cpp">
+      <Filter>Source\TowerDefence</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\TowerDefence\TowerDefenceGameModeBase.h">
+      <Filter>Source\TowerDefence</Filter>
+    </ClInclude>
+    <Filter Include="Source\TowerDefence\Private">
+      <UniqueIdentifier>{AF084AAF-8CF9-4B56-B985-012F597866DE}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\TowerDefence\Private\MyPlayer.cpp">
+      <Filter>Source\TowerDefence\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\TowerDefence\Private\MyUserWidget.cpp">
+      <Filter>Source\TowerDefence\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\TowerDefence\Private\Projectile_canon.cpp">
+      <Filter>Source\TowerDefence\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\TowerDefence\Private\Projectile_XBow.cpp">
+      <Filter>Source\TowerDefence\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\TowerDefence\Private\TowerBase.cpp">
+      <Filter>Source\TowerDefence\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\TowerDefence\Private\Tower_Canon.cpp">
+      <Filter>Source\TowerDefence\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\TowerDefence\Private\Tower_XBow.cpp">
+      <Filter>Source\TowerDefence\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\TowerDefence\Private\TroopBase.cpp">
+      <Filter>Source\TowerDefence\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\TowerDefence\Private\TroopSpawnPoint.cpp">
+      <Filter>Source\TowerDefence\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\TowerDefence\Private\Troop_melee.cpp">
+      <Filter>Source\TowerDefence\Private</Filter>
+    </ClCompile>
+    <Filter Include="Source\TowerDefence\Public">
+      <UniqueIdentifier>{2504102C-E7C5-43C8-9968-345720D090E6}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\TowerDefence\Public\MyPlayer.h">
+      <Filter>Source\TowerDefence\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\TowerDefence\Public\MyUserWidget.h">
+      <Filter>Source\TowerDefence\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\TowerDefence\Public\Projectile_canon.h">
+      <Filter>Source\TowerDefence\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\TowerDefence\Public\Projectile_XBow.h">
+      <Filter>Source\TowerDefence\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\TowerDefence\Public\TowerBase.h">
+      <Filter>Source\TowerDefence\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\TowerDefence\Public\Tower_Canon.h">
+      <Filter>Source\TowerDefence\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\TowerDefence\Public\Tower_XBow.h">
+      <Filter>Source\TowerDefence\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\TowerDefence\Public\TroopBase.h">
+      <Filter>Source\TowerDefence\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\TowerDefence\Public\TroopSpawnPoint.h">
+      <Filter>Source\TowerDefence\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\TowerDefence\Public\Troop_melee.h">
+      <Filter>Source\TowerDefence\Public</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

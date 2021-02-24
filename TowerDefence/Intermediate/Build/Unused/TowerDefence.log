@@ -1,0 +1,12 @@
+﻿  Using 'git status' to determine working set for adaptive non-unity build (C:\Users\sethg\Desktop\High Level Development II\W21_GAM1528_NoNameYet).
+  Building TowerDefenceEditor...
+  Using Visual Studio 2019 14.22.27905 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.22.27905) and Windows 10.0.18362.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+  Building 4 actions with 12 processes...
+    [1/4] Projectile_RangedTroop.cpp
+    [2/4] UE4Editor-TowerDefence.lib
+       Creating library C:\Users\sethg\Desktop\High Level Development II\W21_GAM1528_NoNameYet\TowerDefence\Intermediate\Build\Win64\UE4Editor\Development\TowerDefence\UE4Editor-TowerDefence.lib and object C:\Users\sethg\Desktop\High Level Development II\W21_GAM1528_NoNameYet\TowerDefence\Intermediate\Build\Win64\UE4Editor\Development\TowerDefence\UE4Editor-TowerDefence.exp
+    [3/4] UE4Editor-TowerDefence.dll
+       Creating library C:\Users\sethg\Desktop\High Level Development II\W21_GAM1528_NoNameYet\TowerDefence\Intermediate\Build\Win64\UE4Editor\Development\TowerDefence\UE4Editor-TowerDefence.suppressed.lib and object C:\Users\sethg\Desktop\High Level Development II\W21_GAM1528_NoNameYet\TowerDefence\Intermediate\Build\Win64\UE4Editor\Development\TowerDefence\UE4Editor-TowerDefence.suppressed.exp
+    [4/4] TowerDefenceEditor.target
+  Total time in Parallel executor: 4.81 seconds
+  Total execution time: 6.15 seconds

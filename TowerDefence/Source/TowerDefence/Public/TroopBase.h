@@ -18,7 +18,7 @@ public:
 	UPROPERTY(VisibleAnywhere, Category = "Collider")
 		class UCapsuleComponent* collider;
 	UPROPERTY(VisibleAnywhere, Category = "Mesh")
-		UStaticMeshComponent* mesh;
+		USkeletalMeshComponent* mesh;
 	UPROPERTY(VisibleAnywhere)
 		class UBoxComponent* col_towerDetection;
 	

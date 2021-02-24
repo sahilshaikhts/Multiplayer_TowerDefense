@@ -18,7 +18,7 @@ ATroop_melee::ATroop_melee()
 	collider->SetSimulatePhysics(true);
 	RootComponent = collider;
 
-	mesh = CreateDefaultSubobject<UStaticMeshComponent>("Mesh");
+	mesh = CreateDefaultSubobject<USkeletalMeshComponent>("Mesh");
 	mesh->SetCollisionProfileName("NoCollision");
 	mesh->SetupAttachment(RootComponent);
 	

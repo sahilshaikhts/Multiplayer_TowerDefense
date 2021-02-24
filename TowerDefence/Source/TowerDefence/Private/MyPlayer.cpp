@@ -30,14 +30,12 @@ AMyPlayer::AMyPlayer()
 
 	isAttaking = true;
 	AutoPossessPlayer = EAutoReceiveInput::Player0;
-
 }
 
 // Called when the game starts or when spawned
 void AMyPlayer::BeginPlay()
 {
 	Super::BeginPlay();
-	
 	world = GetWorld();
 
 	FViewTargetTransitionParams params;
@@ -86,12 +84,10 @@ void AMyPlayer::LeftMouseClick()
 			SpawnInfo.SpawnCollisionHandlingOverride = ESpawnActorCollisionHandlingMethod::AdjustIfPossibleButAlwaysSpawn;
 			SpawnInfo.Owner = this;
 			SpawnInfo.Instigator = Cast<APawn>(GetOwner());
+      
 			ATroop_melee* spwndObj = GetWorld()->SpawnActor<ATroop_melee>(t_troopMelee, worldPos, FRotator(0, 0, 0));
 			spwndObj->SetPatrolPoints(&hitActor->PatrolPoints);
 		}
 	}
 	
 }
-
-
-

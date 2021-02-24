@@ -12,8 +12,6 @@ ATroop_melee::ATroop_melee()
 	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
 
-	
-
 	attackRate = 1.5f;
 }
 
@@ -21,7 +19,6 @@ ATroop_melee::ATroop_melee()
 void ATroop_melee::BeginPlay()
 {
 	Super::BeginPlay();
-
 	collider->OnComponentHit.AddDynamic(this, &ATroop_melee::OnHit);
 	collider->OnComponentBeginOverlap.AddDynamic(this, &ATroop_melee::BeginOverlap);
 }
@@ -110,3 +107,4 @@ void ATroop_melee::OnHit(UPrimitiveComponent* HitComp, AActor* OtherActor, UPrim
 {
 
 }
+

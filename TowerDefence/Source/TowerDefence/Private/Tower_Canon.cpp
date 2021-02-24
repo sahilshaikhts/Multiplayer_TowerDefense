@@ -13,14 +13,13 @@ void ATower_Canon::BeginPlay()
 	
 	Tags.Add("Tower_Canon");
 	fire = false;
-	attackRate = 4;
+	attackRate = 3;
 	isAlive = true;
 }
 
 void ATower_Canon::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
-
 	if (isAlive) {
 		CheckForTroops();
 
@@ -45,6 +44,7 @@ void ATower_Canon::Tick(float DeltaTime)
 		}
 	}
 }
+
 void ATower_Canon::Fire()
 {
 	if (currentTarget != nullptr)
@@ -88,7 +88,6 @@ bool ATower_Canon::GetDamage(float value)
 	if (hp > 0)
 		hp -= value;
 	else {
-		mesh->SetMaterial(0,nullptr);
 		//Destroy(); change model/shrink
 		isAlive = false;
 		return false;

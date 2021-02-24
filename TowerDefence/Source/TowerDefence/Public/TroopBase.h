@@ -27,6 +27,7 @@ public:
 	FVector moveDirection;
 	bool follow, attack;
 	class ATowerBase* currentTarget;
+
 	float hp;
 	float attackRate, countDown;//Times attack per second
 

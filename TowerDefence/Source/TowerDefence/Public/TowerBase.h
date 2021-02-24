@@ -25,6 +25,7 @@ public:
 
 	bool fire;
 	bool isAlive;
+
 	AActor* currentTarget;
 protected:
 	// Called when the game starts or when spawned

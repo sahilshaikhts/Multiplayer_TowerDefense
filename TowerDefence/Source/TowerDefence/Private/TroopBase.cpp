@@ -40,6 +40,7 @@ ATroopBase::ATroopBase()
 void ATroopBase::BeginPlay()
 {
 	Super::BeginPlay();
+
 }
 
 // Called every frame
@@ -84,8 +85,33 @@ void ATroopBase::CheckForTowers()
 			}
 
 			follow = true;
-    }
- }
+		}
+	}
+}
+/*
+if (currentTarget == nullptr)
+	{
+		TArray<AActor*> allActors;
+		col_towerDetection->GetOverlappingComponents(allActors, ATowerBase::StaticClass());
+
+		if (allActors.Num() >0) {
+			float lastBestDist = GetDistanceTo(allActors[0]);
+				currentTarget = Cast<ATowerBase>(allActors[0]);
+			for (AActor* obj : allActors)
+			{
+				float dist = GetDistanceTo(obj);
+				if (dist < lastBestDist && Cast<ATowerBase>(obj)->isAlive)
+				{
+					currentTarget = Cast<ATowerBase>(obj);
+					lastBestDist = dist;
+				}
+
+			}
+
+			follow = true;
+		}
+	}
+*/
 bool ATroopBase::GetDamage(float value)
 {
 	return false;

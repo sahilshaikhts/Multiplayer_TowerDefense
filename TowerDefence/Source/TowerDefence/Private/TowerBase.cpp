@@ -26,7 +26,6 @@ ATowerBase::ATowerBase()
 	
 	mesh = CreateDefaultSubobject<UStaticMeshComponent>("Mesh");
 	mesh->SetCollisionProfileName("NoCollision");
-
 	Tags.Add("tower");
 	hp = 100;
 }

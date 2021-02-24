@@ -14,6 +14,9 @@ class TOWERDEFENCE_API ATroopSpawnPoint : public AActor
 public:	
 	// Sets default values for this actor's properties
 	ATroopSpawnPoint();
+	UPROPERTY(EditInstanceOnly, Category = "Path")
+		TArray<AActor*> PatrolPoints;
+	
 	UPROPERTY(EditAnywhere)
 		class USphereComponent* collider;
 	UPROPERTY(EditAnywhere, Category = "Mesh")

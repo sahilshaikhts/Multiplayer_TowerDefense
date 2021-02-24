@@ -21,12 +21,13 @@ public:
 		UStaticMeshComponent* mesh;
 	UPROPERTY(VisibleAnywhere)
 		class UBoxComponent* col_towerDetection;
-	
-
+	UPROPERTY(EditAnywhere)
+		class UAIMovementComponent* movmentComponent;
 	
 	FVector moveDirection;
 	bool follow, attack;
-	AActor* currentTarget;
+	class ATowerBase* currentTarget;
+
 	float hp;
 	float attackRate, countDown;//Times attack per second
 

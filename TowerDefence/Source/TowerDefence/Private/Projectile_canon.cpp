@@ -4,6 +4,7 @@
 #include "Projectile_canon.h"
 
 #include "TroopBase.h"
+#include "Components/CapsuleComponent.h"
 #include "Components/SphereComponent.h"
 #include "GameFramework/ProjectileMovementComponent.h"
 
@@ -16,9 +17,11 @@ AProjectile_canon::AProjectile_canon()
 	collider->SetCollisionProfileName("BlockAll");
 	collider->SetCollisionEnabled(ECollisionEnabled::QueryAndPhysics);
 	collider->SetSimulatePhysics(true);
+	collider->SetNotifyRigidBodyCollision(true);
+
 	collider->OnComponentBeginOverlap.AddDynamic(this, &AProjectile_canon::BeginOverlap);
 	RootComponent = collider;
-	
+
 	col_troopDetection = CreateDefaultSubobject<USphereComponent>("TowerCollider");
 	col_troopDetection->SetCollisionProfileName("OverlapAll");
 	col_troopDetection->SetCollisionEnabled(ECollisionEnabled::QueryOnly);
@@ -27,13 +30,10 @@ AProjectile_canon::AProjectile_canon()
 	mesh = CreateDefaultSubobject<UStaticMeshComponent>("Mesh");
 	mesh->SetCollisionProfileName("NoCollision");
 	mesh->SetupAttachment(RootComponent);
-	
-	projectileComponent = CreateDefaultSubobject<UProjectileMovementComponent>("projectile");
-	projectileComponent->InitialSpeed = 1000.0f;
-	projectileComponent->MaxSpeed = 10000.0f;
-	hasMoved = true;
+  
+	InitialLifeSpan = 3.0f;
 
-
+	Tags.Add("Projectile_canon");
 }
 
 // Called when the game starts or when spawned
@@ -51,16 +51,5 @@ void AProjectile_canon::Tick(float DeltaTime)
 void AProjectile_canon::BeginOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor,
 	UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult)
 {
-	TArray<AActor*> allActors;;
-	col_troopDetection->GetOverlappingActors(allActors, ATroopBase::StaticClass());
-	if (allActors.Num() > 0) {
-		for (AActor* cActor : allActors)
-		{
-			ATroopBase* obj = Cast<ATroopBase>(cActor);
-			//obj->GetDamage(10);
-		}
-		Destroy();
-	}
-	
 }
 

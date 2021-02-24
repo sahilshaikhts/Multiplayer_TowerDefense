@@ -6,6 +6,8 @@
 #include "GameFramework/SpringArmComponent.h"
 #include "TowerDefence/Public/Troop_melee.h"
 #include "Tower_Canon.h"
+#include "TroopSpawnPoint.h"
+#include "AIMovementComponent.h"
 
 // Sets default values
 AMyPlayer::AMyPlayer()
@@ -41,7 +43,6 @@ void AMyPlayer::BeginPlay()
 	world->GetFirstPlayerController()->bShowMouseCursor = true;
 	world->GetFirstPlayerController()->bEnableMouseOverEvents = true;
 	world->GetFirstPlayerController()->bEnableClickEvents = true;
-	
 }
 
 void AMyPlayer::Attacker()
@@ -76,15 +77,17 @@ void AMyPlayer::LeftMouseClick()
 	
 	if (isAttaking)
 	{
-		if (hitResult.GetActor()->Tags.Num()>0 && hitResult.GetActor()->Tags[0] == "TroopSpawnPoint")
+		if (hitResult.GetActor()->Tags.Num() > 0 && hitResult.GetActor()->Tags[0] == "TroopSpawnPoint")
 		{
+			ATroopSpawnPoint* hitActor = Cast<ATroopSpawnPoint>(hitResult.GetActor());
 			FActorSpawnParameters SpawnInfo;
 			SpawnInfo.SpawnCollisionHandlingOverride = ESpawnActorCollisionHandlingMethod::AdjustIfPossibleButAlwaysSpawn;
 			SpawnInfo.Owner = this;
 			SpawnInfo.Instigator = Cast<APawn>(GetOwner());
-			GetWorld()->SpawnActor<ATroop_melee>(t_troopMelee, worldPos, FRotator(0, 0, 0));
+      
+			ATroop_melee* spwndObj = GetWorld()->SpawnActor<ATroop_melee>(t_troopMelee, worldPos, FRotator(0, 0, 0));
+			spwndObj->SetPatrolPoints(&hitActor->PatrolPoints);
 		}
 	}
 	
 }
-

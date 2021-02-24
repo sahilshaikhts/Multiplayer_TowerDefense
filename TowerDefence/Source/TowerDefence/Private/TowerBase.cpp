@@ -15,6 +15,8 @@ ATowerBase::ATowerBase()
 	collider = CreateDefaultSubobject<UBoxComponent>("MainCollider");
 	collider->SetCollisionProfileName("BlockAll");
 	collider->SetCollisionEnabled(ECollisionEnabled::QueryAndPhysics);
+	collider->ComponentTags.Add("collider_physical");
+
 	RootComponent = collider;
 
 	col_troopDetection = CreateDefaultSubobject<USphereComponent>("TowerCollider");
@@ -24,7 +26,8 @@ ATowerBase::ATowerBase()
 	
 	mesh = CreateDefaultSubobject<UStaticMeshComponent>("Mesh");
 	mesh->SetCollisionProfileName("NoCollision");
-	
+
+	Tags.Add("tower");
 	hp = 100;
 }
 

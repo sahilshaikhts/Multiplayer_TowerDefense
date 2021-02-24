@@ -5,13 +5,34 @@
 #include "TowerBase.h"
 #include "Components/BoxComponent.h"
 #include "Components/CapsuleComponent.h"
+#include "AIMovementComponent.h"
+
 // Sets default values
 ATroopBase::ATroopBase()
 {
  	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
+	PrimaryActorTick.bCanEverTick = true;
 
+	collider = CreateDefaultSubobject<UCapsuleComponent>("MainCollider");
+	collider->SetCollisionProfileName("BlockAll");
+	collider->SetCollisionEnabled(ECollisionEnabled::QueryAndPhysics);
+	collider->SetSimulatePhysics(true);
+	collider->SetNotifyRigidBodyCollision(true);
 	
+	collider->ComponentTags.Add("collider_physical");
 
+	RootComponent = collider;
+
+	mesh = CreateDefaultSubobject<UStaticMeshComponent>("Mesh");
+	mesh->SetCollisionProfileName("NoCollision");
+	mesh->SetupAttachment(RootComponent);
+
+	col_towerDetection = CreateDefaultSubobject<UBoxComponent>("TowerCollider");
+	col_towerDetection->SetCollisionProfileName("OverlapAll");
+	col_towerDetection->SetCollisionEnabled(ECollisionEnabled::QueryOnly);
+	col_towerDetection->SetupAttachment(RootComponent);
+
+	movmentComponent = CreateDefaultSubobject< UAIMovementComponent>("movement");
 	hp = 100;
 }
 
@@ -19,7 +40,6 @@ ATroopBase::ATroopBase()
 void ATroopBase::BeginPlay()
 {
 	Super::BeginPlay();
-	
 }
 
 // Called every frame
@@ -30,28 +50,42 @@ void ATroopBase::Tick(float DeltaTime)
 }
 void ATroopBase::CheckForTowers()
 {
-	if (currentTarget == nullptr) {
-		TArray<AActor*> allActors;
-		col_towerDetection->GetOverlappingActors(allActors, ATowerBase::StaticClass());
+	if (currentTarget == nullptr)
+	{
+		TArray<ATowerBase*> objTowers;
 
-		if (allActors.Num() >0) {
-			currentTarget = allActors[0];
-			float lastBestDist = GetDistanceTo(allActors[0]);
-			for (AActor* obj : allActors)
+		TArray<UPrimitiveComponent*> allComponents;
+		col_towerDetection->GetOverlappingComponents(allComponents);
+
+		//Verify each colliders owner and type ,and store it in a list of towers
+		for (UPrimitiveComponent* comp : allComponents)
+		{
+			if (comp->GetOwner()->ActorHasTag("tower") && comp->ComponentHasTag("collider_physical"))
+			{
+				objTowers.Add(Cast<ATowerBase>(comp->GetOwner()));
+			}
+		}
+
+		//Checking nearest tower which is also alive
+		if (objTowers.Num() > 0) 
+		{
+			float lastBestDist = GetDistanceTo(objTowers[0]);
+			currentTarget = objTowers[0];
+
+			for (ATowerBase* obj : objTowers)
 			{
 				float dist = GetDistanceTo(obj);
-				if (dist < lastBestDist)
+				if (dist < lastBestDist && obj->isAlive)
 				{
 					currentTarget = obj;
 					lastBestDist = dist;
 				}
 
 			}
-			follow = true;
-		}
-	}
-}
 
+			follow = true;
+    }
+ }
 bool ATroopBase::GetDamage(float value)
 {
 	return false;

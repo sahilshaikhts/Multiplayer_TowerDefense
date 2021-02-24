@@ -24,6 +24,8 @@ public:
 		class USphereComponent* col_troopDetection;
 
 	bool fire;
+	bool isAlive;
+
 	AActor* currentTarget;
 protected:
 	// Called when the game starts or when spawned

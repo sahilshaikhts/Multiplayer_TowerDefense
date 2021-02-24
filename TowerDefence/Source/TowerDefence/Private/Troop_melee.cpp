@@ -5,28 +5,13 @@
 #include "Components/BoxComponent.h"
 #include "Components/CapsuleComponent.h"
 #include "TowerDefence/Public/TowerBase.h"
-
+#include "AIMovementComponent.h"
 // Sets default values
 ATroop_melee::ATroop_melee()
 {
- 	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
+	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
-	
-	collider = CreateDefaultSubobject<UCapsuleComponent>("MainCollider");
-	collider->SetCollisionProfileName("BlockAll");
-	collider->SetCollisionEnabled(ECollisionEnabled::QueryAndPhysics);
-	collider->SetSimulatePhysics(true);
-	RootComponent = collider;
 
-	mesh = CreateDefaultSubobject<UStaticMeshComponent>("Mesh");
-	mesh->SetCollisionProfileName("NoCollision");
-	mesh->SetupAttachment(RootComponent);
-	
-	col_towerDetection = CreateDefaultSubobject<UBoxComponent>("TowerCollider");
-	col_towerDetection->SetCollisionProfileName("OverlapAll");
-	col_towerDetection->SetCollisionEnabled(ECollisionEnabled::QueryOnly);
-	col_towerDetection->SetupAttachment(RootComponent);
-	
 	attackRate = 1.5f;
 }
 
@@ -34,49 +19,75 @@ ATroop_melee::ATroop_melee()
 void ATroop_melee::BeginPlay()
 {
 	Super::BeginPlay();
-	
+	collider->OnComponentHit.AddDynamic(this, &ATroop_melee::OnHit);
+	collider->OnComponentBeginOverlap.AddDynamic(this, &ATroop_melee::BeginOverlap);
+}
+
+void ATroop_melee::SetPatrolPoints(TArray<AActor*>* aPatrolPoints)
+{
+	movmentComponent->SetPathNodes(aPatrolPoints);
 }
 
 // Called every frame
 void ATroop_melee::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
-	if (currentTarget != nullptr && attack)
+	if (currentTarget != nullptr && attack && currentTarget->isAlive)
 	{
-		if(countDown<=0.0f)
+		if (countDown <= 0.0f)
 		{
-			ATowerBase* currentTower= Cast<ATowerBase>(currentTarget);
-			if(!currentTower->GetDamage(25))
+			ATowerBase* currentTower = Cast<ATowerBase>(currentTarget);
+			if (!currentTower->GetDamage(25))
 			{
 				currentTarget = nullptr;
 			}
-			
-			if(currentTower->GetHP()<=0)
+
+			if (currentTower->isAlive==false)
 			{
 				attack = false;
+				follow = false;
 				currentTarget = nullptr;
+				
+				//keep following the path
+				movmentComponent->isPatroling(true);
 			}
 			countDown = attackRate;
 		}
 		countDown -= DeltaTime;
-	}else
+	}
+	else
 	{
-		//keep following the path
+		movmentComponent->isPatroling(true);
+		collider->SetPhysicsLinearVelocity(moveDirection * 7000 * DeltaTime);
 	}
 	if (currentTarget != nullptr && follow)
 	{
+		movmentComponent->isPatroling(false);
 		moveDirection = (currentTarget->GetActorLocation() - GetActorLocation());
 		moveDirection.Normalize();
-		collider->SetPhysicsLinearVelocity(moveDirection * 3000 * DeltaTime);
+		collider->SetPhysicsLinearVelocity(moveDirection * 7000 * DeltaTime);
+		
 		float dist = GetDistanceTo(currentTarget);
 		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Orange, FString::Printf(TEXT(" %f "), dist));
-		if (dist<90) 
+		if (dist < 90)
 		{
 			follow = false;
-			attack = true; 
+			attack = true;
 		}
 	}
 	CheckForTowers();
+}
+
+void ATroop_melee::BeginOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor,
+	UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult)
+{
+	if (OtherActor->ActorHasTag("Projectile_canon"))
+	{
+		GetDamage(20);
+
+		if (OtherActor != nullptr)
+			OtherActor->Destroy();
+	}
 }
 
 bool ATroop_melee::GetDamage(float value)
@@ -92,4 +103,8 @@ bool ATroop_melee::GetDamage(float value)
 }
 
 
+void ATroop_melee::OnHit(UPrimitiveComponent* HitComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, FVector NormalImpulse, const FHitResult& Hit)
+{
+
+}
 

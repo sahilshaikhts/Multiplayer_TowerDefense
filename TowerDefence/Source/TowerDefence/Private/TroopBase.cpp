@@ -14,12 +14,11 @@ ATroopBase::ATroopBase()
 	PrimaryActorTick.bCanEverTick = true;
 
 	collider = CreateDefaultSubobject<UCapsuleComponent>("MainCollider");
-	collider->SetCollisionProfileName("BlockAll");
+	collider->SetCollisionProfileName("NoCollision");
 	collider->SetCollisionEnabled(ECollisionEnabled::QueryAndPhysics);
 	collider->SetSimulatePhysics(true);
 	collider->SetNotifyRigidBodyCollision(true);
 	
-	collider->ComponentTags.Add("collider_physical");
 
 	RootComponent = collider;
 
@@ -34,20 +33,23 @@ ATroopBase::ATroopBase()
 
 	movmentComponent = CreateDefaultSubobject< UAIMovementComponent>("movement");
 	hp = 100;
+	enabled =true;
 }
 
 // Called when the game starts or when spawned
 void ATroopBase::BeginPlay()
 {
 	Super::BeginPlay();
+}
 
+void ATroopBase::SetPatrolPoints(TArray<AActor*>* aPatrolPoints)
+{
 }
 
 // Called every frame
 void ATroopBase::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
-
 }
 void ATroopBase::CheckForTowers()
 {
@@ -88,30 +90,7 @@ void ATroopBase::CheckForTowers()
 		}
 	}
 }
-/*
-if (currentTarget == nullptr)
-	{
-		TArray<AActor*> allActors;
-		col_towerDetection->GetOverlappingComponents(allActors, ATowerBase::StaticClass());
 
-		if (allActors.Num() >0) {
-			float lastBestDist = GetDistanceTo(allActors[0]);
-				currentTarget = Cast<ATowerBase>(allActors[0]);
-			for (AActor* obj : allActors)
-			{
-				float dist = GetDistanceTo(obj);
-				if (dist < lastBestDist && Cast<ATowerBase>(obj)->isAlive)
-				{
-					currentTarget = Cast<ATowerBase>(obj);
-					lastBestDist = dist;
-				}
-
-			}
-
-			follow = true;
-		}
-	}
-*/
 bool ATroopBase::GetDamage(float value)
 {
 	return false;

@@ -23,8 +23,7 @@ public:
 	UPROPERTY(VisibleAnywhere)
 		class USphereComponent* col_troopDetection;
 
-	bool fire;
-	bool isAlive;
+	bool enabled,fire, isAlive;
 	AActor* currentTarget;
 protected:
 	// Called when the game starts or when spawned
@@ -36,8 +35,6 @@ protected:
 public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
-
-	
 	float GetHP();
 	
 	UFUNCTION()

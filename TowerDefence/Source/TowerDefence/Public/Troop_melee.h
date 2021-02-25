@@ -19,7 +19,7 @@ protected:
 	
 	virtual void BeginPlay() override;
 public:
-	void SetPatrolPoints(TArray<AActor*>* aPatrolPoints);
+	virtual void SetPatrolPoints(TArray<AActor*>* aPatrolPoints) override;
 
 	virtual void Tick(float DeltaTime) override;
 	

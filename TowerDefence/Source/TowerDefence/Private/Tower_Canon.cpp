@@ -10,7 +10,7 @@
 void ATower_Canon::BeginPlay()
 {
 	Super::BeginPlay();
-	
+	col_troopDetection->OnComponentEndOverlap.AddDynamic(this, &ATower_Canon::OnOverlapEnd);
 	Tags.Add("Tower_Canon");
 	fire = false;
 	attackRate = 4;
@@ -62,7 +62,7 @@ void ATower_Canon::Fire()
 
 		const float Gravity = GetWorld()->GetGravityZ() * -1;
 
-		const float Theta = (70 * PI / 180);
+		const float Theta = (45 * PI / 180);
 
 		FVector dir = TargetPosition - startPos;
 		float Sz = dir.Z;
@@ -83,6 +83,7 @@ void ATower_Canon::Fire()
 		}
 	}
 }
+
 bool ATower_Canon::GetDamage(float value)
 {
 	if (hp > 0)
@@ -94,4 +95,12 @@ bool ATower_Canon::GetDamage(float value)
 		return false;
 	}
 	return true;
+}
+
+void ATower_Canon::OnOverlapEnd(class UPrimitiveComponent* OverlappedComp, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex)
+{
+	if (currentTarget != nullptr && OtherActor == currentTarget)
+	{
+		currentTarget = false;
+	}
 }

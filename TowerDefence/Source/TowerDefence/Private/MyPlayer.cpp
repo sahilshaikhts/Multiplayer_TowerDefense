@@ -8,6 +8,7 @@
 #include "Tower_Canon.h"
 #include "TroopSpawnPoint.h"
 #include "AIMovementComponent.h"
+#include "TowerSpawnPoint.h"
 
 // Sets default values
 AMyPlayer::AMyPlayer()
@@ -68,8 +69,9 @@ void AMyPlayer::Tick(float DeltaTime)
 void AMyPlayer::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 {
 	Super::SetupPlayerInputComponent(PlayerInputComponent);
-	PlayerInputComponent->BindAction("Mouse_left", IE_Pressed,this, &AMyPlayer::LeftMouseClick);
+	PlayerInputComponent->BindAction("Mouse_left", IE_Pressed,this, &AMyPlayer::LeftMouseClick);//will be called by inventory
 }
+
 
 void AMyPlayer::LeftMouseClick()
 {
@@ -77,21 +79,33 @@ void AMyPlayer::LeftMouseClick()
 	GetWorld()->GetFirstPlayerController()->GetHitResultUnderCursorByChannel(UEngineTypes::ConvertToTraceType(ECC_Visibility), true, hitResult);
 	FVector worldPos = hitResult.Location;
 	
+
 	if (isAttaking)
 	{
-		if (hitResult.GetActor()->Tags.Num() > 0 && hitResult.GetActor()->Tags[0] == "TroopSpawnPoint")
+		if (isAttaking)
 		{
-			ATroopSpawnPoint* hitActor = Cast<ATroopSpawnPoint>(hitResult.GetActor());
-			FActorSpawnParameters SpawnInfo;
-			SpawnInfo.SpawnCollisionHandlingOverride = ESpawnActorCollisionHandlingMethod::AdjustIfPossibleButAlwaysSpawn;
-			SpawnInfo.Owner = this;
-			SpawnInfo.Instigator = Cast<APawn>(GetOwner());
-			ATroop_melee* spwndObj = GetWorld()->SpawnActor<ATroop_melee>(t_troopMelee, worldPos, FRotator(0, 0, 0));
-			spwndObj->SetPatrolPoints(&hitActor->PatrolPoints);
+			if (hitResult.GetActor()->Tags.Num() > 0 && hitResult.GetActor()->Tags[0] == "TroopSpawnPoint")
+			{
+				ATroopSpawnPoint* hitActor = Cast<ATroopSpawnPoint>(hitResult.GetActor());
+
+				ATroop_melee* spwndObj = GetWorld()->SpawnActor<ATroop_melee>(t_troopMelee, hitResult.Location, FRotator(0, 0, 0));
+				spwndObj->SetPatrolPoints(&hitActor->PatrolPoints);
+			}
+		}
+	}
+	else
+	{
+		if (hitResult.GetActor()->Tags.Num() > 0 && hitResult.GetActor()->ActorHasTag("TowerSpawnPoint"))
+		{
+
+			ATowerSpawnPoint* hitActor = Cast<ATowerSpawnPoint>(hitResult.GetActor());
+			if (hitActor->isEquiped == false) 
+			{
+				ATower_Canon* spwndObj = GetWorld()->SpawnActor<ATower_Canon>(t_towerCanon, FVector(hitActor->GetActorLocation().X, hitActor->GetActorLocation().Y, hitResult.Location.Z), FRotator(0, 0, 0));
+				hitActor->currentTower = spwndObj;
+				hitActor->isEquiped = true;
+			}
 		}
 	}
 	
 }
-
-
-

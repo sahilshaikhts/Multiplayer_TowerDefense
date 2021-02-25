@@ -26,8 +26,10 @@ ATowerBase::ATowerBase()
 	
 	mesh = CreateDefaultSubobject<UStaticMeshComponent>("Mesh");
 	mesh->SetCollisionProfileName("NoCollision");
-	Tags.Add("tower");
+	mesh->SetupAttachment(RootComponent);
 	hp = 100;
+	enabled = true;
+	Tags.Add("tower");
 }
 
 // Called when the game starts or when spawned

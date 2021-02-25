@@ -25,7 +25,7 @@ public:
 		class UAIMovementComponent* movmentComponent;
 	
 	FVector moveDirection;
-	bool follow, attack;
+	bool enabled,follow, attack,beingSpawned;
 	class ATowerBase* currentTarget;
 	float hp;
 	float attackRate, countDown;//Times attack per second
@@ -34,6 +34,9 @@ public:
 
 		// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
+
+	virtual void SetPatrolPoints(TArray<AActor*>* aPatrolPoints);
+
 
 public:
 	// Called every frame

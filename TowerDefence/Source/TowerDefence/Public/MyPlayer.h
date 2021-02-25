@@ -19,15 +19,20 @@ public:
 	UPROPERTY(EditAnywhere)
 		class USpringArmComponent* cameraSpring;
 	UPROPERTY(EditAnywhere)
-		TSubclassOf<class ATower_Canon> t_canonTower;
+		TSubclassOf<class ATower_Canon> t_towerCanon;
 	UPROPERTY(EditAnywhere)
 		TSubclassOf<class ATroop_melee> t_troopMelee;
 	
+	UPROPERTY(EditAnywhere)//for debugging
+	bool isAttaking;//True: player is in attacking role ; False: player is in defensing role
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 	class UWorld* world;
-	bool isAttaking;//True: player is in attacking role ; False: player is in defensing role
+	AActor* newSpawnedObj;
+	//(VAR)current "Item"(troop/tower)
+	bool isSpawning;//True: PLayer has seletec a troop/tower to spawn
+
 	void Attacker();
 	void Defender();
 public:	
@@ -37,4 +42,6 @@ public:
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 
 	void LeftMouseClick();
+	void BeginSpawning();
+	void CompleteSpawning();
 };

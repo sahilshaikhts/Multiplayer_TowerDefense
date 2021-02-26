@@ -30,9 +30,8 @@ protected:
 	virtual void BeginPlay() override;
 	class UWorld* world;
 	AActor* newSpawnedObj;
-	//(VAR)current "Item"(troop/tower)
+	class AInventory* inventory;
 	bool isSpawning;//True: PLayer has seletec a troop/tower to spawn
-
 	void Attacker();
 	void Defender();
 public:	

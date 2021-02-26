@@ -9,6 +9,7 @@
 #include "TroopSpawnPoint.h"
 #include "AIMovementComponent.h"
 #include "TowerSpawnPoint.h"
+#include "MyGameStateBase.h"
 
 // Sets default values
 AMyPlayer::AMyPlayer()
@@ -40,7 +41,8 @@ void AMyPlayer::BeginPlay()
 	Super::BeginPlay();
 	
 	world = GetWorld();
-
+	AMyGameStateBase* gameState = Cast<AMyGameStateBase>(world->GetGameState());
+	inventory = gameState->inventory;
 	FViewTargetTransitionParams params;
 	world->GetFirstPlayerController()->SetViewTarget(this, params);
 	world->GetFirstPlayerController()->bShowMouseCursor = true;
@@ -82,8 +84,7 @@ void AMyPlayer::LeftMouseClick()
 
 	if (isAttaking)
 	{
-		if (isAttaking)
-		{
+		
 			if (hitResult.GetActor()->Tags.Num() > 0 && hitResult.GetActor()->Tags[0] == "TroopSpawnPoint")
 			{
 				ATroopSpawnPoint* hitActor = Cast<ATroopSpawnPoint>(hitResult.GetActor());
@@ -91,7 +92,7 @@ void AMyPlayer::LeftMouseClick()
 				ATroop_melee* spwndObj = GetWorld()->SpawnActor<ATroop_melee>(t_troopMelee, hitResult.Location, FRotator(0, 0, 0));
 				spwndObj->SetPatrolPoints(&hitActor->PatrolPoints);
 			}
-		}
+		
 	}
 	else
 	{
@@ -100,7 +101,7 @@ void AMyPlayer::LeftMouseClick()
 
 			ATowerSpawnPoint* hitActor = Cast<ATowerSpawnPoint>(hitResult.GetActor());
 			if (hitActor->isEquiped == false) 
-			{
+			{ 
 				ATower_Canon* spwndObj = GetWorld()->SpawnActor<ATower_Canon>(t_towerCanon, FVector(hitActor->GetActorLocation().X, hitActor->GetActorLocation().Y, hitResult.Location.Z), FRotator(0, 0, 0));
 				hitActor->currentTower = spwndObj;
 				hitActor->isEquiped = true;

@@ -6,6 +6,7 @@
 #include "Projectile_canon.h"
 #include "Kismet/KismetMathLibrary.h"
 #include "GameFramework/ProjectileMovementComponent.h"
+#include "Components/AudioComponent.h"
 
 void ATower_Canon::BeginPlay()
 {
@@ -81,6 +82,10 @@ void ATower_Canon::Fire()
 			spwndObj->velocity = VelocityOutput;
 			spwndObj->hasMoved = false;
 		}
+
+			AudioComponent->SetSound(sfx_fire);
+			AudioComponent->SetPitchMultiplier(FMath::RandRange(0.5f, 0.1f));
+			AudioComponent->Play();
 	}
 }
 

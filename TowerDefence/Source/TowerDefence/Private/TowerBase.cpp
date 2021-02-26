@@ -5,6 +5,7 @@
 #include "TroopBase.h"
 #include "Components/BoxComponent.h"
 #include "Components/SphereComponent.h"
+#include "Components/AudioComponent.h"
 
 // Sets default values
 ATowerBase::ATowerBase()
@@ -27,6 +28,12 @@ ATowerBase::ATowerBase()
 	mesh = CreateDefaultSubobject<UStaticMeshComponent>("Mesh");
 	mesh->SetCollisionProfileName("NoCollision");
 	mesh->SetupAttachment(RootComponent);
+
+	AudioComponent = CreateDefaultSubobject<UAudioComponent>(TEXT("AudioComponent"));
+	AudioComponent->bAutoActivate = false;
+	AudioComponent->SetRelativeLocation(FVector(0.0f, 0.0f, 0.0f));
+	AudioComponent->SetupAttachment(RootComponent);
+
 	hp = 100;
 	enabled = true;
 	Tags.Add("tower");

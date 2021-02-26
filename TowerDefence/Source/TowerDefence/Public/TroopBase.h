@@ -24,6 +24,18 @@ public:
 	UPROPERTY(EditAnywhere)
 		class UAIMovementComponent* movmentComponent;
 	
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "AduioComponent")
+		class UAudioComponent* AudioComponent;
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "AduioComponent")
+		class UAudioComponent* AudioComponent_2;
+	
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Sound")
+		class USoundBase* sfx_attack;
+	UPROPERTY(EditAnywhere,Category = "Sound")
+		class USoundBase* sfx_hurt;//AC_2
+	UPROPERTY(EditAnywhere,Category = "Sound")
+		class USoundBase* sfx_die;//AC_2
+
 	FVector moveDirection;
 	bool enabled,follow, attack,beingSpawned;
 	class ATowerBase* currentTarget;

@@ -23,6 +23,14 @@ public:
 	UPROPERTY(VisibleAnywhere)
 		class USphereComponent* col_troopDetection;
 
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "AduioComponent")
+		class UAudioComponent* AudioComponent;
+
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Sound")
+		class USoundBase* sfx_fire;
+	
+
 	bool enabled,fire, isAlive;
 	AActor* currentTarget;
 protected:

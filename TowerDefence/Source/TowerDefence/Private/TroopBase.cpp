@@ -6,6 +6,7 @@
 #include "Components/BoxComponent.h"
 #include "Components/CapsuleComponent.h"
 #include "AIMovementComponent.h"
+#include "Components/AudioComponent.h"
 
 // Sets default values
 ATroopBase::ATroopBase()
@@ -32,6 +33,17 @@ ATroopBase::ATroopBase()
 	col_towerDetection->SetupAttachment(RootComponent);
 
 	movmentComponent = CreateDefaultSubobject< UAIMovementComponent>("movement");
+
+	AudioComponent = CreateDefaultSubobject<UAudioComponent>(TEXT("AudioComponent"));
+	AudioComponent->bAutoActivate = false;
+	AudioComponent->SetRelativeLocation(FVector(0.0f, 0.0f, 0.0f));
+	AudioComponent->SetupAttachment(RootComponent);
+
+	AudioComponent_2 = CreateDefaultSubobject<UAudioComponent>(TEXT("AudioComponent_2"));
+	AudioComponent_2->bAutoActivate = false;
+	AudioComponent_2->SetRelativeLocation(FVector(0.0f, 0.0f, 0.0f));
+	AudioComponent_2->SetupAttachment(RootComponent);
+
 	hp = 100;
 	enabled =true;
 }

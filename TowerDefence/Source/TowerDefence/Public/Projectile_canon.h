@@ -22,6 +22,14 @@ public:
 		class USphereComponent* col_troopDetection;
 	UPROPERTY(VisibleAnywhere, Category = "Mesh")
 		UStaticMeshComponent* mesh;
+
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "AduioComponent")
+		class UAudioComponent* AudioComponent;
+
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Sound")
+		class USoundBase* sfx_explode;
+
 	FVector velocity;
 	bool hasMoved;
 protected:

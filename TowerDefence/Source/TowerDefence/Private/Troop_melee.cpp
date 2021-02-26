@@ -6,6 +6,8 @@
 #include "Components/CapsuleComponent.h"
 #include "TowerDefence/Public/TowerBase.h"
 #include "AIMovementComponent.h"
+#include "Components/AudioComponent.h"
+
 // Sets default values
 ATroop_melee::ATroop_melee()
 {
@@ -43,6 +45,9 @@ void ATroop_melee::Tick(float DeltaTime)
 				if (!currentTower->GetDamage(25))
 				{
 					currentTarget = nullptr;
+					AudioComponent->Stop();
+					AudioComponent->SetSound(sfx_attack);
+					AudioComponent->Play();
 				}
 
 				if (currentTower->isAlive == false)
@@ -97,9 +102,21 @@ void ATroop_melee::BeginOverlap(UPrimitiveComponent* OverlappedComponent, AActor
 bool ATroop_melee::GetDamage(float value)
 {
 	if (hp > 0)
+	{
 		hp -= value;
-	else {
+		if (!AudioComponent_2->IsPlaying()) {
+			AudioComponent_2->SetSound(sfx_hurt);
+			AudioComponent_2->SetPitchMultiplier(FMath::RandRange(0.7f, 1.0f));
+			AudioComponent_2->Play();
+		}
 
+	}
+	else 
+	{
+		AudioComponent_2->Stop();
+			AudioComponent_2->SetSound(sfx_die);
+			AudioComponent_2->SetPitchMultiplier(FMath::RandRange(0.8f, 1.0f));
+			AudioComponent_2->Play();
 		Destroy();
 		return false;
 	}

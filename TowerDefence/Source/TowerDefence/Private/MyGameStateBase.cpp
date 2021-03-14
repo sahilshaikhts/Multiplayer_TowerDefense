@@ -4,69 +4,47 @@
 #include "MyGameStateBase.h"
 #include "Kismet/GameplayStatics.h"
 #include "Blueprint/UserWidget.h"
+#include "ShopSystem.h"
 AMyGameStateBase::AMyGameStateBase()
 {
 }
 void AMyGameStateBase::BeginPlay()
 {
-	if (t_UI_AShop) {
-		UI_AShop = CreateWidget<UUserWidget>(GetGameInstance(), t_UI_AShop);
-		UI_AShop->AddToViewport();
-	}
-	if (t_UI_DShop) {
-		UI_DShop = CreateWidget<UUserWidget>(GetGameInstance(), t_UI_DShop);
-		UI_DShop->AddToViewport();
-	}
-	if (t_UI_Game) {
-		UI_Game = CreateWidget<UUserWidget>(GetGameInstance(), t_UI_Game);
-		UI_Game->AddToViewport();
+
+	if (T_ShopSystem)
+	{
+		shopSystem = GetWorld()->SpawnActor<AShopSystem>(T_ShopSystem, FVector::ZeroVector, FRotator(0, 0, 0));
 	}
 	if (T_Inventory)
 	{
-		inventory=GetWorld()->SpawnActor<AInventory>(T_Inventory, FVector::ZeroVector, FRotator(0, 0, 0));
+		inventory = GetWorld()->SpawnActor<AInventory>(T_Inventory, FVector::ZeroVector, FRotator(0, 0, 0));
+		if (shopSystem)
+			shopSystem->inventory = inventory;
 	}
 
-	//Temporary
-	UI_Game->SetVisibility(ESlateVisibility::Hidden);
-	UI_AShop->SetVisibility(ESlateVisibility::Visible);
-	UI_DShop->SetVisibility(ESlateVisibility::Hidden);
-	inventory->AddGold(2000);
+	SwitchUI(0);
+	inventory->AddGold(150);
 }
-void AMyGameStateBase::SwitchUI(int type)
+void AMyGameStateBase::SwitchUI(int type)//0=Shop;1=Game+
 {
 	if (type == 0)//shop_attacker
 	{
-		UI_Game->SetVisibility(ESlateVisibility::Hidden);
-		UI_AShop->SetVisibility(ESlateVisibility::Visible);
-		UI_DShop->SetVisibility(ESlateVisibility::Hidden);
+		shopSystem->SwitchUI(isAttacking ? 0 : 1);
 	}
-	if (type == 1)//shop_defender
+	if (type == 1)//Game
 	{
-		UI_Game->SetVisibility(ESlateVisibility::Hidden);
-		UI_AShop->SetVisibility(ESlateVisibility::Hidden);
-		UI_DShop->SetVisibility(ESlateVisibility::Visible);
-	}
-	if (type == 2)//Game
-	{
+		if(isAttacking)																	//}
+			UI_Game = CreateWidget<UUserWidget>(GetGameInstance(), t_UI_GameA);			//Temporary(Alot of the UI stuff is)
+		else
+			UI_Game = CreateWidget<UUserWidget>(GetGameInstance(), t_UI_GameD);			//}
+			UI_Game->AddToViewport();
+
 		UI_Game->SetVisibility(ESlateVisibility::Visible);
-		UI_AShop->SetVisibility(ESlateVisibility::Hidden);
-		UI_DShop->SetVisibility(ESlateVisibility::Hidden);
+		shopSystem->SwitchUI(-1);
+
 	}
 }
-void AMyGameStateBase::AddToInventory(MyEnums::Item item,int cost)
-{
-	if (inventory)
-	{
-		inventory->AddItem(item, 1);
-		inventory->AddGold(-cost);
-	}
 
-}
-
-int AMyGameStateBase::GetCoins()
-{
-	return inventory->GetGoldCount();
-}
 void AMyGameStateBase::RemoveFromInventory(MyEnums::Item item)
 {
 	if (inventory)

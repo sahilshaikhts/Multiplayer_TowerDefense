@@ -10,6 +10,7 @@
 #include "AIMovementComponent.h"
 #include "TowerSpawnPoint.h"
 #include "MyGameStateBase.h"
+#include "Inventory.h"
 
 // Sets default values
 AMyPlayer::AMyPlayer()
@@ -30,9 +31,21 @@ AMyPlayer::AMyPlayer()
 	camera->SetupAttachment(cameraSpring, USpringArmComponent::SocketName);
 	camera->bUsePawnControlRotation = false;
 
-	isAttaking = true;
+	if (T_Inventory)
+	{
+		inventory = GetWorld()->SpawnActor<AInventory>(T_Inventory, FVector::ZeroVector, FRotator(0, 0, 0));
+	}
+
 	AutoPossessPlayer = EAutoReceiveInput::Player0;
 
+}
+
+AInventory* AMyPlayer::GetInventory()
+{
+	if(inventory)
+	return inventory;
+	
+	return nullptr;
 }
 
 // Called when the game starts or when spawned
@@ -41,13 +54,14 @@ void AMyPlayer::BeginPlay()
 	Super::BeginPlay();
 	
 	world = GetWorld();
-	AMyGameStateBase* gameState = Cast<AMyGameStateBase>(world->GetGameState());
-	inventory = gameState->inventory;
+	
 	FViewTargetTransitionParams params;
 	world->GetFirstPlayerController()->SetViewTarget(this, params);
 	world->GetFirstPlayerController()->bShowMouseCursor = true;
 	world->GetFirstPlayerController()->bEnableMouseOverEvents = true;
 	world->GetFirstPlayerController()->bEnableClickEvents = true;
+	AMyGameStateBase* gameState = Cast<AMyGameStateBase>(world->GetGameState());
+	isAttacking=gameState->isAttacking;
 }
 
 void AMyPlayer::Attacker()
@@ -64,7 +78,11 @@ void AMyPlayer::Defender()
 void AMyPlayer::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
-
+	if (!inventory)
+	{
+		AMyGameStateBase* gameState = Cast<AMyGameStateBase>(world->GetGameState());
+		inventory = gameState->inventory;
+	}
 }
 
 // Called to bind functionality to input
@@ -82,16 +100,20 @@ void AMyPlayer::LeftMouseClick()
 	FVector worldPos = hitResult.Location;
 	
 
-	if (isAttaking)
+	if (isAttacking)
 	{
 		
-			if (hitResult.GetActor()->Tags.Num() > 0 && hitResult.GetActor()->Tags[0] == "TroopSpawnPoint")
+		if (hitResult.GetActor()->Tags.Num() > 0 && hitResult.GetActor()->Tags[0] == "TroopSpawnPoint")
+		{
+			if (inventory->GetItemCount(MyEnums::Item::troop_swordsMan))
 			{
 				ATroopSpawnPoint* hitActor = Cast<ATroopSpawnPoint>(hitResult.GetActor());
 
 				ATroop_melee* spwndObj = GetWorld()->SpawnActor<ATroop_melee>(t_troopMelee, hitResult.Location, FRotator(0, 0, 0));
 				spwndObj->SetPatrolPoints(&hitActor->PatrolPoints);
+				inventory->RemoveItem(MyEnums::Item::troop_swordsMan);
 			}
+		}
 		
 	}
 	else
@@ -100,11 +122,15 @@ void AMyPlayer::LeftMouseClick()
 		{
 
 			ATowerSpawnPoint* hitActor = Cast<ATowerSpawnPoint>(hitResult.GetActor());
-			if (hitActor->isEquiped == false) 
-			{ 
-				ATower_Canon* spwndObj = GetWorld()->SpawnActor<ATower_Canon>(t_towerCanon, FVector(hitActor->GetActorLocation().X, hitActor->GetActorLocation().Y, hitResult.Location.Z), FRotator(0, 0, 0));
-				hitActor->currentTower = spwndObj;
-				hitActor->isEquiped = true;
+			if (hitActor->isEquiped == false)
+			{
+				if (inventory->GetItemCount(MyEnums::Item::tower_canon))
+				{
+					ATower_Canon* spwndObj = GetWorld()->SpawnActor<ATower_Canon>(t_towerCanon, FVector(hitActor->GetActorLocation().X, hitActor->GetActorLocation().Y, hitResult.Location.Z), FRotator(0, 0, 0));
+					hitActor->currentTower = spwndObj;
+					hitActor->isEquiped = true;
+					inventory->RemoveItem(MyEnums::Item::tower_canon);
+				}
 			}
 		}
 	}

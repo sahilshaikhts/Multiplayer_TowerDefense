@@ -17,8 +17,13 @@ class TOWERDEFENCE_API AMyGameStateBase : public AGameStateBase
 public:
 	virtual void BeginPlay() override;
 
+	UPROPERTY(EditAnywhere)//for debugging
+		bool isAttacking;//True: player is in attacking role ; False: player is in defensing role
+
 	UPROPERTY(EditAnywhere)
 		TSubclassOf<AInventory> T_Inventory;
+	UPROPERTY(EditAnywhere)
+		TSubclassOf<class AShopSystem> T_ShopSystem;
 
 	enum Item
 	{
@@ -28,25 +33,22 @@ public:
 		tower_XBow,
 	};
 
+	
 	UPROPERTY(EditAnywhere, Category = "HUD")
-		TSubclassOf<class UUserWidget> t_UI_AShop;
+		TSubclassOf<class UUserWidget> t_UI_GameD;
 	UPROPERTY(EditAnywhere, Category = "HUD")
-		TSubclassOf<class UUserWidget> t_UI_DShop;
-	UPROPERTY(EditAnywhere, Category = "HUD")
-		TSubclassOf<class UUserWidget> t_UI_Game;
+		TSubclassOf<class UUserWidget> t_UI_GameA;
 
 	AInventory* inventory;
+	class AShopSystem* shopSystem;
 
-	UFUNCTION(BlueprintCallable)
-		int GetCoins();
+	
 	UFUNCTION(BlueprintCallable)
 		void SwitchUI(int type);//change to enum later?
-	UFUNCTION(BlueprintCallable)
-		void AddToInventory(MyEnums::Item item,int cost);
+	
 		void RemoveFromInventory(MyEnums::Item item);
 protected:
-	class UUserWidget* UI_AShop;
-	class UUserWidget* UI_DShop;
+	
 	class UUserWidget* UI_Game;
 
 	bool enableShop;//Temporary state check

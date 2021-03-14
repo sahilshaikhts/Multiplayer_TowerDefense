@@ -19,12 +19,23 @@ public:
 	UPROPERTY(EditAnywhere)
 		class USpringArmComponent* cameraSpring;
 	UPROPERTY(EditAnywhere)
+		TSubclassOf<AInventory> T_Inventory;
+
+	UPROPERTY(EditAnywhere)
 		TSubclassOf<class ATower_Canon> t_towerCanon;
 	UPROPERTY(EditAnywhere)
 		TSubclassOf<class ATroop_melee> t_troopMelee;
 	
-	UPROPERTY(EditAnywhere)//for debugging
-	bool isAttaking;//True: player is in attacking role ; False: player is in defensing role
+	UPROPERTY(EditAnywhere, Category = "HUD")
+		TSubclassOf<class UUserWidget> t_UI_AShop;
+	UPROPERTY(EditAnywhere, Category = "HUD")
+		TSubclassOf<class UUserWidget> t_UI_DShop;
+
+	bool isAttacking;//True: player is in attacking role ; False: player is in defensing role
+
+	UFUNCTION(BlueprintCallable)
+		class AInventory* GetInventory();
+
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;

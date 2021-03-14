@@ -49,3 +49,13 @@ int AInventory::GetGoldCount()
 {
 	return gold;
 }
+
+int AInventory::GetItemCount(MyEnums::Item item)
+{
+	return ItemList[item];
+}
+
+void AInventory::RemoveItem(MyEnums::Item item)
+{
+	ItemList[item]-=1;
+}

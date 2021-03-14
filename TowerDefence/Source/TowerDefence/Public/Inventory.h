@@ -41,8 +41,12 @@ public:
 	void AddItem(MyEnums::Item type, int count);
 	void RemoveItem(MyEnums::Item type, int count);
 
-	void AddGold(int amount);
+	void AddGold(int amount );//can be also used to deduct(-ve value in param)
 	int GetGoldCount();
+
+	UFUNCTION(BlueprintCallable)
+		int GetItemCount(MyEnums::Item item);
+	void RemoveItem(MyEnums::Item item);
 private:
 	int gold;
 };

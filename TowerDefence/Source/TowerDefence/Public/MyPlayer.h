@@ -1,5 +1,15 @@
 // Fill out your copyright notice in the Description page of Project Settings.
+/**********************************************************
+Team: No Name Yet
 
+Section: 2
+
+Author: Sahil Shaikh
+
+Description: MyPlayer class handles player's input,it checks and spawn troops and tower and perform checks in inventory if the item is available or not.
+
+
+************************************************************/
 #pragma once
 
 #include "CoreMinimal.h"
@@ -25,11 +35,6 @@ public:
 		TSubclassOf<class ATower_Canon> t_towerCanon;
 	UPROPERTY(EditAnywhere)
 		TSubclassOf<class ATroop_melee> t_troopMelee;
-	
-	UPROPERTY(EditAnywhere, Category = "HUD")
-		TSubclassOf<class UUserWidget> t_UI_AShop;
-	UPROPERTY(EditAnywhere, Category = "HUD")
-		TSubclassOf<class UUserWidget> t_UI_DShop;
 
 	bool isAttacking;//True: player is in attacking role ; False: player is in defensing role
 
@@ -40,11 +45,8 @@ protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 	class UWorld* world;
-	AActor* newSpawnedObj;
 	class AInventory* inventory;
-	bool isSpawning;//True: PLayer has seletec a troop/tower to spawn
-	void Attacker();
-	void Defender();
+
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
@@ -52,6 +54,4 @@ public:
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 
 	void LeftMouseClick();
-	void BeginSpawning();
-	void CompleteSpawning();
 };

@@ -1,5 +1,3 @@
-// Fill out your copyright notice in the Description page of Project Settings.
-
 
 #include "TowerBase.h"
 #include "TroopBase.h"
@@ -63,6 +61,7 @@ bool ATowerBase::GetDamage(float value)
 	return false;
 }
 
+//Whenever a troop is overalping with the col_troopDetection,the current target is set and bool fire is set to true,this begin shooting in the child class
 void ATowerBase::CheckForTroops()
 {
 	if (currentTarget == nullptr) {

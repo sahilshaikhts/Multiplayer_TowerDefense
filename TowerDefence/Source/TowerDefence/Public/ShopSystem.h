@@ -1,5 +1,13 @@
-// Fill out your copyright notice in the Description page of Project Settings.
+/**********************************************************
+Team: No Name Yet
 
+Section: 2
+
+Author: Sahil Shaikh
+
+Description:This handles the shop interface for players. It has blueprint functions that are triggered on the user interacting with the shop UI to purchase items.
+		
+************************************************************/
 #pragma once
 
 #include "CoreMinimal.h"

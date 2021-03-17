@@ -1,5 +1,15 @@
 // Fill out your copyright notice in the Description page of Project Settings.
+/**********************************************************
+Team: No Name Yet
 
+Section: 2
+
+Author: Sahil Shaikh
+
+Description: This object is spawned by the canon tower on detecing troops, it collides with multiple troops and does splash damage on impact
+
+
+************************************************************/
 #pragma once
 
 #include "CoreMinimal.h"

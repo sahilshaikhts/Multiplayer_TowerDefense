@@ -1,5 +1,15 @@
-// Fill out your copyright notice in the Description page of Project Settings.
+/**********************************************************
+Team: No Name Yet
 
+Section: 2
+
+Author: Seth Grinstead | Sahil Shaikh
+
+Description:It keeps tracks of player’s bought items and player’s money. 
+			It also provides functions to other classes such as shopsystem
+			, player to add or remove a troop or tower from inventory.
+
+************************************************************/
 #pragma once
 
 #include "CoreMinimal.h"
@@ -7,7 +17,7 @@
 #include "Inventory.generated.h"
 
 UENUM(BlueprintType)
-namespace MyEnums
+namespace MyEnums	//Custom enums
 {
 	enum Item
 	{
@@ -25,8 +35,8 @@ class TOWERDEFENCE_API AInventory : public AActor
 {
 	AInventory();
 	GENERATED_BODY()
-public:	
-	
+public:
+
 
 	bool isAttacker;
 
@@ -35,17 +45,17 @@ public:
 protected:
 	virtual void BeginPlay() override;
 
-public:	
+public:
 	virtual void Tick(float DeltaTime) override;
 
-	void AddItem(MyEnums::Item type, int count);
-	void RemoveItem(MyEnums::Item type, int count);
+	void AddItem(MyEnums::Item type, int count);//Add an item of a type
+	void RemoveItem(MyEnums::Item type, int count);//Remove an item of a type
 
-	void AddGold(int amount );//can be also used to deduct(-ve value in param)
+	void AddGold(int amount);//can be also used to deduct(-ve value in param)
 	int GetGoldCount();
 
 	UFUNCTION(BlueprintCallable)
-		int GetItemCount(MyEnums::Item item);
+		int GetItemCount(MyEnums::Item item); //Get number of items player have of a type
 	void RemoveItem(MyEnums::Item item);
 private:
 	int gold;

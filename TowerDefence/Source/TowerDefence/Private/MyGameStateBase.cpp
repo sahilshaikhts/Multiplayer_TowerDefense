@@ -23,7 +23,7 @@ void AMyGameStateBase::BeginPlay()
 	}
 
 	SwitchUI(0);
-	inventory->AddGold(150);
+	inventory->AddGold(1000);
 }
 void AMyGameStateBase::SwitchUI(int type)//0=Shop;1=Game+
 {

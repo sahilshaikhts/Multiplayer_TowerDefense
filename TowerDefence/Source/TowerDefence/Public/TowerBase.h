@@ -1,5 +1,16 @@
-// Fill out your copyright notice in the Description page of Project Settings.
+/**********************************************************
+Team: No Name Yet
 
+Section: 2
+
+Author: Sahil Shaikh
+
+Description:TowerBase class is common class every tower class will derive from.It has all the basic
+			members such as collider,mesh,audiocomponent and also troop detection code,
+			which notifies child class when a troop is in range.
+
+
+************************************************************/
 #pragma once
 
 #include "CoreMinimal.h"
@@ -43,10 +54,12 @@ protected:
 public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
+	//Return HP amount
 	float GetHP();
 	
 	UFUNCTION()
 	virtual bool GetDamage(float value);//returns false when hp<=0
+	//Check for overlaping troops entering and leaving
 	void CheckForTroops();
 	
 };

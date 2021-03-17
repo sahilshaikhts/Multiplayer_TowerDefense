@@ -1,5 +1,17 @@
-// Fill out your copyright notice in the Description page of Project Settings.
+/**********************************************************
+Team: No Name Yet
 
+Section: 2
+
+Author:Sahil Shaikh
+
+Description:Tower_Canon class is derived from TowerBase class,
+			TowerBase provide troop detection and other sets basic variables and functions.
+			Canon shoots a parabolic projectile and foes aerial damage.
+			It has low fire rate and does heavy damage to troops.
+
+
+************************************************************/
 #pragma once
 
 #include "CoreMinimal.h"
@@ -13,7 +25,7 @@ UCLASS()
 class TOWERDEFENCE_API ATower_Canon : public ATowerBase
 {
 	GENERATED_BODY()
-
+		//Reduce HP on getting attach
 		virtual bool GetDamage(float value);
 public:
 
@@ -28,6 +40,8 @@ protected:
 	virtual void BeginPlay() override;
 
 	virtual void Tick(float DeltaTime) override;
+
+	//Fire projectile when a troop is in range
 	void Fire();
 
 };

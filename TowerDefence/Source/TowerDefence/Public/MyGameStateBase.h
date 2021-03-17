@@ -1,4 +1,14 @@
-// Fill out your copyright notice in the Description page of Project Settings.
+/**********************************************************
+Team: No Name Yet
+
+Section: 2
+
+Author: Seth Grinstead
+
+Description:GameState is currently responsible to switch between UI widget based on current state of the game. 
+			It tells ShopSystem to display which widget based on the player's role(attacking/defending).
+			It is also intended to be used in future to handle match(start, win/loss conditions) related things when multiplayer is implemented.
+**********************************************************/
 
 #pragma once
 

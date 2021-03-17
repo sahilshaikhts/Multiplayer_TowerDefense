@@ -64,16 +64,6 @@ void AMyPlayer::BeginPlay()
 	isAttacking=gameState->isAttacking;
 }
 
-void AMyPlayer::Attacker()
-{
-	
-}
-
-void AMyPlayer::Defender()
-{
-	
-}
-
 // Called every frame
 void AMyPlayer::Tick(float DeltaTime)
 {

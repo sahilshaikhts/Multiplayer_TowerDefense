@@ -1,5 +1,17 @@
-// Fill out your copyright notice in the Description page of Project Settings.
+/**********************************************************
+Team: No Name Yet
 
+Section: 2
+
+Author: Seth Grinstead
+
+Description:TroopBase class is common class every troop class will derive from.It has all the basic
+			members such as collider,mesh,audiocomponents and also tower detection code,
+			which notifies child class when a tower is near the its path.
+			It has the function to set the pathnode to the pathnode array that the troop will follow after being placed at a spawn point.
+
+
+************************************************************/
 #pragma once
 
 #include "CoreMinimal.h"

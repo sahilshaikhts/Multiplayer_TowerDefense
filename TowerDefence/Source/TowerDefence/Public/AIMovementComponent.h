@@ -1,5 +1,16 @@
 // Fill out your copyright notice in the Description page of Project Settings.
+/**********************************************************
+Team: No Name Yet
 
+Section: 2
+
+Author: Sahil Shaikh
+
+Description:AIMovementComponent is responsible for storing path node,checking for distance to the target node and moving smoothly from one path node to another.
+			The path node are assigned at runtime,when player clicks to spawn on one of the spawnpoints,the spawnpoints containing the array of nodes passes it to the 
+			troop spawned which then assign it to its AIMovementComponent.
+
+************************************************************/
 #pragma once
 
 #include "CoreMinimal.h"

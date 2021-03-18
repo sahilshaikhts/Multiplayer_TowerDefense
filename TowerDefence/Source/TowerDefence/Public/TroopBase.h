@@ -30,7 +30,7 @@ public:
 	UPROPERTY(VisibleAnywhere, Category = "Collider")
 		class UCapsuleComponent* collider;
 	UPROPERTY(VisibleAnywhere, Category = "Mesh")
-		UStaticMeshComponent* mesh;
+		USkeletalMeshComponent* mesh;
 	UPROPERTY(VisibleAnywhere)
 		class UBoxComponent* col_towerDetection;
 	UPROPERTY(EditAnywhere)
@@ -49,7 +49,10 @@ public:
 		class USoundBase* sfx_die;//AC_2
 
 	FVector moveDirection;
-	bool enabled,follow, attack,beingSpawned;
+	UFUNCTION(BlueprintCallable)
+		bool GetAttack();
+		bool attack;
+	bool enabled,follow,beingSpawned;
 	class ATowerBase* currentTarget;
 	float hp;
 	float attackRate, countDown;//Times attack per second

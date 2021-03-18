@@ -7,6 +7,7 @@
 #include "Components/CapsuleComponent.h"
 #include "AIMovementComponent.h"
 #include "Components/AudioComponent.h"
+#include "Components/SkeletalMeshComponent.h"
 
 // Sets default values
 ATroopBase::ATroopBase()
@@ -23,7 +24,7 @@ ATroopBase::ATroopBase()
 
 	RootComponent = collider;
 
-	mesh = CreateDefaultSubobject<UStaticMeshComponent>("Mesh");
+	mesh = CreateDefaultSubobject<USkeletalMeshComponent>("Mesh");
 	mesh->SetCollisionProfileName("NoCollision");
 	mesh->SetupAttachment(RootComponent);
 
@@ -46,6 +47,11 @@ ATroopBase::ATroopBase()
 
 	hp = 100;
 	enabled =true;
+}
+
+bool ATroopBase::GetAttack()
+{
+	return attack;
 }
 
 // Called when the game starts or when spawned
@@ -107,3 +113,4 @@ bool ATroopBase::GetDamage(float value)
 {
 	return false;
 }
+

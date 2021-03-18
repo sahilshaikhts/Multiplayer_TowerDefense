@@ -89,7 +89,8 @@ void AMyPlayer::LeftMouseClick()
 	GetWorld()->GetFirstPlayerController()->GetHitResultUnderCursorByChannel(UEngineTypes::ConvertToTraceType(ECC_Visibility), true, hitResult);
 	FVector worldPos = hitResult.Location;
 	
-
+	if (!hitResult.GetActor())
+		return;
 	if (isAttacking)
 	{
 		

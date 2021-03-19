@@ -25,7 +25,7 @@ UCLASS()
 class TOWERDEFENCE_API ATower_Canon : public ATowerBase
 {
 	GENERATED_BODY()
-		//Reduce HP on getting attach
+		//Reduce HP on getting attack
 		virtual bool GetDamage(float value);
 public:
 

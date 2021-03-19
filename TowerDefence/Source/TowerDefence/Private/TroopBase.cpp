@@ -8,7 +8,8 @@
 #include "AIMovementComponent.h"
 #include "Components/AudioComponent.h"
 #include "Components/SkeletalMeshComponent.h"
-
+#include "Engine/World.h"
+#include "MyPlayer.h"
 // Sets default values
 ATroopBase::ATroopBase()
 {
@@ -105,6 +106,8 @@ void ATroopBase::CheckForTowers()
 			}
 
 			follow = true;
+		if (!currentTarget->isAlive)
+			currentTarget = nullptr;
 		}
 	}
 }
@@ -113,4 +116,21 @@ bool ATroopBase::GetDamage(float value)
 {
 	return false;
 }
-
+void ATroopBase::StartDestroy()
+{
+	player->OnUnitKilled(unitType);
+	Destroy();
+}
+void ATroopBase::SlowMo()
+{
+	if (slowMoMultiplier == 1)
+	{
+		slowMoMultiplier = 0.5f;
+		GetWorld()->GetTimerManager().SetTimer(SlowMoTimer, this, &ATroopBase::SlowMo, 5, false);
+	}
+	else
+	{
+		slowMoMultiplier = 1;
+		GetWorld()->GetTimerManager().ClearTimer(SlowMoTimer);
+	}
+}

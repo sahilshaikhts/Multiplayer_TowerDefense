@@ -14,6 +14,7 @@ Description: MyPlayer class handles player's input,it checks and spawn troops an
 
 #include "CoreMinimal.h"
 #include "GameFramework/Pawn.h"
+#include "Inventory.h"
 #include "MyPlayer.generated.h"
 
 UCLASS()
@@ -40,6 +41,8 @@ public:
 
 	UFUNCTION(BlueprintCallable)
 		class AInventory* GetInventory();
+
+	void OnUnitKilled(MyEnums::Item unit);
 
 protected:
 	// Called when the game starts or when spawned

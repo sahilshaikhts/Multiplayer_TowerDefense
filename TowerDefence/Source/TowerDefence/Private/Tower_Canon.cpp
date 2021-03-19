@@ -12,9 +12,9 @@ void ATower_Canon::BeginPlay()
 	Super::BeginPlay();
 	col_troopDetection->OnComponentEndOverlap.AddDynamic(this, &ATower_Canon::OnOverlapEnd);
 	Tags.Add("Tower_Canon");
-	fire = false;
+	
 	attackRate = 4;
-	isAlive = true;
+	unitType = MyEnums::Item::tower_canon;
 }
 
 void ATower_Canon::Tick(float DeltaTime)
@@ -94,7 +94,7 @@ bool ATower_Canon::GetDamage(float value)
 		hp -= value;
 	else {
 		mesh->SetMaterial(0,nullptr);
-		//Destroy(); change model/shrink
+		StartDestroy();
 		isAlive = false;
 		return false;
 	}
@@ -103,8 +103,5 @@ bool ATower_Canon::GetDamage(float value)
 
 void ATower_Canon::OnOverlapEnd(class UPrimitiveComponent* OverlappedComp, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex)
 {
-	if (currentTarget != nullptr && OtherActor == currentTarget)
-	{
-		currentTarget = false;
-	}
+	
 }

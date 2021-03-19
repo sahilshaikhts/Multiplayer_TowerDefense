@@ -19,12 +19,12 @@ Description:It keeps tracks of player’s bought items and player’s money.
 UENUM(BlueprintType)
 namespace MyEnums	//Custom enums
 {
-	enum Item
+	enum Item					//Arranged according to how powerful(hp,attackRate,damge) the item is
 	{
 		troop_swordsMan = 0,
 		troop_archer,
-		tower_canon,
 		tower_XBow,
+		tower_canon,
 		TypesCount,
 		none
 	};

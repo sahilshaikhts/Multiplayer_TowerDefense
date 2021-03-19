@@ -48,6 +48,12 @@ AInventory* AMyPlayer::GetInventory()
 	return nullptr;
 }
 
+void AMyPlayer::OnUnitKilled(MyEnums::Item unit)
+{
+	AMyGameStateBase* gameState = Cast<AMyGameStateBase>(world->GetGameState());
+	gameState->OnUnitKilled(unit);
+}
+
 // Called when the game starts or when spawned
 void AMyPlayer::BeginPlay()
 {
@@ -103,6 +109,7 @@ void AMyPlayer::LeftMouseClick()
 				ATroop_melee* spwndObj = GetWorld()->SpawnActor<ATroop_melee>(t_troopMelee, hitResult.Location, FRotator(0, 0, 0));
 				spwndObj->SetPatrolPoints(&hitActor->PatrolPoints);
 				inventory->RemoveItem(MyEnums::Item::troop_swordsMan);
+				spwndObj->player = this;
 			}
 		}
 		
@@ -118,6 +125,7 @@ void AMyPlayer::LeftMouseClick()
 				if (inventory->GetItemCount(MyEnums::Item::tower_canon))
 				{
 					ATower_Canon* spwndObj = GetWorld()->SpawnActor<ATower_Canon>(t_towerCanon, FVector(hitActor->GetActorLocation().X, hitActor->GetActorLocation().Y, hitResult.Location.Z), FRotator(0, 0, 0));
+					spwndObj->player = this;
 					hitActor->currentTower = spwndObj;
 					hitActor->isEquiped = true;
 					inventory->RemoveItem(MyEnums::Item::tower_canon);

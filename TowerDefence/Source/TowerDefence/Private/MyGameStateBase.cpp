@@ -2,9 +2,9 @@
 
 
 #include "MyGameStateBase.h"
-#include "Kismet/GameplayStatics.h"
 #include "Blueprint/UserWidget.h"
 #include "ShopSystem.h"
+#include "RewardSystem.h"
 AMyGameStateBase::AMyGameStateBase()
 {
 }
@@ -14,6 +14,10 @@ void AMyGameStateBase::BeginPlay()
 	if (T_ShopSystem)
 	{
 		shopSystem = GetWorld()->SpawnActor<AShopSystem>(T_ShopSystem, FVector::ZeroVector, FRotator(0, 0, 0));
+	}
+	if (T_RewardSystem)
+	{
+		rewardSystem = GetWorld()->SpawnActor<ARewardSystem>(T_RewardSystem, FVector::ZeroVector, FRotator(0, 0, 0));
 	}
 	if (T_Inventory)
 	{
@@ -51,4 +55,9 @@ void AMyGameStateBase::RemoveFromInventory(MyEnums::Item item)
 	{
 		inventory->RemoveItem(item, 1);
 	}
+}
+
+void AMyGameStateBase::OnUnitKilled(MyEnums::Item unit)
+{
+	inventory->AddGold( rewardSystem->Reward_UnitKill(unit));
 }

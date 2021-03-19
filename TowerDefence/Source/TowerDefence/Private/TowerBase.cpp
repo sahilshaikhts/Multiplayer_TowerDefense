@@ -1,6 +1,7 @@
 
 #include "TowerBase.h"
 #include "TroopBase.h"
+#include "MyPlayer.h"
 #include "Components/BoxComponent.h"
 #include "Components/SphereComponent.h"
 #include "Components/AudioComponent.h"
@@ -23,7 +24,7 @@ ATowerBase::ATowerBase()
 	col_troopDetection->SetCollisionEnabled(ECollisionEnabled::QueryOnly);
 	col_troopDetection->SetupAttachment(RootComponent);
 	
-	mesh = CreateDefaultSubobject<UStaticMeshComponent>("Mesh");
+	mesh = CreateDefaultSubobject<USkeletalMeshComponent>("Mesh");
 	mesh->SetCollisionProfileName("NoCollision");
 	mesh->SetupAttachment(RootComponent);
 
@@ -34,6 +35,9 @@ ATowerBase::ATowerBase()
 
 	hp = 100;
 	enabled = true;
+	fire = false;
+	isAlive = true;
+
 	Tags.Add("tower");
 }
 
@@ -59,6 +63,13 @@ float ATowerBase::GetHP()
 bool ATowerBase::GetDamage(float value)
 {
 	return false;
+}
+
+void ATowerBase::StartDestroy()
+{
+	if(player)
+	player->OnUnitKilled(unitType);
+	Destroy();
 }
 
 //Whenever a troop is overalping with the col_troopDetection,the current target is set and bool fire is set to true,this begin shooting in the child class

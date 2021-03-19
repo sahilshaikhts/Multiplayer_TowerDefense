@@ -15,6 +15,7 @@ ATroop_melee::ATroop_melee()
 	PrimaryActorTick.bCanEverTick = true;
 
 	attackRate = 1.5f;
+	unitType = MyEnums::Item::troop_swordsMan;
 }
 
 // Called when the game starts or when spawned
@@ -59,21 +60,22 @@ void ATroop_melee::Tick(float DeltaTime)
 					//keep following the path
 					movmentComponent->isPatroling(true);
 				}
-				countDown = attackRate;
+				
+				countDown = attackRate+(attackRate*fmod(1.0f, slowMoMultiplier));//when slowMoMultiplier==1(disabled)Fmod will return 0 hence adding 0 ,otherwise will increase attackrate by  e.g. 0.5f *attackrate 
 			}
 			countDown -= DeltaTime;
 		}
 		else
 		{
 			movmentComponent->isPatroling(true);
-			collider->SetPhysicsLinearVelocity(moveDirection * 7000 * DeltaTime);
+			collider->SetPhysicsLinearVelocity(moveDirection * 7000*slowMoMultiplier * DeltaTime);
 		}
 		if (currentTarget != nullptr && follow)
 		{
 			movmentComponent->isPatroling(false);
 			moveDirection = (currentTarget->GetActorLocation() - GetActorLocation());
 			moveDirection.Normalize();
-			collider->SetPhysicsLinearVelocity(moveDirection * 7000 * DeltaTime);
+			collider->SetPhysicsLinearVelocity(moveDirection * 7000*slowMoMultiplier * DeltaTime);
 
 			float dist = GetDistanceTo(currentTarget);
 			GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Orange, FString::Printf(TEXT(" %f "), dist));
@@ -117,7 +119,7 @@ bool ATroop_melee::GetDamage(float value)
 			AudioComponent_2->SetSound(sfx_die);
 			AudioComponent_2->SetPitchMultiplier(FMath::RandRange(0.8f, 1.0f));
 			AudioComponent_2->Play();
-		Destroy();
+			StartDestroy();
 		return false;
 	}
 	return true;

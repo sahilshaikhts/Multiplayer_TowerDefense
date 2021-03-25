@@ -1,0 +1,4 @@
+-Use mouse click to spawn troops/towers on their respective spawnpoint
+-The small semi-sphere is the troop spawnpoint.
+and the flat square on the ground is tower spawnpoint
+To switch from attacker to defender ,got to bp_gameState and uncheck isAttacking to swithc to defending role.

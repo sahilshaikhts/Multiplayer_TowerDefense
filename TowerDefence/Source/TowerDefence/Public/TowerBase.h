@@ -1,8 +1,20 @@
-// Fill out your copyright notice in the Description page of Project Settings.
+/**********************************************************
+Team: No Name Yet
 
+Section: 2
+
+Author: Sahil Shaikh
+
+Description:TowerBase class is common class every tower class will derive from.It has all the basic
+			members such as collider,mesh,audiocomponent and also troop detection code,
+			which notifies child class when a troop is in range.
+
+
+************************************************************/
 #pragma once
 
 #include "CoreMinimal.h"
+#include "Inventory.h"
 #include "GameFramework/Actor.h"
 #include "TowerBase.generated.h"
 
@@ -19,15 +31,27 @@ public:
 	UPROPERTY(VisibleAnywhere)
 		class UBoxComponent* collider;
 	UPROPERTY(VisibleAnywhere, Category = "Mesh")
-		UStaticMeshComponent* mesh;
+		USkeletalMeshComponent* mesh;
 	UPROPERTY(VisibleAnywhere)
 		class USphereComponent* col_troopDetection;
 
-	bool fire;
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "AduioComponent")
+		class UAudioComponent* AudioComponent;
+
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Sound")
+		class USoundBase* sfx_fire;
+	
+
+	bool enabled,fire, isAlive;
 	AActor* currentTarget;
+	class AMyPlayer* player;
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
+	void StartDestroy();
+
+	MyEnums::Item unitType;
 	float hp;
 	float timer;//Times attack per second
 	float attackRate;//Times attack per second
@@ -35,12 +59,12 @@ protected:
 public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
-
-	
+	//Return HP amount
 	float GetHP();
 	
 	UFUNCTION()
 	virtual bool GetDamage(float value);//returns false when hp<=0
+	//Check for overlaping troops entering and leaving
 	void CheckForTroops();
 	
 };

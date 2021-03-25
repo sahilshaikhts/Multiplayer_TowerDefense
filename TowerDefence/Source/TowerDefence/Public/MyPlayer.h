@@ -1,9 +1,20 @@
 // Fill out your copyright notice in the Description page of Project Settings.
+/**********************************************************
+Team: No Name Yet
 
+Section: 2
+
+Author: Sahil Shaikh
+
+Description: MyPlayer class handles player's input,it checks and spawn troops and tower and perform checks in inventory if the item is available or not.
+
+
+************************************************************/
 #pragma once
 
 #include "CoreMinimal.h"
 #include "GameFramework/Pawn.h"
+#include "Inventory.h"
 #include "MyPlayer.generated.h"
 
 UCLASS()
@@ -19,17 +30,26 @@ public:
 	UPROPERTY(EditAnywhere)
 		class USpringArmComponent* cameraSpring;
 	UPROPERTY(EditAnywhere)
-		TSubclassOf<class ATower_Canon> t_canonTower;
+		TSubclassOf<AInventory> T_Inventory;
+
+	UPROPERTY(EditAnywhere)
+		TSubclassOf<class ATower_Canon> t_towerCanon;
 	UPROPERTY(EditAnywhere)
 		TSubclassOf<class ATroop_melee> t_troopMelee;
-	
+
+	bool isAttacking;//True: player is in attacking role ; False: player is in defensing role
+
+	UFUNCTION(BlueprintCallable)
+		class AInventory* GetInventory();
+
+	void OnUnitKilled(MyEnums::Item unit);
+
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 	class UWorld* world;
-	bool isAttaking;//True: player is in attacking role ; False: player is in defensing role
-	void Attacker();
-	void Defender();
+	class AInventory* inventory;
+
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;

@@ -1,5 +1,15 @@
-// Fill out your copyright notice in the Description page of Project Settings.
+/**********************************************************
+Team: No Name Yet
 
+Section: 2
+
+Author:Sahil Shaikh
+
+Description:It is used to allow playr to place troops at the entrance
+			of path defined by the map layout,it contains a collider and a mesh,
+			the collider affects raycast when mouse is clicked .
+
+************************************************************/
 #pragma once
 
 #include "CoreMinimal.h"
@@ -14,10 +24,14 @@ class TOWERDEFENCE_API ATroopSpawnPoint : public AActor
 public:	
 	// Sets default values for this actor's properties
 	ATroopSpawnPoint();
+	UPROPERTY(EditInstanceOnly, Category = "Path")
+		TArray<AActor*> PatrolPoints;
+	
 	UPROPERTY(EditAnywhere)
 		class USphereComponent* collider;
 	UPROPERTY(EditAnywhere, Category = "Mesh")
 		UStaticMeshComponent* mesh;
+	
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;

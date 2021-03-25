@@ -3,6 +3,7 @@
 
 #include "TroopSpawnPoint.h"
 #include "Components/SphereComponent.h"
+
 // Sets default values
 ATroopSpawnPoint::ATroopSpawnPoint()
 {
@@ -19,6 +20,7 @@ ATroopSpawnPoint::ATroopSpawnPoint()
 	mesh->SetupAttachment(collider);
 	Tags.Add("TroopSpawnPoint");
 }
+
 
 // Called when the game starts or when spawned
 void ATroopSpawnPoint::BeginPlay()

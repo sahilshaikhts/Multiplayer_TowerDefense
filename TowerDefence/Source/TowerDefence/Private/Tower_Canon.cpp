@@ -1,4 +1,3 @@
-// Fill out your copyright notice in the Description page of Project Settings.
 
 
 #include "Tower_Canon.h"
@@ -6,81 +5,103 @@
 #include "Projectile_canon.h"
 #include "Kismet/KismetMathLibrary.h"
 #include "GameFramework/ProjectileMovementComponent.h"
+#include "Components/AudioComponent.h"
 
 void ATower_Canon::BeginPlay()
 {
 	Super::BeginPlay();
-	
+	col_troopDetection->OnComponentEndOverlap.AddDynamic(this, &ATower_Canon::OnOverlapEnd);
 	Tags.Add("Tower_Canon");
-	fire = false;
+	
 	attackRate = 4;
+	unitType = MyEnums::Item::tower_canon;
 }
 
 void ATower_Canon::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
-	
-	timer -= DeltaTime;
-	if(timer<=0)
-	{
-		timer= attackRate;
-		fire = true;
-	}
-	
-	if(fire)
-	{
-		if(currentTarget!=nullptr)
+
+	if (isAlive) {
+		CheckForTroops();
+
+		timer -= DeltaTime;
+
+		if (fire)
 		{
-			Fire();
-			fire = false;
+			if (currentTarget != nullptr)
+			{
+				fire = false;
+				Fire();
+
+				timer = attackRate;
+			}
+		}
+		else
+		{
+			if (timer <= 0)
+			{
+				fire = true;
+			}
 		}
 	}
-	CheckForTroops();
 }
 void ATower_Canon::Fire()
 {
-	FActorSpawnParameters SpawnInfo;
-	SpawnInfo.SpawnCollisionHandlingOverride = ESpawnActorCollisionHandlingMethod::AdjustIfPossibleButDontSpawnIfColliding;
-	SpawnInfo.Owner = this;
-	SpawnInfo.Instigator = Cast<APawn>(GetOwner());
+	if (currentTarget != nullptr)
+	{
+		FActorSpawnParameters SpawnInfo;
+		SpawnInfo.SpawnCollisionHandlingOverride = ESpawnActorCollisionHandlingMethod::AdjustIfPossibleButDontSpawnIfColliding;
+		SpawnInfo.Owner = this;
+		SpawnInfo.Instigator = Cast<APawn>(GetOwner());
 
 
-	FVector startPos = GetActorLocation() + FVector(0, 0, 150);
-	FVector TargetPosition = currentTarget->GetActorLocation();
+		FVector startPos = GetActorLocation() + FVector(0, 0, 150);
+		FVector TargetPosition = currentTarget->GetActorLocation();
 
-	const FRotator newrot = UKismetMathLibrary::FindLookAtRotation(startPos, TargetPosition);
+		const FRotator newrot = UKismetMathLibrary::FindLookAtRotation(startPos, TargetPosition);
 
-	const float Gravity = GetWorld()->GetGravityZ() * -1; 
-	
-	const float Theta = (40 * PI / 180);
+		const float Gravity = GetWorld()->GetGravityZ() * -1;
 
-	FVector dir = TargetPosition - startPos;
-	float Sz = dir.Z; 
-	dir.Z = 0;
-	float Sx = dir.Size();
+		const float Theta = (45 * PI / 180);
 
-	const float V = (Sx / cos(Theta)) * FMath::Sqrt((Gravity * 1) / (2 * (Sx * tan(Theta) - Sz)));
-	FVector VelocityOutput = FVector(V * cos(Theta), 0, V * sin(Theta));
+		FVector dir = TargetPosition - startPos;
+		float Sz = dir.Z;
+		dir.Z = 0;
+		float Sx = dir.Size();
 
-	FVector rotation = VelocityOutput;
-	rotation.Normalize();
-	
-	AProjectile_canon* spwndObj=GetWorld()->SpawnActor<AProjectile_canon>(t_projectile_canon, startPos, newrot, SpawnInfo);
-	if (spwndObj!=nullptr) {
-		spwndObj->collider->AddForce(VelocityOutput);
-		spwndObj->velocity = VelocityOutput;
-		spwndObj->hasMoved = false;
+		const float V = (Sx / cos(Theta)) * FMath::Sqrt((Gravity * 1) / (2 * (Sx * tan(Theta) - Sz)));
+		FVector VelocityOutput = FVector(V * cos(Theta), 0, V * sin(Theta));
+
+		FVector rotation = VelocityOutput;
+		rotation.Normalize();
+
+		AProjectile_canon* spwndObj = GetWorld()->SpawnActor<AProjectile_canon>(t_projectile_canon, startPos, newrot, SpawnInfo);
+		if (spwndObj != nullptr) {
+			spwndObj->collider->AddForce(VelocityOutput);
+			spwndObj->velocity = VelocityOutput;
+			spwndObj->hasMoved = false;
+		}
+
+			AudioComponent->SetSound(sfx_fire);
+			AudioComponent->SetPitchMultiplier(FMath::RandRange(0.5f, 0.1f));
+			AudioComponent->Play();
 	}
-	currentTarget = nullptr;
 }
+
 bool ATower_Canon::GetDamage(float value)
 {
 	if (hp > 0)
 		hp -= value;
 	else {
-
-		//Destroy(); change model/shrink
+		mesh->SetMaterial(0,nullptr);
+		StartDestroy();
+		isAlive = false;
 		return false;
 	}
 	return true;
+}
+
+void ATower_Canon::OnOverlapEnd(class UPrimitiveComponent* OverlappedComp, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex)
+{
+	
 }

@@ -1,5 +1,0 @@
-C:\Users\sethg\Desktop\High Level Development II\W21_GAM1528_NoNameYet\TowerDefence\Intermediate\Build\Win64\UE4Editor\Development\TowerDefence\Definitions.TowerDefence.h
-D:\Epic Games Files\UE_4.25\Engine\Source\Runtime\CoreUObject\Public\UObject/GeneratedCppIncludes.h
-D:\Epic Games Files\UE_4.25\Engine\Source\Runtime\CoreUObject\Public\UObject/MetaData.h
-C:\Users\sethg\Desktop\High Level Development II\W21_GAM1528_NoNameYet\TowerDefence\Source\TowerDefence/Public/TroopSpawnPoint.h
-C:\Users\sethg\Desktop\High Level Development II\W21_GAM1528_NoNameYet\TowerDefence\Intermediate\Build\Win64\UE4Editor\Inc\TowerDefence\TroopSpawnPoint.generated.h

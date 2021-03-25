@@ -1,4 +1,19 @@
 // Fill out your copyright notice in the Description page of Project Settings.
+/**********************************************************
+Team: No Name Yet
+
+Section: 2
+
+Author: Sahil Shaikh
+
+Description:ATroop_melee class is derived from TroopBase, 
+			which contains sets of common variableand functions needed by troops.This troop detects tower in its path,
+			sets it as target and moves towards it, once close enough,
+			it start damaging the tower at a slow rate and does moderate damage.
+			It also recieves damage from colliding projectile from any towers.
+
+
+************************************************************/
 
 #pragma once
 
@@ -19,7 +34,7 @@ protected:
 	
 	virtual void BeginPlay() override;
 public:
-	void SetPatrolPoints(TArray<AActor*>* aPatrolPoints);
+	virtual void SetPatrolPoints(TArray<AActor*>* aPatrolPoints) override;
 
 	virtual void Tick(float DeltaTime) override;
 	

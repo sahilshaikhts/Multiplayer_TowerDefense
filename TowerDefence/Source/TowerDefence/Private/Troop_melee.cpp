@@ -6,15 +6,16 @@
 #include "Components/CapsuleComponent.h"
 #include "TowerDefence/Public/TowerBase.h"
 #include "AIMovementComponent.h"
+#include "Components/AudioComponent.h"
+
 // Sets default values
 ATroop_melee::ATroop_melee()
 {
 	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
 
-	
-
 	attackRate = 1.5f;
+	unitType = MyEnums::Item::troop_swordsMan;
 }
 
 // Called when the game starts or when spawned
@@ -25,7 +26,7 @@ void ATroop_melee::BeginPlay()
 	collider->OnComponentHit.AddDynamic(this, &ATroop_melee::OnHit);
 	collider->OnComponentBeginOverlap.AddDynamic(this, &ATroop_melee::BeginOverlap);
 }
-
+               
 void ATroop_melee::SetPatrolPoints(TArray<AActor*>* aPatrolPoints)
 {
 	movmentComponent->SetPathNodes(aPatrolPoints);
@@ -35,56 +36,63 @@ void ATroop_melee::SetPatrolPoints(TArray<AActor*>* aPatrolPoints)
 void ATroop_melee::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
-	if (currentTarget != nullptr && attack && currentTarget->isAlive)
+	if (enabled) 
 	{
-		if (countDown <= 0.0f)
+		if (currentTarget != nullptr && attack && currentTarget->isAlive)
 		{
-			ATowerBase* currentTower = Cast<ATowerBase>(currentTarget);
-			if (!currentTower->GetDamage(25))
+			if (countDown <= 0.0f)
 			{
-				currentTarget = nullptr;
-			}
+				ATowerBase* currentTower = Cast<ATowerBase>(currentTarget);
+				if (!currentTower->GetDamage(25))
+				{
+					currentTarget = nullptr;
+					AudioComponent->Stop();
+					AudioComponent->SetSound(sfx_attack);
+					AudioComponent->Play();
+				}
 
-			if (currentTower->isAlive==false)
-			{
-				attack = false;
-				follow = false;
-				currentTarget = nullptr;
+				if (currentTower->isAlive == false)
+				{
+					attack = false;
+					follow = false;
+					currentTarget = nullptr;
+
+					//keep following the path
+					movmentComponent->isPatroling(true);
+				}
 				
-				//keep following the path
-				movmentComponent->isPatroling(true);
+				countDown = attackRate+(attackRate*fmod(1.0f, slowMoMultiplier));//when slowMoMultiplier==1(disabled)Fmod will return 0 hence adding 0 ,otherwise will increase attackrate by  e.g. 0.5f *attackrate 
 			}
-			countDown = attackRate;
+			countDown -= DeltaTime;
 		}
-		countDown -= DeltaTime;
-	}
-	else
-	{
-		movmentComponent->isPatroling(true);
-		collider->SetPhysicsLinearVelocity(moveDirection * 7000 * DeltaTime);
-	}
-	if (currentTarget != nullptr && follow)
-	{
-		movmentComponent->isPatroling(false);
-		moveDirection = (currentTarget->GetActorLocation() - GetActorLocation());
-		moveDirection.Normalize();
-		collider->SetPhysicsLinearVelocity(moveDirection * 7000 * DeltaTime);
-		
-		float dist = GetDistanceTo(currentTarget);
-		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Orange, FString::Printf(TEXT(" %f "), dist));
-		if (dist < 90)
+		else
 		{
-			follow = false;
-			attack = true;
+			movmentComponent->isPatroling(true);
+			collider->SetPhysicsLinearVelocity(moveDirection * 7000*slowMoMultiplier * DeltaTime);
 		}
+		if (currentTarget != nullptr && follow)
+		{
+			movmentComponent->isPatroling(false);
+			moveDirection = (currentTarget->GetActorLocation() - GetActorLocation());
+			moveDirection.Normalize();
+			collider->SetPhysicsLinearVelocity(moveDirection * 7000*slowMoMultiplier * DeltaTime);
+
+			float dist = GetDistanceTo(currentTarget);
+			GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Orange, FString::Printf(TEXT(" %f "), dist));
+			if (dist < 90)
+			{
+				follow = false;
+				attack = true;
+			}
+		}
+		CheckForTowers();
 	}
-	CheckForTowers();
 }
 
 void ATroop_melee::BeginOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor,
 	UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult)
 {
-	if (OtherActor->ActorHasTag("Projectile_canon"))
+	if (OtherActor->ActorHasTag("Projectile_canon") && enabled)
 	{
 		GetDamage(20);
 
@@ -96,10 +104,22 @@ void ATroop_melee::BeginOverlap(UPrimitiveComponent* OverlappedComponent, AActor
 bool ATroop_melee::GetDamage(float value)
 {
 	if (hp > 0)
+	{
 		hp -= value;
-	else {
+		if (!AudioComponent_2->IsPlaying()) {
+			AudioComponent_2->SetSound(sfx_hurt);
+			AudioComponent_2->SetPitchMultiplier(FMath::RandRange(0.7f, 1.0f));
+			AudioComponent_2->Play();
+		}
 
-		Destroy();
+	}
+	else 
+	{
+		AudioComponent_2->Stop();
+			AudioComponent_2->SetSound(sfx_die);
+			AudioComponent_2->SetPitchMultiplier(FMath::RandRange(0.8f, 1.0f));
+			AudioComponent_2->Play();
+			StartDestroy();
 		return false;
 	}
 	return true;

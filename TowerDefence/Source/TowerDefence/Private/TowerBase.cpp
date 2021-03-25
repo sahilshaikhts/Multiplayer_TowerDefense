@@ -1,10 +1,10 @@
-// Fill out your copyright notice in the Description page of Project Settings.
-
 
 #include "TowerBase.h"
 #include "TroopBase.h"
+#include "MyPlayer.h"
 #include "Components/BoxComponent.h"
 #include "Components/SphereComponent.h"
+#include "Components/AudioComponent.h"
 
 // Sets default values
 ATowerBase::ATowerBase()
@@ -24,10 +24,21 @@ ATowerBase::ATowerBase()
 	col_troopDetection->SetCollisionEnabled(ECollisionEnabled::QueryOnly);
 	col_troopDetection->SetupAttachment(RootComponent);
 	
-	mesh = CreateDefaultSubobject<UStaticMeshComponent>("Mesh");
+	mesh = CreateDefaultSubobject<USkeletalMeshComponent>("Mesh");
 	mesh->SetCollisionProfileName("NoCollision");
-	Tags.Add("tower");
+	mesh->SetupAttachment(RootComponent);
+
+	AudioComponent = CreateDefaultSubobject<UAudioComponent>(TEXT("AudioComponent"));
+	AudioComponent->bAutoActivate = false;
+	AudioComponent->SetRelativeLocation(FVector(0.0f, 0.0f, 0.0f));
+	AudioComponent->SetupAttachment(RootComponent);
+
 	hp = 100;
+	enabled = true;
+	fire = false;
+	isAlive = true;
+
+	Tags.Add("tower");
 }
 
 // Called when the game starts or when spawned
@@ -54,6 +65,14 @@ bool ATowerBase::GetDamage(float value)
 	return false;
 }
 
+void ATowerBase::StartDestroy()
+{
+	if(player)
+	player->OnUnitKilled(unitType);
+	Destroy();
+}
+
+//Whenever a troop is overalping with the col_troopDetection,the current target is set and bool fire is set to true,this begin shooting in the child class
 void ATowerBase::CheckForTroops()
 {
 	if (currentTarget == nullptr) {

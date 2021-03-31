@@ -108,8 +108,9 @@ void AMyPlayer::LeftMouseClick()
 			{
 				ATroopSpawnPoint* hitActor = Cast<ATroopSpawnPoint>(hitResult.GetActor());
 
-				ATroopBase* spwndObj = GetWorld()->SpawnActor<ATroop_Ranged>(t_troopRanged, hitResult.Location, FRotator(0, 0, 0));
-				if (spwndObj) {
+				ATroop_Ranged* spwndObj = GetWorld()->SpawnActor<ATroop_Ranged>(t_troopRanged, hitResult.Location, FRotator(0, 0, 0));
+				if (spwndObj) 
+				{
 					spwndObj->SetPatrolPoints(&hitActor->PatrolPoints);
 					inventory->RemoveItem(MyEnums::Item::troop_swordsMan);
 					spwndObj->player = this;
@@ -138,4 +139,26 @@ void AMyPlayer::LeftMouseClick()
 		}
 	}
 	
+}
+
+void AMyPlayer::SpawnItem(MyEnums::Item type, FHitResult hitResult)
+{
+	switch (type)
+	{
+	case MyEnums::troop_swordsMan:
+
+		break;
+	case MyEnums::troop_archer:
+		break;
+	case MyEnums::tower_XBow:
+		break;
+	case MyEnums::tower_canon:
+		break;
+	case MyEnums::TypesCount:
+		break;
+	case MyEnums::none:
+		break;
+	default:
+		break;
+	}
 }

@@ -50,6 +50,8 @@ UPROPERTY(EditAnywhere)
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
+	void SpawnItem(MyEnums::Item type, FHitResult hitResult);
+
 	class UWorld* world;
 	class AInventory* inventory;
 

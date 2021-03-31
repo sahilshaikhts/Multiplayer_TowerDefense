@@ -5,7 +5,9 @@
 #include"Camera/CameraComponent.h"
 #include "GameFramework/SpringArmComponent.h"
 #include "TowerDefence/Public/Troop_melee.h"
+#include "TroopBase.h"
 #include "Tower_Canon.h"
+#include "Troop_Ranged.h"
 #include "TroopSpawnPoint.h"
 #include "AIMovementComponent.h"
 #include "TowerSpawnPoint.h"
@@ -106,10 +108,12 @@ void AMyPlayer::LeftMouseClick()
 			{
 				ATroopSpawnPoint* hitActor = Cast<ATroopSpawnPoint>(hitResult.GetActor());
 
-				ATroop_melee* spwndObj = GetWorld()->SpawnActor<ATroop_melee>(t_troopMelee, hitResult.Location, FRotator(0, 0, 0));
-				spwndObj->SetPatrolPoints(&hitActor->PatrolPoints);
-				inventory->RemoveItem(MyEnums::Item::troop_swordsMan);
-				spwndObj->player = this;
+				ATroopBase* spwndObj = GetWorld()->SpawnActor<ATroop_Ranged>(t_troopRanged, hitResult.Location, FRotator(0, 0, 0));
+				if (spwndObj) {
+					spwndObj->SetPatrolPoints(&hitActor->PatrolPoints);
+					inventory->RemoveItem(MyEnums::Item::troop_swordsMan);
+					spwndObj->player = this;
+				}
 			}
 		}
 		

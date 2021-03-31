@@ -36,6 +36,9 @@ public:
 		TSubclassOf<class ATower_Canon> t_towerCanon;
 	UPROPERTY(EditAnywhere)
 		TSubclassOf<class ATroop_melee> t_troopMelee;
+	
+UPROPERTY(EditAnywhere)
+		TSubclassOf<class ATroopBase> t_troopRanged;
 
 	bool isAttacking;//True: player is in attacking role ; False: player is in defensing role
 

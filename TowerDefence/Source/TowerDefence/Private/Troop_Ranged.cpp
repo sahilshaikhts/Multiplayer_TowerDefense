@@ -10,7 +10,6 @@
 ATroop_Ranged::ATroop_Ranged()
 {
 	Anim = CreateDefaultSubobject<UAnimSequence>("Animation");
-	mesh = CreateDefaultSubobject<USkeletalMeshComponent>("Mesh");
 	Muzzle = CreateDefaultSubobject<UArrowComponent>("Muzzle");
 	Muzzle->SetupAttachment(RootComponent);
 }

@@ -13,26 +13,7 @@ ATroop_melee::ATroop_melee()
 {
 	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
-<<<<<<< HEAD
-	
-	collider = CreateDefaultSubobject<UCapsuleComponent>("MainCollider");
-	collider->SetCollisionProfileName("BlockAll");
-	collider->SetCollisionEnabled(ECollisionEnabled::QueryAndPhysics);
-	collider->SetSimulatePhysics(true);
-	RootComponent = collider;
 
-	mesh = CreateDefaultSubobject<USkeletalMeshComponent>("Mesh");
-	mesh->SetCollisionProfileName("NoCollision");
-	mesh->SetupAttachment(RootComponent);
-	
-	col_towerDetection = CreateDefaultSubobject<UBoxComponent>("TowerCollider");
-	col_towerDetection->SetCollisionProfileName("OverlapAll");
-	col_towerDetection->SetCollisionEnabled(ECollisionEnabled::QueryOnly);
-	col_towerDetection->SetupAttachment(RootComponent);
-	
-=======
-
->>>>>>> main
 	attackRate = 1.5f;
 	unitType = MyEnums::Item::troop_swordsMan;
 }

@@ -17,15 +17,23 @@ class AActor;
 
 #define TowerDefence_Source_TowerDefence_Public_Tower_Canon_h_27_SPARSE_DATA
 #define TowerDefence_Source_TowerDefence_Public_Tower_Canon_h_27_RPC_WRAPPERS \
+	virtual bool Server_Fire_Validate(); \
+	virtual void Server_Fire_Implementation(); \
  \
+	DECLARE_FUNCTION(execServer_Fire); \
 	DECLARE_FUNCTION(execOnOverlapEnd);
 
 
 #define TowerDefence_Source_TowerDefence_Public_Tower_Canon_h_27_RPC_WRAPPERS_NO_PURE_DECLS \
+	virtual bool Server_Fire_Validate(); \
+	virtual void Server_Fire_Implementation(); \
  \
+	DECLARE_FUNCTION(execServer_Fire); \
 	DECLARE_FUNCTION(execOnOverlapEnd);
 
 
+#define TowerDefence_Source_TowerDefence_Public_Tower_Canon_h_27_EVENT_PARMS
+#define TowerDefence_Source_TowerDefence_Public_Tower_Canon_h_27_CALLBACK_WRAPPERS
 #define TowerDefence_Source_TowerDefence_Public_Tower_Canon_h_27_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesATower_Canon(); \
@@ -71,13 +79,17 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(ATower_Canon); \
 
 
 #define TowerDefence_Source_TowerDefence_Public_Tower_Canon_h_27_PRIVATE_PROPERTY_OFFSET
-#define TowerDefence_Source_TowerDefence_Public_Tower_Canon_h_24_PROLOG
+#define TowerDefence_Source_TowerDefence_Public_Tower_Canon_h_24_PROLOG \
+	TowerDefence_Source_TowerDefence_Public_Tower_Canon_h_27_EVENT_PARMS
+
+
 #define TowerDefence_Source_TowerDefence_Public_Tower_Canon_h_27_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
 	TowerDefence_Source_TowerDefence_Public_Tower_Canon_h_27_PRIVATE_PROPERTY_OFFSET \
 	TowerDefence_Source_TowerDefence_Public_Tower_Canon_h_27_SPARSE_DATA \
 	TowerDefence_Source_TowerDefence_Public_Tower_Canon_h_27_RPC_WRAPPERS \
+	TowerDefence_Source_TowerDefence_Public_Tower_Canon_h_27_CALLBACK_WRAPPERS \
 	TowerDefence_Source_TowerDefence_Public_Tower_Canon_h_27_INCLASS \
 	TowerDefence_Source_TowerDefence_Public_Tower_Canon_h_27_STANDARD_CONSTRUCTORS \
 public: \
@@ -90,6 +102,7 @@ public: \
 	TowerDefence_Source_TowerDefence_Public_Tower_Canon_h_27_PRIVATE_PROPERTY_OFFSET \
 	TowerDefence_Source_TowerDefence_Public_Tower_Canon_h_27_SPARSE_DATA \
 	TowerDefence_Source_TowerDefence_Public_Tower_Canon_h_27_RPC_WRAPPERS_NO_PURE_DECLS \
+	TowerDefence_Source_TowerDefence_Public_Tower_Canon_h_27_CALLBACK_WRAPPERS \
 	TowerDefence_Source_TowerDefence_Public_Tower_Canon_h_27_INCLASS_NO_PURE_DECLS \
 	TowerDefence_Source_TowerDefence_Public_Tower_Canon_h_27_ENHANCED_CONSTRUCTORS \
 private: \

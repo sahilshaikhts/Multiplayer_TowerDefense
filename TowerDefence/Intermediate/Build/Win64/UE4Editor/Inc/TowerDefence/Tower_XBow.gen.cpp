@@ -20,8 +20,52 @@ void EmptyLinkFunctionForGeneratedCodeTower_XBow() {}
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
 	TOWERDEFENCE_API UClass* Z_Construct_UClass_AProjectile_XBow_NoRegister();
 // End Cross Module References
+	DEFINE_FUNCTION(ATower_XBow::execServer_Fire)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		if (!P_THIS->Server_Fire_Validate())
+		{
+			RPC_ValidateFailed(TEXT("Server_Fire_Validate"));
+			return;
+		}
+		P_THIS->Server_Fire_Implementation();
+		P_NATIVE_END;
+	}
+	static FName NAME_ATower_XBow_Server_Fire = FName(TEXT("Server_Fire"));
+	void ATower_XBow::Server_Fire()
+	{
+		ProcessEvent(FindFunctionChecked(NAME_ATower_XBow_Server_Fire),NULL);
+	}
 	void ATower_XBow::StaticRegisterNativesATower_XBow()
 	{
+		UClass* Class = ATower_XBow::StaticClass();
+		static const FNameNativePtrPair Funcs[] = {
+			{ "Server_Fire", &ATower_XBow::execServer_Fire },
+		};
+		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
+	}
+	struct Z_Construct_UFunction_ATower_XBow_Server_Fire_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ATower_XBow_Server_Fire_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Public/Tower_XBow.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_ATower_XBow_Server_Fire_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ATower_XBow, nullptr, "Server_Fire", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x80280CC0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_ATower_XBow_Server_Fire_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_ATower_XBow_Server_Fire_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_ATower_XBow_Server_Fire()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_ATower_XBow_Server_Fire_Statics::FuncParams);
+		}
+		return ReturnFunction;
 	}
 	UClass* Z_Construct_UClass_ATower_XBow_NoRegister()
 	{
@@ -30,6 +74,7 @@ void EmptyLinkFunctionForGeneratedCodeTower_XBow() {}
 	struct Z_Construct_UClass_ATower_XBow_Statics
 	{
 		static UObject* (*const DependentSingletons[])();
+		static const FClassFunctionLinkInfo FuncInfo[];
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
@@ -44,6 +89,9 @@ void EmptyLinkFunctionForGeneratedCodeTower_XBow() {}
 	UObject* (*const Z_Construct_UClass_ATower_XBow_Statics::DependentSingletons[])() = {
 		(UObject* (*)())Z_Construct_UClass_ATowerBase,
 		(UObject* (*)())Z_Construct_UPackage__Script_TowerDefence,
+	};
+	const FClassFunctionLinkInfo Z_Construct_UClass_ATower_XBow_Statics::FuncInfo[] = {
+		{ &Z_Construct_UFunction_ATower_XBow_Server_Fire, "Server_Fire" }, // 2130804880
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ATower_XBow_Statics::Class_MetaDataParams[] = {
@@ -70,11 +118,11 @@ void EmptyLinkFunctionForGeneratedCodeTower_XBow() {}
 		"Engine",
 		&StaticCppClassTypeInfo,
 		DependentSingletons,
-		nullptr,
+		FuncInfo,
 		Z_Construct_UClass_ATower_XBow_Statics::PropPointers,
 		nullptr,
 		UE_ARRAY_COUNT(DependentSingletons),
-		0,
+		UE_ARRAY_COUNT(FuncInfo),
 		UE_ARRAY_COUNT(Z_Construct_UClass_ATower_XBow_Statics::PropPointers),
 		0,
 		0x009000A4u,
@@ -89,7 +137,7 @@ void EmptyLinkFunctionForGeneratedCodeTower_XBow() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ATower_XBow, 4021107708);
+	IMPLEMENT_CLASS(ATower_XBow, 2572452203);
 	template<> TOWERDEFENCE_API UClass* StaticClass<ATower_XBow>()
 	{
 		return ATower_XBow::StaticClass();

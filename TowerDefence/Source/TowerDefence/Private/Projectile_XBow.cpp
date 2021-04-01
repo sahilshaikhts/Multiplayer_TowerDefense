@@ -24,6 +24,9 @@ AProjectile_XBow::AProjectile_XBow()
 	ProjectileMovement->MaxSpeed = MaximumSpeed;
 
 	InitialLifeSpan = 5.0f;
+
+	SetReplicates(true);
+	SetReplicateMovement(true);
 }
 
 void AProjectile_XBow::SetFireDirection(FVector dir)

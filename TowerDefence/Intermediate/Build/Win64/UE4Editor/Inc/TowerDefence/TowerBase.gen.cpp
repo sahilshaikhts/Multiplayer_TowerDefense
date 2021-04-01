@@ -229,7 +229,7 @@ void EmptyLinkFunctionForGeneratedCodeTowerBase() {}
 		{ "ModuleRelativePath", "Public/TowerBase.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ATowerBase_Statics::NewProp_sfx_fire = { "sfx_fire", nullptr, (EPropertyFlags)0x0010000000000035, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ATowerBase, sfx_fire), Z_Construct_UClass_USoundBase_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ATowerBase_Statics::NewProp_sfx_fire_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ATowerBase_Statics::NewProp_sfx_fire_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ATowerBase_Statics::NewProp_sfx_fire = { "sfx_fire", nullptr, (EPropertyFlags)0x0010000000000015, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ATowerBase, sfx_fire), Z_Construct_UClass_USoundBase_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ATowerBase_Statics::NewProp_sfx_fire_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ATowerBase_Statics::NewProp_sfx_fire_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ATowerBase_Statics::NewProp_AudioComponent_MetaData[] = {
 		{ "Category", "AduioComponent" },
@@ -237,7 +237,7 @@ void EmptyLinkFunctionForGeneratedCodeTowerBase() {}
 		{ "ModuleRelativePath", "Public/TowerBase.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ATowerBase_Statics::NewProp_AudioComponent = { "AudioComponent", nullptr, (EPropertyFlags)0x00100000000a001d, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ATowerBase, AudioComponent), Z_Construct_UClass_UAudioComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ATowerBase_Statics::NewProp_AudioComponent_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ATowerBase_Statics::NewProp_AudioComponent_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ATowerBase_Statics::NewProp_AudioComponent = { "AudioComponent", nullptr, (EPropertyFlags)0x00100000000a003d, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ATowerBase, AudioComponent), Z_Construct_UClass_UAudioComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ATowerBase_Statics::NewProp_AudioComponent_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ATowerBase_Statics::NewProp_AudioComponent_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ATowerBase_Statics::NewProp_col_troopDetection_MetaData[] = {
 		{ "Category", "TowerBase" },
@@ -297,7 +297,7 @@ void EmptyLinkFunctionForGeneratedCodeTowerBase() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ATowerBase, 1765173131);
+	IMPLEMENT_CLASS(ATowerBase, 3182468253);
 	template<> TOWERDEFENCE_API UClass* StaticClass<ATowerBase>()
 	{
 		return ATowerBase::StaticClass();
@@ -306,11 +306,11 @@ void EmptyLinkFunctionForGeneratedCodeTowerBase() {}
 
 	void ATowerBase::ValidateGeneratedRepEnums(const TArray<struct FRepRecord>& ClassReps) const
 	{
-		static const FName Name_sfx_fire(TEXT("sfx_fire"));
+		static const FName Name_AudioComponent(TEXT("AudioComponent"));
 		static const FName Name_currentTarget(TEXT("currentTarget"));
 
 		const bool bIsValid = true
-			&& Name_sfx_fire == ClassReps[(int32)ENetFields_Private::sfx_fire].Property->GetFName()
+			&& Name_AudioComponent == ClassReps[(int32)ENetFields_Private::AudioComponent].Property->GetFName()
 			&& Name_currentTarget == ClassReps[(int32)ENetFields_Private::currentTarget].Property->GetFName();
 
 		checkf(bIsValid, TEXT("UHT Generated Rep Indices do not match runtime populated Rep Indices for properties in ATowerBase"));

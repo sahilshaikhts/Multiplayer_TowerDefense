@@ -26,6 +26,8 @@ protected:
 	virtual void BeginPlay() override;
 
 	virtual void Tick(float DeltaTime) override;
-	void Fire();
+
+	UFUNCTION(Server, Reliable, WithValidation)
+		void Server_Fire();
 	
 };

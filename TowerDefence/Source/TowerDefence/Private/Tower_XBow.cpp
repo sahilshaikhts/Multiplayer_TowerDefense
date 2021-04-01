@@ -32,7 +32,7 @@ void ATower_XBow::Tick(float DeltaTime)
 	{
 		if (currentTarget != nullptr)
 		{
-			Fire();
+			Server_Fire();
 			fire = false;
 		}
 	}
@@ -40,7 +40,7 @@ void ATower_XBow::Tick(float DeltaTime)
 	Server_CheckForTroops();
 }
 
-void ATower_XBow::Fire()
+void ATower_XBow::Server_Fire_Implementation()
 {
 	FActorSpawnParameters SpawnInfo;
 	SpawnInfo.SpawnCollisionHandlingOverride = ESpawnActorCollisionHandlingMethod::AdjustIfPossibleButDontSpawnIfColliding;
@@ -60,6 +60,11 @@ void ATower_XBow::Fire()
 	}
 
 	currentTarget = nullptr;
+}
+
+bool ATower_XBow::Server_Fire_Validate()
+{
+	return true;
 }
 
 bool ATower_XBow::GetDamage(float value)

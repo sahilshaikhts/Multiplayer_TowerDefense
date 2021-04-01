@@ -22,6 +22,18 @@ void EmptyLinkFunctionForGeneratedCodeTower_Canon() {}
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
 	TOWERDEFENCE_API UClass* Z_Construct_UClass_AProjectile_canon_NoRegister();
 // End Cross Module References
+	DEFINE_FUNCTION(ATower_Canon::execServer_Fire)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		if (!P_THIS->Server_Fire_Validate())
+		{
+			RPC_ValidateFailed(TEXT("Server_Fire_Validate"));
+			return;
+		}
+		P_THIS->Server_Fire_Implementation();
+		P_NATIVE_END;
+	}
 	DEFINE_FUNCTION(ATower_Canon::execOnOverlapEnd)
 	{
 		P_GET_OBJECT(UPrimitiveComponent,Z_Param_OverlappedComp);
@@ -33,11 +45,17 @@ void EmptyLinkFunctionForGeneratedCodeTower_Canon() {}
 		P_THIS->OnOverlapEnd(Z_Param_OverlappedComp,Z_Param_OtherActor,Z_Param_OtherComp,Z_Param_OtherBodyIndex);
 		P_NATIVE_END;
 	}
+	static FName NAME_ATower_Canon_Server_Fire = FName(TEXT("Server_Fire"));
+	void ATower_Canon::Server_Fire()
+	{
+		ProcessEvent(FindFunctionChecked(NAME_ATower_Canon_Server_Fire),NULL);
+	}
 	void ATower_Canon::StaticRegisterNativesATower_Canon()
 	{
 		UClass* Class = ATower_Canon::StaticClass();
 		static const FNameNativePtrPair Funcs[] = {
 			{ "OnOverlapEnd", &ATower_Canon::execOnOverlapEnd },
+			{ "Server_Fire", &ATower_Canon::execServer_Fire },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
 	}
@@ -101,6 +119,30 @@ void EmptyLinkFunctionForGeneratedCodeTower_Canon() {}
 		}
 		return ReturnFunction;
 	}
+	struct Z_Construct_UFunction_ATower_Canon_Server_Fire_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ATower_Canon_Server_Fire_Statics::Function_MetaDataParams[] = {
+		{ "Comment", "//Fire projectile when a troop is in range\n" },
+		{ "ModuleRelativePath", "Public/Tower_Canon.h" },
+		{ "ToolTip", "Fire projectile when a troop is in range" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_ATower_Canon_Server_Fire_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ATower_Canon, nullptr, "Server_Fire", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x80280CC0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_ATower_Canon_Server_Fire_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_ATower_Canon_Server_Fire_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_ATower_Canon_Server_Fire()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_ATower_Canon_Server_Fire_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	UClass* Z_Construct_UClass_ATower_Canon_NoRegister()
 	{
 		return ATower_Canon::StaticClass();
@@ -126,6 +168,7 @@ void EmptyLinkFunctionForGeneratedCodeTower_Canon() {}
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_ATower_Canon_Statics::FuncInfo[] = {
 		{ &Z_Construct_UFunction_ATower_Canon_OnOverlapEnd, "OnOverlapEnd" }, // 1350702113
+		{ &Z_Construct_UFunction_ATower_Canon_Server_Fire, "Server_Fire" }, // 4127326199
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ATower_Canon_Statics::Class_MetaDataParams[] = {
@@ -171,7 +214,7 @@ void EmptyLinkFunctionForGeneratedCodeTower_Canon() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ATower_Canon, 1193884744);
+	IMPLEMENT_CLASS(ATower_Canon, 1449595234);
 	template<> TOWERDEFENCE_API UClass* StaticClass<ATower_Canon>()
 	{
 		return ATower_Canon::StaticClass();

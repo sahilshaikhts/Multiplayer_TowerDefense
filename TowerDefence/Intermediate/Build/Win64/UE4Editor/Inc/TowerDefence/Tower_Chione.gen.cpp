@@ -18,8 +18,52 @@ void EmptyLinkFunctionForGeneratedCodeTower_Chione() {}
 	TOWERDEFENCE_API UClass* Z_Construct_UClass_ATowerBase();
 	UPackage* Z_Construct_UPackage__Script_TowerDefence();
 // End Cross Module References
+	DEFINE_FUNCTION(ATower_Chione::execServer_Fire)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		if (!P_THIS->Server_Fire_Validate())
+		{
+			RPC_ValidateFailed(TEXT("Server_Fire_Validate"));
+			return;
+		}
+		P_THIS->Server_Fire_Implementation();
+		P_NATIVE_END;
+	}
+	static FName NAME_ATower_Chione_Server_Fire = FName(TEXT("Server_Fire"));
+	void ATower_Chione::Server_Fire()
+	{
+		ProcessEvent(FindFunctionChecked(NAME_ATower_Chione_Server_Fire),NULL);
+	}
 	void ATower_Chione::StaticRegisterNativesATower_Chione()
 	{
+		UClass* Class = ATower_Chione::StaticClass();
+		static const FNameNativePtrPair Funcs[] = {
+			{ "Server_Fire", &ATower_Chione::execServer_Fire },
+		};
+		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
+	}
+	struct Z_Construct_UFunction_ATower_Chione_Server_Fire_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ATower_Chione_Server_Fire_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Public/Tower_Chione.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_ATower_Chione_Server_Fire_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ATower_Chione, nullptr, "Server_Fire", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x80220CC0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_ATower_Chione_Server_Fire_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_ATower_Chione_Server_Fire_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_ATower_Chione_Server_Fire()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_ATower_Chione_Server_Fire_Statics::FuncParams);
+		}
+		return ReturnFunction;
 	}
 	UClass* Z_Construct_UClass_ATower_Chione_NoRegister()
 	{
@@ -28,6 +72,7 @@ void EmptyLinkFunctionForGeneratedCodeTower_Chione() {}
 	struct Z_Construct_UClass_ATower_Chione_Statics
 	{
 		static UObject* (*const DependentSingletons[])();
+		static const FClassFunctionLinkInfo FuncInfo[];
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
@@ -37,6 +82,9 @@ void EmptyLinkFunctionForGeneratedCodeTower_Chione() {}
 	UObject* (*const Z_Construct_UClass_ATower_Chione_Statics::DependentSingletons[])() = {
 		(UObject* (*)())Z_Construct_UClass_ATowerBase,
 		(UObject* (*)())Z_Construct_UPackage__Script_TowerDefence,
+	};
+	const FClassFunctionLinkInfo Z_Construct_UClass_ATower_Chione_Statics::FuncInfo[] = {
+		{ &Z_Construct_UFunction_ATower_Chione_Server_Fire, "Server_Fire" }, // 3467966449
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ATower_Chione_Statics::Class_MetaDataParams[] = {
@@ -53,11 +101,11 @@ void EmptyLinkFunctionForGeneratedCodeTower_Chione() {}
 		"Engine",
 		&StaticCppClassTypeInfo,
 		DependentSingletons,
-		nullptr,
+		FuncInfo,
 		nullptr,
 		nullptr,
 		UE_ARRAY_COUNT(DependentSingletons),
-		0,
+		UE_ARRAY_COUNT(FuncInfo),
 		0,
 		0,
 		0x009000A4u,
@@ -72,7 +120,7 @@ void EmptyLinkFunctionForGeneratedCodeTower_Chione() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ATower_Chione, 3948875209);
+	IMPLEMENT_CLASS(ATower_Chione, 2648988018);
 	template<> TOWERDEFENCE_API UClass* StaticClass<ATower_Chione>()
 	{
 		return ATower_Chione::StaticClass();

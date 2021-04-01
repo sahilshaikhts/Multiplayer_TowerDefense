@@ -23,6 +23,7 @@ protected:
 public:
 	virtual void Tick(float DeltaTime) override;
 
-	void Fire();
+	UFUNCTION(Server, Reliable, WithValidation)
+		void Server_Fire();
 
 };

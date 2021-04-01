@@ -104,5 +104,5 @@ void ATowerBase::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifeti
 	Super::GetLifetimeReplicatedProps(OutLifetimeProps);
 
 	DOREPLIFETIME(ATowerBase, currentTarget);
-	DOREPLIFETIME(ATowerBase, sfx_fire);
+	DOREPLIFETIME(ATowerBase, AudioComponent);
 }

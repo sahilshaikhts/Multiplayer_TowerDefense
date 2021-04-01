@@ -20,12 +20,12 @@ void ATower_Chione::Tick(float DeltaTime)
 	Server_CheckForTroops();
 	if(fire)
 	{
-		Fire();
+		Server_Fire();
 		fire = false;
 	}
 }
 
-void ATower_Chione::Fire()
+void ATower_Chione::Server_Fire_Implementation()
 {
 	if (currentTarget != nullptr)
 	{
@@ -46,6 +46,11 @@ void ATower_Chione::Fire()
 		AudioComponent->SetPitchMultiplier(FMath::RandRange(0.5f, 0.1f));
 		AudioComponent->Play();
 	}
+}
+
+bool ATower_Chione::Server_Fire_Validate()
+{
+	return true;
 }
 
 bool ATower_Chione::GetDamage(float value)

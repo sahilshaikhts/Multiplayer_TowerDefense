@@ -45,6 +45,9 @@ AProjectile_canon::AProjectile_canon()
 	InitialLifeSpan = 3.0f;
 
 	Tags.Add("Projectile_canon");
+
+	SetReplicates(true);
+	SetReplicateMovement(true);
 }
 
 // Called when the game starts or when spawned

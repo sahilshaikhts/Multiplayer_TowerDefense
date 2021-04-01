@@ -32,7 +32,7 @@ void ATower_Canon::Tick(float DeltaTime)
 			if (currentTarget != nullptr)
 			{
 				fire = false;
-				Fire();
+				Server_Fire();
 
 				timer = attackRate;
 			}
@@ -46,7 +46,7 @@ void ATower_Canon::Tick(float DeltaTime)
 		}
 	}
 }
-void ATower_Canon::Fire()
+void ATower_Canon::Server_Fire_Implementation()
 {
 	if (currentTarget != nullptr)
 	{
@@ -87,6 +87,11 @@ void ATower_Canon::Fire()
 			AudioComponent->SetPitchMultiplier(FMath::RandRange(0.5f, 0.1f));
 			AudioComponent->Play();
 	}
+}
+
+bool ATower_Canon::Server_Fire_Validate()
+{
+	return true;
 }
 
 bool ATower_Canon::GetDamage(float value)

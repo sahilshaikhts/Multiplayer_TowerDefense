@@ -35,11 +35,11 @@ public:
 	UPROPERTY(VisibleAnywhere)
 		class USphereComponent* col_troopDetection;
 
-	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "AduioComponent")
+	UPROPERTY(Replicated, VisibleAnywhere, BlueprintReadOnly, Category = "AduioComponent")
 		class UAudioComponent* AudioComponent;
 
 
-	UPROPERTY(Replicated, EditAnywhere, BlueprintReadOnly, Category = "Sound")
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Sound")
 		class USoundBase* sfx_fire;
 	
 

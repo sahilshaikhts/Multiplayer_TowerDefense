@@ -42,6 +42,8 @@ protected:
 	virtual void Tick(float DeltaTime) override;
 
 	//Fire projectile when a troop is in range
-	void Fire();
+
+	UFUNCTION(Server, Reliable, WithValidation)
+	void Server_Fire();
 
 };

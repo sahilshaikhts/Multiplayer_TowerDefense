@@ -27,7 +27,8 @@ public:
 	UPROPERTY(EditInstanceOnly, Category = "Path")
 		TArray<AActor*> PatrolPoints;
 	
-	
+	UPROPERTY(EditAnywhere)
+		class UBoxComponent* collider;
 	UPROPERTY(EditAnywhere, Category = "Mesh")
 		UStaticMeshComponent* mesh;
 	

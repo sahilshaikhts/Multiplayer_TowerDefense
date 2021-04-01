@@ -75,7 +75,8 @@ void ATowerBase::StartDestroy()
 //Whenever a troop is overalping with the col_troopDetection,the current target is set and bool fire is set to true,this begin shooting in the child class
 void ATowerBase::CheckForTroops()
 {
-	if (currentTarget == nullptr) {
+	if (currentTarget == nullptr) 
+	{
 		TArray<AActor*> allActors;
 		col_troopDetection->GetOverlappingActors(allActors, ATroopBase::StaticClass());
 

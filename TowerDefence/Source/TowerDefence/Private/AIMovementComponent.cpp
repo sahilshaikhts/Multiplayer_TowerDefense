@@ -40,15 +40,15 @@ void UAIMovementComponent::MoveToNextPathNode()
 	}
 	else
 	{
-		if (CurrentPathNode !=PathNodes.Last())
-			{
-				index++;
-				CurrentPathNode = PathNodes[index];
-			}
-		
+		if (CurrentPathNode != PathNodes.Last())
+		{
+			index++;
+			CurrentPathNode = PathNodes[index];
+		}
+
 	}
 
-	
+
 }
 void UAIMovementComponent::SwichtNextNodeToNearest()	//Used after done attacking a tower and resume in the path (Might not be used)
 {

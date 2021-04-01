@@ -2,7 +2,7 @@
 
 
 #include "TroopSpawnPoint.h"
-#include "Components/SphereComponent.h"
+#include "Components/BoxComponent.h"
 
 // Sets default values
 ATroopSpawnPoint::ATroopSpawnPoint()
@@ -10,7 +10,7 @@ ATroopSpawnPoint::ATroopSpawnPoint()
  	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
 
-	collider = CreateDefaultSubobject<USphereComponent>("collision");
+	collider = CreateDefaultSubobject<UBoxComponent>("collision");
 	collider->SetCollisionProfileName("OverlapAll");
 	collider->SetCollisionEnabled(ECollisionEnabled::QueryOnly);
 	collider->SetupAttachment(RootComponent);

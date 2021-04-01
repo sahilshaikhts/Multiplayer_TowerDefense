@@ -77,6 +77,7 @@ void ATroop_melee::Tick(float DeltaTime)
 			moveDirection.Normalize();
 			collider->SetPhysicsLinearVelocity(moveDirection * 7000*slowMoMultiplier * DeltaTime);
 
+
 			float dist = GetDistanceTo(currentTarget);
 			GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Orange, FString::Printf(TEXT(" %f "), dist));
 			if (dist < 90)
@@ -86,6 +87,7 @@ void ATroop_melee::Tick(float DeltaTime)
 			}
 		}
 		CheckForTowers();
+			SetActorRotation(FRotator(0 ,0,atan2(moveDirection.Y, moveDirection.X)));
 	}
 }
 

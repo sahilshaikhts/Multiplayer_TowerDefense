@@ -14,6 +14,7 @@ AInventory::AInventory()
 	{
 		ItemList.Add(0);
 	}
+	slectedItem = MyEnums::Item::troop_swordsMan;
 }
 
 // Called when the game starts or when spawned

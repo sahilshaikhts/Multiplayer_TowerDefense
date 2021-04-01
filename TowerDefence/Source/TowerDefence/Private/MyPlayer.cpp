@@ -99,23 +99,13 @@ void AMyPlayer::LeftMouseClick()
 	
 	if (!hitResult.GetActor())
 		return;
+
 	if (isAttacking)
 	{
 		
 		if (hitResult.GetActor()->Tags.Num() > 0 && hitResult.GetActor()->Tags[0] == "TroopSpawnPoint")
 		{
-			if (inventory->GetItemCount(MyEnums::Item::troop_swordsMan))
-			{
-				ATroopSpawnPoint* hitActor = Cast<ATroopSpawnPoint>(hitResult.GetActor());
-
-				ATroop_Ranged* spwndObj = GetWorld()->SpawnActor<ATroop_Ranged>(t_troopRanged, hitResult.Location, FRotator(0, 0, 0));
-				if (spwndObj) 
-				{
-					spwndObj->SetPatrolPoints(&hitActor->PatrolPoints);
-					inventory->RemoveItem(MyEnums::Item::troop_swordsMan);
-					spwndObj->player = this;
-				}
-			}
+			SpawnItem(inventory->slectedItem, hitResult.GetActor());
 		}
 		
 	}
@@ -123,42 +113,53 @@ void AMyPlayer::LeftMouseClick()
 	{
 		if (hitResult.GetActor()->Tags.Num() > 0 && hitResult.GetActor()->ActorHasTag("TowerSpawnPoint"))
 		{
-
-			ATowerSpawnPoint* hitActor = Cast<ATowerSpawnPoint>(hitResult.GetActor());
-			if (hitActor->isEquiped == false)
-			{
-				if (inventory->GetItemCount(MyEnums::Item::tower_canon))
-				{
-					ATower_Canon* spwndObj = GetWorld()->SpawnActor<ATower_Canon>(t_towerCanon, FVector(hitActor->GetActorLocation().X, hitActor->GetActorLocation().Y, hitResult.Location.Z), FRotator(0, 0, 0));
-					spwndObj->player = this;
-					hitActor->currentTower = spwndObj;
-					hitActor->isEquiped = true;
-					inventory->RemoveItem(MyEnums::Item::tower_canon);
-				}
-			}
+			SpawnItem(inventory->slectedItem, hitResult.GetActor());
 		}
 	}
 	
 }
 
-void AMyPlayer::SpawnItem(MyEnums::Item type, FHitResult hitResult)
+void AMyPlayer::SpawnItem(MyEnums::Item type, AActor* hitActor)
 {
-	switch (type)
+	if (inventory->GetItemCount(type))
 	{
-	case MyEnums::troop_swordsMan:
+		switch (type)
+		{
+		case MyEnums::troop_swordsMan:
+		{
+			ATroopBase* spwndObj = GetWorld()->SpawnActor<ATroop_melee>(t_troopMelee, hitActor->GetActorLocation()+ hitActor->GetActorUpVector(), FRotator(0, 0, 0));
+			if (spwndObj)
+			{
+				ATroopSpawnPoint* spawnPoint = Cast<ATroopSpawnPoint>(hitActor);
 
+				spwndObj->SetPatrolPoints(&spawnPoint->PatrolPoints);
+				spwndObj->player = this;
+			}
+		}
 		break;
-	case MyEnums::troop_archer:
+		case MyEnums::troop_archer:
+			break;
+		case MyEnums::tower_XBow:
+			break;
+		case MyEnums::tower_canon:
+		{
+			ATowerSpawnPoint* spawnPoint = Cast<ATowerSpawnPoint>(hitActor);
+			if (spawnPoint->isEquiped == false)
+			{
+				if (inventory->GetItemCount(MyEnums::Item::tower_canon))
+				{
+					ATower_Canon* spwndObj = GetWorld()->SpawnActor<ATower_Canon>(t_towerCanon, hitActor->GetActorLocation(), FRotator(0, 0, 0));
+					spwndObj->player = this;
+					spawnPoint->currentTower = spwndObj;
+					spawnPoint->isEquiped = true;
+				}
+			}
+		}
 		break;
-	case MyEnums::tower_XBow:
-		break;
-	case MyEnums::tower_canon:
-		break;
-	case MyEnums::TypesCount:
-		break;
-	case MyEnums::none:
-		break;
-	default:
-		break;
+		default:
+			break;
+		}
+		inventory->RemoveItem(type);
+
 	}
 }

@@ -21,7 +21,8 @@ void ATower_Canon::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
-	if (isAlive) {
+	if (isAlive) 
+	{
 		CheckForTroops();
 
 		timer -= DeltaTime;

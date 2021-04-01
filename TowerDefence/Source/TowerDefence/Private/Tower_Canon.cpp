@@ -95,7 +95,6 @@ bool ATower_Canon::GetDamage(float value)
 		hp -= value;
 	else {
 
-		mesh->SetMaterial(0,nullptr);
 		StartDestroy();
 		isAlive = false;
 		return false;

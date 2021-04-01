@@ -9,12 +9,12 @@ AInventory::AInventory()
  	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
 
-	slectedItem = MyEnums::Item::none;
+	selectedItem = MyEnums::Item::none;
 	for (int i = 0; i < MyEnums::Item::TypesCount; i++)
 	{
 		ItemList.Add(0);
 	}
-	slectedItem = MyEnums::Item::troop_swordsMan;
+	selectedItem = MyEnums::Item::troop_swordsMan;
 }
 
 // Called when the game starts or when spawned

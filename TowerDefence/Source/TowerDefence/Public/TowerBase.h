@@ -30,7 +30,7 @@ public:
 	
 	UPROPERTY(VisibleAnywhere)
 		class UBoxComponent* collider;
-	UPROPERTY(VisibleAnywhere, Category = "Mesh")
+	UPROPERTY(EditAnywhere, Category = "Mesh")
 		USkeletalMeshComponent* mesh;
 	UPROPERTY(VisibleAnywhere)
 		class USphereComponent* col_troopDetection;

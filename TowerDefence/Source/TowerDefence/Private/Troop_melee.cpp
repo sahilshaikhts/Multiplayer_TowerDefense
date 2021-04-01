@@ -79,7 +79,6 @@ void ATroop_melee::Tick(float DeltaTime)
 
 
 			float dist = GetDistanceTo(currentTarget);
-			GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Orange, FString::Printf(TEXT(" %f "), dist));
 			if (dist < 90)
 			{
 				follow = false;
@@ -87,7 +86,7 @@ void ATroop_melee::Tick(float DeltaTime)
 			}
 		}
 		CheckForTowers();
-			SetActorRotation(FRotator(0 ,0,atan2(moveDirection.Y, moveDirection.X)));
+		
 	}
 }
 

@@ -36,8 +36,8 @@ public:
 		TSubclassOf<class ATower_Canon> t_towerCanon;
 	UPROPERTY(EditAnywhere)
 		TSubclassOf<class ATroop_melee> t_troopMelee;
-	
-UPROPERTY(EditAnywhere)
+
+	UPROPERTY(EditAnywhere)
 		TSubclassOf<class ATroopBase> t_troopRanged;
 
 	bool isAttacking;//True: player is in attacking role ; False: player is in defensing role
@@ -50,12 +50,10 @@ UPROPERTY(EditAnywhere)
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
-	void SpawnItem(MyEnums::Item type,AActor* hitActor);
-
 	class UWorld* world;
 	class AInventory* inventory;
-
-public:	
+	void SpawnItem(MyEnums::Item type, AActor* hitActor);
+public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 	// Called to bind functionality to input

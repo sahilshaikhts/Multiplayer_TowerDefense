@@ -16,8 +16,6 @@ public:
 	ATowerSpawnPoint();
 	class ATowerBase* currentTower;
 
-	UPROPERTY(EditAnywhere)
-		class USphereComponent* collider;
 
 	UPROPERTY(EditAnywhere, Category = "Mesh")
 		UStaticMeshComponent* mesh;

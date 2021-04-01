@@ -78,7 +78,6 @@ void ATroop_melee::Tick(float DeltaTime)
 			collider->SetPhysicsLinearVelocity(moveDirection * 7000*slowMoMultiplier * DeltaTime);
 
 			float dist = GetDistanceTo(currentTarget);
-			GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Orange, FString::Printf(TEXT(" %f "), dist));
 			if (dist < 90)
 			{
 				follow = false;
@@ -86,6 +85,7 @@ void ATroop_melee::Tick(float DeltaTime)
 			}
 		}
 		CheckForTowers();
+		
 	}
 }
 

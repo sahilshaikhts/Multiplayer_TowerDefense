@@ -47,6 +47,8 @@ public:
 
 	void OnUnitKilled(MyEnums::Item unit);
 
+	class AMyGameStateBase* gameState;
+
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;

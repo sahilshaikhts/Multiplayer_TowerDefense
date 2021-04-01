@@ -13,16 +13,74 @@
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodeMyGameStateBase() {}
 // Cross Module References
+	TOWERDEFENCE_API UEnum* Z_Construct_UEnum_TowerDefence_MyStates();
+	UPackage* Z_Construct_UPackage__Script_TowerDefence();
 	TOWERDEFENCE_API UClass* Z_Construct_UClass_AMyGameStateBase_NoRegister();
 	TOWERDEFENCE_API UClass* Z_Construct_UClass_AMyGameStateBase();
 	ENGINE_API UClass* Z_Construct_UClass_AGameStateBase();
-	UPackage* Z_Construct_UPackage__Script_TowerDefence();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
+	TOWERDEFENCE_API UClass* Z_Construct_UClass_ATroop_melee_NoRegister();
 	UMG_API UClass* Z_Construct_UClass_UUserWidget_NoRegister();
 	TOWERDEFENCE_API UClass* Z_Construct_UClass_ARewardSystem_NoRegister();
 	TOWERDEFENCE_API UClass* Z_Construct_UClass_AShopSystem_NoRegister();
 	TOWERDEFENCE_API UClass* Z_Construct_UClass_AInventory_NoRegister();
 // End Cross Module References
+	static UEnum* MyStates_StaticEnum()
+	{
+		static UEnum* Singleton = nullptr;
+		if (!Singleton)
+		{
+			Singleton = GetStaticEnum(Z_Construct_UEnum_TowerDefence_MyStates, Z_Construct_UPackage__Script_TowerDefence(), TEXT("MyStates"));
+		}
+		return Singleton;
+	}
+	template<> TOWERDEFENCE_API UEnum* StaticEnum<MyStates::GameState>()
+	{
+		return MyStates_StaticEnum();
+	}
+	static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_MyStates(MyStates_StaticEnum, TEXT("/Script/TowerDefence"), TEXT("MyStates"), false, nullptr, nullptr);
+	uint32 Get_Z_Construct_UEnum_TowerDefence_MyStates_Hash() { return 15621261U; }
+	UEnum* Z_Construct_UEnum_TowerDefence_MyStates()
+	{
+#if WITH_HOT_RELOAD
+		UPackage* Outer = Z_Construct_UPackage__Script_TowerDefence();
+		static UEnum* ReturnEnum = FindExistingEnumIfHotReloadOrDynamic(Outer, TEXT("MyStates"), 0, Get_Z_Construct_UEnum_TowerDefence_MyStates_Hash(), false);
+#else
+		static UEnum* ReturnEnum = nullptr;
+#endif // WITH_HOT_RELOAD
+		if (!ReturnEnum)
+		{
+			static const UE4CodeGen_Private::FEnumeratorParam Enumerators[] = {
+				{ "MyStates::Intermission", (int64)MyStates::Intermission },
+				{ "MyStates::Paused", (int64)MyStates::Paused },
+				{ "MyStates::Play", (int64)MyStates::Play },
+				{ "MyStates::GameOver", (int64)MyStates::GameOver },
+			};
+#if WITH_METADATA
+			const UE4CodeGen_Private::FMetaDataPairParam Enum_MetaDataParams[] = {
+				{ "GameOver.Name", "MyStates::GameOver" },
+				{ "Intermission.Name", "MyStates::Intermission" },
+				{ "ModuleRelativePath", "Public/MyGameStateBase.h" },
+				{ "Paused.Name", "MyStates::Paused" },
+				{ "Play.Name", "MyStates::Play" },
+			};
+#endif
+			static const UE4CodeGen_Private::FEnumParams EnumParams = {
+				(UObject*(*)())Z_Construct_UPackage__Script_TowerDefence,
+				nullptr,
+				"MyStates",
+				"MyStates::GameState",
+				Enumerators,
+				UE_ARRAY_COUNT(Enumerators),
+				RF_Public|RF_Transient|RF_MarkAsNative,
+				UE4CodeGen_Private::EDynamicType::NotDynamic,
+				(uint8)UEnum::ECppForm::Namespaced,
+				METADATA_PARAMS(Enum_MetaDataParams, UE_ARRAY_COUNT(Enum_MetaDataParams))
+			};
+			UE4CodeGen_Private::ConstructUEnum(ReturnEnum, EnumParams);
+		}
+		return ReturnEnum;
+	}
 	DEFINE_FUNCTION(AMyGameStateBase::execSwitchUI)
 	{
 		P_GET_PROPERTY(FIntProperty,Z_Param_type);
@@ -83,6 +141,14 @@ void EmptyLinkFunctionForGeneratedCodeMyGameStateBase() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_T_Melee_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FClassPropertyParams NewProp_T_Melee;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_t_UI_DefendWins_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FClassPropertyParams NewProp_t_UI_DefendWins;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_t_UI_GameA_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FClassPropertyParams NewProp_t_UI_GameA;
@@ -126,6 +192,20 @@ void EmptyLinkFunctionForGeneratedCodeMyGameStateBase() {}
 		{ "ShowCategories", "Input|MouseInput Input|TouchInput" },
 	};
 #endif
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AMyGameStateBase_Statics::NewProp_T_Melee_MetaData[] = {
+		{ "Category", "MyGameStateBase" },
+		{ "ModuleRelativePath", "Public/MyGameStateBase.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AMyGameStateBase_Statics::NewProp_T_Melee = { "T_Melee", nullptr, (EPropertyFlags)0x0014000000000001, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AMyGameStateBase, T_Melee), Z_Construct_UClass_ATroop_melee_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_AMyGameStateBase_Statics::NewProp_T_Melee_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AMyGameStateBase_Statics::NewProp_T_Melee_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AMyGameStateBase_Statics::NewProp_t_UI_DefendWins_MetaData[] = {
+		{ "Category", "HUD" },
+		{ "ModuleRelativePath", "Public/MyGameStateBase.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AMyGameStateBase_Statics::NewProp_t_UI_DefendWins = { "t_UI_DefendWins", nullptr, (EPropertyFlags)0x0014000000000001, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AMyGameStateBase, t_UI_DefendWins), Z_Construct_UClass_UUserWidget_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_AMyGameStateBase_Statics::NewProp_t_UI_DefendWins_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AMyGameStateBase_Statics::NewProp_t_UI_DefendWins_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AMyGameStateBase_Statics::NewProp_t_UI_GameA_MetaData[] = {
 		{ "Category", "HUD" },
@@ -177,6 +257,8 @@ void EmptyLinkFunctionForGeneratedCodeMyGameStateBase() {}
 	}
 	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AMyGameStateBase_Statics::NewProp_isAttacking = { "isAttacking", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(AMyGameStateBase), &Z_Construct_UClass_AMyGameStateBase_Statics::NewProp_isAttacking_SetBit, METADATA_PARAMS(Z_Construct_UClass_AMyGameStateBase_Statics::NewProp_isAttacking_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AMyGameStateBase_Statics::NewProp_isAttacking_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AMyGameStateBase_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMyGameStateBase_Statics::NewProp_T_Melee,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMyGameStateBase_Statics::NewProp_t_UI_DefendWins,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMyGameStateBase_Statics::NewProp_t_UI_GameA,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMyGameStateBase_Statics::NewProp_t_UI_GameD,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMyGameStateBase_Statics::NewProp_T_RewardSystem,
@@ -211,7 +293,7 @@ void EmptyLinkFunctionForGeneratedCodeMyGameStateBase() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AMyGameStateBase, 3896442808);
+	IMPLEMENT_CLASS(AMyGameStateBase, 697446860);
 	template<> TOWERDEFENCE_API UClass* StaticClass<AMyGameStateBase>()
 	{
 		return AMyGameStateBase::StaticClass();

@@ -18,8 +18,19 @@ Description:GameState is currently responsible to switch between UI widget based
 #include "MyGameStateBase.generated.h"
 
 
+UENUM()
+namespace MyStates
+{
+	enum GameState
+	{
+		Intermission = 0,
+		Paused,
+		Play,
+		GameOver,
+	};
+}
+
 UCLASS()
-	
 class TOWERDEFENCE_API AMyGameStateBase : public AGameStateBase
 {
 	AMyGameStateBase();
@@ -41,6 +52,11 @@ public:
 		TSubclassOf<class UUserWidget> t_UI_GameD;
 	UPROPERTY(EditAnywhere, Category = "HUD")
 		TSubclassOf<class UUserWidget> t_UI_GameA;
+	UPROPERTY(EditAnywhere, Category = "HUD")
+		TSubclassOf<class UUserWidget> t_UI_DefendWins;
+
+	UPROPERTY(EditAnywhere)
+		TSubclassOf<class ATroop_melee> T_Melee;
 
 	AInventory* inventory;
 	class ARewardSystem* rewardSystem;
@@ -49,16 +65,36 @@ public:
 	
 	UFUNCTION(BlueprintCallable)
 		void SwitchUI(int type);//change to enum later?
+
+	void SetGameState(MyStates::GameState state);
+	MyStates::GameState GetGameState();
+	void EndIntermission();
+	void EndRound();
 	
 		void RemoveFromInventory(MyEnums::Item item);
 
 		void OnUnitKilled(MyEnums::Item unit);
 		void RoundOver();
+
+	virtual void Tick(float DeltaTime) override;
+
+	bool bIntermissionStart = false;
+	bool bRoundStart = false;
+
+	float RoundTimer = 5.0f;
+	float IntermissionTimer = 5.0f;
+
+	FTimerHandle RoundTimerHandle;
+	FTimerHandle IntermissionTimerHandle;
+
+	MyStates::GameState State;
+
 protected:
 	
 	class UUserWidget* UI_Game;
 
 	bool enableShop;//Temporary state check
 	int score;
-
+	int Round;
+	
 };

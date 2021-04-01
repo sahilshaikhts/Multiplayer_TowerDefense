@@ -5,6 +5,7 @@
 #include "Components/BoxComponent.h"
 #include "Components/SphereComponent.h"
 #include "Components/AudioComponent.h"
+#include "Net/UnrealNetwork.h"
 
 // Sets default values
 ATowerBase::ATowerBase()
@@ -65,15 +66,20 @@ bool ATowerBase::GetDamage(float value)
 	return false;
 }
 
-void ATowerBase::StartDestroy()
+void ATowerBase::Server_StartDestroy_Implementation()
 {
 	if(player)
 	player->OnUnitKilled(unitType);
 	Destroy();
 }
 
+bool ATowerBase::Server_StartDestroy_Validate()
+{
+	return true;
+}
+
 //Whenever a troop is overalping with the col_troopDetection,the current target is set and bool fire is set to true,this begin shooting in the child class
-void ATowerBase::CheckForTroops()
+void ATowerBase::Server_CheckForTroops_Implementation()
 {
 	if (currentTarget == nullptr) 
 	{
@@ -88,3 +94,15 @@ void ATowerBase::CheckForTroops()
 	}
 }
 
+bool ATowerBase::Server_CheckForTroops_Validate()
+{
+	return true;
+}
+
+void ATowerBase::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const
+{
+	Super::GetLifetimeReplicatedProps(OutLifetimeProps);
+
+	DOREPLIFETIME(ATowerBase, currentTarget);
+	DOREPLIFETIME(ATowerBase, sfx_fire);
+}

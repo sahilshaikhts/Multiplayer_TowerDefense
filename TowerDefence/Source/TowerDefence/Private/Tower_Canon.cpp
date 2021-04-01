@@ -23,7 +23,7 @@ void ATower_Canon::Tick(float DeltaTime)
 
 	if (isAlive) 
 	{
-		CheckForTroops();
+		Server_CheckForTroops();
 
 		timer -= DeltaTime;
 
@@ -95,7 +95,7 @@ bool ATower_Canon::GetDamage(float value)
 		hp -= value;
 	else {
 
-		StartDestroy();
+		Server_StartDestroy();
 		isAlive = false;
 		return false;
 	}

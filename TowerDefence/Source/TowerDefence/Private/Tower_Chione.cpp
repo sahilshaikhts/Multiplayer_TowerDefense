@@ -17,7 +17,7 @@ void ATower_Chione::BeginPlay()
 void ATower_Chione::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
-	CheckForTroops();
+	Server_CheckForTroops();
 	if(fire)
 	{
 		Fire();
@@ -54,7 +54,7 @@ bool ATower_Chione::GetDamage(float value)
 		hp -= value;
 	else {
 		mesh->SetMaterial(0, nullptr);
-		StartDestroy();
+		Server_StartDestroy();
 		isAlive = false;
 		return false;
 	}

@@ -39,17 +39,22 @@ public:
 		class UAudioComponent* AudioComponent;
 
 
-	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Sound")
+	UPROPERTY(Replicated, EditAnywhere, BlueprintReadOnly, Category = "Sound")
 		class USoundBase* sfx_fire;
 	
 
 	bool enabled,fire, isAlive;
-	AActor* currentTarget;
+
+	UPROPERTY(Replicated)
+		AActor* currentTarget;
+
 	class AMyPlayer* player;
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
-	void StartDestroy();
+
+	UFUNCTION(Server, Reliable, WithValidation)
+	void Server_StartDestroy();
 
 	MyEnums::Item unitType;
 	float hp;
@@ -65,6 +70,8 @@ public:
 	UFUNCTION()
 	virtual bool GetDamage(float value);//returns false when hp<=0
 	//Check for overlaping troops entering and leaving
-	void CheckForTroops();
+
+	UFUNCTION(Server, Reliable, WithValidation)
+	void Server_CheckForTroops();
 	
 };

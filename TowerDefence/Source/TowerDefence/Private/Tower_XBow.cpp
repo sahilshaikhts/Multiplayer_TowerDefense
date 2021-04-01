@@ -37,7 +37,7 @@ void ATower_XBow::Tick(float DeltaTime)
 		}
 	}
 
-	CheckForTroops();
+	Server_CheckForTroops();
 }
 
 void ATower_XBow::Fire()

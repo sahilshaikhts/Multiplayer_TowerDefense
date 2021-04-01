@@ -17,11 +17,11 @@
 // Sets default values
 AMyPlayer::AMyPlayer()
 {
- 	// Set this pawn to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
+	// Set this pawn to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
-	
 
-	RootComponent=CreateDefaultSubobject<USceneComponent>("RootComponent");
+
+	RootComponent = CreateDefaultSubobject<USceneComponent>("RootComponent");
 
 	cameraSpring = CreateDefaultSubobject<USpringArmComponent>(TEXT("CameraAttachmentArm"));
 	cameraSpring->SetupAttachment(RootComponent);
@@ -44,9 +44,9 @@ AMyPlayer::AMyPlayer()
 
 AInventory* AMyPlayer::GetInventory()
 {
-	if(inventory)
-	return inventory;
-	
+	if (inventory)
+		return inventory;
+
 	return nullptr;
 }
 
@@ -60,16 +60,16 @@ void AMyPlayer::OnUnitKilled(MyEnums::Item unit)
 void AMyPlayer::BeginPlay()
 {
 	Super::BeginPlay();
-	
+
 	world = GetWorld();
-	
+
 	FViewTargetTransitionParams params;
 	world->GetFirstPlayerController()->SetViewTarget(this, params);
 	world->GetFirstPlayerController()->bShowMouseCursor = true;
 	world->GetFirstPlayerController()->bEnableMouseOverEvents = true;
 	world->GetFirstPlayerController()->bEnableClickEvents = true;
 	AMyGameStateBase* gameState = Cast<AMyGameStateBase>(world->GetGameState());
-	isAttacking=gameState->isAttacking;
+	isAttacking = gameState->isAttacking;
 }
 
 // Called every frame
@@ -87,7 +87,7 @@ void AMyPlayer::Tick(float DeltaTime)
 void AMyPlayer::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 {
 	Super::SetupPlayerInputComponent(PlayerInputComponent);
-	PlayerInputComponent->BindAction("Mouse_left", IE_Pressed,this, &AMyPlayer::LeftMouseClick);//will be called by inventory
+	PlayerInputComponent->BindAction("Mouse_left", IE_Pressed, this, &AMyPlayer::LeftMouseClick);//will be called by inventory
 }
 
 
@@ -96,46 +96,70 @@ void AMyPlayer::LeftMouseClick()
 	FHitResult hitResult;
 	GetWorld()->GetFirstPlayerController()->GetHitResultUnderCursorByChannel(UEngineTypes::ConvertToTraceType(ECC_Visibility), true, hitResult);
 	FVector worldPos = hitResult.Location;
-	
+
 	if (!hitResult.GetActor())
 		return;
+
 	if (isAttacking)
 	{
-		
+
 		if (hitResult.GetActor()->Tags.Num() > 0 && hitResult.GetActor()->Tags[0] == "TroopSpawnPoint")
 		{
-			if (inventory->GetItemCount(MyEnums::Item::troop_swordsMan))
-			{
-				ATroopSpawnPoint* hitActor = Cast<ATroopSpawnPoint>(hitResult.GetActor());
-
-				ATroopBase* spwndObj = GetWorld()->SpawnActor<ATroop_Ranged>(t_troopRanged, hitResult.Location, FRotator(0, 0, 0));
-				if (spwndObj) {
-					spwndObj->SetPatrolPoints(&hitActor->PatrolPoints);
-					inventory->RemoveItem(MyEnums::Item::troop_swordsMan);
-					spwndObj->player = this;
-				}
-			}
+			SpawnItem(inventory->selectedItem, hitResult.GetActor());
 		}
-		
+
 	}
 	else
 	{
 		if (hitResult.GetActor()->Tags.Num() > 0 && hitResult.GetActor()->ActorHasTag("TowerSpawnPoint"))
 		{
+			SpawnItem(inventory->selectedItem, hitResult.GetActor());
+		}
+	}
 
-			ATowerSpawnPoint* hitActor = Cast<ATowerSpawnPoint>(hitResult.GetActor());
-			if (hitActor->isEquiped == false)
+}
+
+void AMyPlayer::SpawnItem(MyEnums::Item type, AActor* hitActor)
+{
+	if (inventory->GetItemCount(type))
+	{
+		switch (type)
+		{
+		case MyEnums::troop_swordsMan:
+		{
+			ATroopBase* spwndObj = GetWorld()->SpawnActor<ATroop_melee>(t_troopMelee, hitActor->GetActorLocation() + hitActor->GetActorUpVector(), FRotator(0, 0, 0));
+			if (spwndObj)
+			{
+				ATroopSpawnPoint* spawnPoint = Cast<ATroopSpawnPoint>(hitActor);
+
+				spwndObj->SetPatrolPoints(&spawnPoint->PatrolPoints);
+				spwndObj->player = this;
+			}
+		}
+		break;
+		case MyEnums::troop_archer:
+			break;
+		case MyEnums::tower_XBow:
+			break;
+		case MyEnums::tower_canon:
+		{
+			ATowerSpawnPoint* spawnPoint = Cast<ATowerSpawnPoint>(hitActor);
+			if (spawnPoint->isEquiped == false)
 			{
 				if (inventory->GetItemCount(MyEnums::Item::tower_canon))
 				{
-					ATower_Canon* spwndObj = GetWorld()->SpawnActor<ATower_Canon>(t_towerCanon, FVector(hitActor->GetActorLocation().X, hitActor->GetActorLocation().Y, hitResult.Location.Z), FRotator(0, 0, 0));
+					ATower_Canon* spwndObj = GetWorld()->SpawnActor<ATower_Canon>(t_towerCanon, hitActor->GetActorLocation(), FRotator(0, 0, 0));
 					spwndObj->player = this;
-					hitActor->currentTower = spwndObj;
-					hitActor->isEquiped = true;
-					inventory->RemoveItem(MyEnums::Item::tower_canon);
+					spawnPoint->currentTower = spwndObj;
+					spawnPoint->isEquiped = true;
 				}
 			}
 		}
+		break;
+		default:
+			break;
+		}
+		inventory->RemoveItem(type);
+
 	}
-	
 }

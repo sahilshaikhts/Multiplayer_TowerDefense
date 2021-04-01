@@ -52,7 +52,7 @@ protected:
 	virtual void BeginPlay() override;
 	class UWorld* world;
 	class AInventory* inventory;
-
+	void SpawnItem(MyEnums::Item type, AActor* hitActor);
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;

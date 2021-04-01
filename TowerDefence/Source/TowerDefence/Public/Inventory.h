@@ -41,7 +41,7 @@ public:
 	bool isAttacker;
 
 	TArray<int> ItemList;//ItemList's index are in order as the Enum Item,the value's of at each index defines quantity
-	MyEnums::Item slectedItem;
+	MyEnums::Item selectedItem;
 protected:
 	virtual void BeginPlay() override;
 

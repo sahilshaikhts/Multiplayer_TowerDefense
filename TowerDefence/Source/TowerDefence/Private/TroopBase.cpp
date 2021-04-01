@@ -118,7 +118,9 @@ bool ATroopBase::GetDamage(float value)
 }
 void ATroopBase::StartDestroy()
 {
-	player->OnUnitKilled(unitType);
+	if (player != nullptr)
+		player->OnUnitKilled(unitType);
+
 	Destroy();
 }
 void ATroopBase::SlowMo()

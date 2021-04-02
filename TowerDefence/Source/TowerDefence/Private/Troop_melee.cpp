@@ -77,6 +77,7 @@ void ATroop_melee::Tick(float DeltaTime)
 			moveDirection.Normalize();
 			collider->SetPhysicsLinearVelocity(moveDirection * 7000*slowMoMultiplier * DeltaTime);
 
+
 			float dist = GetDistanceTo(currentTarget);
 			if (dist < 90)
 			{

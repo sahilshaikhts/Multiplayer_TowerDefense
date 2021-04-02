@@ -51,7 +51,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{DC074F30-A764-4EC0-A8B0-509C7BA50901}</ProjectGuid>
+    <ProjectGuid>{D77944B9-A630-4285-94AC-0B819FA6FD82}</ProjectGuid>
     <Keyword>MakeFileProj</Keyword>
     <RootNamespace>TowerDefence</RootNamespace>
     <PlatformToolset>v142</PlatformToolset>

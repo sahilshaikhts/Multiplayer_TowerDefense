@@ -19,7 +19,7 @@ Description:It keeps tracks of player’s bought items and player’s money.
 UENUM(BlueprintType)
 namespace MyEnums	//Custom enums
 {
-	enum Item					//Arranged according to how powerful(hp,attackRate,damge) the item is
+	enum  Item					//Arranged according to how powerful(hp,attackRate,damge) the item is
 	{
 		troop_swordsMan = 0,
 		troop_archer,
@@ -36,12 +36,13 @@ class TOWERDEFENCE_API AInventory : public AActor
 	AInventory();
 	GENERATED_BODY()
 public:
-
-
 	bool isAttacker;
 
+	UPROPERTY( BlueprintReadWrite)
 	TArray<int> ItemList;//ItemList's index are in order as the Enum Item,the value's of at each index defines quantity
-	MyEnums::Item selectedItem;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+		TEnumAsByte<MyEnums::Item> selectedItem;
 protected:
 	virtual void BeginPlay() override;
 
@@ -56,6 +57,8 @@ public:
 
 	UFUNCTION(BlueprintCallable)
 		int GetItemCount(MyEnums::Item item); //Get number of items player have of a type
+	UFUNCTION(BlueprintCallable)
+		int GetItemCountByIndex(int itemIndex); //Get number of items player have of a type
 	void RemoveItem(MyEnums::Item item);
 private:
 	int gold;

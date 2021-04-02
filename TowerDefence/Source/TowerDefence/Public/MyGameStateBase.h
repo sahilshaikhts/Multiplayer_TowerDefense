@@ -17,9 +17,8 @@ Description:GameState is currently responsible to switch between UI widget based
 #include"Inventory.h"
 #include "MyGameStateBase.generated.h"
 
-
-UCLASS()
-	
+DECLARE_DYNAMIC_MULTICAST_DELEGATE(FOnInventoryUpdate);
+UCLASS()	
 class TOWERDEFENCE_API AMyGameStateBase : public AGameStateBase
 {
 	AMyGameStateBase();
@@ -38,11 +37,14 @@ public:
 		TSubclassOf<class ARewardSystem> T_RewardSystem;
 
 	UPROPERTY(EditAnywhere, Category = "HUD")
-		TSubclassOf<class UUserWidget> t_UI_GameD;
-	UPROPERTY(EditAnywhere, Category = "HUD")
-		TSubclassOf<class UUserWidget> t_UI_GameA;
+		TSubclassOf<class UUserWidget> t_UI_InGame;
 
+	UPROPERTY(BlueprintAssignable)
+		FOnInventoryUpdate OnInventoryUpdated;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	AInventory* inventory;
+
 	class ARewardSystem* rewardSystem;
 	class AShopSystem* shopSystem;
 

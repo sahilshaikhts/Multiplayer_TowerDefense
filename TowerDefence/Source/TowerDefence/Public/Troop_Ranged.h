@@ -26,9 +26,6 @@ public:
 
 private:
 
-	UPROPERTY(VisibleAnywhere)
-		class UAnimSequence* Anim;
-
 	void PlayAttackAnimation();
 	void FireProjectile();
 

@@ -12,7 +12,6 @@
 
 ATroop_Ranged::ATroop_Ranged()
 {
-	Anim = CreateDefaultSubobject<UAnimSequence>("Animation");
 	Muzzle = CreateDefaultSubobject<UArrowComponent>("Muzzle");
 	Muzzle->SetupAttachment(RootComponent);
 }
@@ -81,7 +80,7 @@ void ATroop_Ranged::Tick(float DeltaTime)
 
 void ATroop_Ranged::PlayAttackAnimation()
 {
-	mesh->PlayAnimation(Anim, false);
+	//mesh->PlayAnimation(Anim, false);
 	attack = true;
 	GetWorldTimerManager().SetTimer(AnimTimer, this, &ATroop_Ranged::FireProjectile, AnimRate);
 }

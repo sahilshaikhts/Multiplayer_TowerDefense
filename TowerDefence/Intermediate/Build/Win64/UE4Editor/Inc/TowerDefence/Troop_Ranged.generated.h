@@ -59,7 +59,6 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(ATroop_Ranged); \
 
 
 #define TowerDefence_Source_TowerDefence_Public_Troop_Ranged_h_15_PRIVATE_PROPERTY_OFFSET \
-	FORCEINLINE static uint32 __PPO__Anim() { return STRUCT_OFFSET(ATroop_Ranged, Anim); } \
 	FORCEINLINE static uint32 __PPO__Muzzle() { return STRUCT_OFFSET(ATroop_Ranged, Muzzle); }
 
 

@@ -1,0 +1,5 @@
+C:\Users\sethg\Desktop\NoNameYetTestFolder\W21_GAM1528_NoNameYet\TowerDefence\Intermediate\Build\Win64\UE4Editor\Development\TowerDefence\Definitions.TowerDefence.h
+D:\Epic Games Files\UE_4.25\Engine\Source\Runtime\CoreUObject\Public\UObject/GeneratedCppIncludes.h
+D:\Epic Games Files\UE_4.25\Engine\Source\Runtime\CoreUObject\Public\UObject/MetaData.h
+C:\Users\sethg\Desktop\NoNameYetTestFolder\W21_GAM1528_NoNameYet\TowerDefence\Source\TowerDefence/Public/Inventory.h
+C:\Users\sethg\Desktop\NoNameYetTestFolder\W21_GAM1528_NoNameYet\TowerDefence\Intermediate\Build\Win64\UE4Editor\Inc\TowerDefence\Inventory.generated.h

@@ -19,6 +19,8 @@ public:
 
 	virtual void Tick(float DeltaTime) override;
 
+	virtual void SetPatrolPoints(TArray<AActor*>* aPatrolPoints) override;
+
 	UPROPERTY(EditDefaultsOnly, Category = Projectile)
 		TSubclassOf<class AProjectile_RangedTroop> ProjectileClass;
 

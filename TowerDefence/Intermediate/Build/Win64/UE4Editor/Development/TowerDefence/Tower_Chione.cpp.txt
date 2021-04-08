@@ -1,0 +1,22 @@
+C:\Users\sethg\Desktop\NoNameYetTestFolder\W21_GAM1528_NoNameYet\TowerDefence\Intermediate\Build\Win64\UE4Editor\Development\TowerDefence\Definitions.TowerDefence.h
+C:\Users\sethg\Desktop\NoNameYetTestFolder\W21_GAM1528_NoNameYet\TowerDefence\Source\TowerDefence\Public\Tower_Chione.h
+C:\Users\sethg\Desktop\NoNameYetTestFolder\W21_GAM1528_NoNameYet\TowerDefence\Source\TowerDefence\Public\TowerBase.h
+C:\Users\sethg\Desktop\NoNameYetTestFolder\W21_GAM1528_NoNameYet\TowerDefence\Source\TowerDefence\Public\Inventory.h
+C:\Users\sethg\Desktop\NoNameYetTestFolder\W21_GAM1528_NoNameYet\TowerDefence\Intermediate\Build\Win64\UE4Editor\Inc\TowerDefence\Inventory.generated.h
+C:\Users\sethg\Desktop\NoNameYetTestFolder\W21_GAM1528_NoNameYet\TowerDefence\Intermediate\Build\Win64\UE4Editor\Inc\TowerDefence\TowerBase.generated.h
+C:\Users\sethg\Desktop\NoNameYetTestFolder\W21_GAM1528_NoNameYet\TowerDefence\Intermediate\Build\Win64\UE4Editor\Inc\TowerDefence\Tower_Chione.generated.h
+C:\Users\sethg\Desktop\NoNameYetTestFolder\W21_GAM1528_NoNameYet\TowerDefence\Source\TowerDefence/Public/TroopBase.h
+C:\Users\sethg\Desktop\NoNameYetTestFolder\W21_GAM1528_NoNameYet\TowerDefence\Intermediate\Build\Win64\UE4Editor\Inc\TowerDefence\TroopBase.generated.h
+D:\Epic Games Files\UE_4.25\Engine\Source\Runtime\Engine\Classes\Components/SphereComponent.h
+D:\Epic Games Files\UE_4.25\Engine\Source\Runtime\Engine\Classes\Components/ShapeComponent.h
+D:\Epic Games Files\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\ShapeComponent.generated.h
+D:\Epic Games Files\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\SphereComponent.generated.h
+D:\Epic Games Files\UE_4.25\Engine\Source\Runtime\Engine\Classes\Kismet/KismetMathLibrary.h
+D:\Epic Games Files\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\KismetMathLibrary.generated.h
+D:\Epic Games Files\UE_4.25\Engine\Source\Runtime\Engine\Classes\Kismet\KismetMathLibrary.inl
+D:\Epic Games Files\UE_4.25\Engine\Source\Runtime\Engine\Classes\GameFramework/ProjectileMovementComponent.h
+D:\Epic Games Files\UE_4.25\Engine\Source\Runtime\Engine\Classes\GameFramework/MovementComponent.h
+D:\Epic Games Files\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\MovementComponent.generated.h
+D:\Epic Games Files\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\ProjectileMovementComponent.generated.h
+D:\Epic Games Files\UE_4.25\Engine\Source\Runtime\Engine\Classes\Components/AudioComponent.h
+D:\Epic Games Files\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\AudioComponent.generated.h

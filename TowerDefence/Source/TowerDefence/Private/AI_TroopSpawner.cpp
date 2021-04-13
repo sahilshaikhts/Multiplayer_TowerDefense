@@ -34,36 +34,41 @@ void AAI_TroopSpawner::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
-	if (bIsOnBreak == false && bIsSpawning == false && (pGameState->GetGameState() == MyStates::GameState::Play))
+	if (pGameState->GetGameState() == MyStates::GameState::Play)
 	{
-		GetWorldTimerManager().SetTimer(SpawnTimerHandle, this, &AAI_TroopSpawner::SpawnTroops, SpawnRate);
-		bIsSpawning = true;
+		if (bIsOnBreak == false && bIsSpawning == false)
+		{
+			GetWorldTimerManager().SetTimer(SpawnTimerHandle, this, &AAI_TroopSpawner::SpawnTroops, SpawnRate);
+			bIsSpawning = true;
+		}
 	}
-
 }
 
 void AAI_TroopSpawner::SpawnTroops()
 {
-	FVector position = SpawnPoints[SelectedSpawnPoint]->GetActorLocation() + SpawnPoints[SelectedSpawnPoint]->GetActorUpVector();
-
-	ATroopBase* spwndObj = GetWorld()->SpawnActor<ATroop_melee>(t_troopMelee, position, FRotator(0, 0, 0));
-	if (spwndObj)
+	
 	{
-		spwndObj->SetPatrolPoints(&SpawnPoints[SelectedSpawnPoint]->PatrolPoints);
-	}
+		FVector position = SpawnPoints[SelectedSpawnPoint]->GetActorLocation() + SpawnPoints[SelectedSpawnPoint]->GetActorUpVector();
 
-	NumSpawned++;
-	bIsSpawning = false;
+		ATroopBase* spwndObj = GetWorld()->SpawnActor<ATroop_melee>(t_troopMelee, position, FRotator(0, 0, 0));
+		if (spwndObj)
+		{
+			spwndObj->SetPatrolPoints(&SpawnPoints[SelectedSpawnPoint]->PatrolPoints);
+		}
 
-	if (NumSpawned == MaxNumSpawned)
-	{
-		NumSpawned = 0;
-		MaxNumSpawned = FMath::RandRange(1, 3);
-		SelectedSpawnPoint = FMath::RandRange(0, 2);
+		NumSpawned++;
+		bIsSpawning = false;
 
-		bIsOnBreak = true;
+		if (NumSpawned == MaxNumSpawned)
+		{
+			NumSpawned = 0;
+			MaxNumSpawned = FMath::RandRange(1, 3);
+			SelectedSpawnPoint = FMath::RandRange(0, 2);
 
-		GetWorldTimerManager().SetTimer(BreakTimerHandle, this, &AAI_TroopSpawner::ClockIn, BreakTime);
+			bIsOnBreak = true;
+
+			GetWorldTimerManager().SetTimer(BreakTimerHandle, this, &AAI_TroopSpawner::ClockIn, BreakTime);
+		}
 	}
 }
 

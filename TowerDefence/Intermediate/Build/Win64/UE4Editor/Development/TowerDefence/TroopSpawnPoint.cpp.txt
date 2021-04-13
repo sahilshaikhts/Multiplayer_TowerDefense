@@ -1,0 +1,3 @@
+C:\Users\sethg\Desktop\Backups\MergeFile\W21_GAM1528_NoNameYet\TowerDefence\Intermediate\Build\Win64\UE4Editor\Development\TowerDefence\Definitions.TowerDefence.h
+C:\Users\sethg\Desktop\Backups\MergeFile\W21_GAM1528_NoNameYet\TowerDefence\Source\TowerDefence\Public\TroopSpawnPoint.h
+C:\Users\sethg\Desktop\Backups\MergeFile\W21_GAM1528_NoNameYet\TowerDefence\Intermediate\Build\Win64\UE4Editor\Inc\TowerDefence\TroopSpawnPoint.generated.h

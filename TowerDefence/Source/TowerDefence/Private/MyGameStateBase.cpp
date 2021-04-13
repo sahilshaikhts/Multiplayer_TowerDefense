@@ -92,9 +92,12 @@ void AMyGameStateBase::EndRound()
 	TArray<AActor*> FoundActors;
 	UGameplayStatics::GetAllActorsOfClass(GetWorld(), ATroop_melee::StaticClass(), FoundActors);
 
-	for (int i = 0; i < FoundActors.Num(); i++)
+	if (FoundActors.Num() > 0)
 	{
-		FoundActors[i]->Destroy();
+		for (int i = 0; i < FoundActors.Num(); i++)
+		{
+			FoundActors[i]->Destroy();
+		}
 	}
 }
 

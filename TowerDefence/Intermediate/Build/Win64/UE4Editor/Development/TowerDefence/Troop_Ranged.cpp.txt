@@ -1,0 +1,11 @@
+C:\Users\sethg\Desktop\Backups\MergeFile\W21_GAM1528_NoNameYet\TowerDefence\Intermediate\Build\Win64\UE4Editor\Development\TowerDefence\Definitions.TowerDefence.h
+C:\Users\sethg\Desktop\Backups\MergeFile\W21_GAM1528_NoNameYet\TowerDefence\Source\TowerDefence\Public\Troop_Ranged.h
+C:\Users\sethg\Desktop\Backups\MergeFile\W21_GAM1528_NoNameYet\TowerDefence\Source\TowerDefence\Public\TroopBase.h
+C:\Users\sethg\Desktop\Backups\MergeFile\W21_GAM1528_NoNameYet\TowerDefence\Source\TowerDefence\Public\Inventory.h
+C:\Users\sethg\Desktop\Backups\MergeFile\W21_GAM1528_NoNameYet\TowerDefence\Intermediate\Build\Win64\UE4Editor\Inc\TowerDefence\Inventory.generated.h
+C:\Users\sethg\Desktop\Backups\MergeFile\W21_GAM1528_NoNameYet\TowerDefence\Intermediate\Build\Win64\UE4Editor\Inc\TowerDefence\TroopBase.generated.h
+C:\Users\sethg\Desktop\Backups\MergeFile\W21_GAM1528_NoNameYet\TowerDefence\Intermediate\Build\Win64\UE4Editor\Inc\TowerDefence\Troop_Ranged.generated.h
+D:\Epic Games Files\UE_4.25\Engine\Source\Runtime\Engine\Classes\Components/ArrowComponent.h
+D:\Epic Games Files\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\ArrowComponent.generated.h
+C:\Users\sethg\Desktop\Backups\MergeFile\W21_GAM1528_NoNameYet\TowerDefence\Source\TowerDefence\Public\Projectile_RangedTroop.h
+C:\Users\sethg\Desktop\Backups\MergeFile\W21_GAM1528_NoNameYet\TowerDefence\Intermediate\Build\Win64\UE4Editor\Inc\TowerDefence\Projectile_RangedTroop.generated.h

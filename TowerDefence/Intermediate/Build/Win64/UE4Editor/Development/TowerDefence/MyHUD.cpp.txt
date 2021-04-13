@@ -1,0 +1,8 @@
+C:\Users\sethg\Desktop\High Level Development II\W21_GAM1528_NoNameYet\TowerDefence\Intermediate\Build\Win64\UE4Editor\Development\TowerDefence\Definitions.TowerDefence.h
+C:\Users\sethg\Desktop\High Level Development II\W21_GAM1528_NoNameYet\TowerDefence\Source\TowerDefence\Public\MyHUD.h
+D:\Epic Games Files\UE_4.25\Engine\Source\Runtime\Engine\Classes\GameFramework/HUD.h
+D:\Epic Games Files\UE_4.25\Engine\Source\Runtime\Engine\Classes\GameFramework/HUDHitBox.h
+D:\Epic Games Files\UE_4.25\Engine\Source\Runtime\Engine\Classes\GameFramework/DebugTextInfo.h
+D:\Epic Games Files\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\DebugTextInfo.generated.h
+D:\Epic Games Files\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\HUD.generated.h
+C:\Users\sethg\Desktop\High Level Development II\W21_GAM1528_NoNameYet\TowerDefence\Intermediate\Build\Win64\UE4Editor\Inc\TowerDefence\MyHUD.generated.h

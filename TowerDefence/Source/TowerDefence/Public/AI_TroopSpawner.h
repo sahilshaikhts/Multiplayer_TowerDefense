@@ -43,4 +43,6 @@ public:
 
 	bool bIsOnBreak = false;
 	bool bIsSpawning = false;
+
+	class AMyGameStateBase* pGameState;
 };

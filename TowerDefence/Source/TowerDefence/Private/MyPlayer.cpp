@@ -40,6 +40,7 @@ AMyPlayer::AMyPlayer()
 
 	AutoPossessPlayer = EAutoReceiveInput::Player0;
 
+	
 }
 
 AInventory* AMyPlayer::GetInventory()
@@ -52,13 +53,14 @@ AInventory* AMyPlayer::GetInventory()
 
 void AMyPlayer::OnUnitKilled(MyEnums::Item unit)
 {
-	AMyGameStateBase* gameState = Cast<AMyGameStateBase>(world->GetGameState());
 	gameState->OnUnitKilled(unit);
 }
 
 // Called when the game starts or when spawned
 void AMyPlayer::BeginPlay()
 {
+	gameState = Cast<AMyGameStateBase>(GetWorld()->GetGameState());
+
 	Super::BeginPlay();
 
 	world = GetWorld();
@@ -68,7 +70,6 @@ void AMyPlayer::BeginPlay()
 	world->GetFirstPlayerController()->bShowMouseCursor = true;
 	world->GetFirstPlayerController()->bEnableMouseOverEvents = true;
 	world->GetFirstPlayerController()->bEnableClickEvents = true;
-	AMyGameStateBase* gameState = Cast<AMyGameStateBase>(world->GetGameState());
 	isAttacking = gameState->isAttacking;
 }
 
@@ -78,7 +79,6 @@ void AMyPlayer::Tick(float DeltaTime)
 	Super::Tick(DeltaTime);
 	if (!inventory)
 	{
-		AMyGameStateBase* gameState = Cast<AMyGameStateBase>(world->GetGameState());
 		inventory = gameState->inventory;
 	}
 }
@@ -87,36 +87,41 @@ void AMyPlayer::Tick(float DeltaTime)
 void AMyPlayer::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 {
 	Super::SetupPlayerInputComponent(PlayerInputComponent);
-	PlayerInputComponent->BindAction("Mouse_left", IE_Pressed, this, &AMyPlayer::LeftMouseClick);//will be called by inventory
+
+	{
+		PlayerInputComponent->BindAction("Mouse_left", IE_Pressed, this, &AMyPlayer::LeftMouseClick);//will be called by inventory
+	}
 }
 
 
 void AMyPlayer::LeftMouseClick()
 {
-	FHitResult hitResult;
-	GetWorld()->GetFirstPlayerController()->GetHitResultUnderCursorByChannel(UEngineTypes::ConvertToTraceType(ECC_Visibility), true, hitResult);
-	FVector worldPos = hitResult.Location;
-
-	if (!hitResult.GetActor())
-		return;
-
-	if (isAttacking)
+	if (gameState->GetGameState() == MyStates::GameState::Play)
 	{
+		FHitResult hitResult;
+		GetWorld()->GetFirstPlayerController()->GetHitResultUnderCursorByChannel(UEngineTypes::ConvertToTraceType(ECC_Visibility), true, hitResult);
+		FVector worldPos = hitResult.Location;
 
-		if (hitResult.GetActor()->Tags.Num() > 0 && hitResult.GetActor()->Tags[0] == "TroopSpawnPoint")
+		if (!hitResult.GetActor())
+			return;
+
+		if (isAttacking)
 		{
-			SpawnItem(inventory->selectedItem, hitResult.GetActor());
-		}
 
-	}
-	else
-	{
-		if (hitResult.GetActor()->Tags.Num() > 0 && hitResult.GetActor()->ActorHasTag("TowerSpawnPoint"))
+			if (hitResult.GetActor()->Tags.Num() > 0 && hitResult.GetActor()->Tags[0] == "TroopSpawnPoint")
+			{
+				SpawnItem(inventory->selectedItem, hitResult.GetActor());
+			}
+
+		}
+		else
 		{
-			SpawnItem(inventory->selectedItem, hitResult.GetActor());
+			if (hitResult.GetActor()->Tags.Num() > 0 && hitResult.GetActor()->ActorHasTag("TowerSpawnPoint"))
+			{
+				SpawnItem(inventory->selectedItem, hitResult.GetActor());
+			}
 		}
 	}
-
 }
 
 void AMyPlayer::SpawnItem(MyEnums::Item type, AActor* hitActor)

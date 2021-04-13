@@ -4,6 +4,7 @@
 #include "AI_TroopSpawner.h"
 #include "MyPlayer.h"
 #include "Math/UnrealMathUtility.h"
+#include "MyGameStateBase.h"
 #include "TroopSpawnPoint.h"
 #include "Troop_melee.h"
 
@@ -20,6 +21,8 @@ AAI_TroopSpawner::AAI_TroopSpawner()
 // Called when the game starts or when spawned
 void AAI_TroopSpawner::BeginPlay()
 {
+	pGameState = Cast<AMyGameStateBase>(GetWorld()->GetGameState());
+
 	Super::BeginPlay();
 
 	MaxNumSpawned = FMath::RandRange(1, 3);
@@ -31,7 +34,7 @@ void AAI_TroopSpawner::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
-	if (bIsOnBreak == false && bIsSpawning == false)
+	if (bIsOnBreak == false && bIsSpawning == false && (pGameState->GetGameState() == MyStates::GameState::Play))
 	{
 		GetWorldTimerManager().SetTimer(SpawnTimerHandle, this, &AAI_TroopSpawner::SpawnTroops, SpawnRate);
 		bIsSpawning = true;

@@ -23,6 +23,7 @@ namespace MyEnums	//Custom enums
 	{
 		troop_swordsMan = 0,
 		troop_archer,
+		troop_giant,
 		tower_XBow,
 		tower_canon,
 		TypesCount,

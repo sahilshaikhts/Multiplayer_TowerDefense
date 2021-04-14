@@ -1,19 +1,65 @@
 ﻿  Using 'git status' to determine working set for adaptive non-unity build (C:\Users\sethg\Desktop\Backups\MergeFile\W21_GAM1528_NoNameYet).
+  Creating makefile for TowerDefenceEditor (no existing makefile)
   Parsing headers for TowerDefenceEditor
     Running UnrealHeaderTool "C:\Users\sethg\Desktop\Backups\MergeFile\W21_GAM1528_NoNameYet\TowerDefence\TowerDefence.uproject" "C:\Users\sethg\Desktop\Backups\MergeFile\W21_GAM1528_NoNameYet\TowerDefence\Intermediate\Build\Win64\TowerDefenceEditor\Development\TowerDefenceEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -abslog="C:\Users\sethg\AppData\Local\UnrealBuildTool\Log_UHT.txt" -installed
-  Reflection code generated for TowerDefenceEditor in 7.0606589 seconds
+  Reflection code generated for TowerDefenceEditor in 7.603715 seconds
   Building TowerDefenceEditor...
   Using Visual Studio 2019 14.22.27905 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.22.27905) and Windows 10.0.18362.0 SDK (C:\Program Files (x86)\Windows Kits\10).
-  Building 8 actions with 12 processes...
-    [1/8] TowerDefence.init.gen.cpp
-    [2/8] MyGameStateBase.gen.cpp
-    [3/8] MyPlayer.cpp
-    [4/8] AI_TroopSpawner.cpp
-    [5/8] MyGameStateBase.cpp
-    [6/8] UE4Editor-TowerDefence.lib
+  Building 53 actions with 12 processes...
+    [1/53] Default.rc2
+    [2/53] SharedPCH.Engine.ShadowErrors.cpp
+    [3/53] Item.cpp
+    [4/53] TowerSpawnPoint.cpp
+    [5/53] MyHUD.cpp
+    [6/53] TowerDefenceGameModeBase.cpp
+    [7/53] TowerBase.cpp
+    [8/53] Projectile_canon.cpp
+    [9/53] Projectile_RangedTroop.cpp
+    [10/53] Projectile_XBow.cpp
+    [11/53] MyPlayer.cpp
+    [12/53] TroopSpawnPoint.cpp
+    [13/53] Tower_XBow.cpp
+    [14/53] RewardSystem.cpp
+    [15/53] Tower_Chione.cpp
+    [16/53] TroopBase.cpp
+    [17/53] Tower_Canon.cpp
+    [18/53] TowerDefence.cpp
+    [19/53] Troop_Ranged.cpp
+    [20/53] Troop_melee.cpp
+    [21/53] AIMovementComponent.cpp
+    [22/53] AI_TroopSpawner.cpp
+    [23/53] Item.gen.cpp
+    [24/53] AIMovementComponent.gen.cpp
+    [25/53] MyPlayer.gen.cpp
+    [26/53] MyHUD.gen.cpp
+    [27/53] MyGameStateBase.gen.cpp
+    [28/53] Projectile_canon.gen.cpp
+    [29/53] Projectile_XBow.gen.cpp
+    [30/53] ShopSystem.gen.cpp
+    [31/53] Projectile_RangedTroop.gen.cpp
+    [32/53] RewardSystem.gen.cpp
+    [33/53] AI_TroopSpawner.gen.cpp
+    [34/53] TowerBase.gen.cpp
+    [35/53] TowerDefenceGameModeBase.gen.cpp
+    [36/53] TowerSpawnPoint.gen.cpp
+    [37/53] TroopSpawnPoint.gen.cpp
+    [38/53] TroopBase.gen.cpp
+    [39/53] Tower_Canon.gen.cpp
+    [40/53] Tower_XBow.gen.cpp
+    [41/53] Tower_Chione.gen.cpp
+    [42/53] Troop_melee.gen.cpp
+    [43/53] Troop_Ranged.gen.cpp
+    [44/53] Inventory.gen.cpp
+    [45/53] Inventory.cpp
+    [46/53] TowerDefence.init.gen.cpp
+    [47/53] MyUserWidget.cpp
+    [48/53] ShopSystem.cpp
+    [49/53] MyGameStateBase.cpp
+    [50/53] MyUserWidget.gen.cpp
+    [51/53] UE4Editor-TowerDefence.lib
        Creating library C:\Users\sethg\Desktop\Backups\MergeFile\W21_GAM1528_NoNameYet\TowerDefence\Intermediate\Build\Win64\UE4Editor\Development\TowerDefence\UE4Editor-TowerDefence.lib and object C:\Users\sethg\Desktop\Backups\MergeFile\W21_GAM1528_NoNameYet\TowerDefence\Intermediate\Build\Win64\UE4Editor\Development\TowerDefence\UE4Editor-TowerDefence.exp
-    [7/8] UE4Editor-TowerDefence.dll
+    [52/53] UE4Editor-TowerDefence.dll
        Creating library C:\Users\sethg\Desktop\Backups\MergeFile\W21_GAM1528_NoNameYet\TowerDefence\Intermediate\Build\Win64\UE4Editor\Development\TowerDefence\UE4Editor-TowerDefence.suppressed.lib and object C:\Users\sethg\Desktop\Backups\MergeFile\W21_GAM1528_NoNameYet\TowerDefence\Intermediate\Build\Win64\UE4Editor\Development\TowerDefence\UE4Editor-TowerDefence.suppressed.exp
-    [8/8] TowerDefenceEditor.target
-  Total time in Parallel executor: 8.38 seconds
-  Total execution time: 16.56 seconds
+    [53/53] TowerDefenceEditor.target
+  Total time in Parallel executor: 44.20 seconds
+  Total execution time: 68.38 seconds

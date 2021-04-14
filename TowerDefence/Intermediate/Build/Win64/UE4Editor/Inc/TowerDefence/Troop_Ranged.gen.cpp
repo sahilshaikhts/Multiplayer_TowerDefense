@@ -18,7 +18,6 @@ void EmptyLinkFunctionForGeneratedCodeTroop_Ranged() {}
 	TOWERDEFENCE_API UClass* Z_Construct_UClass_ATroopBase();
 	UPackage* Z_Construct_UPackage__Script_TowerDefence();
 	ENGINE_API UClass* Z_Construct_UClass_UArrowComponent_NoRegister();
-	ENGINE_API UClass* Z_Construct_UClass_UAnimSequence_NoRegister();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
 	TOWERDEFENCE_API UClass* Z_Construct_UClass_AProjectile_RangedTroop_NoRegister();
 // End Cross Module References
@@ -39,10 +38,6 @@ void EmptyLinkFunctionForGeneratedCodeTroop_Ranged() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Muzzle_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_Muzzle;
-#if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Anim_MetaData[];
-#endif
-		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_Anim;
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_ProjectileClass_MetaData[];
 #endif
@@ -71,13 +66,6 @@ void EmptyLinkFunctionForGeneratedCodeTroop_Ranged() {}
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ATroop_Ranged_Statics::NewProp_Muzzle = { "Muzzle", nullptr, (EPropertyFlags)0x00400000000a0009, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ATroop_Ranged, Muzzle), Z_Construct_UClass_UArrowComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ATroop_Ranged_Statics::NewProp_Muzzle_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ATroop_Ranged_Statics::NewProp_Muzzle_MetaData)) };
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ATroop_Ranged_Statics::NewProp_Anim_MetaData[] = {
-		{ "Category", "Troop_Ranged" },
-		{ "ModuleRelativePath", "Public/Troop_Ranged.h" },
-	};
-#endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ATroop_Ranged_Statics::NewProp_Anim = { "Anim", nullptr, (EPropertyFlags)0x0040000000020001, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ATroop_Ranged, Anim), Z_Construct_UClass_UAnimSequence_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ATroop_Ranged_Statics::NewProp_Anim_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ATroop_Ranged_Statics::NewProp_Anim_MetaData)) };
-#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ATroop_Ranged_Statics::NewProp_ProjectileClass_MetaData[] = {
 		{ "Category", "Projectile" },
 		{ "ModuleRelativePath", "Public/Troop_Ranged.h" },
@@ -86,7 +74,6 @@ void EmptyLinkFunctionForGeneratedCodeTroop_Ranged() {}
 	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_ATroop_Ranged_Statics::NewProp_ProjectileClass = { "ProjectileClass", nullptr, (EPropertyFlags)0x0014000000010001, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ATroop_Ranged, ProjectileClass), Z_Construct_UClass_AProjectile_RangedTroop_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_ATroop_Ranged_Statics::NewProp_ProjectileClass_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ATroop_Ranged_Statics::NewProp_ProjectileClass_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ATroop_Ranged_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ATroop_Ranged_Statics::NewProp_Muzzle,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ATroop_Ranged_Statics::NewProp_Anim,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ATroop_Ranged_Statics::NewProp_ProjectileClass,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_ATroop_Ranged_Statics::StaticCppClassTypeInfo = {
@@ -116,7 +103,7 @@ void EmptyLinkFunctionForGeneratedCodeTroop_Ranged() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ATroop_Ranged, 2383037152);
+	IMPLEMENT_CLASS(ATroop_Ranged, 2441235668);
 	template<> TOWERDEFENCE_API UClass* StaticClass<ATroop_Ranged>()
 	{
 		return ATroop_Ranged::StaticClass();

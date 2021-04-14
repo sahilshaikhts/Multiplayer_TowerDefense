@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\TowerDefence.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{A9F5EE6E-0D1C-4E05-9185-712B7EEE1905}</UniqueIdentifier>
+      <UniqueIdentifier>{71F7FDC1-8C2A-45FB-92C0-FFF1F83A898A}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\TowerDefence.Target.cs">
       <Filter>Source</Filter>
@@ -12,7 +12,7 @@
       <Filter>Source</Filter>
     </None>
     <Filter Include="Config">
-      <UniqueIdentifier>{7225A417-4BE9-4259-8627-72B103220E8B}</UniqueIdentifier>
+      <UniqueIdentifier>{39E815CD-7A18-49D8-A1BA-273FB1EDCB08}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -27,7 +27,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\TowerDefence">
-      <UniqueIdentifier>{1BB84BA4-DE24-413E-B4AB-47236497E94A}</UniqueIdentifier>
+      <UniqueIdentifier>{6F5CBF0B-CF8C-4774-B782-6D5AB22B9A0A}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\TowerDefence\TowerDefence.Build.cs">
       <Filter>Source\TowerDefence</Filter>
@@ -45,7 +45,7 @@
       <Filter>Source\TowerDefence</Filter>
     </ClInclude>
     <Filter Include="Source\TowerDefence\Private">
-      <UniqueIdentifier>{B653C0A9-94BA-4C4C-BA53-30AFF923BB95}</UniqueIdentifier>
+      <UniqueIdentifier>{2D4353CF-3374-4B7C-BAD7-453B74D003AA}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\TowerDefence\Private\AIMovementComponent.cpp">
       <Filter>Source\TowerDefence\Private</Filter>
@@ -114,7 +114,7 @@
       <Filter>Source\TowerDefence\Private</Filter>
     </ClCompile>
     <Filter Include="Source\TowerDefence\Public">
-      <UniqueIdentifier>{71B07F26-3BB8-48CB-8592-401FC51879EA}</UniqueIdentifier>
+      <UniqueIdentifier>{EBD9088A-1C68-440E-986D-348AE5BBA8E0}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Source\TowerDefence\Public\AIMovementComponent.h">
       <Filter>Source\TowerDefence\Public</Filter>

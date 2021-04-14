@@ -17,7 +17,6 @@ Description:GameState is currently responsible to switch between UI widget based
 #include"Inventory.h"
 #include "MyGameStateBase.generated.h"
 
-
 UENUM()
 namespace MyStates
 {
@@ -29,6 +28,8 @@ namespace MyStates
 		GameOver,
 	};
 }
+
+DECLARE_DYNAMIC_MULTICAST_DELEGATE(FOnInventoryUpdate);
 
 UCLASS()
 class TOWERDEFENCE_API AMyGameStateBase : public AGameStateBase
@@ -49,16 +50,14 @@ public:
 		TSubclassOf<class ARewardSystem> T_RewardSystem;
 
 	UPROPERTY(EditAnywhere, Category = "HUD")
-		TSubclassOf<class UUserWidget> t_UI_GameD;
-	UPROPERTY(EditAnywhere, Category = "HUD")
-		TSubclassOf<class UUserWidget> t_UI_GameA;
-	UPROPERTY(EditAnywhere, Category = "HUD")
-		TSubclassOf<class UUserWidget> t_UI_DefendWins;
+		TSubclassOf<class UUserWidget> t_UI_InGame;
 
-	UPROPERTY(EditAnywhere)
-		TSubclassOf<class ATroop_melee> T_Melee;
+	UPROPERTY(BlueprintAssignable)
+		FOnInventoryUpdate OnInventoryUpdated;
 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	AInventory* inventory;
+
 	class ARewardSystem* rewardSystem;
 	class AShopSystem* shopSystem;
 

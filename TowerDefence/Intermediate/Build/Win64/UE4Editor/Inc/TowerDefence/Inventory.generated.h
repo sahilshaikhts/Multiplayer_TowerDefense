@@ -16,11 +16,13 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #define TowerDefence_Source_TowerDefence_Public_Inventory_h_37_SPARSE_DATA
 #define TowerDefence_Source_TowerDefence_Public_Inventory_h_37_RPC_WRAPPERS \
  \
+	DECLARE_FUNCTION(execGetItemCountByIndex); \
 	DECLARE_FUNCTION(execGetItemCount);
 
 
 #define TowerDefence_Source_TowerDefence_Public_Inventory_h_37_RPC_WRAPPERS_NO_PURE_DECLS \
  \
+	DECLARE_FUNCTION(execGetItemCountByIndex); \
 	DECLARE_FUNCTION(execGetItemCount);
 
 

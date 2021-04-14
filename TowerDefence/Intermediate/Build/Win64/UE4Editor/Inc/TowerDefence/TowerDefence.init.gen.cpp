@@ -11,18 +11,22 @@
 #endif
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodeTowerDefence_init() {}
+	TOWERDEFENCE_API UFunction* Z_Construct_UDelegateFunction_TowerDefence_OnInventoryUpdate__DelegateSignature();
 	UPackage* Z_Construct_UPackage__Script_TowerDefence()
 	{
 		static UPackage* ReturnPackage = nullptr;
 		if (!ReturnPackage)
 		{
+			static UObject* (*const SingletonFuncArray[])() = {
+				(UObject* (*)())Z_Construct_UDelegateFunction_TowerDefence_OnInventoryUpdate__DelegateSignature,
+			};
 			static const UE4CodeGen_Private::FPackageParams PackageParams = {
 				"/Script/TowerDefence",
-				nullptr,
-				0,
+				SingletonFuncArray,
+				UE_ARRAY_COUNT(SingletonFuncArray),
 				PKG_CompiledIn | 0x00000000,
-				0x98508857,
-				0x4AF16A98,
+				0xE4174EF8,
+				0x4F1576D7,
 				METADATA_PARAMS(nullptr, 0)
 			};
 			UE4CodeGen_Private::ConstructUPackage(ReturnPackage, PackageParams);

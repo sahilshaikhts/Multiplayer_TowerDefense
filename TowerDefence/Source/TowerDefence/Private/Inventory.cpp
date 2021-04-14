@@ -2,6 +2,7 @@
 
 
 #include "Inventory.h"
+#include "Item.h"
 
 // Sets default values
 AInventory::AInventory()
@@ -54,6 +55,10 @@ int AInventory::GetGoldCount()
 int AInventory::GetItemCount(MyEnums::Item item)
 {
 	return ItemList[item];
+}
+int AInventory::GetItemCountByIndex(int itemIndex)
+{
+	return ItemList[itemIndex];
 }
 
 void AInventory::RemoveItem(MyEnums::Item item)

@@ -86,7 +86,7 @@ void ATroop_melee::Tick(float DeltaTime)
 			}
 		}
 		CheckForTowers();
-		
+		SetActorRotation(FRotator(0,-FMath::RadiansToDegrees(atan2(moveDirection.X, moveDirection.Y)),0));
 	}
 }
 

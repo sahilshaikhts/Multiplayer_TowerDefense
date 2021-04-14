@@ -13,18 +13,40 @@
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodeMyGameStateBase() {}
 // Cross Module References
-	TOWERDEFENCE_API UEnum* Z_Construct_UEnum_TowerDefence_MyStates();
+	TOWERDEFENCE_API UFunction* Z_Construct_UDelegateFunction_TowerDefence_OnInventoryUpdate__DelegateSignature();
 	UPackage* Z_Construct_UPackage__Script_TowerDefence();
+	TOWERDEFENCE_API UEnum* Z_Construct_UEnum_TowerDefence_MyStates();
 	TOWERDEFENCE_API UClass* Z_Construct_UClass_AMyGameStateBase_NoRegister();
 	TOWERDEFENCE_API UClass* Z_Construct_UClass_AMyGameStateBase();
 	ENGINE_API UClass* Z_Construct_UClass_AGameStateBase();
+	TOWERDEFENCE_API UClass* Z_Construct_UClass_AInventory_NoRegister();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
-	TOWERDEFENCE_API UClass* Z_Construct_UClass_ATroop_melee_NoRegister();
 	UMG_API UClass* Z_Construct_UClass_UUserWidget_NoRegister();
 	TOWERDEFENCE_API UClass* Z_Construct_UClass_ARewardSystem_NoRegister();
 	TOWERDEFENCE_API UClass* Z_Construct_UClass_AShopSystem_NoRegister();
-	TOWERDEFENCE_API UClass* Z_Construct_UClass_AInventory_NoRegister();
 // End Cross Module References
+	struct Z_Construct_UDelegateFunction_TowerDefence_OnInventoryUpdate__DelegateSignature_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UDelegateFunction_TowerDefence_OnInventoryUpdate__DelegateSignature_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Public/MyGameStateBase.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_TowerDefence_OnInventoryUpdate__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UPackage__Script_TowerDefence, nullptr, "OnInventoryUpdate__DelegateSignature", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(Z_Construct_UDelegateFunction_TowerDefence_OnInventoryUpdate__DelegateSignature_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_TowerDefence_OnInventoryUpdate__DelegateSignature_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UDelegateFunction_TowerDefence_OnInventoryUpdate__DelegateSignature()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UDelegateFunction_TowerDefence_OnInventoryUpdate__DelegateSignature_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	static UEnum* MyStates_StaticEnum()
 	{
 		static UEnum* Singleton = nullptr;
@@ -141,21 +163,17 @@ void EmptyLinkFunctionForGeneratedCodeMyGameStateBase() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
 #if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_T_Melee_MetaData[];
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_inventory_MetaData[];
 #endif
-		static const UE4CodeGen_Private::FClassPropertyParams NewProp_T_Melee;
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_inventory;
 #if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_t_UI_DefendWins_MetaData[];
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_OnInventoryUpdated_MetaData[];
 #endif
-		static const UE4CodeGen_Private::FClassPropertyParams NewProp_t_UI_DefendWins;
+		static const UE4CodeGen_Private::FMulticastDelegatePropertyParams NewProp_OnInventoryUpdated;
 #if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_t_UI_GameA_MetaData[];
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_t_UI_InGame_MetaData[];
 #endif
-		static const UE4CodeGen_Private::FClassPropertyParams NewProp_t_UI_GameA;
-#if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_t_UI_GameD_MetaData[];
-#endif
-		static const UE4CodeGen_Private::FClassPropertyParams NewProp_t_UI_GameD;
+		static const UE4CodeGen_Private::FClassPropertyParams NewProp_t_UI_InGame;
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_T_RewardSystem_MetaData[];
 #endif
@@ -193,33 +211,25 @@ void EmptyLinkFunctionForGeneratedCodeMyGameStateBase() {}
 	};
 #endif
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AMyGameStateBase_Statics::NewProp_T_Melee_MetaData[] = {
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AMyGameStateBase_Statics::NewProp_inventory_MetaData[] = {
 		{ "Category", "MyGameStateBase" },
 		{ "ModuleRelativePath", "Public/MyGameStateBase.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AMyGameStateBase_Statics::NewProp_T_Melee = { "T_Melee", nullptr, (EPropertyFlags)0x0014000000000001, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AMyGameStateBase, T_Melee), Z_Construct_UClass_ATroop_melee_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_AMyGameStateBase_Statics::NewProp_T_Melee_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AMyGameStateBase_Statics::NewProp_T_Melee_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AMyGameStateBase_Statics::NewProp_inventory = { "inventory", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AMyGameStateBase, inventory), Z_Construct_UClass_AInventory_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AMyGameStateBase_Statics::NewProp_inventory_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AMyGameStateBase_Statics::NewProp_inventory_MetaData)) };
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AMyGameStateBase_Statics::NewProp_t_UI_DefendWins_MetaData[] = {
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AMyGameStateBase_Statics::NewProp_OnInventoryUpdated_MetaData[] = {
+		{ "ModuleRelativePath", "Public/MyGameStateBase.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_AMyGameStateBase_Statics::NewProp_OnInventoryUpdated = { "OnInventoryUpdated", nullptr, (EPropertyFlags)0x0010000010080000, UE4CodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AMyGameStateBase, OnInventoryUpdated), Z_Construct_UDelegateFunction_TowerDefence_OnInventoryUpdate__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_AMyGameStateBase_Statics::NewProp_OnInventoryUpdated_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AMyGameStateBase_Statics::NewProp_OnInventoryUpdated_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AMyGameStateBase_Statics::NewProp_t_UI_InGame_MetaData[] = {
 		{ "Category", "HUD" },
 		{ "ModuleRelativePath", "Public/MyGameStateBase.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AMyGameStateBase_Statics::NewProp_t_UI_DefendWins = { "t_UI_DefendWins", nullptr, (EPropertyFlags)0x0014000000000001, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AMyGameStateBase, t_UI_DefendWins), Z_Construct_UClass_UUserWidget_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_AMyGameStateBase_Statics::NewProp_t_UI_DefendWins_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AMyGameStateBase_Statics::NewProp_t_UI_DefendWins_MetaData)) };
-#if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AMyGameStateBase_Statics::NewProp_t_UI_GameA_MetaData[] = {
-		{ "Category", "HUD" },
-		{ "ModuleRelativePath", "Public/MyGameStateBase.h" },
-	};
-#endif
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AMyGameStateBase_Statics::NewProp_t_UI_GameA = { "t_UI_GameA", nullptr, (EPropertyFlags)0x0014000000000001, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AMyGameStateBase, t_UI_GameA), Z_Construct_UClass_UUserWidget_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_AMyGameStateBase_Statics::NewProp_t_UI_GameA_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AMyGameStateBase_Statics::NewProp_t_UI_GameA_MetaData)) };
-#if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AMyGameStateBase_Statics::NewProp_t_UI_GameD_MetaData[] = {
-		{ "Category", "HUD" },
-		{ "ModuleRelativePath", "Public/MyGameStateBase.h" },
-	};
-#endif
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AMyGameStateBase_Statics::NewProp_t_UI_GameD = { "t_UI_GameD", nullptr, (EPropertyFlags)0x0014000000000001, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AMyGameStateBase, t_UI_GameD), Z_Construct_UClass_UUserWidget_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_AMyGameStateBase_Statics::NewProp_t_UI_GameD_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AMyGameStateBase_Statics::NewProp_t_UI_GameD_MetaData)) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AMyGameStateBase_Statics::NewProp_t_UI_InGame = { "t_UI_InGame", nullptr, (EPropertyFlags)0x0014000000000001, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AMyGameStateBase, t_UI_InGame), Z_Construct_UClass_UUserWidget_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_AMyGameStateBase_Statics::NewProp_t_UI_InGame_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AMyGameStateBase_Statics::NewProp_t_UI_InGame_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AMyGameStateBase_Statics::NewProp_T_RewardSystem_MetaData[] = {
 		{ "Category", "MyGameStateBase" },
@@ -257,10 +267,9 @@ void EmptyLinkFunctionForGeneratedCodeMyGameStateBase() {}
 	}
 	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AMyGameStateBase_Statics::NewProp_isAttacking = { "isAttacking", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(AMyGameStateBase), &Z_Construct_UClass_AMyGameStateBase_Statics::NewProp_isAttacking_SetBit, METADATA_PARAMS(Z_Construct_UClass_AMyGameStateBase_Statics::NewProp_isAttacking_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AMyGameStateBase_Statics::NewProp_isAttacking_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AMyGameStateBase_Statics::PropPointers[] = {
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMyGameStateBase_Statics::NewProp_T_Melee,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMyGameStateBase_Statics::NewProp_t_UI_DefendWins,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMyGameStateBase_Statics::NewProp_t_UI_GameA,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMyGameStateBase_Statics::NewProp_t_UI_GameD,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMyGameStateBase_Statics::NewProp_inventory,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMyGameStateBase_Statics::NewProp_OnInventoryUpdated,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMyGameStateBase_Statics::NewProp_t_UI_InGame,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMyGameStateBase_Statics::NewProp_T_RewardSystem,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMyGameStateBase_Statics::NewProp_T_ShopSystem,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMyGameStateBase_Statics::NewProp_T_Inventory,
@@ -293,7 +302,7 @@ void EmptyLinkFunctionForGeneratedCodeMyGameStateBase() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AMyGameStateBase, 697446860);
+	IMPLEMENT_CLASS(AMyGameStateBase, 1231958427);
 	template<> TOWERDEFENCE_API UClass* StaticClass<AMyGameStateBase>()
 	{
 		return AMyGameStateBase::StaticClass();

@@ -1,8 +1,8 @@
-﻿Log file open, 04/13/21 13:49:10
+﻿Log file open, 04/14/21 12:00:50
 LogInit: Display: Running engine for game: TowerDefence
 LogPlatformFile: Not using cached read wrapper
 LogTaskGraph: Started task graph with 5 named threads and 35 total threads with 3 sets of task threads.
-LogStats: Stats thread started at 0.410427
+LogStats: Stats thread started at 8.118524
 LogD3D11RHI: Loaded GFSDK_Aftermath_Lib.x64.dll
 LogICUInternationalization: ICU TimeZone Detection - Raw Offset: -5:00, Platform Override: ''
 LogPluginManager: Mounting plugin Paper2D
@@ -194,716 +194,678 @@ LogConfig: Setting CVar [[s.FlushStreamingOnExit:1]]
 LogInit: Object subsystem initialized
 LogConfig: Setting CVar [[con.DebugEarlyDefault:1]]
 LogConfig: Setting CVar [[r.setres:1280x720]]
-[2021.04.13-17.49.10:971][  0]LogConfig: Setting CVar [[r.VSync:0]]
-[2021.04.13-17.49.10:971][  0]LogConfig: Setting CVar [[r.RHICmdBypass:0]]
-[2021.04.13-17.49.10:971][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererSettings] File [C:/Users/sethg/Desktop/Backups/MergeFile/W21_GAM1528_NoNameYet/TowerDefence/Saved/Config/Windows/Engine.ini]
-[2021.04.13-17.49.10:971][  0]LogConfig: Setting CVar [[r.GPUCrashDebugging:0]]
-[2021.04.13-17.49.10:971][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererOverrideSettings] File [C:/Users/sethg/Desktop/Backups/MergeFile/W21_GAM1528_NoNameYet/TowerDefence/Saved/Config/Windows/Engine.ini]
-[2021.04.13-17.49.10:971][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.StreamingSettings] File [C:/Users/sethg/Desktop/Backups/MergeFile/W21_GAM1528_NoNameYet/TowerDefence/Saved/Config/Windows/Engine.ini]
-[2021.04.13-17.49.10:971][  0]LogConfig: Setting CVar [[s.MinBulkDataSizeForAsyncLoading:131072]]
-[2021.04.13-17.49.10:971][  0]LogConfig: Setting CVar [[s.AsyncLoadingThreadEnabled:0]]
-[2021.04.13-17.49.10:971][  0]LogConfig: Setting CVar [[s.EventDrivenLoaderEnabled:1]]
-[2021.04.13-17.49.10:971][  0]LogConfig: Setting CVar [[s.WarnIfTimeLimitExceeded:0]]
-[2021.04.13-17.49.10:972][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMultiplier:1.5]]
-[2021.04.13-17.49.10:972][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMinTime:0.005]]
-[2021.04.13-17.49.10:972][  0]LogConfig: Setting CVar [[s.UseBackgroundLevelStreaming:1]]
-[2021.04.13-17.49.10:972][  0]LogConfig: Setting CVar [[s.PriorityAsyncLoadingExtraTime:15.0]]
-[2021.04.13-17.49.10:972][  0]LogConfig: Setting CVar [[s.LevelStreamingActorsUpdateTimeLimit:5.0]]
-[2021.04.13-17.49.10:972][  0]LogConfig: Setting CVar [[s.PriorityLevelStreamingActorsUpdateExtraTime:5.0]]
-[2021.04.13-17.49.10:972][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsRegistrationGranularity:10]]
-[2021.04.13-17.49.10:972][  0]LogConfig: Setting CVar [[s.UnregisterComponentsTimeLimit:1.0]]
-[2021.04.13-17.49.10:972][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsUnregistrationGranularity:5]]
-[2021.04.13-17.49.10:972][  0]LogConfig: Setting CVar [[s.FlushStreamingOnExit:1]]
-[2021.04.13-17.49.10:972][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.GarbageCollectionSettings] File [C:/Users/sethg/Desktop/Backups/MergeFile/W21_GAM1528_NoNameYet/TowerDefence/Saved/Config/Windows/Engine.ini]
-[2021.04.13-17.49.10:972][  0]LogConfig: Setting CVar [[gc.MaxObjectsNotConsideredByGC:1]]
-[2021.04.13-17.49.10:972][  0]LogConfig: Setting CVar [[gc.SizeOfPermanentObjectPool:0]]
-[2021.04.13-17.49.10:972][  0]LogConfig: Setting CVar [[gc.FlushStreamingOnGC:0]]
-[2021.04.13-17.49.10:972][  0]LogConfig: Setting CVar [[gc.NumRetriesBeforeForcingGC:10]]
-[2021.04.13-17.49.10:972][  0]LogConfig: Setting CVar [[gc.AllowParallelGC:1]]
-[2021.04.13-17.49.10:972][  0]LogConfig: Setting CVar [[gc.TimeBetweenPurgingPendingKillObjects:61.1]]
-[2021.04.13-17.49.10:972][  0]LogConfig: Setting CVar [[gc.MaxObjectsInEditor:25165824]]
-[2021.04.13-17.49.10:972][  0]LogConfig: Setting CVar [[gc.IncrementalBeginDestroyEnabled:1]]
-[2021.04.13-17.49.10:972][  0]LogConfig: Setting CVar [[gc.CreateGCClusters:1]]
-[2021.04.13-17.49.10:973][  0]LogConfig: Setting CVar [[gc.MinGCClusterSize:5]]
-[2021.04.13-17.49.10:973][  0]LogConfig: Setting CVar [[gc.ActorClusteringEnabled:0]]
-[2021.04.13-17.49.10:973][  0]LogConfig: Setting CVar [[gc.BlueprintClusteringEnabled:0]]
-[2021.04.13-17.49.10:973][  0]LogConfig: Setting CVar [[gc.UseDisregardForGCOnDedicatedServers:0]]
-[2021.04.13-17.49.10:973][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.NetworkSettings] File [C:/Users/sethg/Desktop/Backups/MergeFile/W21_GAM1528_NoNameYet/TowerDefence/Saved/Config/Windows/Engine.ini]
-[2021.04.13-17.49.10:973][  0]LogConfig: Applying CVar settings from Section [/Script/UnrealEd.CookerSettings] File [C:/Users/sethg/Desktop/Backups/MergeFile/W21_GAM1528_NoNameYet/TowerDefence/Saved/Config/Windows/Engine.ini]
-[2021.04.13-17.49.10:978][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [C:/Users/sethg/Desktop/Backups/MergeFile/W21_GAM1528_NoNameYet/TowerDefence/Saved/Config/Windows/Scalability.ini]
-[2021.04.13-17.49.10:978][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
-[2021.04.13-17.49.10:979][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
-[2021.04.13-17.49.10:979][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [C:/Users/sethg/Desktop/Backups/MergeFile/W21_GAM1528_NoNameYet/TowerDefence/Saved/Config/Windows/Scalability.ini]
-[2021.04.13-17.49.10:979][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
-[2021.04.13-17.49.10:979][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [C:/Users/sethg/Desktop/Backups/MergeFile/W21_GAM1528_NoNameYet/TowerDefence/Saved/Config/Windows/Scalability.ini]
-[2021.04.13-17.49.10:979][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
-[2021.04.13-17.49.10:979][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
-[2021.04.13-17.49.10:979][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
-[2021.04.13-17.49.10:979][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
-[2021.04.13-17.49.10:979][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
-[2021.04.13-17.49.10:979][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
-[2021.04.13-17.49.10:979][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
-[2021.04.13-17.49.10:979][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
-[2021.04.13-17.49.10:979][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
-[2021.04.13-17.49.10:979][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
-[2021.04.13-17.49.10:979][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
-[2021.04.13-17.49.10:979][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
-[2021.04.13-17.49.10:979][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
-[2021.04.13-17.49.10:979][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
-[2021.04.13-17.49.10:979][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
-[2021.04.13-17.49.10:980][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
-[2021.04.13-17.49.10:980][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
-[2021.04.13-17.49.10:980][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
-[2021.04.13-17.49.10:980][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [C:/Users/sethg/Desktop/Backups/MergeFile/W21_GAM1528_NoNameYet/TowerDefence/Saved/Config/Windows/Scalability.ini]
-[2021.04.13-17.49.10:980][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
-[2021.04.13-17.49.10:980][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
-[2021.04.13-17.49.10:980][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
-[2021.04.13-17.49.10:980][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
-[2021.04.13-17.49.10:980][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
-[2021.04.13-17.49.10:980][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
-[2021.04.13-17.49.10:980][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
-[2021.04.13-17.49.10:980][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
-[2021.04.13-17.49.10:980][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
-[2021.04.13-17.49.10:980][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
-[2021.04.13-17.49.10:980][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
-[2021.04.13-17.49.10:980][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
-[2021.04.13-17.49.10:980][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
-[2021.04.13-17.49.10:980][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
-[2021.04.13-17.49.10:980][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
-[2021.04.13-17.49.10:981][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
-[2021.04.13-17.49.10:981][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
-[2021.04.13-17.49.10:981][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
-[2021.04.13-17.49.10:981][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
-[2021.04.13-17.49.10:981][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
-[2021.04.13-17.49.10:981][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
-[2021.04.13-17.49.10:981][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
-[2021.04.13-17.49.10:981][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
-[2021.04.13-17.49.10:981][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
-[2021.04.13-17.49.10:981][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
-[2021.04.13-17.49.10:981][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
-[2021.04.13-17.49.10:981][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
-[2021.04.13-17.49.10:981][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
-[2021.04.13-17.49.10:981][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
-[2021.04.13-17.49.10:981][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
-[2021.04.13-17.49.10:981][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [C:/Users/sethg/Desktop/Backups/MergeFile/W21_GAM1528_NoNameYet/TowerDefence/Saved/Config/Windows/Scalability.ini]
-[2021.04.13-17.49.10:981][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
-[2021.04.13-17.49.10:981][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
-[2021.04.13-17.49.10:982][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
-[2021.04.13-17.49.10:982][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
-[2021.04.13-17.49.10:982][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
-[2021.04.13-17.49.10:982][  0]LogConfig: Setting CVar [[r.VT.MaxAnisotropy:8]]
-[2021.04.13-17.49.10:982][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
-[2021.04.13-17.49.10:982][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
-[2021.04.13-17.49.10:982][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
-[2021.04.13-17.49.10:982][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [C:/Users/sethg/Desktop/Backups/MergeFile/W21_GAM1528_NoNameYet/TowerDefence/Saved/Config/Windows/Scalability.ini]
-[2021.04.13-17.49.10:982][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
-[2021.04.13-17.49.10:982][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
-[2021.04.13-17.49.10:982][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
-[2021.04.13-17.49.10:982][  0]LogConfig: Setting CVar [[r.SSR.HalfResSceneColor:0]]
-[2021.04.13-17.49.10:982][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
-[2021.04.13-17.49.10:982][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
-[2021.04.13-17.49.10:982][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
-[2021.04.13-17.49.10:982][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
-[2021.04.13-17.49.10:982][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
-[2021.04.13-17.49.10:982][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
-[2021.04.13-17.49.10:982][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
-[2021.04.13-17.49.10:982][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:0]]
-[2021.04.13-17.49.10:983][  0]LogConfig: Setting CVar [[r.SSGI.Quality:3]]
-[2021.04.13-17.49.10:983][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
-[2021.04.13-17.49.10:983][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
-[2021.04.13-17.49.10:983][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.FastApplyOnOpaque:1 ; Always have FastSkyLUT 1 in this case to avoid wrong sky]]
-[2021.04.13-17.49.10:983][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.SampleCountPerSlice:1]]
-[2021.04.13-17.49.10:983][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.DepthResolution:16.0]]
-[2021.04.13-17.49.10:983][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT:1]]
-[2021.04.13-17.49.10:983][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMin:4.0]]
-[2021.04.13-17.49.10:983][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMax:32.0]]
-[2021.04.13-17.49.10:983][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMin:4.0]]
-[2021.04.13-17.49.10:983][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMax:32.0]]
-[2021.04.13-17.49.10:983][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.UseSmallFormat:0]]
-[2021.04.13-17.49.10:983][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.SampleCount:10.0]]
-[2021.04.13-17.49.10:983][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.MultiScatteringLUT.SampleCount:15.0]]
-[2021.04.13-17.49.10:983][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [C:/Users/sethg/Desktop/Backups/MergeFile/W21_GAM1528_NoNameYet/TowerDefence/Saved/Config/Windows/Scalability.ini]
-[2021.04.13-17.49.10:983][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
-[2021.04.13-17.49.10:983][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
-[2021.04.13-17.49.10:983][  0]LogConfig: Applying CVar settings from Section [ShadingQuality@3] File [C:/Users/sethg/Desktop/Backups/MergeFile/W21_GAM1528_NoNameYet/TowerDefence/Saved/Config/Windows/Scalability.ini]
-[2021.04.13-17.49.10:983][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.SampleCount:16]]
-[2021.04.13-17.49.10:983][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.JitterIntegration:0]]
-[2021.04.13-17.49.10:984][  0]LogConfig: Setting CVar [[r.HairStrands.SkyAO.SampleCount:16]]
-[2021.04.13-17.49.10:984][  0]LogConfig: Setting CVar [[r.HairStrands.DeepShadow.SuperSampling:0]]
-[2021.04.13-17.49.10:984][  0]LogConfig: Setting CVar [[r.HairStrands.VisibilityPPLL:0]]
-[2021.04.13-17.49.10:984][  0]LogConfig: Setting CVar [[r.HairStrands.RasterizationScale:0.5]]
-[2021.04.13-17.49.10:984][  0]LogConfig: Setting CVar [[r.HairStrands.VelocityRasterizationScale:1]]
-[2021.04.13-17.49.10:984][  0]LogInit: Selected Device Profile: [Windows]
-[2021.04.13-17.49.10:984][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
-[2021.04.13-17.49.10:984][  0]LogHAL: Display: Platform has ~ 16 GB [17023397888 / 17179869184 / 16], which maps to Larger [LargestMinGB=32, LargerMinGB=12, DefaultMinGB=8, SmallerMinGB=6, SmallestMinGB=0)
-[2021.04.13-17.49.10:984][  0]LogInit: Going up to parent DeviceProfile []
-[2021.04.13-17.49.10:984][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [C:/Users/sethg/Desktop/Backups/MergeFile/W21_GAM1528_NoNameYet/TowerDefence/Saved/Config/Windows/Scalability.ini]
-[2021.04.13-17.49.10:984][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
-[2021.04.13-17.49.10:984][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
-[2021.04.13-17.49.10:984][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [C:/Users/sethg/Desktop/Backups/MergeFile/W21_GAM1528_NoNameYet/TowerDefence/Saved/Config/Windows/Scalability.ini]
-[2021.04.13-17.49.10:984][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
-[2021.04.13-17.49.10:984][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [C:/Users/sethg/Desktop/Backups/MergeFile/W21_GAM1528_NoNameYet/TowerDefence/Saved/Config/Windows/Scalability.ini]
-[2021.04.13-17.49.10:984][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
-[2021.04.13-17.49.10:984][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
-[2021.04.13-17.49.10:984][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
-[2021.04.13-17.49.10:985][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
-[2021.04.13-17.49.10:985][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
-[2021.04.13-17.49.10:985][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
-[2021.04.13-17.49.10:985][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
-[2021.04.13-17.49.10:985][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
-[2021.04.13-17.49.10:985][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
-[2021.04.13-17.49.10:985][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
-[2021.04.13-17.49.10:985][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
-[2021.04.13-17.49.10:985][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
-[2021.04.13-17.49.10:985][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
-[2021.04.13-17.49.10:985][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
-[2021.04.13-17.49.10:985][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
-[2021.04.13-17.49.10:985][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
-[2021.04.13-17.49.10:985][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
-[2021.04.13-17.49.10:985][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
-[2021.04.13-17.49.10:985][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [C:/Users/sethg/Desktop/Backups/MergeFile/W21_GAM1528_NoNameYet/TowerDefence/Saved/Config/Windows/Scalability.ini]
-[2021.04.13-17.49.10:985][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
-[2021.04.13-17.49.10:985][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
-[2021.04.13-17.49.10:985][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
-[2021.04.13-17.49.10:985][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
-[2021.04.13-17.49.10:986][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
-[2021.04.13-17.49.10:986][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
-[2021.04.13-17.49.10:986][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
-[2021.04.13-17.49.10:986][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
-[2021.04.13-17.49.10:986][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
-[2021.04.13-17.49.10:986][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
-[2021.04.13-17.49.10:986][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
-[2021.04.13-17.49.10:986][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
-[2021.04.13-17.49.10:986][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
-[2021.04.13-17.49.10:986][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
-[2021.04.13-17.49.10:986][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
-[2021.04.13-17.49.10:986][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
-[2021.04.13-17.49.10:986][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
-[2021.04.13-17.49.10:986][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
-[2021.04.13-17.49.10:986][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
-[2021.04.13-17.49.10:986][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
-[2021.04.13-17.49.10:986][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
-[2021.04.13-17.49.10:986][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
-[2021.04.13-17.49.10:986][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
-[2021.04.13-17.49.10:986][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
-[2021.04.13-17.49.10:987][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
-[2021.04.13-17.49.10:987][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
-[2021.04.13-17.49.10:987][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
-[2021.04.13-17.49.10:987][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
-[2021.04.13-17.49.10:987][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
-[2021.04.13-17.49.10:987][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
-[2021.04.13-17.49.10:987][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [C:/Users/sethg/Desktop/Backups/MergeFile/W21_GAM1528_NoNameYet/TowerDefence/Saved/Config/Windows/Scalability.ini]
-[2021.04.13-17.49.10:987][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
-[2021.04.13-17.49.10:987][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
-[2021.04.13-17.49.10:987][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
-[2021.04.13-17.49.10:987][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
-[2021.04.13-17.49.10:987][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
-[2021.04.13-17.49.10:987][  0]LogConfig: Setting CVar [[r.VT.MaxAnisotropy:8]]
-[2021.04.13-17.49.10:987][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
-[2021.04.13-17.49.10:987][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
-[2021.04.13-17.49.10:987][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
-[2021.04.13-17.49.10:987][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [C:/Users/sethg/Desktop/Backups/MergeFile/W21_GAM1528_NoNameYet/TowerDefence/Saved/Config/Windows/Scalability.ini]
-[2021.04.13-17.49.10:988][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
-[2021.04.13-17.49.10:988][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
-[2021.04.13-17.49.10:988][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
-[2021.04.13-17.49.10:988][  0]LogConfig: Setting CVar [[r.SSR.HalfResSceneColor:0]]
-[2021.04.13-17.49.10:988][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
-[2021.04.13-17.49.10:988][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
-[2021.04.13-17.49.10:988][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
-[2021.04.13-17.49.10:988][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
-[2021.04.13-17.49.10:988][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
-[2021.04.13-17.49.10:988][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
-[2021.04.13-17.49.10:988][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
-[2021.04.13-17.49.10:988][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:0]]
-[2021.04.13-17.49.10:988][  0]LogConfig: Setting CVar [[r.SSGI.Quality:3]]
-[2021.04.13-17.49.10:988][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
-[2021.04.13-17.49.10:988][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
-[2021.04.13-17.49.10:988][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.FastApplyOnOpaque:1 ; Always have FastSkyLUT 1 in this case to avoid wrong sky]]
-[2021.04.13-17.49.10:988][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.SampleCountPerSlice:1]]
-[2021.04.13-17.49.10:988][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.DepthResolution:16.0]]
-[2021.04.13-17.49.10:988][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT:1]]
-[2021.04.13-17.49.10:989][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMin:4.0]]
-[2021.04.13-17.49.10:989][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMax:32.0]]
-[2021.04.13-17.49.10:989][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMin:4.0]]
-[2021.04.13-17.49.10:989][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMax:32.0]]
-[2021.04.13-17.49.10:989][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.UseSmallFormat:0]]
-[2021.04.13-17.49.10:989][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.SampleCount:10.0]]
-[2021.04.13-17.49.10:989][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.MultiScatteringLUT.SampleCount:15.0]]
-[2021.04.13-17.49.10:989][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [C:/Users/sethg/Desktop/Backups/MergeFile/W21_GAM1528_NoNameYet/TowerDefence/Saved/Config/Windows/Scalability.ini]
-[2021.04.13-17.49.10:989][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
-[2021.04.13-17.49.10:989][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
-[2021.04.13-17.49.10:989][  0]LogConfig: Applying CVar settings from Section [ShadingQuality@3] File [C:/Users/sethg/Desktop/Backups/MergeFile/W21_GAM1528_NoNameYet/TowerDefence/Saved/Config/Windows/Scalability.ini]
-[2021.04.13-17.49.10:989][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.SampleCount:16]]
-[2021.04.13-17.49.10:989][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.JitterIntegration:0]]
-[2021.04.13-17.49.10:989][  0]LogConfig: Setting CVar [[r.HairStrands.SkyAO.SampleCount:16]]
-[2021.04.13-17.49.10:989][  0]LogConfig: Setting CVar [[r.HairStrands.DeepShadow.SuperSampling:0]]
-[2021.04.13-17.49.10:989][  0]LogConfig: Setting CVar [[r.HairStrands.VisibilityPPLL:0]]
-[2021.04.13-17.49.10:989][  0]LogConfig: Setting CVar [[r.HairStrands.RasterizationScale:0.5]]
-[2021.04.13-17.49.10:990][  0]LogConfig: Setting CVar [[r.HairStrands.VelocityRasterizationScale:1]]
-[2021.04.13-17.49.10:990][  0]LogConfig: Applying CVar settings from Section [Startup] File [../../../Engine/Config/ConsoleVariables.ini]
-[2021.04.13-17.49.10:990][  0]LogConfig: Setting CVar [[net.UseAdaptiveNetUpdateFrequency:0]]
-[2021.04.13-17.49.10:990][  0]LogConfig: Setting CVar [[p.chaos.AllowCreatePhysxBodies:1]]
-[2021.04.13-17.49.10:990][  0]LogConfig: Setting CVar [[fx.SkipVectorVMBackendOptimizations:1]]
-[2021.04.13-17.49.10:990][  0]LogConfig: Applying CVar settings from Section [ConsoleVariables] File [C:/Users/sethg/Desktop/Backups/MergeFile/W21_GAM1528_NoNameYet/TowerDefence/Saved/Config/Windows/Engine.ini]
-[2021.04.13-17.49.10:991][  0]LogInit: Computer: LAPTOP-K3PBHEDP
-[2021.04.13-17.49.10:991][  0]LogInit: User: sethg
-[2021.04.13-17.49.10:991][  0]LogInit: CPU Page size=4096, Cores=6
-[2021.04.13-17.49.10:991][  0]LogInit: High frequency timer resolution =10.000000 MHz
-[2021.04.13-17.49.10:991][  0]LogMemory: Memory total: Physical=15.9GB (16GB approx)
-[2021.04.13-17.49.10:991][  0]LogMemory: Platform Memory Stats for Windows
-[2021.04.13-17.49.10:991][  0]LogMemory: Process Physical Memory: 116.73 MB used, 116.74 MB peak
-[2021.04.13-17.49.10:991][  0]LogMemory: Process Virtual Memory: 96.81 MB used, 96.81 MB peak
-[2021.04.13-17.49.10:991][  0]LogMemory: Physical Memory: 9483.76 MB used,  6751.02 MB free, 16234.78 MB total
-[2021.04.13-17.49.10:991][  0]LogMemory: Virtual Memory: 5166.71 MB used,  134212560.00 MB free, 134217728.00 MB total
-[2021.04.13-17.49.11:003][  0]LogWindows: WindowsPlatformFeatures enabled
-[2021.04.13-17.49.11:280][  0]LogInit: Physics initialised using underlying interface: PhysX
-[2021.04.13-17.49.11:281][  0]LogInit: Using OS detected language (en-US).
-[2021.04.13-17.49.11:282][  0]LogInit: Using OS detected locale (en-CA).
-[2021.04.13-17.49.11:284][  0]LogTextLocalizationManager: No specific localization for 'en-US' exists, so the 'en' localization will be used.
-[2021.04.13-17.49.11:461][  0]LogInit: Setting process to per monitor DPI aware
-[2021.04.13-17.49.11:518][  0]LogSlate: New Slate User Created.  User Index 0, Is Virtual User: 0
-[2021.04.13-17.49.11:518][  0]LogSlate: Slate User Registered.  User Index 0, Is Virtual User: 0
-[2021.04.13-17.49.11:801][  0]LogHMD: Failed to initialize OpenVR with code 110
-[2021.04.13-17.49.11:801][  0]LogD3D11RHI: D3D11 min allowed feature level: 11_0
-[2021.04.13-17.49.11:802][  0]LogD3D11RHI: D3D11 max allowed feature level: 11_0
-[2021.04.13-17.49.11:802][  0]LogD3D11RHI: D3D11 adapters:
-[2021.04.13-17.49.12:901][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 1060' (Feature Level 11_0)
-[2021.04.13-17.49.12:901][  0]LogD3D11RHI:       6052/0/8117 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:1, VendorId:0x10de
-[2021.04.13-17.49.12:941][  0]LogD3D11RHI:    1. 'Intel(R) UHD Graphics 630' (Feature Level 11_0)
-[2021.04.13-17.49.12:941][  0]LogD3D11RHI:       128/0/8117 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x8086
-[2021.04.13-17.49.12:949][  0]LogD3D11RHI:    2. 'Microsoft Basic Render Driver' (Feature Level 11_0)
-[2021.04.13-17.49.12:949][  0]LogD3D11RHI:       0/0/8117 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
-[2021.04.13-17.49.12:949][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
-[2021.04.13-17.49.12:997][  0]LogD3D11RHI: Creating new Direct3DDevice
-[2021.04.13-17.49.12:998][  0]LogD3D11RHI:     GPU DeviceId: 0x1c20 (for the marketing name, search the web for "GPU Device Id")
-[2021.04.13-17.49.12:998][  0]LogWindows: EnumDisplayDevices:
-[2021.04.13-17.49.12:998][  0]LogWindows:    0. 'Intel(R) UHD Graphics 630' (P:1 D:1)
-[2021.04.13-17.49.12:998][  0]LogWindows:    1. 'Intel(R) UHD Graphics 630' (P:0 D:0)
-[2021.04.13-17.49.12:999][  0]LogWindows:    2. 'Intel(R) UHD Graphics 630' (P:0 D:0)
-[2021.04.13-17.49.12:999][  0]LogWindows:    3. 'NVIDIA GeForce GTX 1060' (P:0 D:0)
-[2021.04.13-17.49.12:999][  0]LogWindows: DebugString: PrimaryIsNotTheChoosenAdapter PrimaryIsNotTheChoosenAdapter PrimaryIsNotTheChoosenAdapter 
-[2021.04.13-17.49.12:999][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 1060
-[2021.04.13-17.49.12:999][  0]LogD3D11RHI:   Driver Version: 451.67 (internal:27.21.14.5167, unified:451.67)
-[2021.04.13-17.49.13:000][  0]LogD3D11RHI:      Driver Date: 7-5-2020
-[2021.04.13-17.49.13:000][  0]LogRHI: Texture pool is 4236 MB (70% of 6052 MB)
-[2021.04.13-17.49.13:065][  0]LogD3D11RHI: RHI has support for 64 bit atomics
-[2021.04.13-17.49.13:067][  0]LogD3D11RHI: [Aftermath] Enabled and primed
-[2021.04.13-17.49.13:067][  0]LogD3D11RHI: Async texture creation enabled
-[2021.04.13-17.49.13:067][  0]LogD3D11RHI: Array index from any shader is supported
-[2021.04.13-17.49.13:105][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 1)
-[2021.04.13-17.49.13:438][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'AllDesktop'
-[2021.04.13-17.49.13:467][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android'
-[2021.04.13-17.49.13:467][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ASTC'
-[2021.04.13-17.49.13:467][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_DXT'
-[2021.04.13-17.49.13:467][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ETC2'
-[2021.04.13-17.49.13:467][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'AndroidClient'
-[2021.04.13-17.49.13:467][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ASTCClient'
-[2021.04.13-17.49.13:467][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_DXTClient'
-[2021.04.13-17.49.13:468][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ETC2Client'
-[2021.04.13-17.49.13:468][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_Multi'
-[2021.04.13-17.49.13:468][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_MultiClient'
-[2021.04.13-17.49.13:503][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'IOSClient'
-[2021.04.13-17.49.13:503][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'IOS'
-[2021.04.13-17.49.13:516][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Linux'
-[2021.04.13-17.49.13:531][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxNoEditor'
-[2021.04.13-17.49.13:543][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxClient'
-[2021.04.13-17.49.13:559][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxServer'
-[2021.04.13-17.49.13:574][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxAArch64NoEditor'
-[2021.04.13-17.49.13:586][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxAArch64Client'
-[2021.04.13-17.49.13:600][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxAArch64Server'
-[2021.04.13-17.49.13:631][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Lumin'
-[2021.04.13-17.49.13:632][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LuminClient'
-[2021.04.13-17.49.13:652][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'TVOSClient'
-[2021.04.13-17.49.13:652][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'TVOS'
-[2021.04.13-17.49.13:668][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsNoEditor'
-[2021.04.13-17.49.13:681][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Windows'
-[2021.04.13-17.49.13:694][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsClient'
-[2021.04.13-17.49.13:707][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsServer'
-[2021.04.13-17.49.13:707][  0]LogTargetPlatformManager: Display: Building Assets For Windows
-[2021.04.13-17.49.13:730][  0]LogAudioDebug: Display: Lib vorbis DLL was dynamically loaded.
-[2021.04.13-17.49.13:882][  0]LogShaderCompilers: Guid format shader working directory is -30 characters bigger than the processId version (C:/Users/sethg/Desktop/Backups/MergeFile/W21_GAM1528_NoNameYet/TowerDefence/Intermediate/Shaders/WorkingDirectory/26864/).
-[2021.04.13-17.49.13:883][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/sethg/AppData/Local/Temp/UnrealShaderWorkingDir/F3AC14B74C59067303731EB13BE179D0/'.
-[2021.04.13-17.49.13:883][  0]LogXGEController: Cleaning working directory: C:/Users/sethg/AppData/Local/Temp/UnrealXGEWorkingDir/
-[2021.04.13-17.49.13:884][  0]LogXGEController: Cannot use XGE Controller as Incredibuild is not installed on this machine.
-[2021.04.13-17.49.13:884][  0]LogShaderCompilers: Cannot use XGE Shader Compiler as Incredibuild is not installed on this machine.
-[2021.04.13-17.49.13:884][  0]LogShaderCompilers: Display: Using Local Shader Compiler.
-[2021.04.13-17.49.14:633][  0]LogDerivedDataCache: Display: Max Cache Size: 512 MB
-[2021.04.13-17.49.14:693][  0]LogDerivedDataCache: Loaded boot cache 0.06s 75MB C:/Users/sethg/AppData/Local/UnrealEngine/4.25/DerivedDataCache/Boot.ddc.
-[2021.04.13-17.49.14:694][  0]LogDerivedDataCache: Display: Loaded Boot cache: C:/Users/sethg/AppData/Local/UnrealEngine/4.25/DerivedDataCache/Boot.ddc
-[2021.04.13-17.49.14:694][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file C:/Users/sethg/Desktop/Backups/MergeFile/W21_GAM1528_NoNameYet/TowerDefence/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
-[2021.04.13-17.49.14:695][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
-[2021.04.13-17.49.14:695][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file C:/Users/sethg/Desktop/Backups/MergeFile/W21_GAM1528_NoNameYet/TowerDefence/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
-[2021.04.13-17.49.14:695][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
-[2021.04.13-17.49.14:705][  0]LogDerivedDataCache: Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
-[2021.04.13-17.49.14:705][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  EnterprisePak pak cache file ../../../Enterprise/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
-[2021.04.13-17.49.14:705][  0]LogDerivedDataCache: Unable to find inner node EnterprisePak for hierarchical cache Hierarchy.
-[2021.04.13-17.49.14:708][  0]LogDerivedDataCache: Using Local data cache path C:/Users/sethg/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
-[2021.04.13-17.49.14:708][  0]LogDerivedDataCache: Shared data cache path not found in *engine.ini, will not use an Shared cache.
-[2021.04.13-17.49.14:708][  0]LogDerivedDataCache: Unable to find inner node Shared for hierarchical cache Hierarchy.
-[2021.04.13-17.49.14:757][  0]LogSlate: Using FreeType 2.10.0
-[2021.04.13-17.49.14:758][  0]LogSlate: SlateFontServices - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
-[2021.04.13-17.49.14:790][  0]LogAssetRegistry: FAssetRegistry took 0.0051 seconds to start up
-[2021.04.13-17.49.15:022][  0]LogInit: Selected Device Profile: [Windows]
-[2021.04.13-17.49.15:170][  0]LogMeshReduction: Using QuadricMeshReduction for automatic static mesh reduction
-[2021.04.13-17.49.15:170][  0]LogMeshReduction: Using SimplygonMeshReduction for automatic skeletal mesh reduction
-[2021.04.13-17.49.15:170][  0]LogMeshReduction: Using ProxyLODMeshReduction for automatic mesh merging
-[2021.04.13-17.49.15:170][  0]LogMeshReduction: No distributed automatic mesh merging module available
-[2021.04.13-17.49.15:171][  0]LogMeshMerging: No distributed automatic mesh merging module available
-[2021.04.13-17.49.15:187][  0]LogNetVersion: TowerDefence 1.0.0, NetCL: 13144385, EngineNetVer: 14, GameNetVer: 0 (Checksum: 2510641227)
-[2021.04.13-17.49.16:436][  0]LogAISub: UAISubsystem::UAISubsystem AISubsystem (000001D6ADB66980), frame # 0
-[2021.04.13-17.49.16:437][  0]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (000001D6AD9E6AC0), frame # 0
-[2021.04.13-17.49.16:438][  0]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (000001D6ADB62800), frame # 0
-[2021.04.13-17.49.16:498][  0]LogPackageLocalizationCache: Processed 19 localized package path(s) for 1 prioritized culture(s) in 0.054047 seconds
-[2021.04.13-17.49.16:504][  0]LogUObjectArray: 15917 objects as part of root set at end of initial load.
-[2021.04.13-17.49.16:504][  0]LogUObjectAllocator: 3965568 out of 0 bytes used by permanent object pool.
-[2021.04.13-17.49.16:504][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
-[2021.04.13-17.49.17:095][  0]LogTcpMessaging: Initializing TcpMessaging bridge
-[2021.04.13-17.49.17:104][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
-[2021.04.13-17.49.17:421][  0]SourceControl: Source control is disabled
-[2021.04.13-17.49.17:421][  0]SourceControl: Source control is disabled
-[2021.04.13-17.49.17:427][  0]SourceControl: Source control is disabled
-[2021.04.13-17.49.17:434][  0]SourceControl: Source control is disabled
-[2021.04.13-17.49.17:446][  0]SourceControl: Source control is disabled
-[2021.04.13-17.49.18:235][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
-[2021.04.13-17.49.18:274][  0]LogAudioCaptureCore: Display: No Audio Capture implementations found. Audio input will be silent.
-[2021.04.13-17.49.18:274][  0]LogAudioCaptureCore: Display: No Audio Capture implementations found. Audio input will be silent.
-[2021.04.13-17.49.18:345][  0]LogOcInput: OculusInput pre-init called
-[2021.04.13-17.49.18:363][  0]LogWindows: Failed to load 'OVRPlugin.dll' (GetLastError=126)
-[2021.04.13-17.49.18:363][  0]LogWindows: File 'OVRPlugin.dll' does not exist
-[2021.04.13-17.49.18:443][  0]LogEngine: Initializing Engine...
-[2021.04.13-17.49.18:445][  0]LogHMD: Failed to initialize OpenVR with code 110
-[2021.04.13-17.49.18:445][  0]LogMagicLeap: Warning: VR disabled because ZI is not enabled.  To enable, in the editor, Edit -> Project Settings -> Plugins -> Magic Leap Plugin -> Enable Zero Iteration
-[2021.04.13-17.49.18:446][  0]LogStats: UGameplayTagsManager::InitializeManager -  0.000 s
-[2021.04.13-17.49.18:602][  0]LogInit: Initializing FReadOnlyCVARCache
-[2021.04.13-17.49.18:613][  0]LogAIModule: Creating AISystem for world Untitled
-[2021.04.13-17.49.18:614][  0]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (000001D6AFFFFC00), frame # 0
-[2021.04.13-17.49.18:614][  0]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (000001D6B000BB00), frame # 0
-[2021.04.13-17.49.18:642][  0]LogAudioMixer: Display: Audio Mixer Platform Settings:
-[2021.04.13-17.49.18:642][  0]LogAudioMixer: Display: 	Sample Rate:						  48000
-[2021.04.13-17.49.18:642][  0]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
-[2021.04.13-17.49.18:642][  0]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
-[2021.04.13-17.49.18:642][  0]LogAudioMixer: Display: 	Number of buffers to queue:			  2
-[2021.04.13-17.49.18:642][  0]LogAudioMixer: Display: 	Max Channels (voices):				  32
-[2021.04.13-17.49.18:643][  0]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
-[2021.04.13-17.49.18:643][  0]LogAudio: Display: AudioDevice MaxSources: 32
-[2021.04.13-17.49.18:643][  0]LogAudio: Display: Using built-in audio occlusion.
-[2021.04.13-17.49.18:644][  0]LogAudioMixer: Display: Initializing audio mixer.
-[2021.04.13-17.49.18:667][  0]LogAudioMixer: Display: 0: FrontLeft
-[2021.04.13-17.49.18:668][  0]LogAudioMixer: Display: 1: FrontRight
-[2021.04.13-17.49.18:880][  0]LogAudioMixer: Display: Using Audio Device Speakers (Realtek(R) Audio)
-[2021.04.13-17.49.18:884][  0]LogAudioMixer: Display: Initializing Sound Submixes...
-[2021.04.13-17.49.18:888][  0]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
-[2021.04.13-17.49.18:888][  0]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
-[2021.04.13-17.49.18:890][  0]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
-[2021.04.13-17.49.18:897][  0]LogInit: FAudioDevice initialized.
-[2021.04.13-17.49.18:898][  0]LogNetVersion: Set ProjectVersion to 1.0.0.0. Version Checksum will be recalculated on next use.
-[2021.04.13-17.49.18:995][  0]LogDerivedDataCache: Saved boot cache 0.10s 75MB C:/Users/sethg/AppData/Local/UnrealEngine/4.25/DerivedDataCache/Boot.ddc.
-[2021.04.13-17.49.18:997][  0]LogInit: Texture streaming: Enabled
-[2021.04.13-17.49.19:037][  0]LogEngineSessionManager: EngineSessionManager initialized
-[2021.04.13-17.49.19:037][  0]LogEngineSessionManager: EngineSessionManager sent abnormal shutdown report. Type=Debugger, SessionId={5E72A660-41BC-0EB7-7EF9-3D8269E7C391}
-[2021.04.13-17.49.19:037][  0]LogEditorSessionSummary: Verbose: Initializing EditorSessionSummaryWriter for editor session tracking
-[2021.04.13-17.49.19:044][  0]LogEditorSessionSummary: EditorSessionSummaryWriter initialized
-[2021.04.13-17.49.19:091][  0]LogInit: Transaction tracking system initialized
-[2021.04.13-17.49.19:149][  0]BlueprintLog: New page: Editor Load
-[2021.04.13-17.49.19:283][  0]LocalizationService: Localization service is disabled
-[2021.04.13-17.49.19:649][  0]LogCook: Display: Max memory allowance for cook 16384mb min free memory 0mb
-[2021.04.13-17.49.19:649][  0]LogCook: Display: Mobile HDR setting 1
-[2021.04.13-17.49.20:154][  0]LogFileCache: Scanning file cache for directory 'C:/Users/sethg/Desktop/Backups/MergeFile/W21_GAM1528_NoNameYet/TowerDefence/Content/' took 0.01s
-[2021.04.13-17.49.20:404][  0]SourceControl: Source control is disabled
-[2021.04.13-17.49.20:404][  0]LogUnrealEdMisc: Loading editor; pre map load, took 12.054
-[2021.04.13-17.49.20:404][  0]Cmd: MAP LOAD FILE="C:/Users/sethg/Desktop/Backups/MergeFile/W21_GAM1528_NoNameYet/TowerDefence/Content/Maps/Test.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
-[2021.04.13-17.49.20:404][  0]LightingResults: New page: Lighting Build
-[2021.04.13-17.49.20:405][  0]LogWorld: UWorld::CleanupWorld for Untitled, bSessionEnded=true, bCleanupResources=true
-[2021.04.13-17.49.20:405][  0]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
-[2021.04.13-17.49.20:405][  0]MapCheck: New page: Map Check
-[2021.04.13-17.49.20:405][  0]LightingResults: New page: Lighting Build
-[2021.04.13-17.49.20:415][  0]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (000001D6AFFFFC00), frame # 0
-[2021.04.13-17.49.20:416][  0]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (000001D6B000BB00), frame # 0
-[2021.04.13-17.49.20:417][  0]LogUObjectHash: Compacting FUObjectHashTables data took   0.87ms
-[2021.04.13-17.49.20:427][  0]LogLinker: Warning: While loading 'C:/Users/sethg/Desktop/Backups/MergeFile/W21_GAM1528_NoNameYet/TowerDefence/Content/Assets/Models/Troop_melee/troop_melee.uasset' failed to load '/Game/Assets/Models/Troop_melee/Material_001': Can't find file.
-[2021.04.13-17.49.20:427][  0]LogLinker: Warning: While loading 'C:/Users/sethg/Desktop/Backups/MergeFile/W21_GAM1528_NoNameYet/TowerDefence/Content/Assets/Models/Troop_melee/troop_melee.uasset' failed to load '/Game/Assets/Models/Troop_melee/Material_001': Can't find file.
-[2021.04.13-17.49.20:428][  0]LogLinker: Warning: While loading 'C:/Users/sethg/Desktop/Backups/MergeFile/W21_GAM1528_NoNameYet/TowerDefence/Content/Assets/Models/Troop_melee/troop_melee.uasset' failed to load '/Game/Assets/Models/Troop_melee/wire_087225087_002': Can't find file.
-[2021.04.13-17.49.20:428][  0]LogLinker: Warning: While loading 'C:/Users/sethg/Desktop/Backups/MergeFile/W21_GAM1528_NoNameYet/TowerDefence/Content/Assets/Models/Troop_melee/troop_melee.uasset' failed to load '/Game/Assets/Models/Troop_melee/wire_087225087_002': Can't find file.
-[2021.04.13-17.49.20:429][  0]LogLinker: Warning: While loading 'C:/Users/sethg/Desktop/Backups/MergeFile/W21_GAM1528_NoNameYet/TowerDefence/Content/Assets/Models/Troop_melee/troop_melee.uasset' failed to load '/Game/Assets/Models/Troop_melee/wire_177028149_002': Can't find file.
-[2021.04.13-17.49.20:429][  0]LogLinker: Warning: While loading 'C:/Users/sethg/Desktop/Backups/MergeFile/W21_GAM1528_NoNameYet/TowerDefence/Content/Assets/Models/Troop_melee/troop_melee.uasset' failed to load '/Game/Assets/Models/Troop_melee/wire_177028149_002': Can't find file.
-[2021.04.13-17.49.20:429][  0]LogLinker: Warning: While loading 'C:/Users/sethg/Desktop/Backups/MergeFile/W21_GAM1528_NoNameYet/TowerDefence/Content/Assets/Models/Troop_melee/troop_melee.uasset' failed to load '/Game/Assets/Models/Troop_melee/Material_001': Can't find file.
-[2021.04.13-17.49.20:430][  0]LogLinker: Warning: While loading 'C:/Users/sethg/Desktop/Backups/MergeFile/W21_GAM1528_NoNameYet/TowerDefence/Content/Assets/Models/Troop_melee/troop_melee.uasset' failed to load '/Game/Assets/Models/Troop_melee/Material_001': Can't find file.
-[2021.04.13-17.49.20:431][  0]LogLinker: Warning: While loading 'C:/Users/sethg/Desktop/Backups/MergeFile/W21_GAM1528_NoNameYet/TowerDefence/Content/Assets/Models/Troop_melee/troop_melee.uasset' failed to load '/Game/Assets/Models/Troop_melee/wire_087225087_002': Can't find file.
-[2021.04.13-17.49.20:432][  0]LogLinker: Warning: While loading 'C:/Users/sethg/Desktop/Backups/MergeFile/W21_GAM1528_NoNameYet/TowerDefence/Content/Assets/Models/Troop_melee/troop_melee.uasset' failed to load '/Game/Assets/Models/Troop_melee/wire_087225087_002': Can't find file.
-[2021.04.13-17.49.20:432][  0]LogLinker: Warning: While loading 'C:/Users/sethg/Desktop/Backups/MergeFile/W21_GAM1528_NoNameYet/TowerDefence/Content/Assets/Models/Troop_melee/troop_melee.uasset' failed to load '/Game/Assets/Models/Troop_melee/wire_177028149_002': Can't find file.
-[2021.04.13-17.49.20:432][  0]LogLinker: Warning: While loading 'C:/Users/sethg/Desktop/Backups/MergeFile/W21_GAM1528_NoNameYet/TowerDefence/Content/Assets/Models/Troop_melee/troop_melee.uasset' failed to load '/Game/Assets/Models/Troop_melee/wire_177028149_002': Can't find file.
-[2021.04.13-17.49.20:568][  0]LogLinker: Warning: While loading 'C:/Users/sethg/Desktop/Backups/MergeFile/W21_GAM1528_NoNameYet/TowerDefence/Content/StarterContent/Materials/M_Brick_Clay_Beveled.uasset' failed to load '/Game/StarterContent/Textures/T_Brick_Clay_Beveled_D': Can't find file.
-[2021.04.13-17.49.20:569][  0]LogLinker: Warning: While loading 'C:/Users/sethg/Desktop/Backups/MergeFile/W21_GAM1528_NoNameYet/TowerDefence/Content/StarterContent/Materials/M_Brick_Clay_Beveled.uasset' failed to load '/Game/StarterContent/Textures/T_Brick_Clay_Beveled_D': Can't find file.
-[2021.04.13-17.49.20:569][  0]LogLinker: Warning: While loading 'C:/Users/sethg/Desktop/Backups/MergeFile/W21_GAM1528_NoNameYet/TowerDefence/Content/StarterContent/Materials/M_Brick_Clay_Beveled.uasset' failed to load '/Game/StarterContent/Textures/T_Brick_Clay_Beveled_M': Can't find file.
-[2021.04.13-17.49.20:570][  0]LogLinker: Warning: While loading 'C:/Users/sethg/Desktop/Backups/MergeFile/W21_GAM1528_NoNameYet/TowerDefence/Content/StarterContent/Materials/M_Brick_Clay_Beveled.uasset' failed to load '/Game/StarterContent/Textures/T_Brick_Clay_Beveled_M': Can't find file.
-[2021.04.13-17.49.20:571][  0]LogLinker: Warning: While loading 'C:/Users/sethg/Desktop/Backups/MergeFile/W21_GAM1528_NoNameYet/TowerDefence/Content/StarterContent/Materials/M_Brick_Clay_Beveled.uasset' failed to load '/Game/StarterContent/Textures/T_Brick_Clay_Beveled_N': Can't find file.
-[2021.04.13-17.49.20:571][  0]LogLinker: Warning: While loading 'C:/Users/sethg/Desktop/Backups/MergeFile/W21_GAM1528_NoNameYet/TowerDefence/Content/StarterContent/Materials/M_Brick_Clay_Beveled.uasset' failed to load '/Game/StarterContent/Textures/T_Brick_Clay_Beveled_N': Can't find file.
-[2021.04.13-17.49.20:572][  0]LogLinker: Warning: While loading 'C:/Users/sethg/Desktop/Backups/MergeFile/W21_GAM1528_NoNameYet/TowerDefence/Content/StarterContent/Materials/M_Brick_Clay_Beveled.uasset' failed to load '/Game/StarterContent/Textures/T_Brick_Clay_Beveled_D': Can't find file.
-[2021.04.13-17.49.20:572][  0]LogLinker: Warning: While loading 'C:/Users/sethg/Desktop/Backups/MergeFile/W21_GAM1528_NoNameYet/TowerDefence/Content/StarterContent/Materials/M_Brick_Clay_Beveled.uasset' failed to load '/Game/StarterContent/Textures/T_Brick_Clay_Beveled_D': Can't find file.
-[2021.04.13-17.49.20:572][  0]LogLinker: Warning: While loading 'C:/Users/sethg/Desktop/Backups/MergeFile/W21_GAM1528_NoNameYet/TowerDefence/Content/StarterContent/Materials/M_Brick_Clay_Beveled.uasset' failed to load '/Game/StarterContent/Textures/T_Brick_Clay_Beveled_M': Can't find file.
-[2021.04.13-17.49.20:573][  0]LogLinker: Warning: While loading 'C:/Users/sethg/Desktop/Backups/MergeFile/W21_GAM1528_NoNameYet/TowerDefence/Content/StarterContent/Materials/M_Brick_Clay_Beveled.uasset' failed to load '/Game/StarterContent/Textures/T_Brick_Clay_Beveled_M': Can't find file.
-[2021.04.13-17.49.20:573][  0]LogLinker: Warning: While loading 'C:/Users/sethg/Desktop/Backups/MergeFile/W21_GAM1528_NoNameYet/TowerDefence/Content/StarterContent/Materials/M_Brick_Clay_Beveled.uasset' failed to load '/Game/StarterContent/Textures/T_Brick_Clay_Beveled_N': Can't find file.
-[2021.04.13-17.49.20:573][  0]LogLinker: Warning: While loading 'C:/Users/sethg/Desktop/Backups/MergeFile/W21_GAM1528_NoNameYet/TowerDefence/Content/StarterContent/Materials/M_Brick_Clay_Beveled.uasset' failed to load '/Game/StarterContent/Textures/T_Brick_Clay_Beveled_N': Can't find file.
-[2021.04.13-17.49.20:579][  0]LogLinker: Warning: While loading 'C:/Users/sethg/Desktop/Backups/MergeFile/W21_GAM1528_NoNameYet/TowerDefence/Content/StarterContent/Materials/M_Brick_Clay_Beveled.uasset' failed to load '/Game/StarterContent/Textures/T_Brick_Clay_Beveled_N': Can't find file.
-[2021.04.13-17.49.20:579][  0]LoadErrors: Failed to load /Game/StarterContent/Textures/T_Brick_Clay_Beveled_N.T_Brick_Clay_Beveled_N Referenced by MaterialExpressionTextureSample_1
-[2021.04.13-17.49.20:579][  0]LogLinker: Warning: While loading 'C:/Users/sethg/Desktop/Backups/MergeFile/W21_GAM1528_NoNameYet/TowerDefence/Content/StarterContent/Materials/M_Brick_Clay_Beveled.uasset' failed to load '/Game/StarterContent/Textures/T_Brick_Clay_Beveled_N': Can't find file.
-[2021.04.13-17.49.20:579][  0]LoadErrors: Failed to load /Game/StarterContent/Textures/T_Brick_Clay_Beveled_N.T_Brick_Clay_Beveled_N Referenced by MaterialExpressionTextureSample_1
-[2021.04.13-17.49.20:580][  0]LogLinker: Warning: While loading 'C:/Users/sethg/Desktop/Backups/MergeFile/W21_GAM1528_NoNameYet/TowerDefence/Content/StarterContent/Materials/M_Brick_Clay_Beveled.uasset' failed to load '/Game/StarterContent/Textures/T_Brick_Clay_Beveled_M': Can't find file.
-[2021.04.13-17.49.20:580][  0]LoadErrors: Failed to load /Game/StarterContent/Textures/T_Brick_Clay_Beveled_M.T_Brick_Clay_Beveled_M Referenced by MaterialExpressionTextureSample_2
-[2021.04.13-17.49.20:580][  0]LogLinker: Warning: While loading 'C:/Users/sethg/Desktop/Backups/MergeFile/W21_GAM1528_NoNameYet/TowerDefence/Content/StarterContent/Materials/M_Brick_Clay_Beveled.uasset' failed to load '/Game/StarterContent/Textures/T_Brick_Clay_Beveled_M': Can't find file.
-[2021.04.13-17.49.20:581][  0]LoadErrors: Failed to load /Game/StarterContent/Textures/T_Brick_Clay_Beveled_M.T_Brick_Clay_Beveled_M Referenced by MaterialExpressionTextureSample_2
-[2021.04.13-17.49.20:581][  0]LogLinker: Warning: While loading 'C:/Users/sethg/Desktop/Backups/MergeFile/W21_GAM1528_NoNameYet/TowerDefence/Content/StarterContent/Materials/M_Brick_Clay_Beveled.uasset' failed to load '/Game/StarterContent/Textures/T_Brick_Clay_Beveled_D': Can't find file.
-[2021.04.13-17.49.20:581][  0]LoadErrors: Failed to load /Game/StarterContent/Textures/T_Brick_Clay_Beveled_D.T_Brick_Clay_Beveled_D Referenced by MaterialExpressionTextureSample_4
-[2021.04.13-17.49.20:582][  0]LogLinker: Warning: While loading 'C:/Users/sethg/Desktop/Backups/MergeFile/W21_GAM1528_NoNameYet/TowerDefence/Content/StarterContent/Materials/M_Brick_Clay_Beveled.uasset' failed to load '/Game/StarterContent/Textures/T_Brick_Clay_Beveled_D': Can't find file.
-[2021.04.13-17.49.20:582][  0]LoadErrors: Failed to load /Game/StarterContent/Textures/T_Brick_Clay_Beveled_D.T_Brick_Clay_Beveled_D Referenced by MaterialExpressionTextureSample_4
-[2021.04.13-17.49.20:582][  0]LogLinker: Warning: While loading 'C:/Users/sethg/Desktop/Backups/MergeFile/W21_GAM1528_NoNameYet/TowerDefence/Content/StarterContent/Materials/M_Brick_Clay_Beveled.uasset' failed to load '/Game/StarterContent/Textures/T_Brick_Clay_Beveled_D': Can't find file.
-[2021.04.13-17.49.20:582][  0]LoadErrors: Failed to load /Game/StarterContent/Textures/T_Brick_Clay_Beveled_D.T_Brick_Clay_Beveled_D Referenced by MaterialExpressionTextureSample_5
-[2021.04.13-17.49.20:583][  0]LogLinker: Warning: While loading 'C:/Users/sethg/Desktop/Backups/MergeFile/W21_GAM1528_NoNameYet/TowerDefence/Content/StarterContent/Materials/M_Brick_Clay_Beveled.uasset' failed to load '/Game/StarterContent/Textures/T_Brick_Clay_Beveled_D': Can't find file.
-[2021.04.13-17.49.20:583][  0]LoadErrors: Failed to load /Game/StarterContent/Textures/T_Brick_Clay_Beveled_D.T_Brick_Clay_Beveled_D Referenced by MaterialExpressionTextureSample_5
-[2021.04.13-17.49.20:587][  0]LogLinker: Warning: While loading 'C:/Users/sethg/Desktop/Backups/MergeFile/W21_GAM1528_NoNameYet/TowerDefence/Content/Assets/Models/Troop_melee/troop_melee.uasset' failed to load '/Game/Assets/Models/Troop_melee/wire_087225087_002': Can't find file.
-[2021.04.13-17.49.20:587][  0]LoadErrors: Failed to load /Game/Assets/Models/Troop_melee/wire_087225087_002.wire_087225087_002 Referenced by troop_melee
-[2021.04.13-17.49.20:588][  0]LogLinker: Warning: While loading 'C:/Users/sethg/Desktop/Backups/MergeFile/W21_GAM1528_NoNameYet/TowerDefence/Content/Assets/Models/Troop_melee/troop_melee.uasset' failed to load '/Game/Assets/Models/Troop_melee/wire_087225087_002': Can't find file.
-[2021.04.13-17.49.20:588][  0]LoadErrors: Failed to load /Game/Assets/Models/Troop_melee/wire_087225087_002.wire_087225087_002 Referenced by troop_melee
-[2021.04.13-17.49.20:588][  0]LogLinker: Warning: While loading 'C:/Users/sethg/Desktop/Backups/MergeFile/W21_GAM1528_NoNameYet/TowerDefence/Content/Assets/Models/Troop_melee/troop_melee.uasset' failed to load '/Game/Assets/Models/Troop_melee/wire_177028149_002': Can't find file.
-[2021.04.13-17.49.20:588][  0]LoadErrors: Failed to load /Game/Assets/Models/Troop_melee/wire_177028149_002.wire_177028149_002 Referenced by troop_melee
-[2021.04.13-17.49.20:589][  0]LogLinker: Warning: While loading 'C:/Users/sethg/Desktop/Backups/MergeFile/W21_GAM1528_NoNameYet/TowerDefence/Content/Assets/Models/Troop_melee/troop_melee.uasset' failed to load '/Game/Assets/Models/Troop_melee/wire_177028149_002': Can't find file.
-[2021.04.13-17.49.20:589][  0]LoadErrors: Failed to load /Game/Assets/Models/Troop_melee/wire_177028149_002.wire_177028149_002 Referenced by troop_melee
-[2021.04.13-17.49.20:589][  0]LogLinker: Warning: While loading 'C:/Users/sethg/Desktop/Backups/MergeFile/W21_GAM1528_NoNameYet/TowerDefence/Content/Assets/Models/Troop_melee/troop_melee.uasset' failed to load '/Game/Assets/Models/Troop_melee/Material_001': Can't find file.
-[2021.04.13-17.49.20:589][  0]LoadErrors: Failed to load /Game/Assets/Models/Troop_melee/Material_001.Material_001 Referenced by troop_melee
-[2021.04.13-17.49.20:589][  0]LogLinker: Warning: While loading 'C:/Users/sethg/Desktop/Backups/MergeFile/W21_GAM1528_NoNameYet/TowerDefence/Content/Assets/Models/Troop_melee/troop_melee.uasset' failed to load '/Game/Assets/Models/Troop_melee/Material_001': Can't find file.
-[2021.04.13-17.49.20:589][  0]LoadErrors: Failed to load /Game/Assets/Models/Troop_melee/Material_001.Material_001 Referenced by troop_melee
-[2021.04.13-17.49.20:615][  0]LogMaterial: Display: Missing cached shader map for material M_Brick_Clay_Beveled, compiling. 
-[2021.04.13-17.49.20:617][  0]LogMaterial: Warning: C:\Users\sethg\Desktop\Backups\MergeFile\W21_GAM1528_NoNameYet\TowerDefence\Content\StarterContent\Materials\M_Brick_Clay_Beveled.uasset: Failed to compile Material for platform PCD3D_SM5, Default Material will be used in game.
-[2021.04.13-17.49.20:617][  0]LogMaterial: Display: 	(Node TextureSample) Texture Sample> Missing input texture
-[2021.04.13-17.49.20:652][  0]LogAIModule: Creating AISystem for world Test
-[2021.04.13-17.49.20:652][  0]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (000001D69F61CC00), frame # 0
-[2021.04.13-17.49.20:652][  0]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (000001D69F775A80), frame # 0
-[2021.04.13-17.49.20:662][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
-[2021.04.13-17.49.20:684][  0]LogUObjectHash: Compacting FUObjectHashTables data took   1.50ms
-[2021.04.13-17.49.20:684][  0]Cmd: MAP CHECKDEP NOCLEARLOG
-[2021.04.13-17.49.20:685][  0]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 0.252ms to complete.
-[2021.04.13-17.49.20:685][  0]LogFileHelpers: Loading map 'Test' took 0.281
-[2021.04.13-17.49.20:692][  0]LogUnrealEdMisc: Total Editor Startup Time, took 12.343
-[2021.04.13-17.49.21:556][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2021.04.13-17.49.21:566][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2021.04.13-17.49.21:573][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2021.04.13-17.49.21:581][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2021.04.13-17.49.21:594][  0]LogCollectionManager: Loaded 0 collections in 0.003123 seconds
-[2021.04.13-17.49.21:619][  0]LogFileCache: Scanning file cache for directory 'C:/Users/sethg/Desktop/Backups/MergeFile/W21_GAM1528_NoNameYet/TowerDefence/Saved/Collections/' took 0.00s
-[2021.04.13-17.49.21:619][  0]LogFileCache: Scanning file cache for directory 'C:/Users/sethg/Desktop/Backups/MergeFile/W21_GAM1528_NoNameYet/TowerDefence/Content/Developers/sethg/Collections/' took 0.00s
-[2021.04.13-17.49.21:619][  0]LogFileCache: Scanning file cache for directory 'C:/Users/sethg/Desktop/Backups/MergeFile/W21_GAM1528_NoNameYet/TowerDefence/Content/Collections/' took 0.00s
-[2021.04.13-17.49.21:619][  0]LogContentBrowser: Native class hierarchy populated in 0.0086 seconds. Added 3449 classes and 824 folders.
-[2021.04.13-17.49.21:622][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0005 seconds. Added 0 classes and 0 folders.
-[2021.04.13-17.49.21:742][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0005 seconds. Added 0 classes and 0 folders.
-[2021.04.13-17.49.21:743][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0004 seconds. Added 2 classes and 0 folders.
-[2021.04.13-17.49.21:874][  0]LogSlate: Took 0.000296 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
-[2021.04.13-17.49.21:878][  0]LogSlate: Took 0.000814 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
-[2021.04.13-17.49.21:895][  0]LogSlate: Took 0.007919 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
-[2021.04.13-17.49.22:059][  0]LogRenderer: Reallocating scene render targets to support 1088x536 Format 10 NumSamples 1 (Frame:1).
-[2021.04.13-17.49.22:268][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0006 seconds. Added 0 classes and 0 folders.
-[2021.04.13-17.49.22:268][  0]LogLoad: (Engine Initialization) Total time: 13.92 seconds
-[2021.04.13-17.49.22:268][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.00 seconds
-[2021.04.13-17.49.22:317][  0]LogAssetRegistry: Asset discovery search completed in 7.5305 seconds
-[2021.04.13-17.49.22:323][  0]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000003 seconds (updated 0 objects)
-[2021.04.13-17.49.22:324][  0]LogContentStreaming: Texture pool size now 1000 MB
-[2021.04.13-17.49.22:421][  0]LogRenderer: Reallocating scene render targets to support 1088x552 Format 10 NumSamples 1 (Frame:3).
-[2021.04.13-17.49.22:421][  0]LogSlate: Took 0.000209 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
-[2021.04.13-17.49.22:443][  0]LogSlate: Took 0.000331 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/DroidSansMono.ttf' (77K)
-[2021.04.13-17.49.23:787][ 64]LogSlate: Window 'Message Log' being destroyed
-[2021.04.13-17.49.23:793][ 64]LogSlate: Window 'Message Log' being destroyed
-[2021.04.13-17.49.24:654][113]LogTemp: Repeating last play command: Selected Viewport
-[2021.04.13-17.49.24:662][113]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2021.04.13-17.49.24:663][113]PIE: New page: PIE session: Test (Apr. 13, 2021, 9:49:24 a.m.)
-[2021.04.13-17.49.24:666][113]LogOnline: OSS: Creating online subsystem instance for: NULL
-[2021.04.13-17.49.24:669][113]LogOnline: OSS: TryLoadSubsystemAndSetDefault: Loaded subsystem for module [NULL]
-[2021.04.13-17.49.24:669][113]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_Test
-[2021.04.13-17.49.24:674][113]LogPlayLevel: PIE: StaticDuplicateObject took: (0.005162s)
-[2021.04.13-17.49.24:675][113]LogAIModule: Creating AISystem for world Test
-[2021.04.13-17.49.24:675][113]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (000001D6C97CBE00), frame # 113
-[2021.04.13-17.49.24:676][113]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (000001D6EF8E6AC0), frame # 113
-[2021.04.13-17.49.24:676][113]LogPlayLevel: PIE: World Init took: (0.001389s)
-[2021.04.13-17.49.24:676][113]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/Test.Test to /Game/Maps/UEDPIE_0_Test.Test (0.006992s)
-[2021.04.13-17.49.24:687][113]LogUObjectHash: Compacting FUObjectHashTables data took   0.56ms
-[2021.04.13-17.49.24:689][113]LogAudioMixer: Display: Audio Mixer Platform Settings:
-[2021.04.13-17.49.24:689][113]LogAudioMixer: Display: 	Sample Rate:						  48000
-[2021.04.13-17.49.24:689][113]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
-[2021.04.13-17.49.24:689][113]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
-[2021.04.13-17.49.24:689][113]LogAudioMixer: Display: 	Number of buffers to queue:			  2
-[2021.04.13-17.49.24:689][113]LogAudioMixer: Display: 	Max Channels (voices):				  32
-[2021.04.13-17.49.24:690][113]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
-[2021.04.13-17.49.24:690][113]LogAudio: Display: AudioDevice MaxSources: 32
-[2021.04.13-17.49.24:690][113]LogAudio: Display: Using built-in audio occlusion.
-[2021.04.13-17.49.24:690][113]LogAudioMixer: Display: Initializing audio mixer.
-[2021.04.13-17.49.24:694][113]LogAudioMixer: Display: 0: FrontLeft
-[2021.04.13-17.49.24:694][113]LogAudioMixer: Display: 1: FrontRight
-[2021.04.13-17.49.24:749][113]LogAudioMixer: Display: Using Audio Device Speakers (Realtek(R) Audio)
-[2021.04.13-17.49.24:749][113]LogAudioMixer: Display: Initializing Sound Submixes...
-[2021.04.13-17.49.24:749][113]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
-[2021.04.13-17.49.24:749][113]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
-[2021.04.13-17.49.24:750][113]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
-[2021.04.13-17.49.24:768][113]LogInit: FAudioDevice initialized.
-[2021.04.13-17.49.24:785][113]LogLoad: Game class is 'BP_GameMode_C'
-[2021.04.13-17.49.24:787][113]LogWorld: Bringing World /Game/Maps/UEDPIE_0_Test.Test up for play (max tick rate 60) at 2021.04.13-13.49.24
-[2021.04.13-17.49.24:787][113]LogWorld: Bringing up level for play took: 0.001004
-[2021.04.13-17.49.24:787][113]LogOnline: OSS: Creating online subsystem instance for: :Context_1
-[2021.04.13-17.49.24:792][113]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0007 seconds. Added 20 classes and 0 folders.
-[2021.04.13-17.49.24:795][113]PIE: Server logged in
-[2021.04.13-17.49.24:797][113]PIE: Play in editor total start time 0.139 seconds.
-[2021.04.13-17.49.48:998][400]LogAudioMixer: Display: Audio Buffer Underrun detected.
-[2021.04.13-17.49.48:998][400]LogAudioMixer: Display: Audio Buffer Underrun detected.
-[2021.04.13-17.50.50:749][466]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2021.04.13-17.50.50:749][466]LogWorld: BeginTearingDown for /Game/Maps/UEDPIE_0_Test
-[2021.04.13-17.50.50:749][466]LogWorld: UWorld::CleanupWorld for Test, bSessionEnded=true, bCleanupResources=true
-[2021.04.13-17.50.50:750][466]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
-[2021.04.13-17.50.50:761][466]LogPlayLevel: Display: Shutting down PIE online subsystems
-[2021.04.13-17.50.50:764][466]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
-[2021.04.13-17.50.50:824][466]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2021.04.13-17.50.50:825][466]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (000001D6EF8E6AC0), frame # 466
-[2021.04.13-17.50.50:826][466]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (000001D6C97CBE00), frame # 466
-[2021.04.13-17.50.50:827][466]LogUObjectHash: Compacting FUObjectHashTables data took   0.83ms
-[2021.04.13-17.50.50:843][467]LogPlayLevel: Display: Destroying online subsystem :Context_1
-[2021.04.13-17.50.52:506][555]LogEditorViewport: Clicking on Actor (LMB): BP_TroopSpawner_C (BP_TroopSpawner)
-[2021.04.13-17.50.56:691][794]LogEditorViewport: Clicking on Actor (LMB): BP_TroopSpawnPoint_C (BP_TroopSpawnPoint3)
-[2021.04.13-17.50.58:832][906]LogEditorViewport: Clicking on Actor (LMB): BP_TroopSpawnPoint_C (BP_TroopSpawnPoint2)
-[2021.04.13-17.51.00:354][996]LogEditorViewport: Clicking on Actor (LMB): BP_TroopSpawnPoint_C (BP_TroopSpawnPoint)
-[2021.04.13-17.51.10:318][588]LogEditorViewport: Clicking on Actor (LMB): BP_TroopSpawner_C (BP_TroopSpawner)
-[2021.04.13-17.51.12:496][691]LogSlate: Took 0.000451 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
-[2021.04.13-17.51.33:520][933]LogTemp: Repeating last play command: Selected Viewport
-[2021.04.13-17.51.33:533][933]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2021.04.13-17.51.33:533][933]PIE: New page: PIE session: Test (Apr. 13, 2021, 9:51:33 a.m.)
-[2021.04.13-17.51.33:533][933]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_Test
-[2021.04.13-17.51.33:537][933]LogPlayLevel: PIE: StaticDuplicateObject took: (0.003667s)
-[2021.04.13-17.51.33:538][933]LogAIModule: Creating AISystem for world Test
-[2021.04.13-17.51.33:538][933]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (000001D6C9800800), frame # 2933
-[2021.04.13-17.51.33:539][933]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (000001D69FFEC400), frame # 2933
-[2021.04.13-17.51.33:539][933]LogPlayLevel: PIE: World Init took: (0.001844s)
-[2021.04.13-17.51.33:539][933]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/Test.Test to /Game/Maps/UEDPIE_0_Test.Test (0.005990s)
-[2021.04.13-17.51.33:550][933]LogUObjectHash: Compacting FUObjectHashTables data took   0.61ms
-[2021.04.13-17.51.33:551][933]LogAudioMixer: Display: Audio Mixer Platform Settings:
-[2021.04.13-17.51.33:552][933]LogAudioMixer: Display: 	Sample Rate:						  48000
-[2021.04.13-17.51.33:552][933]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
-[2021.04.13-17.51.33:552][933]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
-[2021.04.13-17.51.33:552][933]LogAudioMixer: Display: 	Number of buffers to queue:			  2
-[2021.04.13-17.51.33:552][933]LogAudioMixer: Display: 	Max Channels (voices):				  32
-[2021.04.13-17.51.33:552][933]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
-[2021.04.13-17.51.33:552][933]LogAudio: Display: AudioDevice MaxSources: 32
-[2021.04.13-17.51.33:553][933]LogAudio: Display: Using built-in audio occlusion.
-[2021.04.13-17.51.33:553][933]LogAudioMixer: Display: Initializing audio mixer.
-[2021.04.13-17.51.33:557][933]LogAudioMixer: Display: 0: FrontLeft
-[2021.04.13-17.51.33:557][933]LogAudioMixer: Display: 1: FrontRight
-[2021.04.13-17.51.33:642][933]LogAudioMixer: Display: Using Audio Device Speakers (Realtek(R) Audio)
-[2021.04.13-17.51.33:642][933]LogAudioMixer: Display: Initializing Sound Submixes...
-[2021.04.13-17.51.33:642][933]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
-[2021.04.13-17.51.33:642][933]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
-[2021.04.13-17.51.33:643][933]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
-[2021.04.13-17.51.33:660][933]LogInit: FAudioDevice initialized.
-[2021.04.13-17.51.33:675][933]LogLoad: Game class is 'BP_GameMode_C'
-[2021.04.13-17.51.33:677][933]LogWorld: Bringing World /Game/Maps/UEDPIE_0_Test.Test up for play (max tick rate 60) at 2021.04.13-13.51.33
-[2021.04.13-17.51.33:677][933]LogWorld: Bringing up level for play took: 0.001006
-[2021.04.13-17.51.33:677][933]LogOnline: OSS: Creating online subsystem instance for: :Context_5
-[2021.04.13-17.51.33:682][933]PIE: Server logged in
-[2021.04.13-17.51.33:683][933]PIE: Play in editor total start time 0.157 seconds.
-[2021.04.13-17.51.42:649][462]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2021.04.13-17.51.42:650][462]LogWorld: BeginTearingDown for /Game/Maps/UEDPIE_0_Test
-[2021.04.13-17.51.42:650][462]LogWorld: UWorld::CleanupWorld for Test, bSessionEnded=true, bCleanupResources=true
-[2021.04.13-17.51.42:650][462]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
-[2021.04.13-17.51.42:659][462]LogPlayLevel: Display: Shutting down PIE online subsystems
-[2021.04.13-17.51.42:661][462]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
-[2021.04.13-17.51.42:716][462]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2021.04.13-17.51.42:717][462]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (000001D69FFEC400), frame # 3462
-[2021.04.13-17.51.42:717][462]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (000001D6C9800800), frame # 3462
-[2021.04.13-17.51.42:718][462]LogUObjectHash: Compacting FUObjectHashTables data took   0.57ms
-[2021.04.13-17.51.42:739][463]LogPlayLevel: Display: Destroying online subsystem :Context_5
-[2021.04.13-17.51.47:266][705]LogUObjectHash: Compacting FUObjectHashTables data took   1.01ms
-[2021.04.13-17.52.40:494][705]LogSlate: Window 'Save Content' being destroyed
-[2021.04.13-17.52.40:540][705]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Maps/Test" FILE="C:/Users/sethg/Desktop/Backups/MergeFile/W21_GAM1528_NoNameYet/TowerDefence/Content/Maps/Test.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
-[2021.04.13-17.52.40:554][705]LogUObjectHash: Compacting FUObjectHashTables data took   0.27ms
-[2021.04.13-17.52.40:584][705]LogSavePackage: Moving 'C:/Users/sethg/Desktop/Backups/MergeFile/W21_GAM1528_NoNameYet/TowerDefence/Saved/TestB629C51C407077A76FBF0F8C2A1D219A.tmp' to 'C:/Users/sethg/Desktop/Backups/MergeFile/W21_GAM1528_NoNameYet/TowerDefence/Content/Maps/Test.umap'
-[2021.04.13-17.52.40:605][705]LogFileHelpers: Saving map 'Test' took 0.067
-[2021.04.13-17.52.40:678][705]LogSlate: Window 'TowerDefence - Unreal Editor' being destroyed
-[2021.04.13-17.52.40:679][705]LogWindowsTextInputMethodSystem: Display: IME system now deactivated.
-[2021.04.13-17.52.40:903][705]AssetCheck: New page: Asset Save: Test
-[2021.04.13-17.52.40:904][705]LogContentValidation: Display: Validating World /Game/Maps/Test.Test
-[2021.04.13-17.52.40:910][706]Cmd: QUIT_EDITOR
-[2021.04.13-17.52.40:911][706]LogCore: Engine exit requested (reason: UUnrealEdEngine::CloseEditor())
-[2021.04.13-17.52.40:920][706]LogCore: Engine exit requested (reason: EngineExit() was called; note: exit was already requested)
-[2021.04.13-17.52.41:942][706]LogExit: Preparing to exit.
-[2021.04.13-17.52.42:982][706]LogWorld: UWorld::CleanupWorld for World_0, bSessionEnded=true, bCleanupResources=true
-[2021.04.13-17.52.42:982][706]LogWorld: UWorld::CleanupWorld for World_1, bSessionEnded=true, bCleanupResources=true
-[2021.04.13-17.52.42:982][706]LogWorld: UWorld::CleanupWorld for World_2, bSessionEnded=true, bCleanupResources=true
-[2021.04.13-17.52.42:989][706]LogDemo: Cleaned up 0 splitscreen connections with owner deletion
-[2021.04.13-17.52.42:996][706]LogWorld: UWorld::CleanupWorld for None, bSessionEnded=true, bCleanupResources=true
-[2021.04.13-17.52.42:996][706]LogExit: Editor shut down
-[2021.04.13-17.52.42:997][706]LogExit: Transaction tracking system shut down
-[2021.04.13-17.52.43:125][706]LogAISub: UAISubsystem::~UAISubsystem AISubsystem (000001D6ADB66980), frame # 3706
-[2021.04.13-17.52.43:126][706]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (000001D6AD9E6AC0), frame # 3706
-[2021.04.13-17.52.43:126][706]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (000001D6ADB62800), frame # 3706
-[2021.04.13-17.52.43:133][706]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (000001D69F61CC00), frame # 3706
-[2021.04.13-17.52.43:133][706]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (000001D69F775A80), frame # 3706
-[2021.04.13-17.52.43:156][706]LogExit: Object subsystem successfully closed.
-[2021.04.13-17.52.43:214][706]LogShaderCompilers: Display: Shaders left to compile 0
-[2021.04.13-17.52.43:227][706]LogModuleManager: Shutting down and abandoning module MovieSceneCapture (796)
-[2021.04.13-17.52.43:227][706]LogModuleManager: Shutting down and abandoning module Voice (794)
-[2021.04.13-17.52.43:228][706]LogModuleManager: Shutting down and abandoning module HierarchicalLODOutliner (792)
-[2021.04.13-17.52.43:228][706]LogModuleManager: Shutting down and abandoning module SceneOutliner (790)
-[2021.04.13-17.52.43:228][706]LogModuleManager: Shutting down and abandoning module AddContentDialog (788)
-[2021.04.13-17.52.43:228][706]LogModuleManager: Shutting down and abandoning module WidgetCarousel (787)
-[2021.04.13-17.52.43:229][706]LogModuleManager: Shutting down and abandoning module EditorWidgets (784)
-[2021.04.13-17.52.43:229][706]LogModuleManager: Shutting down and abandoning module CollectionManager (782)
-[2021.04.13-17.52.43:229][706]LogModuleManager: Shutting down and abandoning module StatsViewer (780)
-[2021.04.13-17.52.43:229][706]LogModuleManager: Shutting down and abandoning module VirtualTexturingEditor (778)
-[2021.04.13-17.52.43:229][706]LogModuleManager: Shutting down and abandoning module FoliageEdit (776)
-[2021.04.13-17.52.43:229][706]LogModuleManager: Shutting down and abandoning module LandscapeEditor (774)
-[2021.04.13-17.52.43:229][706]LogModuleManager: Shutting down and abandoning module MeshPaintMode (772)
-[2021.04.13-17.52.43:230][706]LogModuleManager: Shutting down and abandoning module SceneDepthPickerMode (770)
-[2021.04.13-17.52.43:230][706]LogModuleManager: Shutting down and abandoning module ActorPickerMode (768)
-[2021.04.13-17.52.43:230][706]LogModuleManager: Shutting down and abandoning module PIEPreviewDeviceProfileSelector (766)
-[2021.04.13-17.52.43:230][706]LogModuleManager: Shutting down and abandoning module SequenceRecorderSections (764)
-[2021.04.13-17.52.43:230][706]LogModuleManager: Shutting down and abandoning module AutomationWorker (762)
-[2021.04.13-17.52.43:230][706]LogModuleManager: Shutting down and abandoning module SteamVREditor (760)
-[2021.04.13-17.52.43:230][706]LogModuleManager: Shutting down and abandoning module OculusMR (758)
-[2021.04.13-17.52.43:230][706]LogModuleManager: Shutting down and abandoning module GooglePADEditor (756)
-[2021.04.13-17.52.43:230][706]LogModuleManager: Shutting down and abandoning module AudioCaptureEditor (754)
-[2021.04.13-17.52.43:230][706]LogModuleManager: Shutting down and abandoning module TemplateSequenceEditor (752)
-[2021.04.13-17.52.43:230][706]LogModuleManager: Shutting down and abandoning module MatineeToLevelSequence (750)
-[2021.04.13-17.52.43:230][706]LogModuleManager: Shutting down and abandoning module LevelSequenceEditor (748)
-[2021.04.13-17.52.43:231][706]LogModuleManager: Shutting down and abandoning module ActorSequenceEditor (746)
-[2021.04.13-17.52.43:231][706]LogModuleManager: Shutting down and abandoning module WmfMediaFactory (744)
-[2021.04.13-17.52.43:231][706]LogModuleManager: Shutting down and abandoning module WmfMediaEditor (742)
-[2021.04.13-17.52.43:231][706]LogModuleManager: Shutting down and abandoning module WebMMediaFactory (740)
-[2021.04.13-17.52.43:231][706]LogModuleManager: Shutting down and abandoning module WebMMediaEditor (738)
-[2021.04.13-17.52.43:231][706]LogModuleManager: Shutting down and abandoning module WebMMedia (736)
-[2021.04.13-17.52.43:231][706]LogModuleManager: Shutting down and abandoning module MediaPlayerEditor (734)
-[2021.04.13-17.52.43:231][706]LogModuleManager: Shutting down and abandoning module MediaCompositingEditor (732)
-[2021.04.13-17.52.43:231][706]LogModuleManager: Shutting down and abandoning module SequenceRecorder (731)
-[2021.04.13-17.52.43:231][706]LogModuleManager: Shutting down and abandoning module OpenExrWrapper (728)
-[2021.04.13-17.52.43:231][706]LogModuleManager: Shutting down and abandoning module ImgMediaFactory (726)
-[2021.04.13-17.52.43:231][706]LogModuleManager: Shutting down and abandoning module ImgMediaEditor (724)
-[2021.04.13-17.52.43:231][706]LogModuleManager: Shutting down and abandoning module AvfMediaFactory (722)
-[2021.04.13-17.52.43:232][706]LogModuleManager: Shutting down and abandoning module AvfMediaEditor (720)
-[2021.04.13-17.52.43:232][706]LogModuleManager: Shutting down and abandoning module AndroidMediaFactory (718)
-[2021.04.13-17.52.43:232][706]LogModuleManager: Shutting down and abandoning module AndroidMediaEditor (716)
-[2021.04.13-17.52.43:232][706]LogModuleManager: Shutting down and abandoning module MagicLeapMediaCodecFactory (714)
-[2021.04.13-17.52.43:232][706]LogModuleManager: Shutting down and abandoning module MagicLeapMediaFactory (712)
-[2021.04.13-17.52.43:232][706]LogModuleManager: Shutting down and abandoning module MagicLeapMediaEditor (710)
-[2021.04.13-17.52.43:232][706]LogModuleManager: Shutting down and abandoning module PlanarCut (708)
-[2021.04.13-17.52.43:232][706]LogModuleManager: Shutting down and abandoning module CharacterAI (706)
-[2021.04.13-17.52.43:232][706]LogModuleManager: Shutting down and abandoning module TextureAlignMode (704)
-[2021.04.13-17.52.43:232][706]LogModuleManager: Shutting down and abandoning module BspMode (702)
-[2021.04.13-17.52.43:232][706]LogModuleManager: Shutting down and abandoning module PlacementMode (701)
-[2021.04.13-17.52.43:232][706]LogModuleManager: Shutting down and abandoning module GeometryMode (698)
-[2021.04.13-17.52.43:232][706]LogModuleManager: Shutting down and abandoning module CameraShakePreviewer (696)
-[2021.04.13-17.52.43:232][706]LogModuleManager: Shutting down and abandoning module SmartSnapping (694)
-[2021.04.13-17.52.43:233][706]LogModuleManager: Shutting down and abandoning module SessionServices (692)
-[2021.04.13-17.52.43:233][706]LogModuleManager: Shutting down and abandoning module MeshPaint (690)
-[2021.04.13-17.52.43:233][706]LogModuleManager: Shutting down and abandoning module ViewportSnapping (688)
-[2021.04.13-17.52.43:233][706]LogModuleManager: Shutting down and abandoning module ViewportInteraction (686)
-[2021.04.13-17.52.43:233][706]LogModuleManager: Shutting down and abandoning module ClothPainter (684)
-[2021.04.13-17.52.43:233][706]LogModuleManager: Shutting down and abandoning module SkeletalMeshEditor (683)
-[2021.04.13-17.52.43:233][706]LogModuleManager: Shutting down and abandoning module LogVisualizer (680)
-[2021.04.13-17.52.43:233][706]LogModuleManager: Shutting down and abandoning module IntroTutorials (678)
-[2021.04.13-17.52.43:233][706]LogModuleManager: Shutting down and abandoning module GameProjectGeneration (677)
-[2021.04.13-17.52.43:233][706]LogModuleManager: Shutting down and abandoning module LuminPlatformEditor (674)
-[2021.04.13-17.52.43:233][706]LogModuleManager: Shutting down and abandoning module IOSPlatformEditor (672)
-[2021.04.13-17.52.43:233][706]LogModuleManager: Shutting down and abandoning module AndroidPlatformEditor (670)
-[2021.04.13-17.52.43:233][706]LogModuleManager: Shutting down and abandoning module AndroidDeviceDetection (669)
+[2021.04.14-16.00.54:102][  0]LogConfig: Setting CVar [[r.VSync:0]]
+[2021.04.14-16.00.54:102][  0]LogConfig: Setting CVar [[r.RHICmdBypass:0]]
+[2021.04.14-16.00.54:105][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererSettings] File [C:/Users/sethg/Desktop/Backups/MergeFile/W21_GAM1528_NoNameYet/TowerDefence/Saved/Config/Windows/Engine.ini]
+[2021.04.14-16.00.54:105][  0]LogConfig: Setting CVar [[r.GPUCrashDebugging:0]]
+[2021.04.14-16.00.54:105][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererOverrideSettings] File [C:/Users/sethg/Desktop/Backups/MergeFile/W21_GAM1528_NoNameYet/TowerDefence/Saved/Config/Windows/Engine.ini]
+[2021.04.14-16.00.54:105][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.StreamingSettings] File [C:/Users/sethg/Desktop/Backups/MergeFile/W21_GAM1528_NoNameYet/TowerDefence/Saved/Config/Windows/Engine.ini]
+[2021.04.14-16.00.54:105][  0]LogConfig: Setting CVar [[s.MinBulkDataSizeForAsyncLoading:131072]]
+[2021.04.14-16.00.54:105][  0]LogConfig: Setting CVar [[s.AsyncLoadingThreadEnabled:0]]
+[2021.04.14-16.00.54:105][  0]LogConfig: Setting CVar [[s.EventDrivenLoaderEnabled:1]]
+[2021.04.14-16.00.54:105][  0]LogConfig: Setting CVar [[s.WarnIfTimeLimitExceeded:0]]
+[2021.04.14-16.00.54:105][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMultiplier:1.5]]
+[2021.04.14-16.00.54:105][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMinTime:0.005]]
+[2021.04.14-16.00.54:105][  0]LogConfig: Setting CVar [[s.UseBackgroundLevelStreaming:1]]
+[2021.04.14-16.00.54:105][  0]LogConfig: Setting CVar [[s.PriorityAsyncLoadingExtraTime:15.0]]
+[2021.04.14-16.00.54:105][  0]LogConfig: Setting CVar [[s.LevelStreamingActorsUpdateTimeLimit:5.0]]
+[2021.04.14-16.00.54:105][  0]LogConfig: Setting CVar [[s.PriorityLevelStreamingActorsUpdateExtraTime:5.0]]
+[2021.04.14-16.00.54:105][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsRegistrationGranularity:10]]
+[2021.04.14-16.00.54:106][  0]LogConfig: Setting CVar [[s.UnregisterComponentsTimeLimit:1.0]]
+[2021.04.14-16.00.54:106][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsUnregistrationGranularity:5]]
+[2021.04.14-16.00.54:106][  0]LogConfig: Setting CVar [[s.FlushStreamingOnExit:1]]
+[2021.04.14-16.00.54:106][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.GarbageCollectionSettings] File [C:/Users/sethg/Desktop/Backups/MergeFile/W21_GAM1528_NoNameYet/TowerDefence/Saved/Config/Windows/Engine.ini]
+[2021.04.14-16.00.54:106][  0]LogConfig: Setting CVar [[gc.MaxObjectsNotConsideredByGC:1]]
+[2021.04.14-16.00.54:106][  0]LogConfig: Setting CVar [[gc.SizeOfPermanentObjectPool:0]]
+[2021.04.14-16.00.54:106][  0]LogConfig: Setting CVar [[gc.FlushStreamingOnGC:0]]
+[2021.04.14-16.00.54:106][  0]LogConfig: Setting CVar [[gc.NumRetriesBeforeForcingGC:10]]
+[2021.04.14-16.00.54:106][  0]LogConfig: Setting CVar [[gc.AllowParallelGC:1]]
+[2021.04.14-16.00.54:106][  0]LogConfig: Setting CVar [[gc.TimeBetweenPurgingPendingKillObjects:61.1]]
+[2021.04.14-16.00.54:106][  0]LogConfig: Setting CVar [[gc.MaxObjectsInEditor:25165824]]
+[2021.04.14-16.00.54:106][  0]LogConfig: Setting CVar [[gc.IncrementalBeginDestroyEnabled:1]]
+[2021.04.14-16.00.54:106][  0]LogConfig: Setting CVar [[gc.CreateGCClusters:1]]
+[2021.04.14-16.00.54:106][  0]LogConfig: Setting CVar [[gc.MinGCClusterSize:5]]
+[2021.04.14-16.00.54:106][  0]LogConfig: Setting CVar [[gc.ActorClusteringEnabled:0]]
+[2021.04.14-16.00.54:106][  0]LogConfig: Setting CVar [[gc.BlueprintClusteringEnabled:0]]
+[2021.04.14-16.00.54:106][  0]LogConfig: Setting CVar [[gc.UseDisregardForGCOnDedicatedServers:0]]
+[2021.04.14-16.00.54:107][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.NetworkSettings] File [C:/Users/sethg/Desktop/Backups/MergeFile/W21_GAM1528_NoNameYet/TowerDefence/Saved/Config/Windows/Engine.ini]
+[2021.04.14-16.00.54:107][  0]LogConfig: Applying CVar settings from Section [/Script/UnrealEd.CookerSettings] File [C:/Users/sethg/Desktop/Backups/MergeFile/W21_GAM1528_NoNameYet/TowerDefence/Saved/Config/Windows/Engine.ini]
+[2021.04.14-16.00.54:163][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [C:/Users/sethg/Desktop/Backups/MergeFile/W21_GAM1528_NoNameYet/TowerDefence/Saved/Config/Windows/Scalability.ini]
+[2021.04.14-16.00.54:163][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
+[2021.04.14-16.00.54:163][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
+[2021.04.14-16.00.54:163][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [C:/Users/sethg/Desktop/Backups/MergeFile/W21_GAM1528_NoNameYet/TowerDefence/Saved/Config/Windows/Scalability.ini]
+[2021.04.14-16.00.54:163][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
+[2021.04.14-16.00.54:164][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [C:/Users/sethg/Desktop/Backups/MergeFile/W21_GAM1528_NoNameYet/TowerDefence/Saved/Config/Windows/Scalability.ini]
+[2021.04.14-16.00.54:164][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
+[2021.04.14-16.00.54:164][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
+[2021.04.14-16.00.54:164][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
+[2021.04.14-16.00.54:164][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
+[2021.04.14-16.00.54:164][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2021.04.14-16.00.54:164][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
+[2021.04.14-16.00.54:164][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
+[2021.04.14-16.00.54:164][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
+[2021.04.14-16.00.54:164][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
+[2021.04.14-16.00.54:164][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
+[2021.04.14-16.00.54:165][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
+[2021.04.14-16.00.54:165][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
+[2021.04.14-16.00.54:165][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
+[2021.04.14-16.00.54:165][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
+[2021.04.14-16.00.54:165][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
+[2021.04.14-16.00.54:165][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
+[2021.04.14-16.00.54:165][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
+[2021.04.14-16.00.54:165][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
+[2021.04.14-16.00.54:165][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [C:/Users/sethg/Desktop/Backups/MergeFile/W21_GAM1528_NoNameYet/TowerDefence/Saved/Config/Windows/Scalability.ini]
+[2021.04.14-16.00.54:165][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
+[2021.04.14-16.00.54:165][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
+[2021.04.14-16.00.54:165][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
+[2021.04.14-16.00.54:165][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
+[2021.04.14-16.00.54:165][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
+[2021.04.14-16.00.54:165][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
+[2021.04.14-16.00.54:166][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
+[2021.04.14-16.00.54:166][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
+[2021.04.14-16.00.54:166][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
+[2021.04.14-16.00.54:166][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
+[2021.04.14-16.00.54:166][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
+[2021.04.14-16.00.54:166][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
+[2021.04.14-16.00.54:166][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
+[2021.04.14-16.00.54:166][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
+[2021.04.14-16.00.54:166][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
+[2021.04.14-16.00.54:166][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
+[2021.04.14-16.00.54:166][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
+[2021.04.14-16.00.54:166][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
+[2021.04.14-16.00.54:167][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
+[2021.04.14-16.00.54:167][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
+[2021.04.14-16.00.54:167][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
+[2021.04.14-16.00.54:167][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
+[2021.04.14-16.00.54:167][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
+[2021.04.14-16.00.54:167][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
+[2021.04.14-16.00.54:167][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
+[2021.04.14-16.00.54:167][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
+[2021.04.14-16.00.54:167][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
+[2021.04.14-16.00.54:167][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
+[2021.04.14-16.00.54:167][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
+[2021.04.14-16.00.54:168][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
+[2021.04.14-16.00.54:168][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [C:/Users/sethg/Desktop/Backups/MergeFile/W21_GAM1528_NoNameYet/TowerDefence/Saved/Config/Windows/Scalability.ini]
+[2021.04.14-16.00.54:168][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
+[2021.04.14-16.00.54:168][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
+[2021.04.14-16.00.54:168][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
+[2021.04.14-16.00.54:168][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
+[2021.04.14-16.00.54:168][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
+[2021.04.14-16.00.54:168][  0]LogConfig: Setting CVar [[r.VT.MaxAnisotropy:8]]
+[2021.04.14-16.00.54:168][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
+[2021.04.14-16.00.54:168][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
+[2021.04.14-16.00.54:168][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
+[2021.04.14-16.00.54:168][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [C:/Users/sethg/Desktop/Backups/MergeFile/W21_GAM1528_NoNameYet/TowerDefence/Saved/Config/Windows/Scalability.ini]
+[2021.04.14-16.00.54:168][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
+[2021.04.14-16.00.54:168][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
+[2021.04.14-16.00.54:169][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
+[2021.04.14-16.00.54:169][  0]LogConfig: Setting CVar [[r.SSR.HalfResSceneColor:0]]
+[2021.04.14-16.00.54:169][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
+[2021.04.14-16.00.54:169][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
+[2021.04.14-16.00.54:169][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
+[2021.04.14-16.00.54:169][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
+[2021.04.14-16.00.54:169][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
+[2021.04.14-16.00.54:169][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
+[2021.04.14-16.00.54:169][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
+[2021.04.14-16.00.54:169][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:0]]
+[2021.04.14-16.00.54:169][  0]LogConfig: Setting CVar [[r.SSGI.Quality:3]]
+[2021.04.14-16.00.54:169][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
+[2021.04.14-16.00.54:169][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
+[2021.04.14-16.00.54:169][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.FastApplyOnOpaque:1 ; Always have FastSkyLUT 1 in this case to avoid wrong sky]]
+[2021.04.14-16.00.54:169][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.SampleCountPerSlice:1]]
+[2021.04.14-16.00.54:170][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.DepthResolution:16.0]]
+[2021.04.14-16.00.54:170][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT:1]]
+[2021.04.14-16.00.54:170][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMin:4.0]]
+[2021.04.14-16.00.54:170][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMax:32.0]]
+[2021.04.14-16.00.54:170][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMin:4.0]]
+[2021.04.14-16.00.54:170][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMax:32.0]]
+[2021.04.14-16.00.54:170][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.UseSmallFormat:0]]
+[2021.04.14-16.00.54:170][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.SampleCount:10.0]]
+[2021.04.14-16.00.54:170][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.MultiScatteringLUT.SampleCount:15.0]]
+[2021.04.14-16.00.54:170][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [C:/Users/sethg/Desktop/Backups/MergeFile/W21_GAM1528_NoNameYet/TowerDefence/Saved/Config/Windows/Scalability.ini]
+[2021.04.14-16.00.54:170][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
+[2021.04.14-16.00.54:170][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
+[2021.04.14-16.00.54:170][  0]LogConfig: Applying CVar settings from Section [ShadingQuality@3] File [C:/Users/sethg/Desktop/Backups/MergeFile/W21_GAM1528_NoNameYet/TowerDefence/Saved/Config/Windows/Scalability.ini]
+[2021.04.14-16.00.54:170][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.SampleCount:16]]
+[2021.04.14-16.00.54:170][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.JitterIntegration:0]]
+[2021.04.14-16.00.54:170][  0]LogConfig: Setting CVar [[r.HairStrands.SkyAO.SampleCount:16]]
+[2021.04.14-16.00.54:171][  0]LogConfig: Setting CVar [[r.HairStrands.DeepShadow.SuperSampling:0]]
+[2021.04.14-16.00.54:171][  0]LogConfig: Setting CVar [[r.HairStrands.VisibilityPPLL:0]]
+[2021.04.14-16.00.54:171][  0]LogConfig: Setting CVar [[r.HairStrands.RasterizationScale:0.5]]
+[2021.04.14-16.00.54:171][  0]LogConfig: Setting CVar [[r.HairStrands.VelocityRasterizationScale:1]]
+[2021.04.14-16.00.54:187][  0]LogInit: Selected Device Profile: [Windows]
+[2021.04.14-16.00.54:195][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2021.04.14-16.00.54:226][  0]LogHAL: Display: Platform has ~ 16 GB [17023397888 / 17179869184 / 16], which maps to Larger [LargestMinGB=32, LargerMinGB=12, DefaultMinGB=8, SmallerMinGB=6, SmallestMinGB=0)
+[2021.04.14-16.00.54:226][  0]LogInit: Going up to parent DeviceProfile []
+[2021.04.14-16.00.54:229][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [C:/Users/sethg/Desktop/Backups/MergeFile/W21_GAM1528_NoNameYet/TowerDefence/Saved/Config/Windows/Scalability.ini]
+[2021.04.14-16.00.54:229][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
+[2021.04.14-16.00.54:229][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
+[2021.04.14-16.00.54:229][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [C:/Users/sethg/Desktop/Backups/MergeFile/W21_GAM1528_NoNameYet/TowerDefence/Saved/Config/Windows/Scalability.ini]
+[2021.04.14-16.00.54:229][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
+[2021.04.14-16.00.54:229][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [C:/Users/sethg/Desktop/Backups/MergeFile/W21_GAM1528_NoNameYet/TowerDefence/Saved/Config/Windows/Scalability.ini]
+[2021.04.14-16.00.54:229][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
+[2021.04.14-16.00.54:229][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
+[2021.04.14-16.00.54:229][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
+[2021.04.14-16.00.54:230][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
+[2021.04.14-16.00.54:230][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2021.04.14-16.00.54:230][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
+[2021.04.14-16.00.54:230][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
+[2021.04.14-16.00.54:230][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
+[2021.04.14-16.00.54:230][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
+[2021.04.14-16.00.54:230][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
+[2021.04.14-16.00.54:230][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
+[2021.04.14-16.00.54:230][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
+[2021.04.14-16.00.54:230][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
+[2021.04.14-16.00.54:230][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
+[2021.04.14-16.00.54:230][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
+[2021.04.14-16.00.54:230][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
+[2021.04.14-16.00.54:230][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
+[2021.04.14-16.00.54:230][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
+[2021.04.14-16.00.54:230][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [C:/Users/sethg/Desktop/Backups/MergeFile/W21_GAM1528_NoNameYet/TowerDefence/Saved/Config/Windows/Scalability.ini]
+[2021.04.14-16.00.54:231][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
+[2021.04.14-16.00.54:231][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
+[2021.04.14-16.00.54:231][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
+[2021.04.14-16.00.54:231][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
+[2021.04.14-16.00.54:231][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
+[2021.04.14-16.00.54:231][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
+[2021.04.14-16.00.54:231][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
+[2021.04.14-16.00.54:231][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
+[2021.04.14-16.00.54:231][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
+[2021.04.14-16.00.54:231][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
+[2021.04.14-16.00.54:231][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
+[2021.04.14-16.00.54:231][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
+[2021.04.14-16.00.54:231][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
+[2021.04.14-16.00.54:231][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
+[2021.04.14-16.00.54:231][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
+[2021.04.14-16.00.54:231][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
+[2021.04.14-16.00.54:232][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
+[2021.04.14-16.00.54:232][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
+[2021.04.14-16.00.54:232][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
+[2021.04.14-16.00.54:232][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
+[2021.04.14-16.00.54:232][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
+[2021.04.14-16.00.54:232][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
+[2021.04.14-16.00.54:232][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
+[2021.04.14-16.00.54:232][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
+[2021.04.14-16.00.54:232][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
+[2021.04.14-16.00.54:232][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
+[2021.04.14-16.00.54:232][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
+[2021.04.14-16.00.54:232][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
+[2021.04.14-16.00.54:232][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
+[2021.04.14-16.00.54:232][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
+[2021.04.14-16.00.54:232][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [C:/Users/sethg/Desktop/Backups/MergeFile/W21_GAM1528_NoNameYet/TowerDefence/Saved/Config/Windows/Scalability.ini]
+[2021.04.14-16.00.54:233][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
+[2021.04.14-16.00.54:233][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
+[2021.04.14-16.00.54:233][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
+[2021.04.14-16.00.54:233][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
+[2021.04.14-16.00.54:233][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
+[2021.04.14-16.00.54:233][  0]LogConfig: Setting CVar [[r.VT.MaxAnisotropy:8]]
+[2021.04.14-16.00.54:233][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
+[2021.04.14-16.00.54:233][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
+[2021.04.14-16.00.54:233][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
+[2021.04.14-16.00.54:233][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [C:/Users/sethg/Desktop/Backups/MergeFile/W21_GAM1528_NoNameYet/TowerDefence/Saved/Config/Windows/Scalability.ini]
+[2021.04.14-16.00.54:233][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
+[2021.04.14-16.00.54:233][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
+[2021.04.14-16.00.54:233][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
+[2021.04.14-16.00.54:233][  0]LogConfig: Setting CVar [[r.SSR.HalfResSceneColor:0]]
+[2021.04.14-16.00.54:233][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
+[2021.04.14-16.00.54:233][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
+[2021.04.14-16.00.54:234][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
+[2021.04.14-16.00.54:234][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
+[2021.04.14-16.00.54:234][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
+[2021.04.14-16.00.54:234][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
+[2021.04.14-16.00.54:234][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
+[2021.04.14-16.00.54:234][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:0]]
+[2021.04.14-16.00.54:234][  0]LogConfig: Setting CVar [[r.SSGI.Quality:3]]
+[2021.04.14-16.00.54:234][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
+[2021.04.14-16.00.54:234][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
+[2021.04.14-16.00.54:234][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.FastApplyOnOpaque:1 ; Always have FastSkyLUT 1 in this case to avoid wrong sky]]
+[2021.04.14-16.00.54:234][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.SampleCountPerSlice:1]]
+[2021.04.14-16.00.54:234][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.DepthResolution:16.0]]
+[2021.04.14-16.00.54:234][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT:1]]
+[2021.04.14-16.00.54:234][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMin:4.0]]
+[2021.04.14-16.00.54:234][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMax:32.0]]
+[2021.04.14-16.00.54:235][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMin:4.0]]
+[2021.04.14-16.00.54:235][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMax:32.0]]
+[2021.04.14-16.00.54:235][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.UseSmallFormat:0]]
+[2021.04.14-16.00.54:235][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.SampleCount:10.0]]
+[2021.04.14-16.00.54:235][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.MultiScatteringLUT.SampleCount:15.0]]
+[2021.04.14-16.00.54:235][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [C:/Users/sethg/Desktop/Backups/MergeFile/W21_GAM1528_NoNameYet/TowerDefence/Saved/Config/Windows/Scalability.ini]
+[2021.04.14-16.00.54:235][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
+[2021.04.14-16.00.54:235][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
+[2021.04.14-16.00.54:235][  0]LogConfig: Applying CVar settings from Section [ShadingQuality@3] File [C:/Users/sethg/Desktop/Backups/MergeFile/W21_GAM1528_NoNameYet/TowerDefence/Saved/Config/Windows/Scalability.ini]
+[2021.04.14-16.00.54:235][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.SampleCount:16]]
+[2021.04.14-16.00.54:235][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.JitterIntegration:0]]
+[2021.04.14-16.00.54:235][  0]LogConfig: Setting CVar [[r.HairStrands.SkyAO.SampleCount:16]]
+[2021.04.14-16.00.54:235][  0]LogConfig: Setting CVar [[r.HairStrands.DeepShadow.SuperSampling:0]]
+[2021.04.14-16.00.54:235][  0]LogConfig: Setting CVar [[r.HairStrands.VisibilityPPLL:0]]
+[2021.04.14-16.00.54:236][  0]LogConfig: Setting CVar [[r.HairStrands.RasterizationScale:0.5]]
+[2021.04.14-16.00.54:236][  0]LogConfig: Setting CVar [[r.HairStrands.VelocityRasterizationScale:1]]
+[2021.04.14-16.00.54:236][  0]LogConfig: Applying CVar settings from Section [Startup] File [../../../Engine/Config/ConsoleVariables.ini]
+[2021.04.14-16.00.54:236][  0]LogConfig: Setting CVar [[net.UseAdaptiveNetUpdateFrequency:0]]
+[2021.04.14-16.00.54:236][  0]LogConfig: Setting CVar [[p.chaos.AllowCreatePhysxBodies:1]]
+[2021.04.14-16.00.54:236][  0]LogConfig: Setting CVar [[fx.SkipVectorVMBackendOptimizations:1]]
+[2021.04.14-16.00.54:236][  0]LogConfig: Applying CVar settings from Section [ConsoleVariables] File [C:/Users/sethg/Desktop/Backups/MergeFile/W21_GAM1528_NoNameYet/TowerDefence/Saved/Config/Windows/Engine.ini]
+[2021.04.14-16.00.54:301][  0]LogInit: Computer: LAPTOP-K3PBHEDP
+[2021.04.14-16.00.54:301][  0]LogInit: User: sethg
+[2021.04.14-16.00.54:325][  0]LogInit: CPU Page size=4096, Cores=6
+[2021.04.14-16.00.54:325][  0]LogInit: High frequency timer resolution =10.000000 MHz
+[2021.04.14-16.00.54:325][  0]LogMemory: Memory total: Physical=15.9GB (16GB approx)
+[2021.04.14-16.00.54:327][  0]LogMemory: Platform Memory Stats for Windows
+[2021.04.14-16.00.54:327][  0]LogMemory: Process Physical Memory: 116.69 MB used, 116.69 MB peak
+[2021.04.14-16.00.54:327][  0]LogMemory: Process Virtual Memory: 97.00 MB used, 97.00 MB peak
+[2021.04.14-16.00.54:327][  0]LogMemory: Physical Memory: 11358.00 MB used,  4876.78 MB free, 16234.78 MB total
+[2021.04.14-16.00.54:327][  0]LogMemory: Virtual Memory: 5166.71 MB used,  134212560.00 MB free, 134217728.00 MB total
+[2021.04.14-16.00.54:341][  0]LogWindows: WindowsPlatformFeatures enabled
+[2021.04.14-16.00.56:508][  0]LogInit: Physics initialised using underlying interface: PhysX
+[2021.04.14-16.00.56:577][  0]LogInit: Using OS detected language (en-US).
+[2021.04.14-16.00.56:577][  0]LogInit: Using OS detected locale (en-CA).
+[2021.04.14-16.00.56:659][  0]LogTextLocalizationManager: No specific localization for 'en-US' exists, so the 'en' localization will be used.
+[2021.04.14-16.00.57:260][  0]LogInit: Setting process to per monitor DPI aware
+[2021.04.14-16.00.57:894][  0]LogSlate: New Slate User Created.  User Index 0, Is Virtual User: 0
+[2021.04.14-16.00.57:894][  0]LogSlate: Slate User Registered.  User Index 0, Is Virtual User: 0
+[2021.04.14-16.00.59:017][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2021.04.14-16.00.59:018][  0]LogD3D11RHI: D3D11 min allowed feature level: 11_0
+[2021.04.14-16.00.59:018][  0]LogD3D11RHI: D3D11 max allowed feature level: 11_0
+[2021.04.14-16.00.59:018][  0]LogD3D11RHI: D3D11 adapters:
+[2021.04.14-16.01.00:146][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 1060' (Feature Level 11_0)
+[2021.04.14-16.01.00:146][  0]LogD3D11RHI:       6052/0/8117 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:1, VendorId:0x10de
+[2021.04.14-16.01.00:201][  0]LogD3D11RHI:    1. 'Intel(R) UHD Graphics 630' (Feature Level 11_0)
+[2021.04.14-16.01.00:202][  0]LogD3D11RHI:       128/0/8117 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x8086
+[2021.04.14-16.01.00:215][  0]LogD3D11RHI:    2. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2021.04.14-16.01.00:215][  0]LogD3D11RHI:       0/0/8117 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2021.04.14-16.01.00:215][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2021.04.14-16.01.00:322][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2021.04.14-16.01.00:322][  0]LogD3D11RHI:     GPU DeviceId: 0x1c20 (for the marketing name, search the web for "GPU Device Id")
+[2021.04.14-16.01.00:323][  0]LogWindows: EnumDisplayDevices:
+[2021.04.14-16.01.00:323][  0]LogWindows:    0. 'Intel(R) UHD Graphics 630' (P:1 D:1)
+[2021.04.14-16.01.00:324][  0]LogWindows:    1. 'Intel(R) UHD Graphics 630' (P:0 D:0)
+[2021.04.14-16.01.00:324][  0]LogWindows:    2. 'Intel(R) UHD Graphics 630' (P:0 D:0)
+[2021.04.14-16.01.00:324][  0]LogWindows:    3. 'NVIDIA GeForce GTX 1060' (P:0 D:0)
+[2021.04.14-16.01.00:325][  0]LogWindows: DebugString: PrimaryIsNotTheChoosenAdapter PrimaryIsNotTheChoosenAdapter PrimaryIsNotTheChoosenAdapter 
+[2021.04.14-16.01.00:325][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 1060
+[2021.04.14-16.01.00:325][  0]LogD3D11RHI:   Driver Version: 451.67 (internal:27.21.14.5167, unified:451.67)
+[2021.04.14-16.01.00:325][  0]LogD3D11RHI:      Driver Date: 7-5-2020
+[2021.04.14-16.01.00:326][  0]LogRHI: Texture pool is 4236 MB (70% of 6052 MB)
+[2021.04.14-16.01.00:429][  0]LogD3D11RHI: RHI has support for 64 bit atomics
+[2021.04.14-16.01.00:442][  0]LogD3D11RHI: [Aftermath] Enabled and primed
+[2021.04.14-16.01.00:442][  0]LogD3D11RHI: Async texture creation enabled
+[2021.04.14-16.01.00:442][  0]LogD3D11RHI: Array index from any shader is supported
+[2021.04.14-16.01.01:212][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 1)
+[2021.04.14-16.01.02:234][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'AllDesktop'
+[2021.04.14-16.01.02:290][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android'
+[2021.04.14-16.01.02:290][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ASTC'
+[2021.04.14-16.01.02:290][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_DXT'
+[2021.04.14-16.01.02:290][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ETC2'
+[2021.04.14-16.01.02:290][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'AndroidClient'
+[2021.04.14-16.01.02:290][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ASTCClient'
+[2021.04.14-16.01.02:290][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_DXTClient'
+[2021.04.14-16.01.02:290][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ETC2Client'
+[2021.04.14-16.01.02:291][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_Multi'
+[2021.04.14-16.01.02:291][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_MultiClient'
+[2021.04.14-16.01.02:385][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'IOSClient'
+[2021.04.14-16.01.02:386][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'IOS'
+[2021.04.14-16.01.02:412][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Linux'
+[2021.04.14-16.01.02:446][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxNoEditor'
+[2021.04.14-16.01.02:466][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxClient'
+[2021.04.14-16.01.02:488][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxServer'
+[2021.04.14-16.01.02:526][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxAArch64NoEditor'
+[2021.04.14-16.01.02:564][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxAArch64Client'
+[2021.04.14-16.01.02:592][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxAArch64Server'
+[2021.04.14-16.01.02:643][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Lumin'
+[2021.04.14-16.01.02:643][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LuminClient'
+[2021.04.14-16.01.02:679][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'TVOSClient'
+[2021.04.14-16.01.02:679][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'TVOS'
+[2021.04.14-16.01.02:729][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsNoEditor'
+[2021.04.14-16.01.02:768][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Windows'
+[2021.04.14-16.01.02:800][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsClient'
+[2021.04.14-16.01.02:834][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsServer'
+[2021.04.14-16.01.02:834][  0]LogTargetPlatformManager: Display: Building Assets For Windows
+[2021.04.14-16.01.02:993][  0]LogAudioDebug: Display: Lib vorbis DLL was dynamically loaded.
+[2021.04.14-16.01.03:802][  0]LogShaderCompilers: Guid format shader working directory is -30 characters bigger than the processId version (C:/Users/sethg/Desktop/Backups/MergeFile/W21_GAM1528_NoNameYet/TowerDefence/Intermediate/Shaders/WorkingDirectory/33632/).
+[2021.04.14-16.01.03:802][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/sethg/AppData/Local/Temp/UnrealShaderWorkingDir/EEE636904E59337B8F08918C4DD5C60E/'.
+[2021.04.14-16.01.03:853][  0]LogXGEController: Cleaning working directory: C:/Users/sethg/AppData/Local/Temp/UnrealXGEWorkingDir/
+[2021.04.14-16.01.03:853][  0]LogXGEController: Cannot use XGE Controller as Incredibuild is not installed on this machine.
+[2021.04.14-16.01.03:853][  0]LogShaderCompilers: Cannot use XGE Shader Compiler as Incredibuild is not installed on this machine.
+[2021.04.14-16.01.03:853][  0]LogShaderCompilers: Display: Using Local Shader Compiler.
+[2021.04.14-16.01.06:702][  0]LogDerivedDataCache: Display: Max Cache Size: 512 MB
+[2021.04.14-16.01.06:861][  0]LogDerivedDataCache: Loaded boot cache 0.16s 75MB C:/Users/sethg/AppData/Local/UnrealEngine/4.25/DerivedDataCache/Boot.ddc.
+[2021.04.14-16.01.06:861][  0]LogDerivedDataCache: Display: Loaded Boot cache: C:/Users/sethg/AppData/Local/UnrealEngine/4.25/DerivedDataCache/Boot.ddc
+[2021.04.14-16.01.06:861][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file C:/Users/sethg/Desktop/Backups/MergeFile/W21_GAM1528_NoNameYet/TowerDefence/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2021.04.14-16.01.06:862][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2021.04.14-16.01.06:862][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file C:/Users/sethg/Desktop/Backups/MergeFile/W21_GAM1528_NoNameYet/TowerDefence/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2021.04.14-16.01.06:862][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2021.04.14-16.01.06:923][  0]LogDerivedDataCache: Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2021.04.14-16.01.06:923][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  EnterprisePak pak cache file ../../../Enterprise/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2021.04.14-16.01.06:923][  0]LogDerivedDataCache: Unable to find inner node EnterprisePak for hierarchical cache Hierarchy.
+[2021.04.14-16.01.06:927][  0]LogDerivedDataCache: Using Local data cache path C:/Users/sethg/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2021.04.14-16.01.06:927][  0]LogDerivedDataCache: Shared data cache path not found in *engine.ini, will not use an Shared cache.
+[2021.04.14-16.01.06:927][  0]LogDerivedDataCache: Unable to find inner node Shared for hierarchical cache Hierarchy.
+[2021.04.14-16.01.07:181][  0]LogSlate: Using FreeType 2.10.0
+[2021.04.14-16.01.07:242][  0]LogSlate: SlateFontServices - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2021.04.14-16.01.07:748][  0]LogAssetRegistry: FAssetRegistry took 0.0192 seconds to start up
+[2021.04.14-16.01.16:252][  0]LogInit: Selected Device Profile: [Windows]
+[2021.04.14-16.01.18:335][  0]LogMeshReduction: Using QuadricMeshReduction for automatic static mesh reduction
+[2021.04.14-16.01.18:336][  0]LogMeshReduction: Using SimplygonMeshReduction for automatic skeletal mesh reduction
+[2021.04.14-16.01.18:336][  0]LogMeshReduction: Using ProxyLODMeshReduction for automatic mesh merging
+[2021.04.14-16.01.18:336][  0]LogMeshReduction: No distributed automatic mesh merging module available
+[2021.04.14-16.01.18:338][  0]LogMeshMerging: No distributed automatic mesh merging module available
+[2021.04.14-16.01.18:968][  0]LogNetVersion: TowerDefence 1.0.0, NetCL: 13144385, EngineNetVer: 14, GameNetVer: 0 (Checksum: 2510641227)
+[2021.04.14-16.01.33:211][  0]LogAISub: UAISubsystem::UAISubsystem AISubsystem (000002C5FC06DF80), frame # 0
+[2021.04.14-16.01.33:211][  0]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (000002C5FBF0AAC0), frame # 0
+[2021.04.14-16.01.33:243][  0]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (000002C5FC052800), frame # 0
+[2021.04.14-16.01.34:236][  0]LogPackageLocalizationCache: Processed 19 localized package path(s) for 1 prioritized culture(s) in 0.179446 seconds
+[2021.04.14-16.01.34:293][  0]LogUObjectArray: 15917 objects as part of root set at end of initial load.
+[2021.04.14-16.01.34:300][  0]LogUObjectAllocator: 3965568 out of 0 bytes used by permanent object pool.
+[2021.04.14-16.01.34:300][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2021.04.14-16.01.42:878][  0]LogTcpMessaging: Initializing TcpMessaging bridge
+[2021.04.14-16.01.42:933][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2021.04.14-16.01.44:245][  0]SourceControl: Source control is disabled
+[2021.04.14-16.01.44:250][  0]SourceControl: Source control is disabled
+[2021.04.14-16.01.44:357][  0]SourceControl: Source control is disabled
+[2021.04.14-16.01.44:405][  0]SourceControl: Source control is disabled
+[2021.04.14-16.01.44:476][  0]SourceControl: Source control is disabled
+[2021.04.14-16.01.47:751][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
+[2021.04.14-16.01.47:891][  0]LogAudioCaptureCore: Display: No Audio Capture implementations found. Audio input will be silent.
+[2021.04.14-16.01.47:891][  0]LogAudioCaptureCore: Display: No Audio Capture implementations found. Audio input will be silent.
+[2021.04.14-16.01.48:368][  0]LogOcInput: OculusInput pre-init called
+[2021.04.14-16.01.48:445][  0]LogWindows: Failed to load 'OVRPlugin.dll' (GetLastError=126)
+[2021.04.14-16.01.48:445][  0]LogWindows: File 'OVRPlugin.dll' does not exist
+[2021.04.14-16.01.52:074][  0]LogAutomationTest: Warning: Smoke tests took > 2s to run: 2.61s
+[2021.04.14-16.01.52:312][  0]LogEngine: Initializing Engine...
+[2021.04.14-16.01.52:452][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2021.04.14-16.01.52:472][  0]LogMagicLeap: Warning: VR disabled because ZI is not enabled.  To enable, in the editor, Edit -> Project Settings -> Plugins -> Magic Leap Plugin -> Enable Zero Iteration
+[2021.04.14-16.01.52:602][  0]LogStats: UGameplayTagsManager::InitializeManager -  0.039 s
+[2021.04.14-16.01.53:729][  0]LogInit: Initializing FReadOnlyCVARCache
+[2021.04.14-16.01.54:963][  0]LogAIModule: Creating AISystem for world Untitled
+[2021.04.14-16.01.54:963][  0]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (000002C582E81C00), frame # 0
+[2021.04.14-16.01.54:964][  0]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (000002C582E8ED40), frame # 0
+[2021.04.14-16.01.55:202][  0]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2021.04.14-16.01.55:203][  0]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2021.04.14-16.01.55:203][  0]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2021.04.14-16.01.55:203][  0]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2021.04.14-16.01.55:203][  0]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2021.04.14-16.01.55:203][  0]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2021.04.14-16.01.55:203][  0]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2021.04.14-16.01.55:214][  0]LogAudio: Display: AudioDevice MaxSources: 32
+[2021.04.14-16.01.55:230][  0]LogAudio: Display: Using built-in audio occlusion.
+[2021.04.14-16.01.55:231][  0]LogAudioMixer: Display: Initializing audio mixer.
+[2021.04.14-16.01.55:361][  0]LogAudioMixer: Display: 0: FrontLeft
+[2021.04.14-16.01.55:361][  0]LogAudioMixer: Display: 1: FrontRight
+[2021.04.14-16.01.55:460][  0]LogAudioMixer: Display: Using Audio Device Speakers (Realtek(R) Audio)
+[2021.04.14-16.01.55:494][  0]LogAudioMixer: Display: Initializing Sound Submixes...
+[2021.04.14-16.01.55:532][  0]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2021.04.14-16.01.55:532][  0]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2021.04.14-16.01.55:566][  0]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2021.04.14-16.01.55:570][  0]LogInit: FAudioDevice initialized.
+[2021.04.14-16.01.55:592][  0]LogNetVersion: Set ProjectVersion to 1.0.0.0. Version Checksum will be recalculated on next use.
+[2021.04.14-16.01.55:651][  0]LogDerivedDataCache: Saved boot cache 0.06s 75MB C:/Users/sethg/AppData/Local/UnrealEngine/4.25/DerivedDataCache/Boot.ddc.
+[2021.04.14-16.01.55:653][  0]LogInit: Texture streaming: Enabled
+[2021.04.14-16.01.55:937][  0]LogEngineSessionManager: EngineSessionManager initialized
+[2021.04.14-16.01.55:939][  0]LogEngineSessionManager: EngineSessionManager sent abnormal shutdown report. Type=Debugger, SessionId={BB9F71F0-4899-DF41-C766-3DB2309DC124}
+[2021.04.14-16.01.55:939][  0]LogEngineSessionManager: EngineSessionManager sent abnormal shutdown report. Type=Debugger, SessionId={6C5663E6-4D15-2E73-E21E-B8ABD9EEEACB}
+[2021.04.14-16.01.55:939][  0]LogEditorSessionSummary: Verbose: Initializing EditorSessionSummaryWriter for editor session tracking
+[2021.04.14-16.01.56:003][  0]LogEditorSessionSummary: EditorSessionSummaryWriter initialized
+[2021.04.14-16.01.56:471][  0]LogInit: Transaction tracking system initialized
+[2021.04.14-16.01.56:944][  0]BlueprintLog: New page: Editor Load
+[2021.04.14-16.01.58:475][  0]LocalizationService: Localization service is disabled
+[2021.04.14-16.02.01:564][  0]LogFileCache: Scanning file cache for directory 'C:/Users/sethg/Desktop/Backups/MergeFile/W21_GAM1528_NoNameYet/TowerDefence/Content/' took 0.03s
+[2021.04.14-16.02.01:565][  0]LogCook: Display: Max memory allowance for cook 16384mb min free memory 0mb
+[2021.04.14-16.02.01:567][  0]LogCook: Display: Mobile HDR setting 1
+[2021.04.14-16.02.07:078][  0]SourceControl: Source control is disabled
+[2021.04.14-16.02.07:128][  0]LogUnrealEdMisc: Loading editor; pre map load, took 90.005
+[2021.04.14-16.02.07:196][  0]Cmd: MAP LOAD FILE="C:/Users/sethg/Desktop/Backups/MergeFile/W21_GAM1528_NoNameYet/TowerDefence/Content/Maps/Test.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2021.04.14-16.02.07:222][  0]LightingResults: New page: Lighting Build
+[2021.04.14-16.02.07:605][  0]LogWorld: UWorld::CleanupWorld for Untitled, bSessionEnded=true, bCleanupResources=true
+[2021.04.14-16.02.07:713][  0]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.04.14-16.02.07:821][  0]MapCheck: New page: Map Check
+[2021.04.14-16.02.07:821][  0]LightingResults: New page: Lighting Build
+[2021.04.14-16.02.08:836][  0]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (000002C582E81C00), frame # 0
+[2021.04.14-16.02.08:850][  0]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (000002C582E8ED40), frame # 0
+[2021.04.14-16.02.08:860][  0]LogUObjectHash: Compacting FUObjectHashTables data took   0.71ms
+[2021.04.14-16.02.09:154][  0]LogLinker: Warning: While loading 'C:/Users/sethg/Desktop/Backups/MergeFile/W21_GAM1528_NoNameYet/TowerDefence/Content/Assets/Models/Troop_melee/troop_melee.uasset' failed to load '/Game/Assets/Models/Troop_melee/Material_001': Can't find file.
+[2021.04.14-16.02.09:154][  0]LogLinker: Warning: While loading 'C:/Users/sethg/Desktop/Backups/MergeFile/W21_GAM1528_NoNameYet/TowerDefence/Content/Assets/Models/Troop_melee/troop_melee.uasset' failed to load '/Game/Assets/Models/Troop_melee/Material_001': Can't find file.
+[2021.04.14-16.02.09:154][  0]LogLinker: Warning: While loading 'C:/Users/sethg/Desktop/Backups/MergeFile/W21_GAM1528_NoNameYet/TowerDefence/Content/Assets/Models/Troop_melee/troop_melee.uasset' failed to load '/Game/Assets/Models/Troop_melee/wire_087225087_002': Can't find file.
+[2021.04.14-16.02.09:154][  0]LogLinker: Warning: While loading 'C:/Users/sethg/Desktop/Backups/MergeFile/W21_GAM1528_NoNameYet/TowerDefence/Content/Assets/Models/Troop_melee/troop_melee.uasset' failed to load '/Game/Assets/Models/Troop_melee/wire_087225087_002': Can't find file.
+[2021.04.14-16.02.09:155][  0]LogLinker: Warning: While loading 'C:/Users/sethg/Desktop/Backups/MergeFile/W21_GAM1528_NoNameYet/TowerDefence/Content/Assets/Models/Troop_melee/troop_melee.uasset' failed to load '/Game/Assets/Models/Troop_melee/wire_177028149_002': Can't find file.
+[2021.04.14-16.02.09:155][  0]LogLinker: Warning: While loading 'C:/Users/sethg/Desktop/Backups/MergeFile/W21_GAM1528_NoNameYet/TowerDefence/Content/Assets/Models/Troop_melee/troop_melee.uasset' failed to load '/Game/Assets/Models/Troop_melee/wire_177028149_002': Can't find file.
+[2021.04.14-16.02.09:155][  0]LogLinker: Warning: While loading 'C:/Users/sethg/Desktop/Backups/MergeFile/W21_GAM1528_NoNameYet/TowerDefence/Content/Assets/Models/Troop_melee/troop_melee.uasset' failed to load '/Game/Assets/Models/Troop_melee/Material_001': Can't find file.
+[2021.04.14-16.02.09:155][  0]LogLinker: Warning: While loading 'C:/Users/sethg/Desktop/Backups/MergeFile/W21_GAM1528_NoNameYet/TowerDefence/Content/Assets/Models/Troop_melee/troop_melee.uasset' failed to load '/Game/Assets/Models/Troop_melee/Material_001': Can't find file.
+[2021.04.14-16.02.09:157][  0]LogLinker: Warning: While loading 'C:/Users/sethg/Desktop/Backups/MergeFile/W21_GAM1528_NoNameYet/TowerDefence/Content/Assets/Models/Troop_melee/troop_melee.uasset' failed to load '/Game/Assets/Models/Troop_melee/wire_087225087_002': Can't find file.
+[2021.04.14-16.02.09:157][  0]LogLinker: Warning: While loading 'C:/Users/sethg/Desktop/Backups/MergeFile/W21_GAM1528_NoNameYet/TowerDefence/Content/Assets/Models/Troop_melee/troop_melee.uasset' failed to load '/Game/Assets/Models/Troop_melee/wire_087225087_002': Can't find file.
+[2021.04.14-16.02.09:157][  0]LogLinker: Warning: While loading 'C:/Users/sethg/Desktop/Backups/MergeFile/W21_GAM1528_NoNameYet/TowerDefence/Content/Assets/Models/Troop_melee/troop_melee.uasset' failed to load '/Game/Assets/Models/Troop_melee/wire_177028149_002': Can't find file.
+[2021.04.14-16.02.09:158][  0]LogLinker: Warning: While loading 'C:/Users/sethg/Desktop/Backups/MergeFile/W21_GAM1528_NoNameYet/TowerDefence/Content/Assets/Models/Troop_melee/troop_melee.uasset' failed to load '/Game/Assets/Models/Troop_melee/wire_177028149_002': Can't find file.
+[2021.04.14-16.02.10:819][  0]LogLinker: Warning: While loading 'C:/Users/sethg/Desktop/Backups/MergeFile/W21_GAM1528_NoNameYet/TowerDefence/Content/StarterContent/Materials/M_Brick_Clay_Beveled.uasset' failed to load '/Game/StarterContent/Textures/T_Brick_Clay_Beveled_D': Can't find file.
+[2021.04.14-16.02.10:820][  0]LogLinker: Warning: While loading 'C:/Users/sethg/Desktop/Backups/MergeFile/W21_GAM1528_NoNameYet/TowerDefence/Content/StarterContent/Materials/M_Brick_Clay_Beveled.uasset' failed to load '/Game/StarterContent/Textures/T_Brick_Clay_Beveled_D': Can't find file.
+[2021.04.14-16.02.10:820][  0]LogLinker: Warning: While loading 'C:/Users/sethg/Desktop/Backups/MergeFile/W21_GAM1528_NoNameYet/TowerDefence/Content/StarterContent/Materials/M_Brick_Clay_Beveled.uasset' failed to load '/Game/StarterContent/Textures/T_Brick_Clay_Beveled_M': Can't find file.
+[2021.04.14-16.02.10:821][  0]LogLinker: Warning: While loading 'C:/Users/sethg/Desktop/Backups/MergeFile/W21_GAM1528_NoNameYet/TowerDefence/Content/StarterContent/Materials/M_Brick_Clay_Beveled.uasset' failed to load '/Game/StarterContent/Textures/T_Brick_Clay_Beveled_M': Can't find file.
+[2021.04.14-16.02.10:821][  0]LogLinker: Warning: While loading 'C:/Users/sethg/Desktop/Backups/MergeFile/W21_GAM1528_NoNameYet/TowerDefence/Content/StarterContent/Materials/M_Brick_Clay_Beveled.uasset' failed to load '/Game/StarterContent/Textures/T_Brick_Clay_Beveled_N': Can't find file.
+[2021.04.14-16.02.10:821][  0]LogLinker: Warning: While loading 'C:/Users/sethg/Desktop/Backups/MergeFile/W21_GAM1528_NoNameYet/TowerDefence/Content/StarterContent/Materials/M_Brick_Clay_Beveled.uasset' failed to load '/Game/StarterContent/Textures/T_Brick_Clay_Beveled_N': Can't find file.
+[2021.04.14-16.02.10:822][  0]LogLinker: Warning: While loading 'C:/Users/sethg/Desktop/Backups/MergeFile/W21_GAM1528_NoNameYet/TowerDefence/Content/StarterContent/Materials/M_Brick_Clay_Beveled.uasset' failed to load '/Game/StarterContent/Textures/T_Brick_Clay_Beveled_D': Can't find file.
+[2021.04.14-16.02.10:822][  0]LogLinker: Warning: While loading 'C:/Users/sethg/Desktop/Backups/MergeFile/W21_GAM1528_NoNameYet/TowerDefence/Content/StarterContent/Materials/M_Brick_Clay_Beveled.uasset' failed to load '/Game/StarterContent/Textures/T_Brick_Clay_Beveled_D': Can't find file.
+[2021.04.14-16.02.10:822][  0]LogLinker: Warning: While loading 'C:/Users/sethg/Desktop/Backups/MergeFile/W21_GAM1528_NoNameYet/TowerDefence/Content/StarterContent/Materials/M_Brick_Clay_Beveled.uasset' failed to load '/Game/StarterContent/Textures/T_Brick_Clay_Beveled_M': Can't find file.
+[2021.04.14-16.02.10:823][  0]LogLinker: Warning: While loading 'C:/Users/sethg/Desktop/Backups/MergeFile/W21_GAM1528_NoNameYet/TowerDefence/Content/StarterContent/Materials/M_Brick_Clay_Beveled.uasset' failed to load '/Game/StarterContent/Textures/T_Brick_Clay_Beveled_M': Can't find file.
+[2021.04.14-16.02.10:823][  0]LogLinker: Warning: While loading 'C:/Users/sethg/Desktop/Backups/MergeFile/W21_GAM1528_NoNameYet/TowerDefence/Content/StarterContent/Materials/M_Brick_Clay_Beveled.uasset' failed to load '/Game/StarterContent/Textures/T_Brick_Clay_Beveled_N': Can't find file.
+[2021.04.14-16.02.10:823][  0]LogLinker: Warning: While loading 'C:/Users/sethg/Desktop/Backups/MergeFile/W21_GAM1528_NoNameYet/TowerDefence/Content/StarterContent/Materials/M_Brick_Clay_Beveled.uasset' failed to load '/Game/StarterContent/Textures/T_Brick_Clay_Beveled_N': Can't find file.
+[2021.04.14-16.02.10:904][  0]LogLinker: Warning: While loading 'C:/Users/sethg/Desktop/Backups/MergeFile/W21_GAM1528_NoNameYet/TowerDefence/Content/StarterContent/Materials/M_Brick_Clay_Beveled.uasset' failed to load '/Game/StarterContent/Textures/T_Brick_Clay_Beveled_N': Can't find file.
+[2021.04.14-16.02.10:904][  0]LoadErrors: Failed to load /Game/StarterContent/Textures/T_Brick_Clay_Beveled_N.T_Brick_Clay_Beveled_N Referenced by MaterialExpressionTextureSample_1
+[2021.04.14-16.02.10:905][  0]LogLinker: Warning: While loading 'C:/Users/sethg/Desktop/Backups/MergeFile/W21_GAM1528_NoNameYet/TowerDefence/Content/StarterContent/Materials/M_Brick_Clay_Beveled.uasset' failed to load '/Game/StarterContent/Textures/T_Brick_Clay_Beveled_N': Can't find file.
+[2021.04.14-16.02.10:905][  0]LoadErrors: Failed to load /Game/StarterContent/Textures/T_Brick_Clay_Beveled_N.T_Brick_Clay_Beveled_N Referenced by MaterialExpressionTextureSample_1
+[2021.04.14-16.02.10:905][  0]LogLinker: Warning: While loading 'C:/Users/sethg/Desktop/Backups/MergeFile/W21_GAM1528_NoNameYet/TowerDefence/Content/StarterContent/Materials/M_Brick_Clay_Beveled.uasset' failed to load '/Game/StarterContent/Textures/T_Brick_Clay_Beveled_M': Can't find file.
+[2021.04.14-16.02.10:905][  0]LoadErrors: Failed to load /Game/StarterContent/Textures/T_Brick_Clay_Beveled_M.T_Brick_Clay_Beveled_M Referenced by MaterialExpressionTextureSample_2
+[2021.04.14-16.02.10:906][  0]LogLinker: Warning: While loading 'C:/Users/sethg/Desktop/Backups/MergeFile/W21_GAM1528_NoNameYet/TowerDefence/Content/StarterContent/Materials/M_Brick_Clay_Beveled.uasset' failed to load '/Game/StarterContent/Textures/T_Brick_Clay_Beveled_M': Can't find file.
+[2021.04.14-16.02.10:906][  0]LoadErrors: Failed to load /Game/StarterContent/Textures/T_Brick_Clay_Beveled_M.T_Brick_Clay_Beveled_M Referenced by MaterialExpressionTextureSample_2
+[2021.04.14-16.02.10:906][  0]LogLinker: Warning: While loading 'C:/Users/sethg/Desktop/Backups/MergeFile/W21_GAM1528_NoNameYet/TowerDefence/Content/StarterContent/Materials/M_Brick_Clay_Beveled.uasset' failed to load '/Game/StarterContent/Textures/T_Brick_Clay_Beveled_D': Can't find file.
+[2021.04.14-16.02.10:906][  0]LoadErrors: Failed to load /Game/StarterContent/Textures/T_Brick_Clay_Beveled_D.T_Brick_Clay_Beveled_D Referenced by MaterialExpressionTextureSample_4
+[2021.04.14-16.02.10:907][  0]LogLinker: Warning: While loading 'C:/Users/sethg/Desktop/Backups/MergeFile/W21_GAM1528_NoNameYet/TowerDefence/Content/StarterContent/Materials/M_Brick_Clay_Beveled.uasset' failed to load '/Game/StarterContent/Textures/T_Brick_Clay_Beveled_D': Can't find file.
+[2021.04.14-16.02.10:907][  0]LoadErrors: Failed to load /Game/StarterContent/Textures/T_Brick_Clay_Beveled_D.T_Brick_Clay_Beveled_D Referenced by MaterialExpressionTextureSample_4
+[2021.04.14-16.02.10:907][  0]LogLinker: Warning: While loading 'C:/Users/sethg/Desktop/Backups/MergeFile/W21_GAM1528_NoNameYet/TowerDefence/Content/StarterContent/Materials/M_Brick_Clay_Beveled.uasset' failed to load '/Game/StarterContent/Textures/T_Brick_Clay_Beveled_D': Can't find file.
+[2021.04.14-16.02.10:907][  0]LoadErrors: Failed to load /Game/StarterContent/Textures/T_Brick_Clay_Beveled_D.T_Brick_Clay_Beveled_D Referenced by MaterialExpressionTextureSample_5
+[2021.04.14-16.02.10:908][  0]LogLinker: Warning: While loading 'C:/Users/sethg/Desktop/Backups/MergeFile/W21_GAM1528_NoNameYet/TowerDefence/Content/StarterContent/Materials/M_Brick_Clay_Beveled.uasset' failed to load '/Game/StarterContent/Textures/T_Brick_Clay_Beveled_D': Can't find file.
+[2021.04.14-16.02.10:908][  0]LoadErrors: Failed to load /Game/StarterContent/Textures/T_Brick_Clay_Beveled_D.T_Brick_Clay_Beveled_D Referenced by MaterialExpressionTextureSample_5
+[2021.04.14-16.02.10:995][  0]LogLinker: Warning: While loading 'C:/Users/sethg/Desktop/Backups/MergeFile/W21_GAM1528_NoNameYet/TowerDefence/Content/Assets/Models/Troop_melee/troop_melee.uasset' failed to load '/Game/Assets/Models/Troop_melee/wire_087225087_002': Can't find file.
+[2021.04.14-16.02.10:995][  0]LoadErrors: Failed to load /Game/Assets/Models/Troop_melee/wire_087225087_002.wire_087225087_002 Referenced by troop_melee
+[2021.04.14-16.02.10:996][  0]LogLinker: Warning: While loading 'C:/Users/sethg/Desktop/Backups/MergeFile/W21_GAM1528_NoNameYet/TowerDefence/Content/Assets/Models/Troop_melee/troop_melee.uasset' failed to load '/Game/Assets/Models/Troop_melee/wire_087225087_002': Can't find file.
+[2021.04.14-16.02.10:996][  0]LoadErrors: Failed to load /Game/Assets/Models/Troop_melee/wire_087225087_002.wire_087225087_002 Referenced by troop_melee
+[2021.04.14-16.02.10:996][  0]LogLinker: Warning: While loading 'C:/Users/sethg/Desktop/Backups/MergeFile/W21_GAM1528_NoNameYet/TowerDefence/Content/Assets/Models/Troop_melee/troop_melee.uasset' failed to load '/Game/Assets/Models/Troop_melee/wire_177028149_002': Can't find file.
+[2021.04.14-16.02.10:996][  0]LoadErrors: Failed to load /Game/Assets/Models/Troop_melee/wire_177028149_002.wire_177028149_002 Referenced by troop_melee
+[2021.04.14-16.02.10:996][  0]LogLinker: Warning: While loading 'C:/Users/sethg/Desktop/Backups/MergeFile/W21_GAM1528_NoNameYet/TowerDefence/Content/Assets/Models/Troop_melee/troop_melee.uasset' failed to load '/Game/Assets/Models/Troop_melee/wire_177028149_002': Can't find file.
+[2021.04.14-16.02.10:997][  0]LoadErrors: Failed to load /Game/Assets/Models/Troop_melee/wire_177028149_002.wire_177028149_002 Referenced by troop_melee
+[2021.04.14-16.02.10:997][  0]LogLinker: Warning: While loading 'C:/Users/sethg/Desktop/Backups/MergeFile/W21_GAM1528_NoNameYet/TowerDefence/Content/Assets/Models/Troop_melee/troop_melee.uasset' failed to load '/Game/Assets/Models/Troop_melee/Material_001': Can't find file.
+[2021.04.14-16.02.10:997][  0]LoadErrors: Failed to load /Game/Assets/Models/Troop_melee/Material_001.Material_001 Referenced by troop_melee
+[2021.04.14-16.02.10:997][  0]LogLinker: Warning: While loading 'C:/Users/sethg/Desktop/Backups/MergeFile/W21_GAM1528_NoNameYet/TowerDefence/Content/Assets/Models/Troop_melee/troop_melee.uasset' failed to load '/Game/Assets/Models/Troop_melee/Material_001': Can't find file.
+[2021.04.14-16.02.10:997][  0]LoadErrors: Failed to load /Game/Assets/Models/Troop_melee/Material_001.Material_001 Referenced by troop_melee
+[2021.04.14-16.02.11:289][  0]LogMaterial: Display: Missing cached shader map for material M_Brick_Clay_Beveled, compiling. 
+[2021.04.14-16.02.11:365][  0]LogMaterial: Warning: C:\Users\sethg\Desktop\Backups\MergeFile\W21_GAM1528_NoNameYet\TowerDefence\Content\StarterContent\Materials\M_Brick_Clay_Beveled.uasset: Failed to compile Material for platform PCD3D_SM5, Default Material will be used in game.
+[2021.04.14-16.02.11:365][  0]LogMaterial: Display: 	(Node TextureSample) Texture Sample> Missing input texture
+[2021.04.14-16.02.11:637][  0]LogAIModule: Creating AISystem for world Test
+[2021.04.14-16.02.11:637][  0]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (000002C590854E00), frame # 0
+[2021.04.14-16.02.11:637][  0]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (000002C59085F100), frame # 0
+[2021.04.14-16.02.12:545][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2021.04.14-16.02.12:818][  0]LogUObjectHash: Compacting FUObjectHashTables data took   1.08ms
+[2021.04.14-16.02.12:848][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2021.04.14-16.02.12:870][  0]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 10.506ms to complete.
+[2021.04.14-16.02.12:885][  0]LogFileHelpers: Loading map 'Test' took 5.715
+[2021.04.14-16.02.17:469][  0]LogUnrealEdMisc: Total Editor Startup Time, took 100.347
+[2021.04.14-16.02.18:858][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.04.14-16.02.18:871][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.04.14-16.02.18:878][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.04.14-16.02.18:887][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.04.14-16.02.18:989][  0]LogCollectionManager: Loaded 0 collections in 0.001727 seconds
+[2021.04.14-16.02.19:316][  0]LogFileCache: Scanning file cache for directory 'C:/Users/sethg/Desktop/Backups/MergeFile/W21_GAM1528_NoNameYet/TowerDefence/Saved/Collections/' took 0.00s
+[2021.04.14-16.02.19:316][  0]LogFileCache: Scanning file cache for directory 'C:/Users/sethg/Desktop/Backups/MergeFile/W21_GAM1528_NoNameYet/TowerDefence/Content/Developers/sethg/Collections/' took 0.00s
+[2021.04.14-16.02.19:316][  0]LogFileCache: Scanning file cache for directory 'C:/Users/sethg/Desktop/Backups/MergeFile/W21_GAM1528_NoNameYet/TowerDefence/Content/Collections/' took 0.00s
+[2021.04.14-16.02.19:317][  0]LogContentBrowser: Native class hierarchy populated in 0.0669 seconds. Added 3450 classes and 824 folders.
+[2021.04.14-16.02.19:552][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0005 seconds. Added 0 classes and 0 folders.
+[2021.04.14-16.02.22:199][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0005 seconds. Added 0 classes and 0 folders.
+[2021.04.14-16.02.22:334][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0005 seconds. Added 2 classes and 0 folders.
+[2021.04.14-16.02.23:926][  0]LogSlate: Took 0.024412 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2021.04.14-16.02.23:956][  0]LogSlate: Took 0.013072 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
+[2021.04.14-16.02.24:050][  0]LogSlate: Took 0.026900 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
+[2021.04.14-16.02.24:790][  0]LogRenderer: Reallocating scene render targets to support 1088x536 Format 10 NumSamples 1 (Frame:1).
+[2021.04.14-16.02.25:901][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0006 seconds. Added 0 classes and 0 folders.
+[2021.04.14-16.02.25:901][  0]LogLoad: (Engine Initialization) Total time: 108.78 seconds
+[2021.04.14-16.02.25:901][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.00 seconds
+[2021.04.14-16.02.26:639][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2021.04.14-16.02.27:113][  0]LogRenderer: Reallocating scene render targets to support 1088x552 Format 10 NumSamples 1 (Frame:3).
+[2021.04.14-16.02.27:113][  0]LogSlate: Took 0.015555 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
+[2021.04.14-16.02.27:197][  0]LogSlate: Took 0.018444 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/DroidSansMono.ttf' (77K)
+[2021.04.14-16.02.27:360][  1]LogFileCache: Retrieving MD5 hashes for directory 'C:/Users/sethg/Desktop/Backups/MergeFile/W21_GAM1528_NoNameYet/TowerDefence/Content/' took 1.06s
+[2021.04.14-16.02.27:438][  1]LogAssetRegistry: Asset discovery search completed in 79.6998 seconds
+[2021.04.14-16.02.27:488][  1]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000005 seconds (updated 0 objects)
+[2021.04.14-16.02.59:421][729]LogSlate: Window 'Message Log' being destroyed
+[2021.04.14-16.02.59:469][729]LogSlate: Window 'Message Log' being destroyed
+[2021.04.14-16.02.59:978][754]LogTemp: Repeating last play command: Selected Viewport
+[2021.04.14-16.03.00:886][754]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2021.04.14-16.03.01:056][754]PIE: New page: PIE session: Test (Apr. 14, 2021, 8:03:00 a.m.)
+[2021.04.14-16.03.01:453][754]LogOnline: OSS: Creating online subsystem instance for: NULL
+[2021.04.14-16.03.01:464][754]LogOnline: OSS: TryLoadSubsystemAndSetDefault: Loaded subsystem for module [NULL]
+[2021.04.14-16.03.01:571][754]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_Test
+[2021.04.14-16.03.01:678][754]LogPlayLevel: PIE: StaticDuplicateObject took: (0.105804s)
+[2021.04.14-16.03.01:732][754]LogAIModule: Creating AISystem for world Test
+[2021.04.14-16.03.01:733][754]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (000002C5AEFC6000), frame # 1754
+[2021.04.14-16.03.01:733][754]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (000002C5831F4680), frame # 1754
+[2021.04.14-16.03.01:733][754]LogPlayLevel: PIE: World Init took: (0.055108s)
+[2021.04.14-16.03.01:735][754]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/Test.Test to /Game/Maps/UEDPIE_0_Test.Test (0.162912s)
+[2021.04.14-16.03.01:816][754]LogUObjectHash: Compacting FUObjectHashTables data took   0.82ms
+[2021.04.14-16.03.01:825][754]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2021.04.14-16.03.01:825][754]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2021.04.14-16.03.01:825][754]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2021.04.14-16.03.01:825][754]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2021.04.14-16.03.01:826][754]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2021.04.14-16.03.01:826][754]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2021.04.14-16.03.01:826][754]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2021.04.14-16.03.01:826][754]LogAudio: Display: AudioDevice MaxSources: 32
+[2021.04.14-16.03.01:826][754]LogAudio: Display: Using built-in audio occlusion.
+[2021.04.14-16.03.01:827][754]LogAudioMixer: Display: Initializing audio mixer.
+[2021.04.14-16.03.01:830][754]LogAudioMixer: Display: 0: FrontLeft
+[2021.04.14-16.03.01:830][754]LogAudioMixer: Display: 1: FrontRight
+[2021.04.14-16.03.01:897][754]LogAudioMixer: Display: Using Audio Device Speakers (Realtek(R) Audio)
+[2021.04.14-16.03.01:897][754]LogAudioMixer: Display: Initializing Sound Submixes...
+[2021.04.14-16.03.01:897][754]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2021.04.14-16.03.01:897][754]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2021.04.14-16.03.01:898][754]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2021.04.14-16.03.01:919][754]LogInit: FAudioDevice initialized.
+[2021.04.14-16.03.02:239][754]LogLoad: Game class is 'BP_GameMode_C'
+[2021.04.14-16.03.02:947][754]LogWorld: Bringing World /Game/Maps/UEDPIE_0_Test.Test up for play (max tick rate 60) at 2021.04.14-12.03.02
+[2021.04.14-16.03.02:998][754]LogWorld: Bringing up level for play took: 0.114402
+[2021.04.14-16.03.03:001][754]LogOnline: OSS: Creating online subsystem instance for: :Context_6
+[2021.04.14-16.03.03:477][754]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0006 seconds. Added 20 classes and 0 folders.
+[2021.04.14-16.03.04:708][754]PIE: Server logged in
+[2021.04.14-16.03.04:714][754]PIE: Play in editor total start time 4.301 seconds.
+[2021.04.14-16.03.15:649][325]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.04.14-16.03.15:650][325]LogWorld: BeginTearingDown for /Game/Maps/UEDPIE_0_Test
+[2021.04.14-16.03.15:688][325]LogWorld: UWorld::CleanupWorld for Test, bSessionEnded=true, bCleanupResources=true
+[2021.04.14-16.03.15:688][325]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.04.14-16.03.15:720][325]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2021.04.14-16.03.15:749][325]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.04.14-16.03.15:934][325]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.04.14-16.03.15:944][325]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (000002C5831F4680), frame # 2325
+[2021.04.14-16.03.15:944][325]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (000002C5AEFC6000), frame # 2325
+[2021.04.14-16.03.15:966][325]LogUObjectHash: Compacting FUObjectHashTables data took   0.58ms
+[2021.04.14-16.03.15:980][326]LogPlayLevel: Display: Destroying online subsystem :Context_6
+[2021.04.14-16.03.16:760][364]LogTemp: Repeating last play command: Selected Viewport
+[2021.04.14-16.03.16:768][364]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2021.04.14-16.03.16:768][364]PIE: New page: PIE session: Test (Apr. 14, 2021, 8:03:16 a.m.)
+[2021.04.14-16.03.16:769][364]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_Test
+[2021.04.14-16.03.16:772][364]LogPlayLevel: PIE: StaticDuplicateObject took: (0.003224s)
+[2021.04.14-16.03.16:773][364]LogAIModule: Creating AISystem for world Test
+[2021.04.14-16.03.16:774][364]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (000002C59DBD3C00), frame # 2364
+[2021.04.14-16.03.16:775][364]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (000002C582AE0A40), frame # 2364
+[2021.04.14-16.03.16:775][364]LogPlayLevel: PIE: World Init took: (0.002851s)
+[2021.04.14-16.03.16:776][364]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/Test.Test to /Game/Maps/UEDPIE_0_Test.Test (0.006642s)
+[2021.04.14-16.03.16:787][364]LogUObjectHash: Compacting FUObjectHashTables data took   0.57ms
+[2021.04.14-16.03.16:788][364]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2021.04.14-16.03.16:788][364]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2021.04.14-16.03.16:788][364]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2021.04.14-16.03.16:788][364]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2021.04.14-16.03.16:789][364]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2021.04.14-16.03.16:789][364]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2021.04.14-16.03.16:789][364]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2021.04.14-16.03.16:789][364]LogAudio: Display: AudioDevice MaxSources: 32
+[2021.04.14-16.03.16:789][364]LogAudio: Display: Using built-in audio occlusion.
+[2021.04.14-16.03.16:790][364]LogAudioMixer: Display: Initializing audio mixer.
+[2021.04.14-16.03.16:793][364]LogAudioMixer: Display: 0: FrontLeft
+[2021.04.14-16.03.16:793][364]LogAudioMixer: Display: 1: FrontRight
+[2021.04.14-16.03.16:846][364]LogAudioMixer: Display: Using Audio Device Speakers (Realtek(R) Audio)
+[2021.04.14-16.03.16:847][364]LogAudioMixer: Display: Initializing Sound Submixes...
+[2021.04.14-16.03.16:847][364]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2021.04.14-16.03.16:847][364]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2021.04.14-16.03.16:847][364]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2021.04.14-16.03.16:863][364]LogInit: FAudioDevice initialized.
+[2021.04.14-16.03.16:878][364]LogLoad: Game class is 'BP_GameMode_C'
+[2021.04.14-16.03.16:879][364]LogWorld: Bringing World /Game/Maps/UEDPIE_0_Test.Test up for play (max tick rate 60) at 2021.04.14-12.03.16
+[2021.04.14-16.03.16:880][364]LogWorld: Bringing up level for play took: 0.001066
+[2021.04.14-16.03.16:880][364]LogOnline: OSS: Creating online subsystem instance for: :Context_7
+[2021.04.14-16.03.16:885][364]PIE: Server logged in
+[2021.04.14-16.03.16:886][364]PIE: Play in editor total start time 0.121 seconds.
+[2021.04.14-16.03.21:811][652]LogScript: Warning: Accessed None trying to read property Item
+	InventoryItem_C /Engine/Transient.UnrealEdEngine_0:GameInstance_1.InventoryItem_C_0
+	Function /Game/Blueprints/UI/InventoryItem.InventoryItem_C:GetThumbnail:0027
+[2021.04.14-16.03.21:870][652]PIE: Error: Blueprint Runtime Error: "Accessed None trying to read property Item". Blueprint:  InventoryItem Function:  Get Thumbnail Graph:  GetThumbnail Node:  Return Node
+[2021.04.14-16.03.21:872][652]LogScript: Warning: Accessed None trying to read property Item
+	InventoryItem_C /Engine/Transient.UnrealEdEngine_0:GameInstance_1.InventoryItem_C_0
+	Function /Game/Blueprints/UI/InventoryItem.InventoryItem_C:GetThumbnail:0027
+[2021.04.14-16.03.21:872][652]LogScript: Warning: Accessed None trying to read property Item
+	InventoryItem_C /Engine/Transient.UnrealEdEngine_0:GameInstance_1.InventoryItem_C_0
+	Function /Game/Blueprints/UI/InventoryItem.InventoryItem_C:Get_name:001F
+[2021.04.14-16.03.21:893][652]LogScript: Warning: Accessed None trying to read property Item
+	InventoryItem_C /Engine/Transient.UnrealEdEngine_0:GameInstance_1.InventoryItem_C_0
+	Function /Game/Blueprints/UI/InventoryItem.InventoryItem_C:Get_count:00BB
+[2021.04.14-16.03.21:895][652]LogScript: Warning: Accessed None trying to read property Item
+	InventoryItem_C /Engine/Transient.UnrealEdEngine_0:GameInstance_1.InventoryItem_C_0
+	Function /Game/Blueprints/UI/InventoryItem.InventoryItem_C:GetThumbnail:0027
+[2021.04.14-16.03.21:901][653]LogScript: Warning: Accessed None trying to read property Item
+	InventoryItem_C /Engine/Transient.UnrealEdEngine_0:GameInstance_1.InventoryItem_C_0
+	Function /Game/Blueprints/UI/InventoryItem.InventoryItem_C:GetThumbnail:0027
+[2021.04.14-16.03.21:901][653]LogScript: Warning: Accessed None trying to read property Item
+	InventoryItem_C /Engine/Transient.UnrealEdEngine_0:GameInstance_1.InventoryItem_C_0
+	Function /Game/Blueprints/UI/InventoryItem.InventoryItem_C:Get_name:001F
+[2021.04.14-16.03.21:902][653]LogScript: Warning: Accessed None trying to read property Item
+	InventoryItem_C /Engine/Transient.UnrealEdEngine_0:GameInstance_1.InventoryItem_C_0
+	Function /Game/Blueprints/UI/InventoryItem.InventoryItem_C:Get_count:00BB
+[2021.04.14-16.03.21:904][653]LogScript: Warning: Accessed None trying to read property Item
+	InventoryItem_C /Engine/Transient.UnrealEdEngine_0:GameInstance_1.InventoryItem_C_0
+	Function /Game/Blueprints/UI/InventoryItem.InventoryItem_C:GetThumbnail:0027
+[2021.04.14-16.03.21:919][654]LogScript: Warning: Accessed None trying to read property Item
+	InventoryItem_C /Engine/Transient.UnrealEdEngine_0:GameInstance_1.InventoryItem_C_0
+	Function /Game/Blueprints/UI/InventoryItem.InventoryItem_C:GetThumbnail:0027
+[2021.04.14-16.03.21:919][654]LogScript: Warning: Accessed None trying to read property Item
+	InventoryItem_C /Engine/Transient.UnrealEdEngine_0:GameInstance_1.InventoryItem_C_0
+	Function /Game/Blueprints/UI/InventoryItem.InventoryItem_C:Get_name:001F
+[2021.04.14-16.03.21:919][654]LogScript: Warning: Accessed None trying to read property Item
+	InventoryItem_C /Engine/Transient.UnrealEdEngine_0:GameInstance_1.InventoryItem_C_0
+	Function /Game/Blueprints/UI/InventoryItem.InventoryItem_C:Get_count:00BB
+[2021.04.14-16.03.21:923][654]LogScript: Warning: Accessed None trying to read property Item
+	InventoryItem_C /Engine/Transient.UnrealEdEngine_0:GameInstance_1.InventoryItem_C_0
+	Function /Game/Blueprints/UI/InventoryItem.InventoryItem_C:GetThumbnail:0027
+[2021.04.14-16.03.21:933][655]LogScript: Warning: Accessed None trying to read property Item
+	InventoryItem_C /Engine/Transient.UnrealEdEngine_0:GameInstance_1.InventoryItem_C_0
+	Function /Game/Blueprints/UI/InventoryItem.InventoryItem_C:GetThumbnail:0027
+[2021.04.14-16.03.21:933][655]LogScript: Warning: Accessed None trying to read property Item
+	InventoryItem_C /Engine/Transient.UnrealEdEngine_0:GameInstance_1.InventoryItem_C_0
+	Function /Game/Blueprints/UI/InventoryItem.InventoryItem_C:Get_name:001F
+[2021.04.14-16.03.21:933][655]LogScript: Warning: Accessed None trying to read property Item
+	InventoryItem_C /Engine/Transient.UnrealEdEngine_0:GameInstance_1.InventoryItem_C_0
+	Function /Game/Blueprints/UI/InventoryItem.InventoryItem_C:Get_count:00BB
+[2021.04.14-16.03.21:935][655]LogScript: Warning: Accessed None trying to read property Item
+	InventoryItem_C /Engine/Transient.UnrealEdEngine_0:GameInstance_1.InventoryItem_C_0
+	Function /Game/Blueprints/UI/InventoryItem.InventoryItem_C:GetThumbnail:0027
+[2021.04.14-16.03.25:272][850]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.04.14-16.03.25:272][850]LogWorld: BeginTearingDown for /Game/Maps/UEDPIE_0_Test
+[2021.04.14-16.03.25:272][850]LogWorld: UWorld::CleanupWorld for Test, bSessionEnded=true, bCleanupResources=true
+[2021.04.14-16.03.25:273][850]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.04.14-16.03.25:284][850]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2021.04.14-16.03.25:287][850]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.04.14-16.03.25:296][850]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.04.14-16.03.25:339][850]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (000002C582AE0A40), frame # 2850
+[2021.04.14-16.03.25:339][850]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (000002C59DBD3C00), frame # 2850
+[2021.04.14-16.03.25:370][850]LogUObjectHash: Compacting FUObjectHashTables data took   0.56ms
+[2021.04.14-16.03.25:453][851]LogPlayLevel: Display: Destroying online subsystem :Context_7
+[2021.04.14-16.03.29:749][ 88]LogSlate: Window 'Message Log' being destroyed
+[2021.04.14-16.03.29:764][ 88]LogSlate: Window 'Message Log' being destroyed
+[2021.04.14-16.03.34:425][360]LogUObjectHash: Compacting FUObjectHashTables data took   0.58ms
+[2021.04.14-16.03.34:536][360]LogSlate: Window 'TowerDefence - Unreal Editor' being destroyed
+[2021.04.14-16.03.34:554][360]LogWindowsTextInputMethodSystem: Display: IME system now deactivated.
+[2021.04.14-16.03.35:266][361]Cmd: QUIT_EDITOR
+[2021.04.14-16.03.35:266][361]LogCore: Engine exit requested (reason: UUnrealEdEngine::CloseEditor())
+[2021.04.14-16.03.35:310][361]LogCore: Engine exit requested (reason: EngineExit() was called; note: exit was already requested)

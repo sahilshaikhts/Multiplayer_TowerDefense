@@ -2,12 +2,12 @@
 	"Targets": [
 		{
 			"Name": "TowerDefence",
-			"Path": "C:\\Users\\sethg\\Desktop\\Backups\\MergeFile\\W21_GAM1528_NoNameYet\\TowerDefence\\Source\\TowerDefence.Target.cs",
+			"Path": "C:\\Users\\sethg\\Desktop\\High Level Development II\\W21_GAM1528_NoNameYet\\TowerDefence\\Source\\TowerDefence.Target.cs",
 			"Type": "Game"
 		},
 		{
 			"Name": "TowerDefenceEditor",
-			"Path": "C:\\Users\\sethg\\Desktop\\Backups\\MergeFile\\W21_GAM1528_NoNameYet\\TowerDefence\\Source\\TowerDefenceEditor.Target.cs",
+			"Path": "C:\\Users\\sethg\\Desktop\\High Level Development II\\W21_GAM1528_NoNameYet\\TowerDefence\\Source\\TowerDefenceEditor.Target.cs",
 			"Type": "Editor"
 		}
 	]

@@ -1,14 +1,14 @@
-C:\Users\sethg\Desktop\Backups\MergeFile\W21_GAM1528_NoNameYet\TowerDefence\Intermediate\Build\Win64\UE4Editor\Development\TowerDefence\Definitions.TowerDefence.h
-C:\Users\sethg\Desktop\Backups\MergeFile\W21_GAM1528_NoNameYet\TowerDefence\Source\TowerDefence\Public\MyGameStateBase.h
+C:\Users\sethg\Desktop\High Level Development II\W21_GAM1528_NoNameYet\TowerDefence\Intermediate\Build\Win64\UE4Editor\Development\TowerDefence\Definitions.TowerDefence.h
+C:\Users\sethg\Desktop\High Level Development II\W21_GAM1528_NoNameYet\TowerDefence\Source\TowerDefence\Public\MyGameStateBase.h
 D:\Epic Games Files\UE_4.25\Engine\Source\Runtime\Engine\Classes\GameFramework/GameStateBase.h
 D:\Epic Games Files\UE_4.25\Engine\Source\Runtime\Engine\Classes\GameFramework/GameModeBase.h
 D:\Epic Games Files\UE_4.25\Engine\Source\Runtime\Engine\Classes\Engine/ServerStatReplicator.h
 D:\Epic Games Files\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\ServerStatReplicator.generated.h
 D:\Epic Games Files\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\GameModeBase.generated.h
 D:\Epic Games Files\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\GameStateBase.generated.h
-C:\Users\sethg\Desktop\Backups\MergeFile\W21_GAM1528_NoNameYet\TowerDefence\Source\TowerDefence\Public\Inventory.h
-C:\Users\sethg\Desktop\Backups\MergeFile\W21_GAM1528_NoNameYet\TowerDefence\Intermediate\Build\Win64\UE4Editor\Inc\TowerDefence\Inventory.generated.h
-C:\Users\sethg\Desktop\Backups\MergeFile\W21_GAM1528_NoNameYet\TowerDefence\Intermediate\Build\Win64\UE4Editor\Inc\TowerDefence\MyGameStateBase.generated.h
+C:\Users\sethg\Desktop\High Level Development II\W21_GAM1528_NoNameYet\TowerDefence\Source\TowerDefence\Public\Inventory.h
+C:\Users\sethg\Desktop\High Level Development II\W21_GAM1528_NoNameYet\TowerDefence\Intermediate\Build\Win64\UE4Editor\Inc\TowerDefence\Inventory.generated.h
+C:\Users\sethg\Desktop\High Level Development II\W21_GAM1528_NoNameYet\TowerDefence\Intermediate\Build\Win64\UE4Editor\Inc\TowerDefence\MyGameStateBase.generated.h
 D:\Epic Games Files\UE_4.25\Engine\Source\Runtime\UMG\Public\Blueprint/UserWidget.h
 D:\Epic Games Files\UE_4.25\Engine\Source\Runtime\UMG\Public\Components/SlateWrapperTypes.h
 D:\Epic Games Files\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UMG\SlateWrapperTypes.generated.h
@@ -126,10 +126,10 @@ D:\Epic Games Files\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Proper
 D:\Epic Games Files\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UMG\DynamicPropertyPath.generated.h
 D:\Epic Games Files\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UMG\WidgetBlueprintGeneratedClass.generated.h
 D:\Epic Games Files\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UMG\UserWidget.generated.h
-C:\Users\sethg\Desktop\Backups\MergeFile\W21_GAM1528_NoNameYet\TowerDefence\Source\TowerDefence\Public\ShopSystem.h
-C:\Users\sethg\Desktop\Backups\MergeFile\W21_GAM1528_NoNameYet\TowerDefence\Intermediate\Build\Win64\UE4Editor\Inc\TowerDefence\ShopSystem.generated.h
-C:\Users\sethg\Desktop\Backups\MergeFile\W21_GAM1528_NoNameYet\TowerDefence\Source\TowerDefence\Public\RewardSystem.h
-C:\Users\sethg\Desktop\Backups\MergeFile\W21_GAM1528_NoNameYet\TowerDefence\Intermediate\Build\Win64\UE4Editor\Inc\TowerDefence\RewardSystem.generated.h
+C:\Users\sethg\Desktop\High Level Development II\W21_GAM1528_NoNameYet\TowerDefence\Source\TowerDefence\Public\ShopSystem.h
+C:\Users\sethg\Desktop\High Level Development II\W21_GAM1528_NoNameYet\TowerDefence\Intermediate\Build\Win64\UE4Editor\Inc\TowerDefence\ShopSystem.generated.h
+C:\Users\sethg\Desktop\High Level Development II\W21_GAM1528_NoNameYet\TowerDefence\Source\TowerDefence\Public\RewardSystem.h
+C:\Users\sethg\Desktop\High Level Development II\W21_GAM1528_NoNameYet\TowerDefence\Intermediate\Build\Win64\UE4Editor\Inc\TowerDefence\RewardSystem.generated.h
 D:\Epic Games Files\UE_4.25\Engine\Source\Runtime\Engine\Classes\GameFramework/PlayerState.h
 D:\Epic Games Files\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\PlayerState.generated.h
 D:\Epic Games Files\UE_4.25\Engine\Source\Runtime\Engine\Classes\Kismet/GameplayStatics.h
@@ -143,7 +143,7 @@ D:\Epic Games Files\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine
 D:\Epic Games Files\UE_4.25\Engine\Source\Runtime\Engine\Classes\Kismet\GameplayStaticsTypes.h
 D:\Epic Games Files\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\GameplayStaticsTypes.generated.h
 D:\Epic Games Files\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\GameplayStatics.generated.h
-C:\Users\sethg\Desktop\Backups\MergeFile\W21_GAM1528_NoNameYet\TowerDefence\Source\TowerDefence\Public\Troop_melee.h
-C:\Users\sethg\Desktop\Backups\MergeFile\W21_GAM1528_NoNameYet\TowerDefence\Source\TowerDefence/Public/TroopBase.h
-C:\Users\sethg\Desktop\Backups\MergeFile\W21_GAM1528_NoNameYet\TowerDefence\Intermediate\Build\Win64\UE4Editor\Inc\TowerDefence\TroopBase.generated.h
-C:\Users\sethg\Desktop\Backups\MergeFile\W21_GAM1528_NoNameYet\TowerDefence\Intermediate\Build\Win64\UE4Editor\Inc\TowerDefence\Troop_melee.generated.h
+C:\Users\sethg\Desktop\High Level Development II\W21_GAM1528_NoNameYet\TowerDefence\Source\TowerDefence\Public\Troop_melee.h
+C:\Users\sethg\Desktop\High Level Development II\W21_GAM1528_NoNameYet\TowerDefence\Source\TowerDefence/Public/TroopBase.h
+C:\Users\sethg\Desktop\High Level Development II\W21_GAM1528_NoNameYet\TowerDefence\Intermediate\Build\Win64\UE4Editor\Inc\TowerDefence\TroopBase.generated.h
+C:\Users\sethg\Desktop\High Level Development II\W21_GAM1528_NoNameYet\TowerDefence\Intermediate\Build\Win64\UE4Editor\Inc\TowerDefence\Troop_melee.generated.h

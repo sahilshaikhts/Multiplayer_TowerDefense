@@ -13,20 +13,20 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define TOWERDEFENCE_Inventory_generated_h
 
-#define TowerDefence_Source_TowerDefence_Public_Inventory_h_37_SPARSE_DATA
-#define TowerDefence_Source_TowerDefence_Public_Inventory_h_37_RPC_WRAPPERS \
+#define TowerDefence_Source_TowerDefence_Public_Inventory_h_38_SPARSE_DATA
+#define TowerDefence_Source_TowerDefence_Public_Inventory_h_38_RPC_WRAPPERS \
  \
 	DECLARE_FUNCTION(execGetItemCountByIndex); \
 	DECLARE_FUNCTION(execGetItemCount);
 
 
-#define TowerDefence_Source_TowerDefence_Public_Inventory_h_37_RPC_WRAPPERS_NO_PURE_DECLS \
+#define TowerDefence_Source_TowerDefence_Public_Inventory_h_38_RPC_WRAPPERS_NO_PURE_DECLS \
  \
 	DECLARE_FUNCTION(execGetItemCountByIndex); \
 	DECLARE_FUNCTION(execGetItemCount);
 
 
-#define TowerDefence_Source_TowerDefence_Public_Inventory_h_37_INCLASS_NO_PURE_DECLS \
+#define TowerDefence_Source_TowerDefence_Public_Inventory_h_38_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAInventory(); \
 	friend struct Z_Construct_UClass_AInventory_Statics; \
@@ -35,7 +35,7 @@ public: \
 	DECLARE_SERIALIZER(AInventory)
 
 
-#define TowerDefence_Source_TowerDefence_Public_Inventory_h_37_INCLASS \
+#define TowerDefence_Source_TowerDefence_Public_Inventory_h_38_INCLASS \
 private: \
 	static void StaticRegisterNativesAInventory(); \
 	friend struct Z_Construct_UClass_AInventory_Statics; \
@@ -44,7 +44,7 @@ public: \
 	DECLARE_SERIALIZER(AInventory)
 
 
-#define TowerDefence_Source_TowerDefence_Public_Inventory_h_37_STANDARD_CONSTRUCTORS \
+#define TowerDefence_Source_TowerDefence_Public_Inventory_h_38_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AInventory(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AInventory) \
@@ -57,7 +57,7 @@ private: \
 public:
 
 
-#define TowerDefence_Source_TowerDefence_Public_Inventory_h_37_ENHANCED_CONSTRUCTORS \
+#define TowerDefence_Source_TowerDefence_Public_Inventory_h_38_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API AInventory(AInventory&&); \
@@ -68,28 +68,28 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AInventory); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AInventory)
 
 
-#define TowerDefence_Source_TowerDefence_Public_Inventory_h_37_PRIVATE_PROPERTY_OFFSET
-#define TowerDefence_Source_TowerDefence_Public_Inventory_h_33_PROLOG
-#define TowerDefence_Source_TowerDefence_Public_Inventory_h_37_GENERATED_BODY_LEGACY \
+#define TowerDefence_Source_TowerDefence_Public_Inventory_h_38_PRIVATE_PROPERTY_OFFSET
+#define TowerDefence_Source_TowerDefence_Public_Inventory_h_34_PROLOG
+#define TowerDefence_Source_TowerDefence_Public_Inventory_h_38_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	TowerDefence_Source_TowerDefence_Public_Inventory_h_37_PRIVATE_PROPERTY_OFFSET \
-	TowerDefence_Source_TowerDefence_Public_Inventory_h_37_SPARSE_DATA \
-	TowerDefence_Source_TowerDefence_Public_Inventory_h_37_RPC_WRAPPERS \
-	TowerDefence_Source_TowerDefence_Public_Inventory_h_37_INCLASS \
-	TowerDefence_Source_TowerDefence_Public_Inventory_h_37_STANDARD_CONSTRUCTORS \
+	TowerDefence_Source_TowerDefence_Public_Inventory_h_38_PRIVATE_PROPERTY_OFFSET \
+	TowerDefence_Source_TowerDefence_Public_Inventory_h_38_SPARSE_DATA \
+	TowerDefence_Source_TowerDefence_Public_Inventory_h_38_RPC_WRAPPERS \
+	TowerDefence_Source_TowerDefence_Public_Inventory_h_38_INCLASS \
+	TowerDefence_Source_TowerDefence_Public_Inventory_h_38_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define TowerDefence_Source_TowerDefence_Public_Inventory_h_37_GENERATED_BODY \
+#define TowerDefence_Source_TowerDefence_Public_Inventory_h_38_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	TowerDefence_Source_TowerDefence_Public_Inventory_h_37_PRIVATE_PROPERTY_OFFSET \
-	TowerDefence_Source_TowerDefence_Public_Inventory_h_37_SPARSE_DATA \
-	TowerDefence_Source_TowerDefence_Public_Inventory_h_37_RPC_WRAPPERS_NO_PURE_DECLS \
-	TowerDefence_Source_TowerDefence_Public_Inventory_h_37_INCLASS_NO_PURE_DECLS \
-	TowerDefence_Source_TowerDefence_Public_Inventory_h_37_ENHANCED_CONSTRUCTORS \
+	TowerDefence_Source_TowerDefence_Public_Inventory_h_38_PRIVATE_PROPERTY_OFFSET \
+	TowerDefence_Source_TowerDefence_Public_Inventory_h_38_SPARSE_DATA \
+	TowerDefence_Source_TowerDefence_Public_Inventory_h_38_RPC_WRAPPERS_NO_PURE_DECLS \
+	TowerDefence_Source_TowerDefence_Public_Inventory_h_38_INCLASS_NO_PURE_DECLS \
+	TowerDefence_Source_TowerDefence_Public_Inventory_h_38_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -103,6 +103,7 @@ template<> TOWERDEFENCE_API UClass* StaticClass<class AInventory>();
 #define FOREACH_ENUM_MYENUMS(op) \
 	op(MyEnums::troop_swordsMan) \
 	op(MyEnums::troop_archer) \
+	op(MyEnums::troop_giant) \
 	op(MyEnums::tower_XBow) \
 	op(MyEnums::tower_canon) \
 	op(MyEnums::TypesCount) \

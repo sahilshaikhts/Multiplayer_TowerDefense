@@ -33,7 +33,7 @@ void EmptyLinkFunctionForGeneratedCodeInventory() {}
 		return MyEnums_StaticEnum();
 	}
 	static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_MyEnums(MyEnums_StaticEnum, TEXT("/Script/TowerDefence"), TEXT("MyEnums"), false, nullptr, nullptr);
-	uint32 Get_Z_Construct_UEnum_TowerDefence_MyEnums_Hash() { return 3305949601U; }
+	uint32 Get_Z_Construct_UEnum_TowerDefence_MyEnums_Hash() { return 3476678671U; }
 	UEnum* Z_Construct_UEnum_TowerDefence_MyEnums()
 	{
 #if WITH_HOT_RELOAD
@@ -47,6 +47,7 @@ void EmptyLinkFunctionForGeneratedCodeInventory() {}
 			static const UE4CodeGen_Private::FEnumeratorParam Enumerators[] = {
 				{ "MyEnums::troop_swordsMan", (int64)MyEnums::troop_swordsMan },
 				{ "MyEnums::troop_archer", (int64)MyEnums::troop_archer },
+				{ "MyEnums::troop_giant", (int64)MyEnums::troop_giant },
 				{ "MyEnums::tower_XBow", (int64)MyEnums::tower_XBow },
 				{ "MyEnums::tower_canon", (int64)MyEnums::tower_canon },
 				{ "MyEnums::TypesCount", (int64)MyEnums::TypesCount },
@@ -62,6 +63,7 @@ void EmptyLinkFunctionForGeneratedCodeInventory() {}
 				{ "tower_canon.Name", "MyEnums::tower_canon" },
 				{ "tower_XBow.Name", "MyEnums::tower_XBow" },
 				{ "troop_archer.Name", "MyEnums::troop_archer" },
+				{ "troop_giant.Name", "MyEnums::troop_giant" },
 				{ "troop_swordsMan.Name", "MyEnums::troop_swordsMan" },
 				{ "TypesCount.Name", "MyEnums::TypesCount" },
 			};

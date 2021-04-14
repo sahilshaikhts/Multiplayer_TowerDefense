@@ -7,7 +7,7 @@ WindowsPlatform.FindVSInstallDirs: Found Visual Studio installation: C:\Program 
 WindowsPlatform.FindVSInstallDirs: Found Visual Studio installation: C:\Program Files (x86)\Microsoft Visual Studio\2019\Community (Product=Microsoft.VisualStudio.Product.Community, Version=16.4.29613.14, Sort=1)
 WindowsPlatform.FindToolChainDirs: Found Visual Studio toolchain: C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.22.27905 (Version=14.22.27905)
 WindowsPlatform.FindToolChainDirs: Found Visual Studio toolchain: C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314 (Version=14.24.28314)
-DynamicCompilation.RequiresCompilation: Compiling C:\Users\sethg\Desktop\Backups\MergeFile\W21_GAM1528_NoNameYet\TowerDefence\Intermediate\Build\BuildRules\TowerDefenceModuleRules.dll: Assembly does not exist
+DynamicCompilation.RequiresCompilation: Compiling C:\Users\sethg\Desktop\High Level Development II\W21_GAM1528_NoNameYet\TowerDefence\Intermediate\Build\BuildRules\TowerDefenceModuleRules.dll: Assembly does not exist
 WindowsPlatform.EnumerateSdkRootDirs: Found Windows 10 SDK root at C:\Program Files (x86)\Windows Kits\10 (1)
 WindowsPlatform.EnumerateSdkRootDirs: Found Windows 10 SDK root at C:\Program Files (x86)\Windows Kits\10 (2)
 WindowsPlatform.UpdateCachedWindowsSdks: Found Windows 10 SDK version 10.0.16299.0 at C:\Program Files (x86)\Windows Kits\10
@@ -258,37 +258,37 @@ ProgressWriter.Write: @progress 'Writing project files...' 100%
 Timeline.Print: Timeline:
 Timeline.Print: 
 Timeline.Print: [ 0.000]
-Timeline.Print: [ 0.000](+0.058) <unknown>
-Timeline.Print: [ 0.058](+0.105) XmlConfig.ReadConfigFiles()
-Timeline.Print: [ 0.164](+0.000) SingleInstanceMutex.Acquire()
-Timeline.Print: [ 0.164](+0.063) UEBuildPlatform.RegisterPlatforms()
-Timeline.Print:   0.164          [ 0.000](+0.032) Initializing InstalledPlatformInfo
-Timeline.Print:   0.197          [ 0.033](+0.000) Querying types
-Timeline.Print:   0.199          [ 0.035](+0.001) MacPlatformFactory
-Timeline.Print:   0.200          [ 0.036](+0.000) TVOSPlatformFactory
-Timeline.Print:   0.201          [ 0.037](+0.017) AndroidPlatformFactory
-Timeline.Print:   0.218          [ 0.054](+0.000) HoloLensPlatformFactory
-Timeline.Print:   0.219          [ 0.054](+0.004) IOSPlatformFactory
-Timeline.Print:   0.223          [ 0.058](+0.003) LinuxPlatformFactory
-Timeline.Print:   0.226          [ 0.062](+0.000) LuminPlatformFactory
-Timeline.Print:   0.226          [ 0.062](+0.000) WindowsPlatformFactory
-Timeline.Print: [ 0.227](+1.800) <unknown>
-Timeline.Print: [ 2.028](+0.002) Finding engine modules
-Timeline.Print: [ 2.031](+0.003) Finding plugin modules
-Timeline.Print: [ 2.034](+0.071) <unknown>
-Timeline.Print: [ 2.106](+0.000) Finding program modules
-Timeline.Print: [ 2.106](+0.000) Finding program targets
-Timeline.Print: [ 2.125](+0.270) Compiling rules assembly (TowerDefenceModuleRules.dll)
-Timeline.Print: [ 2.395](+1.508) <unknown>
-Timeline.Print: [ 3.903](+0.000) RulesCompiler.CreateTargetRulesAssembly()
-Timeline.Print: [ 3.904](+0.001) RulesAssembly.CreateTargetRules()
-Timeline.Print: [ 3.913](+0.004) UEBuildTarget constructor
-Timeline.Print: [ 3.918](+3.327) UEBuildTarget.PreBuildSetup()
-Timeline.Print: [ 7.246](+0.566) <unknown>
-Timeline.Print: [ 7.812](+0.000) RulesCompiler.CreateTargetRulesAssembly()
-Timeline.Print: [ 7.812](+0.001) RulesAssembly.CreateTargetRules()
-Timeline.Print: [ 7.816](+0.000) UEBuildTarget constructor
-Timeline.Print: [ 7.816](+0.151) UEBuildTarget.PreBuildSetup()
-Timeline.Print: [ 7.967](+22.405) <unknown>
-Timeline.Print: [30.373](+0.000) FileMetadataPrefetch.Stop()
-Timeline.Print: [30.376]
+Timeline.Print: [ 0.000](+0.054) <unknown>
+Timeline.Print: [ 0.054](+0.090) XmlConfig.ReadConfigFiles()
+Timeline.Print: [ 0.145](+0.000) SingleInstanceMutex.Acquire()
+Timeline.Print: [ 0.145](+0.059) UEBuildPlatform.RegisterPlatforms()
+Timeline.Print:   0.146          [ 0.000](+0.029) Initializing InstalledPlatformInfo
+Timeline.Print:   0.175          [ 0.030](+0.000) Querying types
+Timeline.Print:   0.177          [ 0.031](+0.001) MacPlatformFactory
+Timeline.Print:   0.178          [ 0.033](+0.000) TVOSPlatformFactory
+Timeline.Print:   0.178          [ 0.033](+0.016) AndroidPlatformFactory
+Timeline.Print:   0.195          [ 0.050](+0.000) HoloLensPlatformFactory
+Timeline.Print:   0.195          [ 0.050](+0.003) IOSPlatformFactory
+Timeline.Print:   0.199          [ 0.054](+0.003) LinuxPlatformFactory
+Timeline.Print:   0.203          [ 0.057](+0.000) LuminPlatformFactory
+Timeline.Print:   0.203          [ 0.058](+0.000) WindowsPlatformFactory
+Timeline.Print: [ 0.204](+2.196) <unknown>
+Timeline.Print: [ 2.400](+0.002) Finding engine modules
+Timeline.Print: [ 2.403](+0.002) Finding plugin modules
+Timeline.Print: [ 2.405](+0.031) <unknown>
+Timeline.Print: [ 2.437](+0.000) Finding program modules
+Timeline.Print: [ 2.437](+0.000) Finding program targets
+Timeline.Print: [ 2.441](+0.382) Compiling rules assembly (TowerDefenceModuleRules.dll)
+Timeline.Print: [ 2.823](+1.389) <unknown>
+Timeline.Print: [ 4.213](+0.000) RulesCompiler.CreateTargetRulesAssembly()
+Timeline.Print: [ 4.213](+0.001) RulesAssembly.CreateTargetRules()
+Timeline.Print: [ 4.223](+0.004) UEBuildTarget constructor
+Timeline.Print: [ 4.228](+7.256) UEBuildTarget.PreBuildSetup()
+Timeline.Print: [11.485](+0.557) <unknown>
+Timeline.Print: [12.042](+0.000) RulesCompiler.CreateTargetRulesAssembly()
+Timeline.Print: [12.042](+0.001) RulesAssembly.CreateTargetRules()
+Timeline.Print: [12.046](+0.000) UEBuildTarget constructor
+Timeline.Print: [12.046](+0.160) UEBuildTarget.PreBuildSetup()
+Timeline.Print: [12.206](+18.457) <unknown>
+Timeline.Print: [30.664](+0.000) FileMetadataPrefetch.Stop()
+Timeline.Print: [30.666]

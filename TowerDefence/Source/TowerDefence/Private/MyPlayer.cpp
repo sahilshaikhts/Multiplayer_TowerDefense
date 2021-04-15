@@ -126,13 +126,13 @@ void AMyPlayer::LeftMouseClick()
 
 void AMyPlayer::SpawnItem(MyEnums::Item type, AActor* hitActor)
 {
-	if (inventory->GetItemCount(type))
+	//if (inventory->GetItemCount(type))
 	{
 		switch (type)
 		{
 		case MyEnums::troop_swordsMan:
 		{
-			ATroopBase* spwndObj = GetWorld()->SpawnActor<ATroop_melee>(t_troopMelee, hitActor->GetActorLocation() + hitActor->GetActorUpVector(), FRotator(0, 0, 0));
+			ATroopBase* spwndObj = GetWorld()->SpawnActor<ATroop_Ranged>(t_troopRanged, hitActor->GetActorLocation() + hitActor->GetActorUpVector(), FRotator(0, 0, 0));
 			if (spwndObj)
 			{
 				ATroopSpawnPoint* spawnPoint = Cast<ATroopSpawnPoint>(hitActor);

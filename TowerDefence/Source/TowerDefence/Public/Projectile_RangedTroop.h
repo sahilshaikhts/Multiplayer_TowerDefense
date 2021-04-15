@@ -22,7 +22,7 @@ public:
 		class UProjectileMovementComponent* ProjectileMovement;
 
 	UPROPERTY(VisibleAnywhere, Category = "Mesh")
-		class UStaticMeshComponent* StaticMesh;
+		UStaticMeshComponent* Mesh;
 
 	void SetFireDirection(FVector dir);
 

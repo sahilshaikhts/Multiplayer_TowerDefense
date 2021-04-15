@@ -80,7 +80,7 @@ public:
 	bool bIntermissionStart = false;
 	bool bRoundStart = false;
 
-	float RoundTimer = 5.0f;
+	float RoundTimer = 35.0f;
 	float IntermissionTimer = 5.0f;
 
 	FTimerHandle RoundTimerHandle;

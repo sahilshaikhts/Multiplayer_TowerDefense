@@ -5,6 +5,8 @@ C:\Users\sethg\Desktop\High Level Development II\W21_GAM1528_NoNameYet\TowerDefe
 C:\Users\sethg\Desktop\High Level Development II\W21_GAM1528_NoNameYet\TowerDefence\Intermediate\Build\Win64\UE4Editor\Inc\TowerDefence\Inventory.generated.h
 C:\Users\sethg\Desktop\High Level Development II\W21_GAM1528_NoNameYet\TowerDefence\Intermediate\Build\Win64\UE4Editor\Inc\TowerDefence\TroopBase.generated.h
 C:\Users\sethg\Desktop\High Level Development II\W21_GAM1528_NoNameYet\TowerDefence\Intermediate\Build\Win64\UE4Editor\Inc\TowerDefence\Troop_Ranged.generated.h
+D:\Epic Games Files\UE_4.25\Engine\Source\Runtime\Engine\Classes\Components/AudioComponent.h
+D:\Epic Games Files\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\AudioComponent.generated.h
 D:\Epic Games Files\UE_4.25\Engine\Source\Runtime\Engine\Classes\Components/ArrowComponent.h
 D:\Epic Games Files\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\ArrowComponent.generated.h
 C:\Users\sethg\Desktop\High Level Development II\W21_GAM1528_NoNameYet\TowerDefence\Source\TowerDefence\Public\Projectile_RangedTroop.h

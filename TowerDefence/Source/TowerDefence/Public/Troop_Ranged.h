@@ -24,6 +24,8 @@ public:
 	UPROPERTY(EditDefaultsOnly, Category = Projectile)
 		TSubclassOf<class AProjectile_RangedTroop> ProjectileClass;
 
+	virtual bool GetDamage(float value) override;
+
 private:
 
 	void PlayAttackAnimation();

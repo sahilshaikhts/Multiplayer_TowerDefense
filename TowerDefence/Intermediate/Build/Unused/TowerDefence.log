@@ -1,67 +1,12 @@
 ﻿  Using 'git status' to determine working set for adaptive non-unity build (C:\Users\sethg\Desktop\High Level Development II\W21_GAM1528_NoNameYet).
-  Creating makefile for TowerDefenceEditor (no existing makefile)
-  Parsing headers for TowerDefenceEditor
-    Running UnrealHeaderTool "C:\Users\sethg\Desktop\High Level Development II\W21_GAM1528_NoNameYet\TowerDefence\TowerDefence.uproject" "C:\Users\sethg\Desktop\High Level Development II\W21_GAM1528_NoNameYet\TowerDefence\Intermediate\Build\Win64\TowerDefenceEditor\Development\TowerDefenceEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -abslog="C:\Users\sethg\AppData\Local\UnrealBuildTool\Log_UHT.txt" -installed
-  Reflection code generated for TowerDefenceEditor in 8.777845 seconds
   Building TowerDefenceEditor...
   Using Visual Studio 2019 14.22.27905 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.22.27905) and Windows 10.0.18362.0 SDK (C:\Program Files (x86)\Windows Kits\10).
-  Building 55 actions with 12 processes...
-    [1/55] Default.rc2
-    [2/55] SharedPCH.Engine.ShadowErrors.cpp
-    [3/55] Item.cpp
-    [4/55] MyHUD.cpp
-    [5/55] TowerDefenceGameModeBase.cpp
-    [6/55] RewardSystem.cpp
-    [7/55] Projectile_canon.cpp
-    [8/55] Projectile_RangedTroop.cpp
-    [9/55] AI_TroopSpawner.cpp
-    [10/55] TowerSpawnPoint.cpp
-    [11/55] Projectile_XBow.cpp
-    [12/55] MyPlayer.cpp
-    [13/55] Tower_XBow.cpp
-    [14/55] TroopSpawnPoint.cpp
-    [15/55] TroopBase.cpp
-    [16/55] Tower_Canon.cpp
-    [17/55] Tower_Chione.cpp
-    [18/55] TowerDefence.cpp
-    [19/55] Troop_Giant.cpp
-    [20/55] Troop_Ranged.cpp
-    [21/55] Troop_melee.cpp
-    [22/55] AIMovementComponent.cpp
-    [23/55] TowerBase.cpp
-    [24/55] AIMovementComponent.gen.cpp
-    [25/55] Item.gen.cpp
-    [26/55] MyGameStateBase.gen.cpp
-    [27/55] MyHUD.gen.cpp
-    [28/55] MyPlayer.gen.cpp
-    [29/55] Projectile_canon.gen.cpp
-    [30/55] Projectile_RangedTroop.gen.cpp
-    [31/55] Projectile_XBow.gen.cpp
-    [32/55] RewardSystem.gen.cpp
-    [33/55] ShopSystem.gen.cpp
-    [34/55] AI_TroopSpawner.gen.cpp
-    [35/55] TowerSpawnPoint.gen.cpp
-    [36/55] Inventory.gen.cpp
-    [37/55] TowerBase.gen.cpp
-    [38/55] Tower_Chione.gen.cpp
-    [39/55] Tower_Canon.gen.cpp
-    [40/55] Troop_Ranged.gen.cpp
-    [41/55] Troop_Giant.gen.cpp
-    [42/55] Tower_XBow.gen.cpp
-    [43/55] TroopSpawnPoint.gen.cpp
-    [44/55] TowerDefence.init.gen.cpp
-    [45/55] TroopBase.gen.cpp
-    [46/55] Troop_melee.gen.cpp
-    [47/55] TowerDefenceGameModeBase.gen.cpp
-    [48/55] Inventory.cpp
-    [49/55] MyUserWidget.cpp
-    [50/55] MyGameStateBase.cpp
-    [51/55] ShopSystem.cpp
-    [52/55] MyUserWidget.gen.cpp
-    [53/55] UE4Editor-TowerDefence.lib
+  Building 4 actions with 12 processes...
+    [1/4] Troop_Ranged.cpp
+    [2/4] UE4Editor-TowerDefence.lib
        Creating library C:\Users\sethg\Desktop\High Level Development II\W21_GAM1528_NoNameYet\TowerDefence\Intermediate\Build\Win64\UE4Editor\Development\TowerDefence\UE4Editor-TowerDefence.lib and object C:\Users\sethg\Desktop\High Level Development II\W21_GAM1528_NoNameYet\TowerDefence\Intermediate\Build\Win64\UE4Editor\Development\TowerDefence\UE4Editor-TowerDefence.exp
-    [54/55] UE4Editor-TowerDefence.dll
+    [3/4] UE4Editor-TowerDefence.dll
        Creating library C:\Users\sethg\Desktop\High Level Development II\W21_GAM1528_NoNameYet\TowerDefence\Intermediate\Build\Win64\UE4Editor\Development\TowerDefence\UE4Editor-TowerDefence.suppressed.lib and object C:\Users\sethg\Desktop\High Level Development II\W21_GAM1528_NoNameYet\TowerDefence\Intermediate\Build\Win64\UE4Editor\Development\TowerDefence\UE4Editor-TowerDefence.suppressed.exp
-    [55/55] TowerDefenceEditor.target
-  Total time in Parallel executor: 44.87 seconds
-  Total execution time: 56.33 seconds
+    [4/4] TowerDefenceEditor.target
+  Total time in Parallel executor: 2.13 seconds
+  Total execution time: 2.80 seconds

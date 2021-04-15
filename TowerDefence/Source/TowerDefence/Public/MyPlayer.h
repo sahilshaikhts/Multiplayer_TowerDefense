@@ -32,13 +32,21 @@ public:
 	UPROPERTY(EditAnywhere)
 		TSubclassOf<AInventory> T_Inventory;
 
+	//Tower class referencees
 	UPROPERTY(EditAnywhere)
 		TSubclassOf<class ATower_Canon> t_towerCanon;
 	UPROPERTY(EditAnywhere)
-		TSubclassOf<class ATroop_melee> t_troopMelee;
-
+		TSubclassOf<class ATower_Chione> t_towerChione;
 	UPROPERTY(EditAnywhere)
-		TSubclassOf<class ATroopBase> t_troopRanged;
+		TSubclassOf<class ATower_XBow> t_towerXBow;
+
+	//Troop class references
+	UPROPERTY(EditAnywhere)
+		TSubclassOf<class ATroop_melee> t_troopMelee;
+	UPROPERTY(EditAnywhere)
+		TSubclassOf<class ATroop_Ranged> t_troopRanged;
+	UPROPERTY(EditAnywhere)
+		TSubclassOf<class ATroop_Giant> t_troopGiant;
 
 	bool isAttacking;//True: player is in attacking role ; False: player is in defensing role
 

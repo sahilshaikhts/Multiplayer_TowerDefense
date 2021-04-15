@@ -8,7 +8,10 @@
 #include "Components/AudioComponent.h"
 #include "TroopBase.h"
 #include "Tower_Canon.h"
+#include "Tower_XBow.h"
+#include "Tower_Chione.h"
 #include "Troop_Ranged.h"
+#include "Troop_Giant.h"
 #include "TroopSpawnPoint.h"
 #include "AIMovementComponent.h"
 #include "TowerSpawnPoint.h"
@@ -165,9 +168,38 @@ void AMyPlayer::SpawnItem(MyEnums::Item type, AActor* hitActor)
 				AudioComponent->Play();
 			}
 		}
-			break;
+		break;
+		case MyEnums::troop_giant:
+		{
+			ATroopBase* spwndObj = GetWorld()->SpawnActor<ATroop_Giant>(t_troopGiant, hitActor->GetActorLocation() + hitActor->GetActorUpVector(), FRotator(0.0f, 0.0f, 0.0f));
+			if (spwndObj)
+			{
+				ATroopSpawnPoint* spawnPoint = Cast<ATroopSpawnPoint>(hitActor);
+
+				spwndObj->SetPatrolPoints(&spawnPoint->PatrolPoints);
+				spwndObj->player = this;
+
+				AudioComponent->Stop();
+				AudioComponent->SetSound(sfx_SpawnRanged);
+				AudioComponent->Play();
+			}
+		}
+		break;
 		case MyEnums::tower_XBow:
-			break;
+		{
+			ATowerSpawnPoint* spawnPoint = Cast<ATowerSpawnPoint>(hitActor);
+			if (spawnPoint->isEquiped == false)
+			{
+				if (inventory->GetItemCount(MyEnums::Item::tower_XBow))
+				{
+					ATower_XBow* spwndObj = GetWorld()->SpawnActor<ATower_XBow>(t_towerXBow, hitActor->GetActorLocation(), FRotator(0, 0, 0));
+					spwndObj->player = this;
+					spawnPoint->currentTower = spwndObj;
+					spawnPoint->isEquiped = true;
+				}
+			}
+		}
+		break;
 		case MyEnums::tower_canon:
 		{
 			ATowerSpawnPoint* spawnPoint = Cast<ATowerSpawnPoint>(hitActor);
@@ -176,6 +208,21 @@ void AMyPlayer::SpawnItem(MyEnums::Item type, AActor* hitActor)
 				if (inventory->GetItemCount(MyEnums::Item::tower_canon))
 				{
 					ATower_Canon* spwndObj = GetWorld()->SpawnActor<ATower_Canon>(t_towerCanon, hitActor->GetActorLocation(), FRotator(0, 0, 0));
+					spwndObj->player = this;
+					spawnPoint->currentTower = spwndObj;
+					spawnPoint->isEquiped = true;
+				}
+			}
+		}
+		break;
+		case MyEnums::tower_chione:
+		{
+			ATowerSpawnPoint* spawnPoint = Cast<ATowerSpawnPoint>(hitActor);
+			if (spawnPoint->isEquiped == false)
+			{
+				if (inventory->GetItemCount(MyEnums::Item::tower_chione))
+				{
+					ATower_Chione* spwndObj = GetWorld()->SpawnActor<ATower_Chione>(t_towerChione, hitActor->GetActorLocation(), FRotator(0, 0, 0));
 					spwndObj->player = this;
 					spawnPoint->currentTower = spwndObj;
 					spawnPoint->isEquiped = true;

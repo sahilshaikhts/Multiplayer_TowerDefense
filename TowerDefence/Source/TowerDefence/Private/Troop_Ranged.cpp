@@ -12,8 +12,7 @@
 
 ATroop_Ranged::ATroop_Ranged()
 {
-	Muzzle = CreateDefaultSubobject<UArrowComponent>("Muzzle");
-	Muzzle->SetupAttachment(RootComponent);
+	unitType = MyEnums::Item::troop_archer;
 }
 
 void ATroop_Ranged::SetPatrolPoints(TArray<AActor*>* aPatrolPoints)

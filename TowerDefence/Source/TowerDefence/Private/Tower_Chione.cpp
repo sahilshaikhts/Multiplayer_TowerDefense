@@ -12,7 +12,7 @@ void ATower_Chione::BeginPlay()
 	Super::BeginPlay();
 	Tags.Add("Tower_Chione");
 	attackRate = 6;
-	unitType = MyEnums::Item::tower_canon;
+	unitType = MyEnums::Item::tower_chione;
 }
 void ATower_Chione::Tick(float DeltaTime)
 {

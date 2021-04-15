@@ -26,6 +26,7 @@ namespace MyEnums	//Custom enums
 		troop_giant,
 		tower_XBow,
 		tower_canon,
+		tower_chione,
 		TypesCount,
 		none
 	};

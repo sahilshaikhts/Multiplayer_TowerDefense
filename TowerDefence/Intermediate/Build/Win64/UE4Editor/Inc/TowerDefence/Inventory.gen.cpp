@@ -33,7 +33,7 @@ void EmptyLinkFunctionForGeneratedCodeInventory() {}
 		return MyEnums_StaticEnum();
 	}
 	static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_MyEnums(MyEnums_StaticEnum, TEXT("/Script/TowerDefence"), TEXT("MyEnums"), false, nullptr, nullptr);
-	uint32 Get_Z_Construct_UEnum_TowerDefence_MyEnums_Hash() { return 3476678671U; }
+	uint32 Get_Z_Construct_UEnum_TowerDefence_MyEnums_Hash() { return 764068928U; }
 	UEnum* Z_Construct_UEnum_TowerDefence_MyEnums()
 	{
 #if WITH_HOT_RELOAD
@@ -50,6 +50,7 @@ void EmptyLinkFunctionForGeneratedCodeInventory() {}
 				{ "MyEnums::troop_giant", (int64)MyEnums::troop_giant },
 				{ "MyEnums::tower_XBow", (int64)MyEnums::tower_XBow },
 				{ "MyEnums::tower_canon", (int64)MyEnums::tower_canon },
+				{ "MyEnums::tower_chione", (int64)MyEnums::tower_chione },
 				{ "MyEnums::TypesCount", (int64)MyEnums::TypesCount },
 				{ "MyEnums::none", (int64)MyEnums::none },
 			};
@@ -61,6 +62,7 @@ void EmptyLinkFunctionForGeneratedCodeInventory() {}
 				{ "none.Name", "MyEnums::none" },
 				{ "ToolTip", "Custom enums\nArranged according to how powerful(hp,attackRate,damge) the item is" },
 				{ "tower_canon.Name", "MyEnums::tower_canon" },
+				{ "tower_chione.Name", "MyEnums::tower_chione" },
 				{ "tower_XBow.Name", "MyEnums::tower_XBow" },
 				{ "troop_archer.Name", "MyEnums::troop_archer" },
 				{ "troop_giant.Name", "MyEnums::troop_giant" },

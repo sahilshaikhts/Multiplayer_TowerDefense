@@ -21,8 +21,11 @@ void EmptyLinkFunctionForGeneratedCodeMyPlayer() {}
 	ENGINE_API UClass* Z_Construct_UClass_USoundBase_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UAudioComponent_NoRegister();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
-	TOWERDEFENCE_API UClass* Z_Construct_UClass_ATroopBase_NoRegister();
+	TOWERDEFENCE_API UClass* Z_Construct_UClass_ATroop_Giant_NoRegister();
+	TOWERDEFENCE_API UClass* Z_Construct_UClass_ATroop_Ranged_NoRegister();
 	TOWERDEFENCE_API UClass* Z_Construct_UClass_ATroop_melee_NoRegister();
+	TOWERDEFENCE_API UClass* Z_Construct_UClass_ATower_XBow_NoRegister();
+	TOWERDEFENCE_API UClass* Z_Construct_UClass_ATower_Chione_NoRegister();
 	TOWERDEFENCE_API UClass* Z_Construct_UClass_ATower_Canon_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_USpringArmComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UCameraComponent_NoRegister();
@@ -100,6 +103,10 @@ void EmptyLinkFunctionForGeneratedCodeMyPlayer() {}
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_AudioComponent;
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_t_troopGiant_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FClassPropertyParams NewProp_t_troopGiant;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_t_troopRanged_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FClassPropertyParams NewProp_t_troopRanged;
@@ -107,6 +114,14 @@ void EmptyLinkFunctionForGeneratedCodeMyPlayer() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_t_troopMelee_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FClassPropertyParams NewProp_t_troopMelee;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_t_towerXBow_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FClassPropertyParams NewProp_t_towerXBow;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_t_towerChione_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FClassPropertyParams NewProp_t_towerChione;
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_t_towerCanon_MetaData[];
 #endif
@@ -164,23 +179,48 @@ void EmptyLinkFunctionForGeneratedCodeMyPlayer() {}
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AMyPlayer_Statics::NewProp_AudioComponent = { "AudioComponent", nullptr, (EPropertyFlags)0x00100000000a001d, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AMyPlayer, AudioComponent), Z_Construct_UClass_UAudioComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AMyPlayer_Statics::NewProp_AudioComponent_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AMyPlayer_Statics::NewProp_AudioComponent_MetaData)) };
 #if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AMyPlayer_Statics::NewProp_t_troopGiant_MetaData[] = {
+		{ "Category", "MyPlayer" },
+		{ "ModuleRelativePath", "Public/MyPlayer.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AMyPlayer_Statics::NewProp_t_troopGiant = { "t_troopGiant", nullptr, (EPropertyFlags)0x0014000000000001, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AMyPlayer, t_troopGiant), Z_Construct_UClass_ATroop_Giant_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_AMyPlayer_Statics::NewProp_t_troopGiant_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AMyPlayer_Statics::NewProp_t_troopGiant_MetaData)) };
+#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AMyPlayer_Statics::NewProp_t_troopRanged_MetaData[] = {
 		{ "Category", "MyPlayer" },
 		{ "ModuleRelativePath", "Public/MyPlayer.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AMyPlayer_Statics::NewProp_t_troopRanged = { "t_troopRanged", nullptr, (EPropertyFlags)0x0014000000000001, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AMyPlayer, t_troopRanged), Z_Construct_UClass_ATroopBase_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_AMyPlayer_Statics::NewProp_t_troopRanged_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AMyPlayer_Statics::NewProp_t_troopRanged_MetaData)) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AMyPlayer_Statics::NewProp_t_troopRanged = { "t_troopRanged", nullptr, (EPropertyFlags)0x0014000000000001, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AMyPlayer, t_troopRanged), Z_Construct_UClass_ATroop_Ranged_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_AMyPlayer_Statics::NewProp_t_troopRanged_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AMyPlayer_Statics::NewProp_t_troopRanged_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AMyPlayer_Statics::NewProp_t_troopMelee_MetaData[] = {
 		{ "Category", "MyPlayer" },
+		{ "Comment", "//Troop class references\n" },
 		{ "ModuleRelativePath", "Public/MyPlayer.h" },
+		{ "ToolTip", "Troop class references" },
 	};
 #endif
 	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AMyPlayer_Statics::NewProp_t_troopMelee = { "t_troopMelee", nullptr, (EPropertyFlags)0x0014000000000001, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AMyPlayer, t_troopMelee), Z_Construct_UClass_ATroop_melee_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_AMyPlayer_Statics::NewProp_t_troopMelee_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AMyPlayer_Statics::NewProp_t_troopMelee_MetaData)) };
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AMyPlayer_Statics::NewProp_t_towerCanon_MetaData[] = {
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AMyPlayer_Statics::NewProp_t_towerXBow_MetaData[] = {
 		{ "Category", "MyPlayer" },
 		{ "ModuleRelativePath", "Public/MyPlayer.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AMyPlayer_Statics::NewProp_t_towerXBow = { "t_towerXBow", nullptr, (EPropertyFlags)0x0014000000000001, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AMyPlayer, t_towerXBow), Z_Construct_UClass_ATower_XBow_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_AMyPlayer_Statics::NewProp_t_towerXBow_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AMyPlayer_Statics::NewProp_t_towerXBow_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AMyPlayer_Statics::NewProp_t_towerChione_MetaData[] = {
+		{ "Category", "MyPlayer" },
+		{ "ModuleRelativePath", "Public/MyPlayer.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AMyPlayer_Statics::NewProp_t_towerChione = { "t_towerChione", nullptr, (EPropertyFlags)0x0014000000000001, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AMyPlayer, t_towerChione), Z_Construct_UClass_ATower_Chione_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_AMyPlayer_Statics::NewProp_t_towerChione_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AMyPlayer_Statics::NewProp_t_towerChione_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AMyPlayer_Statics::NewProp_t_towerCanon_MetaData[] = {
+		{ "Category", "MyPlayer" },
+		{ "Comment", "//Tower class referencees\n" },
+		{ "ModuleRelativePath", "Public/MyPlayer.h" },
+		{ "ToolTip", "Tower class referencees" },
 	};
 #endif
 	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AMyPlayer_Statics::NewProp_t_towerCanon = { "t_towerCanon", nullptr, (EPropertyFlags)0x0014000000000001, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AMyPlayer, t_towerCanon), Z_Construct_UClass_ATower_Canon_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_AMyPlayer_Statics::NewProp_t_towerCanon_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AMyPlayer_Statics::NewProp_t_towerCanon_MetaData)) };
@@ -211,8 +251,11 @@ void EmptyLinkFunctionForGeneratedCodeMyPlayer() {}
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMyPlayer_Statics::NewProp_sfx_SpawnMelee,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMyPlayer_Statics::NewProp_sfx_SpawnRanged,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMyPlayer_Statics::NewProp_AudioComponent,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMyPlayer_Statics::NewProp_t_troopGiant,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMyPlayer_Statics::NewProp_t_troopRanged,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMyPlayer_Statics::NewProp_t_troopMelee,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMyPlayer_Statics::NewProp_t_towerXBow,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMyPlayer_Statics::NewProp_t_towerChione,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMyPlayer_Statics::NewProp_t_towerCanon,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMyPlayer_Statics::NewProp_T_Inventory,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMyPlayer_Statics::NewProp_cameraSpring,
@@ -245,7 +288,7 @@ void EmptyLinkFunctionForGeneratedCodeMyPlayer() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AMyPlayer, 2501916530);
+	IMPLEMENT_CLASS(AMyPlayer, 340898150);
 	template<> TOWERDEFENCE_API UClass* StaticClass<AMyPlayer>()
 	{
 		return AMyPlayer::StaticClass();

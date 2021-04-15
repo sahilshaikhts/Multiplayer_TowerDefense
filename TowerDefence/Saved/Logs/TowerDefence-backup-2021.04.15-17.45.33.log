@@ -1,0 +1,1766 @@
+﻿Log file open, 04/15/21 13:20:43
+LogInit: Display: Running engine for game: TowerDefence
+LogPlatformFile: Not using cached read wrapper
+LogTaskGraph: Started task graph with 5 named threads and 35 total threads with 3 sets of task threads.
+LogStats: Stats thread started at 0.294718
+LogD3D11RHI: Loaded GFSDK_Aftermath_Lib.x64.dll
+LogICUInternationalization: ICU TimeZone Detection - Raw Offset: -5:00, Platform Override: ''
+LogPluginManager: Mounting plugin Paper2D
+LogPluginManager: Mounting plugin AISupport
+LogPluginManager: Mounting plugin LightPropagationVolume
+LogPluginManager: Mounting plugin CameraShakePreviewer
+LogPluginManager: Mounting plugin ActorLayerUtilities
+LogPluginManager: Mounting plugin AnimationSharing
+LogPluginManager: Mounting plugin CLionSourceCodeAccess
+LogPluginManager: Mounting plugin CodeLiteSourceCodeAccess
+LogPluginManager: Mounting plugin GitSourceControl
+LogPluginManager: Mounting plugin KDevelopSourceCodeAccess
+LogPluginManager: Mounting plugin NullSourceCodeAccess
+LogPluginManager: Mounting plugin PerforceSourceControl
+LogPluginManager: Mounting plugin PlasticSourceControl
+LogPluginManager: Mounting plugin RiderSourceCodeAccess
+LogPluginManager: Mounting plugin SubversionSourceControl
+LogPluginManager: Mounting plugin UObjectPlugin
+LogPluginManager: Mounting plugin VisualStudioCodeSourceCodeAccess
+LogPluginManager: Mounting plugin VisualStudioSourceCodeAccess
+LogPluginManager: Mounting plugin XCodeSourceCodeAccess
+LogPluginManager: Mounting plugin AssetManagerEditor
+LogPluginManager: Mounting plugin CryptoKeys
+LogPluginManager: Mounting plugin CurveEditorTools
+LogPluginManager: Mounting plugin DataValidation
+LogPluginManager: Mounting plugin EditorScriptingUtilities
+LogPluginManager: Mounting plugin FacialAnimation
+LogPluginManager: Mounting plugin GameplayTagsEditor
+LogPluginManager: Mounting plugin GeometryMode
+LogPluginManager: Mounting plugin MacGraphicsSwitching
+LogPluginManager: Mounting plugin MaterialAnalyzer
+LogPluginManager: Mounting plugin MobileLauncherProfileWizard
+LogPluginManager: Mounting plugin PluginBrowser
+LogPluginManager: Mounting plugin SpeedTreeImporter
+LogPluginManager: Mounting plugin DatasmithContent
+LogPluginManager: Mounting plugin VariantManagerContent
+LogPluginManager: Mounting plugin AlembicImporter
+LogPluginManager: Mounting plugin AutomationUtils
+LogPluginManager: Mounting plugin BackChannel
+LogPluginManager: Mounting plugin ChaosCloth
+LogPluginManager: Mounting plugin ChaosClothEditor
+LogPluginManager: Mounting plugin ChaosEditor
+LogPluginManager: Mounting plugin ChaosNiagara
+LogPluginManager: Mounting plugin ChaosSolverPlugin
+LogPluginManager: Mounting plugin CharacterAI
+LogPluginManager: Mounting plugin GeometryCache
+LogPluginManager: Mounting plugin GeometryCollectionPlugin
+LogPluginManager: Mounting plugin GeometryProcessing
+LogPluginManager: Mounting plugin PlanarCut
+LogPluginManager: Mounting plugin PlatformCrypto
+LogPluginManager: Mounting plugin ProxyLODPlugin
+LogPluginManager: Mounting plugin SkeletalReduction
+LogPluginManager: Mounting plugin Niagara
+LogPluginManager: Mounting plugin MagicLeap
+LogPluginManager: Mounting plugin MagicLeapLightEstimation
+LogPluginManager: Mounting plugin MagicLeapMedia
+LogPluginManager: Mounting plugin MagicLeapPassableWorld
+LogPluginManager: Mounting plugin MLSDK
+LogPluginManager: Mounting plugin AndroidMedia
+LogPluginManager: Mounting plugin AvfMedia
+LogPluginManager: Mounting plugin ImgMedia
+LogPluginManager: Mounting plugin MediaCompositing
+LogPluginManager: Mounting plugin MediaPlayerEditor
+LogPluginManager: Mounting plugin WebMMedia
+LogPluginManager: Mounting plugin WmfMedia
+LogPluginManager: Mounting plugin MeshPainting
+LogPluginManager: Mounting plugin TcpMessaging
+LogPluginManager: Mounting plugin UdpMessaging
+LogPluginManager: Mounting plugin ActorSequence
+LogPluginManager: Mounting plugin LevelSequenceEditor
+LogPluginManager: Mounting plugin MatineeToLevelSequence
+LogPluginManager: Mounting plugin MovieRenderPipeline
+LogPluginManager: Mounting plugin TemplateSequence
+LogPluginManager: Mounting plugin NetcodeUnitTest
+LogPluginManager: Mounting plugin NUTUnrealEngine4
+LogPluginManager: Mounting plugin OnlineSubsystemGooglePlay
+LogPluginManager: Mounting plugin OnlineSubsystemIOS
+LogPluginManager: Mounting plugin OnlineSubsystem
+LogPluginManager: Mounting plugin OnlineSubsystemNull
+LogPluginManager: Mounting plugin OnlineSubsystemUtils
+LogPluginManager: Mounting plugin LauncherChunkInstaller
+LogPluginManager: Mounting plugin AndroidDeviceProfileSelector
+LogPluginManager: Mounting plugin AndroidMoviePlayer
+LogPluginManager: Mounting plugin AndroidPermission
+LogPluginManager: Mounting plugin AppleImageUtils
+LogPluginManager: Mounting plugin AppleMoviePlayer
+LogPluginManager: Mounting plugin ArchVisCharacter
+LogPluginManager: Mounting plugin AssetTags
+LogPluginManager: Mounting plugin AudioCapture
+LogPluginManager: Mounting plugin CableComponent
+LogPluginManager: Mounting plugin CustomMeshComponent
+LogPluginManager: Mounting plugin EditableMesh
+LogPluginManager: Mounting plugin ExampleDeviceProfileSelector
+LogPluginManager: Mounting plugin GoogleCloudMessaging
+LogPluginManager: Mounting plugin GooglePAD
+LogPluginManager: Mounting plugin IOSDeviceProfileSelector
+LogPluginManager: Mounting plugin LinuxDeviceProfileSelector
+LogPluginManager: Mounting plugin LocationServicesBPLibrary
+LogPluginManager: Mounting plugin MobilePatchingUtils
+LogPluginManager: Mounting plugin OculusVR
+LogPluginManager: Mounting plugin PhysXVehicles
+LogPluginManager: Mounting plugin PostSplashScreen
+LogPluginManager: Mounting plugin ProceduralMeshComponent
+LogPluginManager: Mounting plugin RuntimePhysXCooking
+LogPluginManager: Mounting plugin SignificanceManager
+LogPluginManager: Mounting plugin SoundFields
+LogPluginManager: Mounting plugin SteamVR
+LogPluginManager: Mounting plugin Synthesis
+LogPluginManager: Mounting plugin WebMMoviePlayer
+LogPluginManager: Mounting plugin WindowsMoviePlayer
+LogPluginManager: Mounting plugin ScreenshotTools
+LogInit: Warning: Incompatible or missing module: TowerDefence
+Running D:/Epic Games Files/UE_4.25/Engine/Binaries/DotNET/UnrealBuildTool.exe Development Win64 -Project="C:/Users/sethg/Desktop/High Level Development II/W21_GAM1528_NoNameYet/TowerDefence/TowerDefence.uproject" -TargetType=Editor -Progress -NoEngineChanges -NoHotReloadFromIDE
+Using 'git status' to determine working set for adaptive non-unity build (C:\Users\sethg\Desktop\High Level Development II\W21_GAM1528_NoNameYet).
+Creating makefile for TowerDefenceEditor (no existing makefile)
+@progress push 5%
+Parsing headers for TowerDefenceEditor
+  Running UnrealHeaderTool "C:\Users\sethg\Desktop\High Level Development II\W21_GAM1528_NoNameYet\TowerDefence\TowerDefence.uproject" "C:\Users\sethg\Desktop\High Level Development II\W21_GAM1528_NoNameYet\TowerDefence\Intermediate\Build\Win64\TowerDefenceEditor\Development\TowerDefenceEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -abslog="C:\Users\sethg\AppData\Local\UnrealBuildTool\Log_UHT.txt" -installed
+Reflection code generated for TowerDefenceEditor in 6.1060055 seconds
+@progress pop
+Building TowerDefenceEditor...
+Using Visual Studio 2019 14.22.27905 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.22.27905) and Windows 10.0.18362.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+Building 55 actions with 12 processes...
+  @progress 'Compiling C++ source code...' 0%
+  @progress 'Compiling C++ source code...' 2%
+  [1/55] Default.rc2
+  @progress 'Compiling C++ source code...' 4%
+  [2/55] SharedPCH.Engine.ShadowErrors.cpp
+  @progress 'Compiling C++ source code...' 5%
+  [3/55] RewardSystem.cpp
+  @progress 'Compiling C++ source code...' 7%
+  [4/55] TowerSpawnPoint.cpp
+  @progress 'Compiling C++ source code...' 9%
+  [5/55] Item.cpp
+  @progress 'Compiling C++ source code...' 11%
+  [6/55] MyHUD.cpp
+  @progress 'Compiling C++ source code...' 13%
+  [7/55] TowerDefenceGameModeBase.cpp
+  @progress 'Compiling C++ source code...' 15%
+  [8/55] Projectile_RangedTroop.cpp
+  @progress 'Compiling C++ source code...' 16%
+  [9/55] AI_TroopSpawner.cpp
+  @progress 'Compiling C++ source code...' 18%
+  [10/55] Projectile_XBow.cpp
+  @progress 'Compiling C++ source code...' 20%
+  [11/55] Projectile_canon.cpp
+  @progress 'Compiling C++ source code...' 22%
+  [12/55] MyPlayer.cpp
+  @progress 'Compiling C++ source code...' 24%
+  [13/55] TroopSpawnPoint.cpp
+  @progress 'Compiling C++ source code...' 25%
+  [14/55] Tower_XBow.cpp
+  @progress 'Compiling C++ source code...' 27%
+  [15/55] Tower_Chione.cpp
+  @progress 'Compiling C++ source code...' 29%
+  [16/55] TowerDefence.cpp
+  @progress 'Compiling C++ source code...' 31%
+  [17/55] TroopBase.cpp
+  @progress 'Compiling C++ source code...' 33%
+  [18/55] Tower_Canon.cpp
+  @progress 'Compiling C++ source code...' 35%
+  [19/55] Troop_Ranged.cpp
+  @progress 'Compiling C++ source code...' 36%
+  [20/55] Troop_Giant.cpp
+  @progress 'Compiling C++ source code...' 38%
+  [21/55] TowerBase.cpp
+  @progress 'Compiling C++ source code...' 40%
+  [22/55] Troop_melee.cpp
+  @progress 'Compiling C++ source code...' 42%
+  [23/55] AIMovementComponent.cpp
+  @progress 'Compiling C++ source code...' 44%
+  [24/55] AIMovementComponent.gen.cpp
+  @progress 'Compiling C++ source code...' 45%
+  [25/55] Item.gen.cpp
+  @progress 'Compiling C++ source code...' 47%
+  [26/55] MyGameStateBase.gen.cpp
+  @progress 'Compiling C++ source code...' 49%
+  [27/55] MyHUD.gen.cpp
+  @progress 'Compiling C++ source code...' 51%
+  [28/55] MyPlayer.gen.cpp
+  @progress 'Compiling C++ source code...' 53%
+  [29/55] Projectile_canon.gen.cpp
+  @progress 'Compiling C++ source code...' 55%
+  [30/55] Projectile_RangedTroop.gen.cpp
+  @progress 'Compiling C++ source code...' 56%
+  [31/55] Projectile_XBow.gen.cpp
+  @progress 'Compiling C++ source code...' 58%
+  [32/55] RewardSystem.gen.cpp
+  @progress 'Compiling C++ source code...' 60%
+  [33/55] ShopSystem.gen.cpp
+  @progress 'Compiling C++ source code...' 62%
+  [34/55] Inventory.gen.cpp
+  @progress 'Compiling C++ source code...' 64%
+  [35/55] TowerBase.gen.cpp
+  @progress 'Compiling C++ source code...' 65%
+  [36/55] AI_TroopSpawner.gen.cpp
+  @progress 'Compiling C++ source code...' 67%
+  [37/55] TowerSpawnPoint.gen.cpp
+  @progress 'Compiling C++ source code...' 69%
+  [38/55] Tower_Canon.gen.cpp
+  @progress 'Compiling C++ source code...' 71%
+  [39/55] Tower_Chione.gen.cpp
+  @progress 'Compiling C++ source code...' 73%
+  [40/55] Tower_XBow.gen.cpp
+  @progress 'Compiling C++ source code...' 75%
+  [41/55] TroopBase.gen.cpp
+  @progress 'Compiling C++ source code...' 76%
+  [42/55] TroopSpawnPoint.gen.cpp
+  @progress 'Compiling C++ source code...' 78%
+  [43/55] Troop_melee.gen.cpp
+  @progress 'Compiling C++ source code...' 80%
+  [44/55] Troop_Giant.gen.cpp
+  @progress 'Compiling C++ source code...' 82%
+  [45/55] Troop_Ranged.gen.cpp
+  @progress 'Compiling C++ source code...' 84%
+  [46/55] TowerDefence.init.gen.cpp
+  @progress 'Compiling C++ source code...' 85%
+  [47/55] Inventory.cpp
+  @progress 'Compiling C++ source code...' 87%
+  [48/55] TowerDefenceGameModeBase.gen.cpp
+  @progress 'Compiling C++ source code...' 89%
+  [49/55] MyUserWidget.cpp
+  @progress 'Compiling C++ source code...' 91%
+  [50/55] MyGameStateBase.cpp
+  @progress 'Compiling C++ source code...' 93%
+  [51/55] ShopSystem.cpp
+  @progress 'Compiling C++ source code...' 95%
+  [52/55] MyUserWidget.gen.cpp
+  @progress 'Compiling C++ source code...' 96%
+  [53/55] UE4Editor-TowerDefence.lib
+     Creating library C:\Users\sethg\Desktop\High Level Development II\W21_GAM1528_NoNameYet\TowerDefence\Intermediate\Build\Win64\UE4Editor\Development\TowerDefence\UE4Editor-TowerDefence.lib and object C:\Users\sethg\Desktop\High Level Development II\W21_GAM1528_NoNameYet\TowerDefence\Intermediate\Build\Win64\UE4Editor\Development\TowerDefence\UE4Editor-TowerDefence.exp
+  @progress 'Compiling C++ source code...' 98%
+  [54/55] UE4Editor-TowerDefence.dll
+     Creating library C:\Users\sethg\Desktop\High Level Development II\W21_GAM1528_NoNameYet\TowerDefence\Intermediate\Build\Win64\UE4Editor\Development\TowerDefence\UE4Editor-TowerDefence.suppressed.lib and object C:\Users\sethg\Desktop\High Level Development II\W21_GAM1528_NoNameYet\TowerDefence\Intermediate\Build\Win64\UE4Editor\Development\TowerDefence\UE4Editor-TowerDefence.suppressed.exp
+  @progress 'Compiling C++ source code...' 100%
+  [55/55] TowerDefenceEditor.target
+Total time in Parallel executor: 43.38 seconds
+Total execution time: 52.22 seconds
+LogInit: Using libcurl 7.55.1-DEV
+LogInit:  - built for x86_64-pc-win32
+LogInit:  - supports SSL with OpenSSL/1.1.1
+LogInit:  - supports HTTP deflate (compression) using libz 1.2.8
+LogInit:  - other features:
+LogInit:      CURL_VERSION_SSL
+LogInit:      CURL_VERSION_LIBZ
+LogInit:      CURL_VERSION_IPV6
+LogInit:      CURL_VERSION_ASYNCHDNS
+LogInit:      CURL_VERSION_LARGEFILE
+LogInit:      CURL_VERSION_IDN
+LogInit:  CurlRequestOptions (configurable via config and command line):
+LogInit:  - bVerifyPeer = true  - Libcurl will verify peer certificate
+LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+LogInit:  - MaxHostConnections = 16  - Libcurl will limit the number of connections to a host
+LogInit:  - LocalHostAddr = Default
+LogInit:  - BufferSize = 65536
+LogOnline: OSS: Creating online subsystem instance for: NULL
+LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+LogOnline: OSS: TryLoadSubsystemAndSetDefault: Loaded subsystem for module [NULL]
+LogInit: Build: ++UE4+Release-4.25-CL-13942748
+LogInit: Engine Version: 4.25.3-13942748+++UE4+Release-4.25
+LogInit: Compatible Engine Version: 4.25.0-13144385+++UE4+Release-4.25
+LogInit: Net CL: 13144385
+LogInit: OS: Windows 10 (Release 2009) (), CPU: Intel(R) Core(TM) i7-8750H CPU @ 2.20GHz, GPU: Intel(R) UHD Graphics 630
+LogInit: Compiled (64-bit): Jul 25 2020 02:07:48
+LogInit: Compiled with Visual C++: 19.24.28315.00
+LogInit: Build Configuration: Development
+LogInit: Branch Name: ++UE4+Release-4.25
+LogInit: Command Line: 
+LogInit: Base Directory: D:/Epic Games Files/UE_4.25/Engine/Binaries/Win64/
+LogInit: Allocator: TBB
+LogInit: Installed Engine Build: 1
+LogDevObjectVersion: Number of dev versions registered: 26
+LogDevObjectVersion:   Dev-Blueprints (B0D832E4-1F89-4F0D-ACCF-7EB736FD4AA2): 10
+LogDevObjectVersion:   Dev-Build (E1C64328-A22C-4D53-A36C-8E866417BD8C): 0
+LogDevObjectVersion:   Dev-Core (375EC13C-06E4-48FB-B500-84F0262A717E): 4
+LogDevObjectVersion:   Dev-Editor (E4B068ED-F494-42E9-A231-DA0B2E46BB41): 38
+LogDevObjectVersion:   Dev-Framework (CFFC743F-43B0-4480-9391-14DF171D2073): 37
+LogDevObjectVersion:   Dev-Mobile (B02B49B5-BB20-44E9-A304-32B752E40360): 2
+LogDevObjectVersion:   Dev-Networking (A4E4105C-59A1-49B5-A7C5-40C4547EDFEE): 0
+LogDevObjectVersion:   Dev-Online (39C831C9-5AE6-47DC-9A44-9C173E1C8E7C): 0
+LogDevObjectVersion:   Dev-Physics (78F01B33-EBEA-4F98-B9B4-84EACCB95AA2): 4
+LogDevObjectVersion:   Dev-Platform (6631380F-2D4D-43E0-8009-CF276956A95A): 0
+LogDevObjectVersion:   Dev-Rendering (12F88B9F-8875-4AFC-A67C-D90C383ABD29): 43
+LogDevObjectVersion:   Dev-Sequencer (7B5AE74C-D270-4C10-A958-57980B212A5A): 12
+LogDevObjectVersion:   Dev-VR (D7296918-1DD6-4BDD-9DE2-64A83CC13884): 3
+LogDevObjectVersion:   Dev-LoadTimes (C2A15278-BFE7-4AFE-6C17-90FF531DF755): 1
+LogDevObjectVersion:   Private-Geometry (6EACA3D4-40EC-4CC1-B786-8BED09428FC5): 3
+LogDevObjectVersion:   Dev-AnimPhys (29E575DD-E0A3-4627-9D10-D276232CDCEA): 17
+LogDevObjectVersion:   Dev-Anim (AF43A65D-7FD3-4947-9873-3E8ED9C1BB05): 7
+LogDevObjectVersion:   Dev-ReflectionCapture (6B266CEC-1EC7-4B8F-A30B-E4D90942FC07): 1
+LogDevObjectVersion:   Dev-Automation (0DF73D61-A23F-47EA-B727-89E90C41499A): 1
+LogDevObjectVersion:   FortniteMain (601D1886-AC64-4F84-AA16-D3DE0DEAC7D6): 31
+LogDevObjectVersion:   Dev-Enterprise (9DFFBCD6-494F-0158-E221-12823C92A888): 10
+LogDevObjectVersion:   Dev-Niagara (F2AED0AC-9AFE-416F-8664-AA7FFA26D6FC): 1
+LogDevObjectVersion:   Dev-Destruction (174F1F0B-B4C6-45A5-B13F-2EE8D0FB917D): 10
+LogDevObjectVersion:   Dev-Physics-Ext (35F94A83-E258-406C-A318-09F59610247C): 37
+LogDevObjectVersion:   Dev-PhysicsMaterial-Chaos (B68FC16E-8B1B-42E2-B453-215C058844FE): 1
+LogDevObjectVersion:   Dev-CineCamera (B2E18506-4273-CFC2-A54E-F4BB758BBA07): 1
+LogInit: Presizing for max 25165824 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
+LogConfig: Applying CVar settings from Section [/Script/Engine.StreamingSettings] File [C:/Users/sethg/Desktop/High Level Development II/W21_GAM1528_NoNameYet/TowerDefence/Saved/Config/Windows/Engine.ini]
+LogConfig: Setting CVar [[s.MinBulkDataSizeForAsyncLoading:131072]]
+LogConfig: Setting CVar [[s.AsyncLoadingThreadEnabled:0]]
+LogConfig: Setting CVar [[s.EventDrivenLoaderEnabled:1]]
+LogConfig: Setting CVar [[s.WarnIfTimeLimitExceeded:0]]
+LogConfig: Setting CVar [[s.TimeLimitExceededMultiplier:1.5]]
+LogConfig: Setting CVar [[s.TimeLimitExceededMinTime:0.005]]
+LogConfig: Setting CVar [[s.UseBackgroundLevelStreaming:1]]
+LogConfig: Setting CVar [[s.PriorityAsyncLoadingExtraTime:15.0]]
+LogConfig: Setting CVar [[s.LevelStreamingActorsUpdateTimeLimit:5.0]]
+LogConfig: Setting CVar [[s.PriorityLevelStreamingActorsUpdateExtraTime:5.0]]
+LogConfig: Setting CVar [[s.LevelStreamingComponentsRegistrationGranularity:10]]
+LogConfig: Setting CVar [[s.UnregisterComponentsTimeLimit:1.0]]
+LogConfig: Setting CVar [[s.LevelStreamingComponentsUnregistrationGranularity:5]]
+LogConfig: Setting CVar [[s.FlushStreamingOnExit:1]]
+LogInit: Object subsystem initialized
+LogConfig: Setting CVar [[con.DebugEarlyDefault:1]]
+LogConfig: Setting CVar [[r.setres:1280x720]]
+[2021.04.15-17.21.38:490][  0]LogConfig: Setting CVar [[r.VSync:0]]
+[2021.04.15-17.21.38:490][  0]LogConfig: Setting CVar [[r.RHICmdBypass:0]]
+[2021.04.15-17.21.38:490][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererSettings] File [C:/Users/sethg/Desktop/High Level Development II/W21_GAM1528_NoNameYet/TowerDefence/Saved/Config/Windows/Engine.ini]
+[2021.04.15-17.21.38:490][  0]LogConfig: Setting CVar [[r.GPUCrashDebugging:0]]
+[2021.04.15-17.21.38:490][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererOverrideSettings] File [C:/Users/sethg/Desktop/High Level Development II/W21_GAM1528_NoNameYet/TowerDefence/Saved/Config/Windows/Engine.ini]
+[2021.04.15-17.21.38:490][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.StreamingSettings] File [C:/Users/sethg/Desktop/High Level Development II/W21_GAM1528_NoNameYet/TowerDefence/Saved/Config/Windows/Engine.ini]
+[2021.04.15-17.21.38:490][  0]LogConfig: Setting CVar [[s.MinBulkDataSizeForAsyncLoading:131072]]
+[2021.04.15-17.21.38:490][  0]LogConfig: Setting CVar [[s.AsyncLoadingThreadEnabled:0]]
+[2021.04.15-17.21.38:490][  0]LogConfig: Setting CVar [[s.EventDrivenLoaderEnabled:1]]
+[2021.04.15-17.21.38:490][  0]LogConfig: Setting CVar [[s.WarnIfTimeLimitExceeded:0]]
+[2021.04.15-17.21.38:490][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMultiplier:1.5]]
+[2021.04.15-17.21.38:490][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMinTime:0.005]]
+[2021.04.15-17.21.38:490][  0]LogConfig: Setting CVar [[s.UseBackgroundLevelStreaming:1]]
+[2021.04.15-17.21.38:490][  0]LogConfig: Setting CVar [[s.PriorityAsyncLoadingExtraTime:15.0]]
+[2021.04.15-17.21.38:490][  0]LogConfig: Setting CVar [[s.LevelStreamingActorsUpdateTimeLimit:5.0]]
+[2021.04.15-17.21.38:490][  0]LogConfig: Setting CVar [[s.PriorityLevelStreamingActorsUpdateExtraTime:5.0]]
+[2021.04.15-17.21.38:490][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsRegistrationGranularity:10]]
+[2021.04.15-17.21.38:490][  0]LogConfig: Setting CVar [[s.UnregisterComponentsTimeLimit:1.0]]
+[2021.04.15-17.21.38:490][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsUnregistrationGranularity:5]]
+[2021.04.15-17.21.38:490][  0]LogConfig: Setting CVar [[s.FlushStreamingOnExit:1]]
+[2021.04.15-17.21.38:490][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.GarbageCollectionSettings] File [C:/Users/sethg/Desktop/High Level Development II/W21_GAM1528_NoNameYet/TowerDefence/Saved/Config/Windows/Engine.ini]
+[2021.04.15-17.21.38:490][  0]LogConfig: Setting CVar [[gc.MaxObjectsNotConsideredByGC:1]]
+[2021.04.15-17.21.38:490][  0]LogConfig: Setting CVar [[gc.SizeOfPermanentObjectPool:0]]
+[2021.04.15-17.21.38:490][  0]LogConfig: Setting CVar [[gc.FlushStreamingOnGC:0]]
+[2021.04.15-17.21.38:490][  0]LogConfig: Setting CVar [[gc.NumRetriesBeforeForcingGC:10]]
+[2021.04.15-17.21.38:490][  0]LogConfig: Setting CVar [[gc.AllowParallelGC:1]]
+[2021.04.15-17.21.38:490][  0]LogConfig: Setting CVar [[gc.TimeBetweenPurgingPendingKillObjects:61.1]]
+[2021.04.15-17.21.38:490][  0]LogConfig: Setting CVar [[gc.MaxObjectsInEditor:25165824]]
+[2021.04.15-17.21.38:490][  0]LogConfig: Setting CVar [[gc.IncrementalBeginDestroyEnabled:1]]
+[2021.04.15-17.21.38:490][  0]LogConfig: Setting CVar [[gc.CreateGCClusters:1]]
+[2021.04.15-17.21.38:490][  0]LogConfig: Setting CVar [[gc.MinGCClusterSize:5]]
+[2021.04.15-17.21.38:490][  0]LogConfig: Setting CVar [[gc.ActorClusteringEnabled:0]]
+[2021.04.15-17.21.38:490][  0]LogConfig: Setting CVar [[gc.BlueprintClusteringEnabled:0]]
+[2021.04.15-17.21.38:490][  0]LogConfig: Setting CVar [[gc.UseDisregardForGCOnDedicatedServers:0]]
+[2021.04.15-17.21.38:490][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.NetworkSettings] File [C:/Users/sethg/Desktop/High Level Development II/W21_GAM1528_NoNameYet/TowerDefence/Saved/Config/Windows/Engine.ini]
+[2021.04.15-17.21.38:490][  0]LogConfig: Applying CVar settings from Section [/Script/UnrealEd.CookerSettings] File [C:/Users/sethg/Desktop/High Level Development II/W21_GAM1528_NoNameYet/TowerDefence/Saved/Config/Windows/Engine.ini]
+[2021.04.15-17.21.38:494][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [C:/Users/sethg/Desktop/High Level Development II/W21_GAM1528_NoNameYet/TowerDefence/Saved/Config/Windows/Scalability.ini]
+[2021.04.15-17.21.38:494][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
+[2021.04.15-17.21.38:494][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
+[2021.04.15-17.21.38:494][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [C:/Users/sethg/Desktop/High Level Development II/W21_GAM1528_NoNameYet/TowerDefence/Saved/Config/Windows/Scalability.ini]
+[2021.04.15-17.21.38:494][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
+[2021.04.15-17.21.38:494][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [C:/Users/sethg/Desktop/High Level Development II/W21_GAM1528_NoNameYet/TowerDefence/Saved/Config/Windows/Scalability.ini]
+[2021.04.15-17.21.38:494][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
+[2021.04.15-17.21.38:494][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
+[2021.04.15-17.21.38:494][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
+[2021.04.15-17.21.38:494][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
+[2021.04.15-17.21.38:494][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2021.04.15-17.21.38:494][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
+[2021.04.15-17.21.38:494][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
+[2021.04.15-17.21.38:494][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
+[2021.04.15-17.21.38:494][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
+[2021.04.15-17.21.38:494][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
+[2021.04.15-17.21.38:494][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
+[2021.04.15-17.21.38:494][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
+[2021.04.15-17.21.38:494][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
+[2021.04.15-17.21.38:494][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
+[2021.04.15-17.21.38:494][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
+[2021.04.15-17.21.38:494][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
+[2021.04.15-17.21.38:494][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
+[2021.04.15-17.21.38:494][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
+[2021.04.15-17.21.38:494][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [C:/Users/sethg/Desktop/High Level Development II/W21_GAM1528_NoNameYet/TowerDefence/Saved/Config/Windows/Scalability.ini]
+[2021.04.15-17.21.38:494][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
+[2021.04.15-17.21.38:494][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
+[2021.04.15-17.21.38:494][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
+[2021.04.15-17.21.38:494][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
+[2021.04.15-17.21.38:494][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
+[2021.04.15-17.21.38:494][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
+[2021.04.15-17.21.38:494][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
+[2021.04.15-17.21.38:494][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
+[2021.04.15-17.21.38:494][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
+[2021.04.15-17.21.38:494][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
+[2021.04.15-17.21.38:494][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
+[2021.04.15-17.21.38:494][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
+[2021.04.15-17.21.38:494][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
+[2021.04.15-17.21.38:494][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
+[2021.04.15-17.21.38:494][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
+[2021.04.15-17.21.38:494][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
+[2021.04.15-17.21.38:494][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
+[2021.04.15-17.21.38:494][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
+[2021.04.15-17.21.38:494][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
+[2021.04.15-17.21.38:494][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
+[2021.04.15-17.21.38:494][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
+[2021.04.15-17.21.38:494][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
+[2021.04.15-17.21.38:494][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
+[2021.04.15-17.21.38:494][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
+[2021.04.15-17.21.38:494][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
+[2021.04.15-17.21.38:494][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
+[2021.04.15-17.21.38:494][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
+[2021.04.15-17.21.38:494][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
+[2021.04.15-17.21.38:494][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
+[2021.04.15-17.21.38:494][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
+[2021.04.15-17.21.38:494][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [C:/Users/sethg/Desktop/High Level Development II/W21_GAM1528_NoNameYet/TowerDefence/Saved/Config/Windows/Scalability.ini]
+[2021.04.15-17.21.38:494][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
+[2021.04.15-17.21.38:494][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
+[2021.04.15-17.21.38:494][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
+[2021.04.15-17.21.38:494][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
+[2021.04.15-17.21.38:494][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
+[2021.04.15-17.21.38:494][  0]LogConfig: Setting CVar [[r.VT.MaxAnisotropy:8]]
+[2021.04.15-17.21.38:494][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
+[2021.04.15-17.21.38:494][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
+[2021.04.15-17.21.38:494][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
+[2021.04.15-17.21.38:494][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [C:/Users/sethg/Desktop/High Level Development II/W21_GAM1528_NoNameYet/TowerDefence/Saved/Config/Windows/Scalability.ini]
+[2021.04.15-17.21.38:494][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
+[2021.04.15-17.21.38:494][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
+[2021.04.15-17.21.38:494][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
+[2021.04.15-17.21.38:494][  0]LogConfig: Setting CVar [[r.SSR.HalfResSceneColor:0]]
+[2021.04.15-17.21.38:494][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
+[2021.04.15-17.21.38:494][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
+[2021.04.15-17.21.38:494][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
+[2021.04.15-17.21.38:494][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
+[2021.04.15-17.21.38:494][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
+[2021.04.15-17.21.38:494][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
+[2021.04.15-17.21.38:494][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
+[2021.04.15-17.21.38:494][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:0]]
+[2021.04.15-17.21.38:494][  0]LogConfig: Setting CVar [[r.SSGI.Quality:3]]
+[2021.04.15-17.21.38:494][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
+[2021.04.15-17.21.38:494][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
+[2021.04.15-17.21.38:494][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.FastApplyOnOpaque:1 ; Always have FastSkyLUT 1 in this case to avoid wrong sky]]
+[2021.04.15-17.21.38:494][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.SampleCountPerSlice:1]]
+[2021.04.15-17.21.38:494][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.DepthResolution:16.0]]
+[2021.04.15-17.21.38:494][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT:1]]
+[2021.04.15-17.21.38:494][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMin:4.0]]
+[2021.04.15-17.21.38:494][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMax:32.0]]
+[2021.04.15-17.21.38:494][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMin:4.0]]
+[2021.04.15-17.21.38:494][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMax:32.0]]
+[2021.04.15-17.21.38:494][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.UseSmallFormat:0]]
+[2021.04.15-17.21.38:494][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.SampleCount:10.0]]
+[2021.04.15-17.21.38:494][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.MultiScatteringLUT.SampleCount:15.0]]
+[2021.04.15-17.21.38:494][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [C:/Users/sethg/Desktop/High Level Development II/W21_GAM1528_NoNameYet/TowerDefence/Saved/Config/Windows/Scalability.ini]
+[2021.04.15-17.21.38:494][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
+[2021.04.15-17.21.38:494][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
+[2021.04.15-17.21.38:494][  0]LogConfig: Applying CVar settings from Section [ShadingQuality@3] File [C:/Users/sethg/Desktop/High Level Development II/W21_GAM1528_NoNameYet/TowerDefence/Saved/Config/Windows/Scalability.ini]
+[2021.04.15-17.21.38:494][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.SampleCount:16]]
+[2021.04.15-17.21.38:495][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.JitterIntegration:0]]
+[2021.04.15-17.21.38:495][  0]LogConfig: Setting CVar [[r.HairStrands.SkyAO.SampleCount:16]]
+[2021.04.15-17.21.38:495][  0]LogConfig: Setting CVar [[r.HairStrands.DeepShadow.SuperSampling:0]]
+[2021.04.15-17.21.38:495][  0]LogConfig: Setting CVar [[r.HairStrands.VisibilityPPLL:0]]
+[2021.04.15-17.21.38:495][  0]LogConfig: Setting CVar [[r.HairStrands.RasterizationScale:0.5]]
+[2021.04.15-17.21.38:495][  0]LogConfig: Setting CVar [[r.HairStrands.VelocityRasterizationScale:1]]
+[2021.04.15-17.21.38:495][  0]LogInit: Selected Device Profile: [Windows]
+[2021.04.15-17.21.38:495][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2021.04.15-17.21.38:495][  0]LogHAL: Display: Platform has ~ 16 GB [17023397888 / 17179869184 / 16], which maps to Larger [LargestMinGB=32, LargerMinGB=12, DefaultMinGB=8, SmallerMinGB=6, SmallestMinGB=0)
+[2021.04.15-17.21.38:495][  0]LogInit: Going up to parent DeviceProfile []
+[2021.04.15-17.21.38:495][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [C:/Users/sethg/Desktop/High Level Development II/W21_GAM1528_NoNameYet/TowerDefence/Saved/Config/Windows/Scalability.ini]
+[2021.04.15-17.21.38:495][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
+[2021.04.15-17.21.38:495][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
+[2021.04.15-17.21.38:495][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [C:/Users/sethg/Desktop/High Level Development II/W21_GAM1528_NoNameYet/TowerDefence/Saved/Config/Windows/Scalability.ini]
+[2021.04.15-17.21.38:495][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
+[2021.04.15-17.21.38:495][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [C:/Users/sethg/Desktop/High Level Development II/W21_GAM1528_NoNameYet/TowerDefence/Saved/Config/Windows/Scalability.ini]
+[2021.04.15-17.21.38:495][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
+[2021.04.15-17.21.38:495][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
+[2021.04.15-17.21.38:495][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
+[2021.04.15-17.21.38:495][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
+[2021.04.15-17.21.38:495][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2021.04.15-17.21.38:495][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
+[2021.04.15-17.21.38:495][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
+[2021.04.15-17.21.38:495][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
+[2021.04.15-17.21.38:495][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
+[2021.04.15-17.21.38:495][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
+[2021.04.15-17.21.38:495][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
+[2021.04.15-17.21.38:495][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
+[2021.04.15-17.21.38:495][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
+[2021.04.15-17.21.38:495][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
+[2021.04.15-17.21.38:495][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
+[2021.04.15-17.21.38:495][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
+[2021.04.15-17.21.38:495][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
+[2021.04.15-17.21.38:495][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
+[2021.04.15-17.21.38:495][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [C:/Users/sethg/Desktop/High Level Development II/W21_GAM1528_NoNameYet/TowerDefence/Saved/Config/Windows/Scalability.ini]
+[2021.04.15-17.21.38:495][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
+[2021.04.15-17.21.38:495][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
+[2021.04.15-17.21.38:495][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
+[2021.04.15-17.21.38:495][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
+[2021.04.15-17.21.38:495][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
+[2021.04.15-17.21.38:495][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
+[2021.04.15-17.21.38:495][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
+[2021.04.15-17.21.38:495][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
+[2021.04.15-17.21.38:495][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
+[2021.04.15-17.21.38:495][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
+[2021.04.15-17.21.38:495][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
+[2021.04.15-17.21.38:495][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
+[2021.04.15-17.21.38:495][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
+[2021.04.15-17.21.38:495][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
+[2021.04.15-17.21.38:495][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
+[2021.04.15-17.21.38:495][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
+[2021.04.15-17.21.38:495][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
+[2021.04.15-17.21.38:495][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
+[2021.04.15-17.21.38:495][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
+[2021.04.15-17.21.38:495][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
+[2021.04.15-17.21.38:495][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
+[2021.04.15-17.21.38:495][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
+[2021.04.15-17.21.38:495][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
+[2021.04.15-17.21.38:495][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
+[2021.04.15-17.21.38:495][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
+[2021.04.15-17.21.38:495][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
+[2021.04.15-17.21.38:495][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
+[2021.04.15-17.21.38:495][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
+[2021.04.15-17.21.38:495][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
+[2021.04.15-17.21.38:495][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
+[2021.04.15-17.21.38:495][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [C:/Users/sethg/Desktop/High Level Development II/W21_GAM1528_NoNameYet/TowerDefence/Saved/Config/Windows/Scalability.ini]
+[2021.04.15-17.21.38:495][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
+[2021.04.15-17.21.38:495][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
+[2021.04.15-17.21.38:495][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
+[2021.04.15-17.21.38:495][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
+[2021.04.15-17.21.38:495][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
+[2021.04.15-17.21.38:495][  0]LogConfig: Setting CVar [[r.VT.MaxAnisotropy:8]]
+[2021.04.15-17.21.38:495][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
+[2021.04.15-17.21.38:495][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
+[2021.04.15-17.21.38:495][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
+[2021.04.15-17.21.38:496][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [C:/Users/sethg/Desktop/High Level Development II/W21_GAM1528_NoNameYet/TowerDefence/Saved/Config/Windows/Scalability.ini]
+[2021.04.15-17.21.38:496][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
+[2021.04.15-17.21.38:496][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
+[2021.04.15-17.21.38:496][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
+[2021.04.15-17.21.38:496][  0]LogConfig: Setting CVar [[r.SSR.HalfResSceneColor:0]]
+[2021.04.15-17.21.38:496][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
+[2021.04.15-17.21.38:496][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
+[2021.04.15-17.21.38:496][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
+[2021.04.15-17.21.38:496][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
+[2021.04.15-17.21.38:496][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
+[2021.04.15-17.21.38:496][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
+[2021.04.15-17.21.38:496][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
+[2021.04.15-17.21.38:496][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:0]]
+[2021.04.15-17.21.38:496][  0]LogConfig: Setting CVar [[r.SSGI.Quality:3]]
+[2021.04.15-17.21.38:496][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
+[2021.04.15-17.21.38:496][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
+[2021.04.15-17.21.38:496][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.FastApplyOnOpaque:1 ; Always have FastSkyLUT 1 in this case to avoid wrong sky]]
+[2021.04.15-17.21.38:496][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.SampleCountPerSlice:1]]
+[2021.04.15-17.21.38:496][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.DepthResolution:16.0]]
+[2021.04.15-17.21.38:496][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT:1]]
+[2021.04.15-17.21.38:496][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMin:4.0]]
+[2021.04.15-17.21.38:496][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMax:32.0]]
+[2021.04.15-17.21.38:496][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMin:4.0]]
+[2021.04.15-17.21.38:496][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMax:32.0]]
+[2021.04.15-17.21.38:496][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.UseSmallFormat:0]]
+[2021.04.15-17.21.38:496][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.SampleCount:10.0]]
+[2021.04.15-17.21.38:496][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.MultiScatteringLUT.SampleCount:15.0]]
+[2021.04.15-17.21.38:496][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [C:/Users/sethg/Desktop/High Level Development II/W21_GAM1528_NoNameYet/TowerDefence/Saved/Config/Windows/Scalability.ini]
+[2021.04.15-17.21.38:496][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
+[2021.04.15-17.21.38:496][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
+[2021.04.15-17.21.38:496][  0]LogConfig: Applying CVar settings from Section [ShadingQuality@3] File [C:/Users/sethg/Desktop/High Level Development II/W21_GAM1528_NoNameYet/TowerDefence/Saved/Config/Windows/Scalability.ini]
+[2021.04.15-17.21.38:496][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.SampleCount:16]]
+[2021.04.15-17.21.38:496][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.JitterIntegration:0]]
+[2021.04.15-17.21.38:496][  0]LogConfig: Setting CVar [[r.HairStrands.SkyAO.SampleCount:16]]
+[2021.04.15-17.21.38:496][  0]LogConfig: Setting CVar [[r.HairStrands.DeepShadow.SuperSampling:0]]
+[2021.04.15-17.21.38:496][  0]LogConfig: Setting CVar [[r.HairStrands.VisibilityPPLL:0]]
+[2021.04.15-17.21.38:496][  0]LogConfig: Setting CVar [[r.HairStrands.RasterizationScale:0.5]]
+[2021.04.15-17.21.38:496][  0]LogConfig: Setting CVar [[r.HairStrands.VelocityRasterizationScale:1]]
+[2021.04.15-17.21.38:496][  0]LogConfig: Applying CVar settings from Section [Startup] File [../../../Engine/Config/ConsoleVariables.ini]
+[2021.04.15-17.21.38:496][  0]LogConfig: Setting CVar [[net.UseAdaptiveNetUpdateFrequency:0]]
+[2021.04.15-17.21.38:496][  0]LogConfig: Setting CVar [[p.chaos.AllowCreatePhysxBodies:1]]
+[2021.04.15-17.21.38:496][  0]LogConfig: Setting CVar [[fx.SkipVectorVMBackendOptimizations:1]]
+[2021.04.15-17.21.38:496][  0]LogConfig: Applying CVar settings from Section [ConsoleVariables] File [C:/Users/sethg/Desktop/High Level Development II/W21_GAM1528_NoNameYet/TowerDefence/Saved/Config/Windows/Engine.ini]
+[2021.04.15-17.21.38:496][  0]LogInit: Computer: LAPTOP-K3PBHEDP
+[2021.04.15-17.21.38:496][  0]LogInit: User: sethg
+[2021.04.15-17.21.38:496][  0]LogInit: CPU Page size=4096, Cores=6
+[2021.04.15-17.21.38:496][  0]LogInit: High frequency timer resolution =10.000000 MHz
+[2021.04.15-17.21.38:497][  0]LogMemory: Memory total: Physical=15.9GB (16GB approx)
+[2021.04.15-17.21.38:497][  0]LogMemory: Platform Memory Stats for Windows
+[2021.04.15-17.21.38:497][  0]LogMemory: Process Physical Memory: 120.88 MB used, 120.89 MB peak
+[2021.04.15-17.21.38:497][  0]LogMemory: Process Virtual Memory: 97.80 MB used, 97.80 MB peak
+[2021.04.15-17.21.38:497][  0]LogMemory: Physical Memory: 6972.31 MB used,  9262.46 MB free, 16234.78 MB total
+[2021.04.15-17.21.38:497][  0]LogMemory: Virtual Memory: 5227.45 MB used,  134212504.00 MB free, 134217728.00 MB total
+[2021.04.15-17.21.38:503][  0]LogWindows: WindowsPlatformFeatures enabled
+[2021.04.15-17.21.38:550][  0]LogInit: Physics initialised using underlying interface: PhysX
+[2021.04.15-17.21.38:552][  0]LogInit: Using OS detected language (en-US).
+[2021.04.15-17.21.38:552][  0]LogInit: Using OS detected locale (en-CA).
+[2021.04.15-17.21.38:555][  0]LogTextLocalizationManager: No specific localization for 'en-US' exists, so the 'en' localization will be used.
+[2021.04.15-17.21.38:744][  0]LogInit: Setting process to per monitor DPI aware
+[2021.04.15-17.21.38:775][  0]LogSlate: New Slate User Created.  User Index 0, Is Virtual User: 0
+[2021.04.15-17.21.38:775][  0]LogSlate: Slate User Registered.  User Index 0, Is Virtual User: 0
+[2021.04.15-17.21.39:052][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2021.04.15-17.21.39:052][  0]LogD3D11RHI: D3D11 min allowed feature level: 11_0
+[2021.04.15-17.21.39:052][  0]LogD3D11RHI: D3D11 max allowed feature level: 11_0
+[2021.04.15-17.21.39:052][  0]LogD3D11RHI: D3D11 adapters:
+[2021.04.15-17.21.40:137][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 1060' (Feature Level 11_0)
+[2021.04.15-17.21.40:137][  0]LogD3D11RHI:       6052/0/8117 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:1, VendorId:0x10de
+[2021.04.15-17.21.40:160][  0]LogD3D11RHI:    1. 'Intel(R) UHD Graphics 630' (Feature Level 11_0)
+[2021.04.15-17.21.40:160][  0]LogD3D11RHI:       128/0/8117 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x8086
+[2021.04.15-17.21.40:162][  0]LogD3D11RHI:    2. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2021.04.15-17.21.40:162][  0]LogD3D11RHI:       0/0/8117 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2021.04.15-17.21.40:162][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2021.04.15-17.21.40:203][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2021.04.15-17.21.40:204][  0]LogD3D11RHI:     GPU DeviceId: 0x1c20 (for the marketing name, search the web for "GPU Device Id")
+[2021.04.15-17.21.40:204][  0]LogWindows: EnumDisplayDevices:
+[2021.04.15-17.21.40:204][  0]LogWindows:    0. 'Intel(R) UHD Graphics 630' (P:1 D:1)
+[2021.04.15-17.21.40:204][  0]LogWindows:    1. 'Intel(R) UHD Graphics 630' (P:0 D:0)
+[2021.04.15-17.21.40:204][  0]LogWindows:    2. 'Intel(R) UHD Graphics 630' (P:0 D:0)
+[2021.04.15-17.21.40:205][  0]LogWindows:    3. 'NVIDIA GeForce GTX 1060' (P:0 D:0)
+[2021.04.15-17.21.40:205][  0]LogWindows: DebugString: PrimaryIsNotTheChoosenAdapter PrimaryIsNotTheChoosenAdapter PrimaryIsNotTheChoosenAdapter 
+[2021.04.15-17.21.40:205][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 1060
+[2021.04.15-17.21.40:205][  0]LogD3D11RHI:   Driver Version: 451.67 (internal:27.21.14.5167, unified:451.67)
+[2021.04.15-17.21.40:205][  0]LogD3D11RHI:      Driver Date: 7-5-2020
+[2021.04.15-17.21.40:205][  0]LogRHI: Texture pool is 4236 MB (70% of 6052 MB)
+[2021.04.15-17.21.40:268][  0]LogD3D11RHI: RHI has support for 64 bit atomics
+[2021.04.15-17.21.40:271][  0]LogD3D11RHI: [Aftermath] Enabled and primed
+[2021.04.15-17.21.40:271][  0]LogD3D11RHI: Async texture creation enabled
+[2021.04.15-17.21.40:271][  0]LogD3D11RHI: Array index from any shader is supported
+[2021.04.15-17.21.40:313][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 1)
+[2021.04.15-17.21.40:627][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'AllDesktop'
+[2021.04.15-17.21.40:651][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android'
+[2021.04.15-17.21.40:651][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ASTC'
+[2021.04.15-17.21.40:651][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_DXT'
+[2021.04.15-17.21.40:651][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ETC2'
+[2021.04.15-17.21.40:651][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'AndroidClient'
+[2021.04.15-17.21.40:651][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ASTCClient'
+[2021.04.15-17.21.40:651][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_DXTClient'
+[2021.04.15-17.21.40:651][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ETC2Client'
+[2021.04.15-17.21.40:651][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_Multi'
+[2021.04.15-17.21.40:651][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_MultiClient'
+[2021.04.15-17.21.40:676][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'IOSClient'
+[2021.04.15-17.21.40:676][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'IOS'
+[2021.04.15-17.21.40:687][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Linux'
+[2021.04.15-17.21.40:697][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxNoEditor'
+[2021.04.15-17.21.40:706][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxClient'
+[2021.04.15-17.21.40:716][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxServer'
+[2021.04.15-17.21.40:726][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxAArch64NoEditor'
+[2021.04.15-17.21.40:735][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxAArch64Client'
+[2021.04.15-17.21.40:745][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxAArch64Server'
+[2021.04.15-17.21.40:772][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Lumin'
+[2021.04.15-17.21.40:772][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LuminClient'
+[2021.04.15-17.21.40:788][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'TVOSClient'
+[2021.04.15-17.21.40:788][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'TVOS'
+[2021.04.15-17.21.40:798][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsNoEditor'
+[2021.04.15-17.21.40:808][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Windows'
+[2021.04.15-17.21.40:818][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsClient'
+[2021.04.15-17.21.40:828][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsServer'
+[2021.04.15-17.21.40:828][  0]LogTargetPlatformManager: Display: Building Assets For Windows
+[2021.04.15-17.21.40:838][  0]LogAudioDebug: Display: Lib vorbis DLL was dynamically loaded.
+[2021.04.15-17.21.40:905][  0]LogShaderCompilers: Guid format shader working directory is -37 characters bigger than the processId version (C:/Users/sethg/Desktop/High Level Development II/W21_GAM1528_NoNameYet/TowerDefence/Intermediate/Shaders/WorkingDirectory/6324/).
+[2021.04.15-17.21.40:906][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/sethg/AppData/Local/Temp/UnrealShaderWorkingDir/41FCBEB6498EE2997B5930A19B752DAE/'.
+[2021.04.15-17.21.40:906][  0]LogXGEController: Cleaning working directory: C:/Users/sethg/AppData/Local/Temp/UnrealXGEWorkingDir/
+[2021.04.15-17.21.40:906][  0]LogXGEController: Cannot use XGE Controller as Incredibuild is not installed on this machine.
+[2021.04.15-17.21.40:906][  0]LogShaderCompilers: Cannot use XGE Shader Compiler as Incredibuild is not installed on this machine.
+[2021.04.15-17.21.40:906][  0]LogShaderCompilers: Display: Using Local Shader Compiler.
+[2021.04.15-17.21.41:662][  0]LogDerivedDataCache: Display: Max Cache Size: 512 MB
+[2021.04.15-17.21.41:721][  0]LogDerivedDataCache: Loaded boot cache 0.06s 75MB C:/Users/sethg/AppData/Local/UnrealEngine/4.25/DerivedDataCache/Boot.ddc.
+[2021.04.15-17.21.41:721][  0]LogDerivedDataCache: Display: Loaded Boot cache: C:/Users/sethg/AppData/Local/UnrealEngine/4.25/DerivedDataCache/Boot.ddc
+[2021.04.15-17.21.41:721][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file C:/Users/sethg/Desktop/High Level Development II/W21_GAM1528_NoNameYet/TowerDefence/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2021.04.15-17.21.41:721][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2021.04.15-17.21.41:721][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file C:/Users/sethg/Desktop/High Level Development II/W21_GAM1528_NoNameYet/TowerDefence/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2021.04.15-17.21.41:721][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2021.04.15-17.21.41:731][  0]LogDerivedDataCache: Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2021.04.15-17.21.41:731][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  EnterprisePak pak cache file ../../../Enterprise/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2021.04.15-17.21.41:731][  0]LogDerivedDataCache: Unable to find inner node EnterprisePak for hierarchical cache Hierarchy.
+[2021.04.15-17.21.41:733][  0]LogDerivedDataCache: Using Local data cache path C:/Users/sethg/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2021.04.15-17.21.41:733][  0]LogDerivedDataCache: Shared data cache path not found in *engine.ini, will not use an Shared cache.
+[2021.04.15-17.21.41:733][  0]LogDerivedDataCache: Unable to find inner node Shared for hierarchical cache Hierarchy.
+[2021.04.15-17.21.41:780][  0]LogSlate: Using FreeType 2.10.0
+[2021.04.15-17.21.41:782][  0]LogSlate: SlateFontServices - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2021.04.15-17.21.41:811][  0]LogAssetRegistry: FAssetRegistry took 0.0034 seconds to start up
+[2021.04.15-17.21.42:031][  0]LogInit: Selected Device Profile: [Windows]
+[2021.04.15-17.21.42:163][  0]LogMeshReduction: Using QuadricMeshReduction for automatic static mesh reduction
+[2021.04.15-17.21.42:163][  0]LogMeshReduction: Using SimplygonMeshReduction for automatic skeletal mesh reduction
+[2021.04.15-17.21.42:163][  0]LogMeshReduction: Using ProxyLODMeshReduction for automatic mesh merging
+[2021.04.15-17.21.42:163][  0]LogMeshReduction: No distributed automatic mesh merging module available
+[2021.04.15-17.21.42:163][  0]LogMeshMerging: No distributed automatic mesh merging module available
+[2021.04.15-17.21.42:179][  0]LogNetVersion: TowerDefence 1.0.0, NetCL: 13144385, EngineNetVer: 14, GameNetVer: 0 (Checksum: 2510641227)
+[2021.04.15-17.21.42:644][  0]LogAISub: UAISubsystem::UAISubsystem AISubsystem (000001B8B44B8380), frame # 0
+[2021.04.15-17.21.42:644][  0]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (000001B8B43BFD80), frame # 0
+[2021.04.15-17.21.42:646][  0]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (000001B8B444CA00), frame # 0
+[2021.04.15-17.21.42:702][  0]LogPackageLocalizationCache: Processed 19 localized package path(s) for 1 prioritized culture(s) in 0.050319 seconds
+[2021.04.15-17.21.42:707][  0]LogUObjectArray: 15917 objects as part of root set at end of initial load.
+[2021.04.15-17.21.42:707][  0]LogUObjectAllocator: 3965568 out of 0 bytes used by permanent object pool.
+[2021.04.15-17.21.42:707][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2021.04.15-17.21.43:141][  0]LogTcpMessaging: Initializing TcpMessaging bridge
+[2021.04.15-17.21.43:173][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2021.04.15-17.21.43:298][  0]SourceControl: Source control is disabled
+[2021.04.15-17.21.43:298][  0]SourceControl: Source control is disabled
+[2021.04.15-17.21.43:303][  0]SourceControl: Source control is disabled
+[2021.04.15-17.21.43:308][  0]SourceControl: Source control is disabled
+[2021.04.15-17.21.43:321][  0]SourceControl: Source control is disabled
+[2021.04.15-17.21.43:623][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
+[2021.04.15-17.21.43:646][  0]LogAudioCaptureCore: Display: No Audio Capture implementations found. Audio input will be silent.
+[2021.04.15-17.21.43:646][  0]LogAudioCaptureCore: Display: No Audio Capture implementations found. Audio input will be silent.
+[2021.04.15-17.21.43:700][  0]LogOcInput: OculusInput pre-init called
+[2021.04.15-17.21.43:712][  0]LogWindows: Failed to load 'OVRPlugin.dll' (GetLastError=126)
+[2021.04.15-17.21.43:712][  0]LogWindows: File 'OVRPlugin.dll' does not exist
+[2021.04.15-17.21.43:776][  0]LogEngine: Initializing Engine...
+[2021.04.15-17.21.43:778][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2021.04.15-17.21.43:778][  0]LogMagicLeap: Warning: VR disabled because ZI is not enabled.  To enable, in the editor, Edit -> Project Settings -> Plugins -> Magic Leap Plugin -> Enable Zero Iteration
+[2021.04.15-17.21.43:778][  0]LogStats: UGameplayTagsManager::InitializeManager -  0.000 s
+[2021.04.15-17.21.43:921][  0]LogInit: Initializing FReadOnlyCVARCache
+[2021.04.15-17.21.43:930][  0]LogAIModule: Creating AISystem for world Untitled
+[2021.04.15-17.21.43:930][  0]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (000001B8B7339C00), frame # 0
+[2021.04.15-17.21.43:930][  0]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (000001B8B734ED40), frame # 0
+[2021.04.15-17.21.43:955][  0]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2021.04.15-17.21.43:955][  0]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2021.04.15-17.21.43:955][  0]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2021.04.15-17.21.43:955][  0]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2021.04.15-17.21.43:955][  0]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2021.04.15-17.21.43:955][  0]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2021.04.15-17.21.43:955][  0]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2021.04.15-17.21.43:955][  0]LogAudio: Display: AudioDevice MaxSources: 32
+[2021.04.15-17.21.43:955][  0]LogAudio: Display: Using built-in audio occlusion.
+[2021.04.15-17.21.43:955][  0]LogAudioMixer: Display: Initializing audio mixer.
+[2021.04.15-17.21.43:969][  0]LogAudioMixer: Display: 0: FrontLeft
+[2021.04.15-17.21.43:969][  0]LogAudioMixer: Display: 1: FrontRight
+[2021.04.15-17.21.44:024][  0]LogAudioMixer: Display: Using Audio Device Speakers (Realtek(R) Audio)
+[2021.04.15-17.21.44:025][  0]LogAudioMixer: Display: Initializing Sound Submixes...
+[2021.04.15-17.21.44:027][  0]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2021.04.15-17.21.44:027][  0]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2021.04.15-17.21.44:028][  0]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2021.04.15-17.21.44:029][  0]LogInit: FAudioDevice initialized.
+[2021.04.15-17.21.44:029][  0]LogNetVersion: Set ProjectVersion to 1.0.0.0. Version Checksum will be recalculated on next use.
+[2021.04.15-17.21.44:088][  0]LogDerivedDataCache: Saved boot cache 0.06s 75MB C:/Users/sethg/AppData/Local/UnrealEngine/4.25/DerivedDataCache/Boot.ddc.
+[2021.04.15-17.21.44:088][  0]LogInit: Texture streaming: Enabled
+[2021.04.15-17.21.44:110][  0]LogEngineSessionManager: EngineSessionManager initialized
+[2021.04.15-17.21.44:110][  0]LogEngineSessionManager: EngineSessionManager sent abnormal shutdown report. Type=Debugger, SessionId={7CA584BF-414D-EB7C-2D8C-2185B0A47AC8}
+[2021.04.15-17.21.44:110][  0]LogEngineSessionManager: EngineSessionManager sent abnormal shutdown report. Type=Debugger, SessionId={87461D9A-41D0-8757-45F2-59B8202AAE21}
+[2021.04.15-17.21.44:110][  0]LogEditorSessionSummary: Verbose: Initializing EditorSessionSummaryWriter for editor session tracking
+[2021.04.15-17.21.44:118][  0]LogEditorSessionSummary: EditorSessionSummaryWriter initialized
+[2021.04.15-17.21.44:137][  0]LogInit: Transaction tracking system initialized
+[2021.04.15-17.21.44:163][  0]BlueprintLog: New page: Editor Load
+[2021.04.15-17.21.44:241][  0]LocalizationService: Localization service is disabled
+[2021.04.15-17.21.44:422][  0]LogCook: Display: Max memory allowance for cook 16384mb min free memory 0mb
+[2021.04.15-17.21.44:422][  0]LogCook: Display: Mobile HDR setting 1
+[2021.04.15-17.21.44:566][  0]LogFileCache: Scanning file cache for directory 'C:/Users/sethg/Desktop/High Level Development II/W21_GAM1528_NoNameYet/TowerDefence/Content/' took 0.00s
+[2021.04.15-17.21.44:794][  0]SourceControl: Source control is disabled
+[2021.04.15-17.21.44:794][  0]LogUnrealEdMisc: Loading editor; pre map load, took 63.315
+[2021.04.15-17.21.44:794][  0]Cmd: MAP LOAD FILE="C:/Users/sethg/Desktop/High Level Development II/W21_GAM1528_NoNameYet/TowerDefence/Content/Maps/Test.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2021.04.15-17.21.44:795][  0]LightingResults: New page: Lighting Build
+[2021.04.15-17.21.44:795][  0]LogWorld: UWorld::CleanupWorld for Untitled, bSessionEnded=true, bCleanupResources=true
+[2021.04.15-17.21.44:795][  0]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.04.15-17.21.44:795][  0]MapCheck: New page: Map Check
+[2021.04.15-17.21.44:795][  0]LightingResults: New page: Lighting Build
+[2021.04.15-17.21.44:806][  0]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (000001B8B7339C00), frame # 0
+[2021.04.15-17.21.44:806][  0]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (000001B8B734ED40), frame # 0
+[2021.04.15-17.21.44:807][  0]LogUObjectHash: Compacting FUObjectHashTables data took   0.70ms
+[2021.04.15-17.21.44:818][  0]LogLinker: Warning: While loading 'C:/Users/sethg/Desktop/High Level Development II/W21_GAM1528_NoNameYet/TowerDefence/Content/Assets/Models/Troop_melee/troop_melee.uasset' failed to load '/Game/Assets/Models/Troop_melee/Material_001': Can't find file.
+[2021.04.15-17.21.44:818][  0]LogLinker: Warning: While loading 'C:/Users/sethg/Desktop/High Level Development II/W21_GAM1528_NoNameYet/TowerDefence/Content/Assets/Models/Troop_melee/troop_melee.uasset' failed to load '/Game/Assets/Models/Troop_melee/Material_001': Can't find file.
+[2021.04.15-17.21.44:818][  0]LogLinker: Warning: While loading 'C:/Users/sethg/Desktop/High Level Development II/W21_GAM1528_NoNameYet/TowerDefence/Content/Assets/Models/Troop_melee/troop_melee.uasset' failed to load '/Game/Assets/Models/Troop_melee/wire_087225087_002': Can't find file.
+[2021.04.15-17.21.44:818][  0]LogLinker: Warning: While loading 'C:/Users/sethg/Desktop/High Level Development II/W21_GAM1528_NoNameYet/TowerDefence/Content/Assets/Models/Troop_melee/troop_melee.uasset' failed to load '/Game/Assets/Models/Troop_melee/wire_087225087_002': Can't find file.
+[2021.04.15-17.21.44:818][  0]LogLinker: Warning: While loading 'C:/Users/sethg/Desktop/High Level Development II/W21_GAM1528_NoNameYet/TowerDefence/Content/Assets/Models/Troop_melee/troop_melee.uasset' failed to load '/Game/Assets/Models/Troop_melee/wire_177028149_002': Can't find file.
+[2021.04.15-17.21.44:819][  0]LogLinker: Warning: While loading 'C:/Users/sethg/Desktop/High Level Development II/W21_GAM1528_NoNameYet/TowerDefence/Content/Assets/Models/Troop_melee/troop_melee.uasset' failed to load '/Game/Assets/Models/Troop_melee/wire_177028149_002': Can't find file.
+[2021.04.15-17.21.44:819][  0]LogLinker: Warning: While loading 'C:/Users/sethg/Desktop/High Level Development II/W21_GAM1528_NoNameYet/TowerDefence/Content/Assets/Models/Troop_melee/troop_melee.uasset' failed to load '/Game/Assets/Models/Troop_melee/Material_001': Can't find file.
+[2021.04.15-17.21.44:819][  0]LogLinker: Warning: While loading 'C:/Users/sethg/Desktop/High Level Development II/W21_GAM1528_NoNameYet/TowerDefence/Content/Assets/Models/Troop_melee/troop_melee.uasset' failed to load '/Game/Assets/Models/Troop_melee/Material_001': Can't find file.
+[2021.04.15-17.21.44:820][  0]LogLinker: Warning: While loading 'C:/Users/sethg/Desktop/High Level Development II/W21_GAM1528_NoNameYet/TowerDefence/Content/Assets/Models/Troop_melee/troop_melee.uasset' failed to load '/Game/Assets/Models/Troop_melee/wire_087225087_002': Can't find file.
+[2021.04.15-17.21.44:820][  0]LogLinker: Warning: While loading 'C:/Users/sethg/Desktop/High Level Development II/W21_GAM1528_NoNameYet/TowerDefence/Content/Assets/Models/Troop_melee/troop_melee.uasset' failed to load '/Game/Assets/Models/Troop_melee/wire_087225087_002': Can't find file.
+[2021.04.15-17.21.44:821][  0]LogLinker: Warning: While loading 'C:/Users/sethg/Desktop/High Level Development II/W21_GAM1528_NoNameYet/TowerDefence/Content/Assets/Models/Troop_melee/troop_melee.uasset' failed to load '/Game/Assets/Models/Troop_melee/wire_177028149_002': Can't find file.
+[2021.04.15-17.21.44:821][  0]LogLinker: Warning: While loading 'C:/Users/sethg/Desktop/High Level Development II/W21_GAM1528_NoNameYet/TowerDefence/Content/Assets/Models/Troop_melee/troop_melee.uasset' failed to load '/Game/Assets/Models/Troop_melee/wire_177028149_002': Can't find file.
+[2021.04.15-17.21.44:971][  0]LogLinker: Warning: While loading 'C:/Users/sethg/Desktop/High Level Development II/W21_GAM1528_NoNameYet/TowerDefence/Content/StarterContent/Materials/M_Brick_Clay_Beveled.uasset' failed to load '/Game/StarterContent/Textures/T_Brick_Clay_Beveled_D': Can't find file.
+[2021.04.15-17.21.44:972][  0]LogLinker: Warning: While loading 'C:/Users/sethg/Desktop/High Level Development II/W21_GAM1528_NoNameYet/TowerDefence/Content/StarterContent/Materials/M_Brick_Clay_Beveled.uasset' failed to load '/Game/StarterContent/Textures/T_Brick_Clay_Beveled_D': Can't find file.
+[2021.04.15-17.21.44:972][  0]LogLinker: Warning: While loading 'C:/Users/sethg/Desktop/High Level Development II/W21_GAM1528_NoNameYet/TowerDefence/Content/StarterContent/Materials/M_Brick_Clay_Beveled.uasset' failed to load '/Game/StarterContent/Textures/T_Brick_Clay_Beveled_M': Can't find file.
+[2021.04.15-17.21.44:972][  0]LogLinker: Warning: While loading 'C:/Users/sethg/Desktop/High Level Development II/W21_GAM1528_NoNameYet/TowerDefence/Content/StarterContent/Materials/M_Brick_Clay_Beveled.uasset' failed to load '/Game/StarterContent/Textures/T_Brick_Clay_Beveled_M': Can't find file.
+[2021.04.15-17.21.44:972][  0]LogLinker: Warning: While loading 'C:/Users/sethg/Desktop/High Level Development II/W21_GAM1528_NoNameYet/TowerDefence/Content/StarterContent/Materials/M_Brick_Clay_Beveled.uasset' failed to load '/Game/StarterContent/Textures/T_Brick_Clay_Beveled_N': Can't find file.
+[2021.04.15-17.21.44:972][  0]LogLinker: Warning: While loading 'C:/Users/sethg/Desktop/High Level Development II/W21_GAM1528_NoNameYet/TowerDefence/Content/StarterContent/Materials/M_Brick_Clay_Beveled.uasset' failed to load '/Game/StarterContent/Textures/T_Brick_Clay_Beveled_N': Can't find file.
+[2021.04.15-17.21.44:973][  0]LogLinker: Warning: While loading 'C:/Users/sethg/Desktop/High Level Development II/W21_GAM1528_NoNameYet/TowerDefence/Content/StarterContent/Materials/M_Brick_Clay_Beveled.uasset' failed to load '/Game/StarterContent/Textures/T_Brick_Clay_Beveled_D': Can't find file.
+[2021.04.15-17.21.44:973][  0]LogLinker: Warning: While loading 'C:/Users/sethg/Desktop/High Level Development II/W21_GAM1528_NoNameYet/TowerDefence/Content/StarterContent/Materials/M_Brick_Clay_Beveled.uasset' failed to load '/Game/StarterContent/Textures/T_Brick_Clay_Beveled_D': Can't find file.
+[2021.04.15-17.21.44:973][  0]LogLinker: Warning: While loading 'C:/Users/sethg/Desktop/High Level Development II/W21_GAM1528_NoNameYet/TowerDefence/Content/StarterContent/Materials/M_Brick_Clay_Beveled.uasset' failed to load '/Game/StarterContent/Textures/T_Brick_Clay_Beveled_M': Can't find file.
+[2021.04.15-17.21.44:973][  0]LogLinker: Warning: While loading 'C:/Users/sethg/Desktop/High Level Development II/W21_GAM1528_NoNameYet/TowerDefence/Content/StarterContent/Materials/M_Brick_Clay_Beveled.uasset' failed to load '/Game/StarterContent/Textures/T_Brick_Clay_Beveled_M': Can't find file.
+[2021.04.15-17.21.44:974][  0]LogLinker: Warning: While loading 'C:/Users/sethg/Desktop/High Level Development II/W21_GAM1528_NoNameYet/TowerDefence/Content/StarterContent/Materials/M_Brick_Clay_Beveled.uasset' failed to load '/Game/StarterContent/Textures/T_Brick_Clay_Beveled_N': Can't find file.
+[2021.04.15-17.21.44:974][  0]LogLinker: Warning: While loading 'C:/Users/sethg/Desktop/High Level Development II/W21_GAM1528_NoNameYet/TowerDefence/Content/StarterContent/Materials/M_Brick_Clay_Beveled.uasset' failed to load '/Game/StarterContent/Textures/T_Brick_Clay_Beveled_N': Can't find file.
+[2021.04.15-17.21.44:982][  0]LogLinker: Warning: While loading 'C:/Users/sethg/Desktop/High Level Development II/W21_GAM1528_NoNameYet/TowerDefence/Content/Assets/Models/Troop_melee/troop_melee.uasset' failed to load '/Game/Assets/Models/Troop_melee/wire_087225087_002': Can't find file.
+[2021.04.15-17.21.44:982][  0]LoadErrors: Failed to load /Game/Assets/Models/Troop_melee/wire_087225087_002.wire_087225087_002 Referenced by troop_melee
+[2021.04.15-17.21.44:982][  0]LogLinker: Warning: While loading 'C:/Users/sethg/Desktop/High Level Development II/W21_GAM1528_NoNameYet/TowerDefence/Content/Assets/Models/Troop_melee/troop_melee.uasset' failed to load '/Game/Assets/Models/Troop_melee/wire_087225087_002': Can't find file.
+[2021.04.15-17.21.44:982][  0]LoadErrors: Failed to load /Game/Assets/Models/Troop_melee/wire_087225087_002.wire_087225087_002 Referenced by troop_melee
+[2021.04.15-17.21.44:982][  0]LogLinker: Warning: While loading 'C:/Users/sethg/Desktop/High Level Development II/W21_GAM1528_NoNameYet/TowerDefence/Content/Assets/Models/Troop_melee/troop_melee.uasset' failed to load '/Game/Assets/Models/Troop_melee/wire_177028149_002': Can't find file.
+[2021.04.15-17.21.44:982][  0]LoadErrors: Failed to load /Game/Assets/Models/Troop_melee/wire_177028149_002.wire_177028149_002 Referenced by troop_melee
+[2021.04.15-17.21.44:982][  0]LogLinker: Warning: While loading 'C:/Users/sethg/Desktop/High Level Development II/W21_GAM1528_NoNameYet/TowerDefence/Content/Assets/Models/Troop_melee/troop_melee.uasset' failed to load '/Game/Assets/Models/Troop_melee/wire_177028149_002': Can't find file.
+[2021.04.15-17.21.44:982][  0]LoadErrors: Failed to load /Game/Assets/Models/Troop_melee/wire_177028149_002.wire_177028149_002 Referenced by troop_melee
+[2021.04.15-17.21.44:983][  0]LogLinker: Warning: While loading 'C:/Users/sethg/Desktop/High Level Development II/W21_GAM1528_NoNameYet/TowerDefence/Content/Assets/Models/Troop_melee/troop_melee.uasset' failed to load '/Game/Assets/Models/Troop_melee/Material_001': Can't find file.
+[2021.04.15-17.21.44:983][  0]LoadErrors: Failed to load /Game/Assets/Models/Troop_melee/Material_001.Material_001 Referenced by troop_melee
+[2021.04.15-17.21.44:983][  0]LogLinker: Warning: While loading 'C:/Users/sethg/Desktop/High Level Development II/W21_GAM1528_NoNameYet/TowerDefence/Content/Assets/Models/Troop_melee/troop_melee.uasset' failed to load '/Game/Assets/Models/Troop_melee/Material_001': Can't find file.
+[2021.04.15-17.21.44:983][  0]LoadErrors: Failed to load /Game/Assets/Models/Troop_melee/Material_001.Material_001 Referenced by troop_melee
+[2021.04.15-17.21.45:002][  0]LogLinker: Warning: While loading 'C:/Users/sethg/Desktop/High Level Development II/W21_GAM1528_NoNameYet/TowerDefence/Content/StarterContent/Materials/M_Brick_Clay_Beveled.uasset' failed to load '/Game/StarterContent/Textures/T_Brick_Clay_Beveled_N': Can't find file.
+[2021.04.15-17.21.45:002][  0]LoadErrors: Failed to load /Game/StarterContent/Textures/T_Brick_Clay_Beveled_N.T_Brick_Clay_Beveled_N Referenced by MaterialExpressionTextureSample_1
+[2021.04.15-17.21.45:002][  0]LogLinker: Warning: While loading 'C:/Users/sethg/Desktop/High Level Development II/W21_GAM1528_NoNameYet/TowerDefence/Content/StarterContent/Materials/M_Brick_Clay_Beveled.uasset' failed to load '/Game/StarterContent/Textures/T_Brick_Clay_Beveled_N': Can't find file.
+[2021.04.15-17.21.45:002][  0]LoadErrors: Failed to load /Game/StarterContent/Textures/T_Brick_Clay_Beveled_N.T_Brick_Clay_Beveled_N Referenced by MaterialExpressionTextureSample_1
+[2021.04.15-17.21.45:003][  0]LogLinker: Warning: While loading 'C:/Users/sethg/Desktop/High Level Development II/W21_GAM1528_NoNameYet/TowerDefence/Content/StarterContent/Materials/M_Brick_Clay_Beveled.uasset' failed to load '/Game/StarterContent/Textures/T_Brick_Clay_Beveled_M': Can't find file.
+[2021.04.15-17.21.45:003][  0]LoadErrors: Failed to load /Game/StarterContent/Textures/T_Brick_Clay_Beveled_M.T_Brick_Clay_Beveled_M Referenced by MaterialExpressionTextureSample_2
+[2021.04.15-17.21.45:003][  0]LogLinker: Warning: While loading 'C:/Users/sethg/Desktop/High Level Development II/W21_GAM1528_NoNameYet/TowerDefence/Content/StarterContent/Materials/M_Brick_Clay_Beveled.uasset' failed to load '/Game/StarterContent/Textures/T_Brick_Clay_Beveled_M': Can't find file.
+[2021.04.15-17.21.45:003][  0]LoadErrors: Failed to load /Game/StarterContent/Textures/T_Brick_Clay_Beveled_M.T_Brick_Clay_Beveled_M Referenced by MaterialExpressionTextureSample_2
+[2021.04.15-17.21.45:003][  0]LogLinker: Warning: While loading 'C:/Users/sethg/Desktop/High Level Development II/W21_GAM1528_NoNameYet/TowerDefence/Content/StarterContent/Materials/M_Brick_Clay_Beveled.uasset' failed to load '/Game/StarterContent/Textures/T_Brick_Clay_Beveled_D': Can't find file.
+[2021.04.15-17.21.45:003][  0]LoadErrors: Failed to load /Game/StarterContent/Textures/T_Brick_Clay_Beveled_D.T_Brick_Clay_Beveled_D Referenced by MaterialExpressionTextureSample_4
+[2021.04.15-17.21.45:003][  0]LogLinker: Warning: While loading 'C:/Users/sethg/Desktop/High Level Development II/W21_GAM1528_NoNameYet/TowerDefence/Content/StarterContent/Materials/M_Brick_Clay_Beveled.uasset' failed to load '/Game/StarterContent/Textures/T_Brick_Clay_Beveled_D': Can't find file.
+[2021.04.15-17.21.45:003][  0]LoadErrors: Failed to load /Game/StarterContent/Textures/T_Brick_Clay_Beveled_D.T_Brick_Clay_Beveled_D Referenced by MaterialExpressionTextureSample_4
+[2021.04.15-17.21.45:003][  0]LogLinker: Warning: While loading 'C:/Users/sethg/Desktop/High Level Development II/W21_GAM1528_NoNameYet/TowerDefence/Content/StarterContent/Materials/M_Brick_Clay_Beveled.uasset' failed to load '/Game/StarterContent/Textures/T_Brick_Clay_Beveled_D': Can't find file.
+[2021.04.15-17.21.45:003][  0]LoadErrors: Failed to load /Game/StarterContent/Textures/T_Brick_Clay_Beveled_D.T_Brick_Clay_Beveled_D Referenced by MaterialExpressionTextureSample_5
+[2021.04.15-17.21.45:004][  0]LogLinker: Warning: While loading 'C:/Users/sethg/Desktop/High Level Development II/W21_GAM1528_NoNameYet/TowerDefence/Content/StarterContent/Materials/M_Brick_Clay_Beveled.uasset' failed to load '/Game/StarterContent/Textures/T_Brick_Clay_Beveled_D': Can't find file.
+[2021.04.15-17.21.45:004][  0]LoadErrors: Failed to load /Game/StarterContent/Textures/T_Brick_Clay_Beveled_D.T_Brick_Clay_Beveled_D Referenced by MaterialExpressionTextureSample_5
+[2021.04.15-17.21.45:051][  0]LogMaterial: Display: Missing cached shader map for material M_Brick_Clay_Beveled, compiling. 
+[2021.04.15-17.21.45:052][  0]LogMaterial: Warning: C:\Users\sethg\Desktop\High Level Development II\W21_GAM1528_NoNameYet\TowerDefence\Content\StarterContent\Materials\M_Brick_Clay_Beveled.uasset: Failed to compile Material for platform PCD3D_SM5, Default Material will be used in game.
+[2021.04.15-17.21.45:052][  0]LogMaterial: Display: 	(Node TextureSample) Texture Sample> Missing input texture
+[2021.04.15-17.21.45:063][  0]LogAIModule: Creating AISystem for world Test
+[2021.04.15-17.21.45:063][  0]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (000001B8A3CAFE00), frame # 0
+[2021.04.15-17.21.45:063][  0]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (000001B8A3D53B00), frame # 0
+[2021.04.15-17.21.45:068][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2021.04.15-17.21.45:082][  0]LogUObjectHash: Compacting FUObjectHashTables data took   1.15ms
+[2021.04.15-17.21.45:083][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2021.04.15-17.21.45:084][  0]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 0.287ms to complete.
+[2021.04.15-17.21.45:084][  0]LogFileHelpers: Loading map 'Test' took 0.289
+[2021.04.15-17.21.45:087][  0]LogUnrealEdMisc: Total Editor Startup Time, took 63.608
+[2021.04.15-17.21.45:207][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.04.15-17.21.45:215][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.04.15-17.21.45:222][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.04.15-17.21.45:228][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.04.15-17.21.45:238][  0]LogCollectionManager: Loaded 0 collections in 0.001744 seconds
+[2021.04.15-17.21.45:261][  0]LogFileCache: Scanning file cache for directory 'C:/Users/sethg/Desktop/High Level Development II/W21_GAM1528_NoNameYet/TowerDefence/Saved/Collections/' took 0.00s
+[2021.04.15-17.21.45:261][  0]LogFileCache: Scanning file cache for directory 'C:/Users/sethg/Desktop/High Level Development II/W21_GAM1528_NoNameYet/TowerDefence/Content/Developers/sethg/Collections/' took 0.00s
+[2021.04.15-17.21.45:261][  0]LogFileCache: Scanning file cache for directory 'C:/Users/sethg/Desktop/High Level Development II/W21_GAM1528_NoNameYet/TowerDefence/Content/Collections/' took 0.00s
+[2021.04.15-17.21.45:262][  0]LogContentBrowser: Native class hierarchy populated in 0.0110 seconds. Added 3451 classes and 824 folders.
+[2021.04.15-17.21.45:265][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0006 seconds. Added 0 classes and 0 folders.
+[2021.04.15-17.21.45:353][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0008 seconds. Added 0 classes and 0 folders.
+[2021.04.15-17.21.45:355][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0007 seconds. Added 2 classes and 0 folders.
+[2021.04.15-17.21.45:465][  0]LogSlate: Took 0.000272 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2021.04.15-17.21.45:467][  0]LogSlate: Took 0.000222 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
+[2021.04.15-17.21.45:474][  0]LogSlate: Took 0.000239 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
+[2021.04.15-17.21.45:562][  0]LogRenderer: Reallocating scene render targets to support 1088x536 Format 10 NumSamples 1 (Frame:1).
+[2021.04.15-17.21.45:792][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0005 seconds. Added 0 classes and 0 folders.
+[2021.04.15-17.21.45:792][  0]LogLoad: (Engine Initialization) Total time: 64.31 seconds
+[2021.04.15-17.21.45:792][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.00 seconds
+[2021.04.15-17.21.45:851][  0]LogAssetRegistry: Asset discovery search completed in 4.0411 seconds
+[2021.04.15-17.21.45:857][  0]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000003 seconds (updated 0 objects)
+[2021.04.15-17.21.45:859][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2021.04.15-17.21.45:991][  0]LogRenderer: Reallocating scene render targets to support 1088x552 Format 10 NumSamples 1 (Frame:3).
+[2021.04.15-17.21.45:992][  0]LogSlate: Took 0.000338 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
+[2021.04.15-17.21.46:004][  0]LogSlate: Took 0.000305 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/DroidSansMono.ttf' (77K)
+[2021.04.15-17.21.46:020][  1]LogFileCache: Retrieving MD5 hashes for directory 'C:/Users/sethg/Desktop/High Level Development II/W21_GAM1528_NoNameYet/TowerDefence/Content/' took 0.21s
+[2021.04.15-17.22.15:462][347]LogSlate: Window 'Message Log' being destroyed
+[2021.04.15-17.22.15:468][347]LogSlate: Window 'Message Log' being destroyed
+[2021.04.15-17.22.31:937][320]LogSlate: Took 0.000612 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
+[2021.04.15-17.22.31:960][320]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/Blueprints/Troops/BP_Troop_Giant.BP_Troop_Giant
+[2021.04.15-17.22.32:169][320]LogContentBrowser: Native class hierarchy updated for 'BlueprintGraph' in 0.0007 seconds. Added 125 classes and 0 folders.
+[2021.04.15-17.22.35:989][465]LogSlate: Window 'BP_Troop_Giant' being destroyed
+[2021.04.15-17.22.36:003][465]LogSlate: Window 'BP_Troop_Giant' being destroyed
+[2021.04.15-17.22.36:008][465]LogWorld: UWorld::CleanupWorld for World_3, bSessionEnded=true, bCleanupResources=true
+[2021.04.15-17.22.36:008][465]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.04.15-17.23.20:038][874]LogFactory: FactoryCreateFile: SoundWave with ReimportSoundFactory (0 0 C:/Users/sethg/Desktop/High Level Development II/W21_GAM1528_NoNameYet/arrowshoot.wav)
+[2021.04.15-17.23.20:175][874]LogAudioDerivedData: Display: Building compressed audio format OGG hash OGG10000-1-1-1-1-1 wave arrowshoot...
+[2021.04.15-17.23.20:175][874]LogAudioDerivedData: Display: Compression Quality for SoundWave /Game/Assets/Audio/SFX/arrowshoot.arrowshoot will be modified from 40 to 40.
+[2021.04.15-17.23.21:313][874]LogAudioDerivedData: Display: Updated SoundWave->RawPCMDataSize from 0 to 220500 while cooking SoundWave /Game/Assets/Audio/SFX/arrowshoot.arrowshoot.
+[2021.04.15-17.23.21:487][874]LogFactory: FactoryCreateFile: FileMediaSource with WmfFileMediaSourceFactory (0 0 C:/Users/sethg/Desktop/High Level Development II/W21_GAM1528_NoNameYet/BatlleMusic1.mp3)
+[2021.04.15-17.23.21:519][874]LogFactory: FactoryCreateFile: SoundWave with ReimportSoundFactory (0 0 C:/Users/sethg/Desktop/High Level Development II/W21_GAM1528_NoNameYet/battlecry.wav)
+[2021.04.15-17.23.21:522][874]LogAudioDerivedData: Display: Building compressed audio format OGG hash OGG10000-1-1-1-1-1 wave battlecry...
+[2021.04.15-17.23.21:522][874]LogAudioDerivedData: Display: Compression Quality for SoundWave /Game/Assets/Audio/SFX/battlecry.battlecry will be modified from 40 to 40.
+[2021.04.15-17.23.22:042][874]LogAudioDerivedData: Display: Updated SoundWave->RawPCMDataSize from 0 to 166620 while cooking SoundWave /Game/Assets/Audio/SFX/battlecry.battlecry.
+[2021.04.15-17.23.22:047][874]LogFactory: FactoryCreateFile: SoundWave with ReimportSoundFactory (0 0 C:/Users/sethg/Desktop/High Level Development II/W21_GAM1528_NoNameYet/battlecry2.wav)
+[2021.04.15-17.23.22:049][874]LogAudioDerivedData: Display: Building compressed audio format OGG hash OGG10000-1-1-1-1-1 wave battlecry2...
+[2021.04.15-17.23.22:049][874]LogAudioDerivedData: Display: Compression Quality for SoundWave /Game/Assets/Audio/SFX/battlecry2.battlecry2 will be modified from 40 to 40.
+[2021.04.15-17.23.22:068][874]LogAudioDerivedData: Display: Updated SoundWave->RawPCMDataSize from 0 to 147958 while cooking SoundWave /Game/Assets/Audio/SFX/battlecry2.battlecry2.
+[2021.04.15-17.23.22:083][874]LogFactory: FactoryCreateFile: FileMediaSource with WmfFileMediaSourceFactory (0 0 C:/Users/sethg/Desktop/High Level Development II/W21_GAM1528_NoNameYet/BattleMusic2.mp3)
+[2021.04.15-17.23.22:091][874]LogFactory: FactoryCreateFile: SoundWave with ReimportSoundFactory (0 0 C:/Users/sethg/Desktop/High Level Development II/W21_GAM1528_NoNameYet/BattleStart.wav)
+[2021.04.15-17.23.22:099][874]LogAudioDerivedData: Display: Building compressed audio format OGG hash OGG10000-1-1-1-1-1 wave BattleStart...
+[2021.04.15-17.23.22:100][874]LogAudioDerivedData: Display: Compression Quality for SoundWave /Game/Assets/Audio/SFX/BattleStart.BattleStart will be modified from 40 to 40.
+[2021.04.15-17.23.22:281][874]LogAudioDerivedData: Display: Updated SoundWave->RawPCMDataSize from 0 to 1921536 while cooking SoundWave /Game/Assets/Audio/SFX/BattleStart.BattleStart.
+[2021.04.15-17.23.22:288][874]LogFactory: FactoryCreateFile: FileMediaSource with WmfFileMediaSourceFactory (0 0 C:/Users/sethg/Desktop/High Level Development II/W21_GAM1528_NoNameYet/chaching.mp3)
+[2021.04.15-17.23.22:291][874]LogFactory: FactoryCreateFile: SoundWave with ReimportSoundFactory (0 0 C:/Users/sethg/Desktop/High Level Development II/W21_GAM1528_NoNameYet/fireball.wav)
+[2021.04.15-17.23.22:293][874]LogAudioDerivedData: Display: Building compressed audio format OGG hash OGG10000-1-1-1-1-1 wave fireball...
+[2021.04.15-17.23.22:293][874]LogAudioDerivedData: Display: Compression Quality for SoundWave /Game/Assets/Audio/SFX/fireball.fireball will be modified from 40 to 40.
+[2021.04.15-17.23.22:317][874]LogAudioDerivedData: Display: Updated SoundWave->RawPCMDataSize from 0 to 224628 while cooking SoundWave /Game/Assets/Audio/SFX/fireball.fireball.
+[2021.04.15-17.23.22:326][874]LogFactory: FactoryCreateFile: SoundWave with ReimportSoundFactory (0 0 C:/Users/sethg/Desktop/High Level Development II/W21_GAM1528_NoNameYet/giantstep.wav)
+[2021.04.15-17.23.22:331][874]LogAudioDerivedData: Display: Building compressed audio format OGG hash OGG10000-1-1-1-1-1 wave giantstep...
+[2021.04.15-17.23.22:332][874]LogAudioDerivedData: Display: Compression Quality for SoundWave /Game/Assets/Audio/SFX/giantstep.giantstep will be modified from 40 to 40.
+[2021.04.15-17.23.22:426][874]LogAudioDerivedData: Display: Updated SoundWave->RawPCMDataSize from 0 to 1165344 while cooking SoundWave /Game/Assets/Audio/SFX/giantstep.giantstep.
+[2021.04.15-17.23.22:432][874]LogFactory: FactoryCreateFile: SoundWave with ReimportSoundFactory (0 0 C:/Users/sethg/Desktop/High Level Development II/W21_GAM1528_NoNameYet/goblinlaugh.wav)
+[2021.04.15-17.23.22:436][874]LogAudioDerivedData: Display: Building compressed audio format OGG hash OGG10000-1-1-1-1-1 wave goblinlaugh...
+[2021.04.15-17.23.22:436][874]LogAudioDerivedData: Display: Compression Quality for SoundWave /Game/Assets/Audio/SFX/goblinlaugh.goblinlaugh will be modified from 40 to 40.
+[2021.04.15-17.23.22:472][874]LogAudioDerivedData: Display: Updated SoundWave->RawPCMDataSize from 0 to 386208 while cooking SoundWave /Game/Assets/Audio/SFX/goblinlaugh.goblinlaugh.
+[2021.04.15-17.23.22:477][874]LogFactory: FactoryCreateFile: SoundWave with ReimportSoundFactory (0 0 C:/Users/sethg/Desktop/High Level Development II/W21_GAM1528_NoNameYet/lose1.wav)
+[2021.04.15-17.23.22:483][874]LogAudioDerivedData: Display: Building compressed audio format OGG hash OGG10000-1-1-1-1-1 wave lose1...
+[2021.04.15-17.23.22:483][874]LogAudioDerivedData: Display: Compression Quality for SoundWave /Game/Assets/Audio/SFX/lose1.lose1 will be modified from 40 to 40.
+[2021.04.15-17.23.22:555][874]LogAudioDerivedData: Display: Updated SoundWave->RawPCMDataSize from 0 to 821292 while cooking SoundWave /Game/Assets/Audio/SFX/lose1.lose1.
+[2021.04.15-17.23.22:572][874]LogFactory: FactoryCreateFile: SoundWave with ReimportSoundFactory (0 0 C:/Users/sethg/Desktop/High Level Development II/W21_GAM1528_NoNameYet/lose2.wav)
+[2021.04.15-17.23.22:577][874]Error: Unable to read wave file 'lose2' - "Unsupported wave file format.  Only PCM, ADPCM, and DVI ADPCM can be imported."
+[2021.04.15-17.23.24:274][874]LogAudioDerivedData: Display: Building compressed audio format OGG hash OGG10000-1-1-1-1-1 wave lose2...
+[2021.04.15-17.23.24:275][874]LogAudioDerivedData: Display: Compression Quality for SoundWave /Game/Assets/Audio/SFX/lose2.lose2 will be modified from 40 to 40.
+[2021.04.15-17.23.24:514][874]LogAudioDerivedData: Display: Updated SoundWave->RawPCMDataSize from 0 to 2307096 while cooking SoundWave /Game/Assets/Audio/SFX/lose2.lose2.
+[2021.04.15-17.23.24:546][874]LogFactory: FactoryCreateFile: FileMediaSource with WmfFileMediaSourceFactory (0 0 C:/Users/sethg/Desktop/High Level Development II/W21_GAM1528_NoNameYet/MenuMusic.mp3)
+[2021.04.15-17.23.24:550][874]LogFactory: FactoryCreateFile: SoundWave with ReimportSoundFactory (0 0 C:/Users/sethg/Desktop/High Level Development II/W21_GAM1528_NoNameYet/towersmash.wav)
+[2021.04.15-17.23.24:551][874]LogAudioDerivedData: Display: Building compressed audio format OGG hash OGG10000-1-1-1-1-1 wave towersmash...
+[2021.04.15-17.23.24:551][874]LogAudioDerivedData: Display: Compression Quality for SoundWave /Game/Assets/Audio/SFX/towersmash.towersmash will be modified from 40 to 40.
+[2021.04.15-17.23.24:573][874]LogAudioDerivedData: Display: Updated SoundWave->RawPCMDataSize from 0 to 185920 while cooking SoundWave /Game/Assets/Audio/SFX/towersmash.towersmash.
+[2021.04.15-17.23.24:578][874]LogFactory: FactoryCreateFile: SoundWave with ReimportSoundFactory (0 0 C:/Users/sethg/Desktop/High Level Development II/W21_GAM1528_NoNameYet/winsound.wav)
+[2021.04.15-17.23.24:581][874]LogAudioDerivedData: Display: Building compressed audio format OGG hash OGG10000-1-1-1-1-1 wave winsound...
+[2021.04.15-17.23.24:583][874]LogAudioDerivedData: Display: Compression Quality for SoundWave /Game/Assets/Audio/SFX/winsound.winsound will be modified from 40 to 40.
+[2021.04.15-17.23.24:649][874]LogAudioDerivedData: Display: Updated SoundWave->RawPCMDataSize from 0 to 623076 while cooking SoundWave /Game/Assets/Audio/SFX/winsound.winsound.
+[2021.04.15-17.23.36:029][470]LogAssetEditorSubsystem: Opening Asset editor for FileMediaSource /Game/Assets/Audio/SFX/BatlleMusic1.BatlleMusic1
+[2021.04.15-17.23.51:568][287]LogSlate: Window 'BatlleMusic1' being destroyed
+[2021.04.15-17.23.51:580][287]LogSlate: Window 'BatlleMusic1' being destroyed
+[2021.04.15-17.23.53:460][390]LogAssetEditorSubsystem: Opening Asset editor for SoundWave /Game/Assets/Audio/SFX/battlecry.battlecry
+[2021.04.15-17.23.56:555][559]LogSlate: Window 'battlecry' being destroyed
+[2021.04.15-17.23.56:568][559]LogSlate: Window 'battlecry' being destroyed
+[2021.04.15-17.31.46:070][799]LogUObjectHash: Compacting FUObjectHashTables data took   1.90ms
+[2021.04.15-17.31.46:074][799]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/Maps/Test' took 0.028
+[2021.04.15-17.31.46:148][799]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/Assets/Audio/SFX/arrowshoot] ([1] browsable assets)...
+[2021.04.15-17.31.46:203][799]OBJ SavePackage:     Rendered thumbnail for [SoundWave /Game/Assets/Audio/SFX/arrowshoot.arrowshoot]
+[2021.04.15-17.31.46:203][799]OBJ SavePackage: Finished generating thumbnails for package [/Game/Assets/Audio/SFX/arrowshoot]
+[2021.04.15-17.31.46:229][799]LogSavePackage: Moving 'C:/Users/sethg/Desktop/High Level Development II/W21_GAM1528_NoNameYet/TowerDefence/Saved/arrowshoot_Auto1C4532E1D457B2DFB68109E9D47589DDF.tmp' to 'C:/Users/sethg/Desktop/High Level Development II/W21_GAM1528_NoNameYet/TowerDefence/Saved/Autosaves/Game/Assets/Audio/SFX/arrowshoot_Auto1.uasset'
+[2021.04.15-17.31.46:230][799]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/Assets/Audio/SFX/BatlleMusic1] ([1] browsable assets)...
+[2021.04.15-17.31.46:230][799]OBJ SavePackage: Finished generating thumbnails for package [/Game/Assets/Audio/SFX/BatlleMusic1]
+[2021.04.15-17.31.46:232][799]LogSavePackage: Moving 'C:/Users/sethg/Desktop/High Level Development II/W21_GAM1528_NoNameYet/TowerDefence/Saved/BatlleMusic1_Auto1E2F6BF9C47CFFDB4C04FC99215FBCC2C.tmp' to 'C:/Users/sethg/Desktop/High Level Development II/W21_GAM1528_NoNameYet/TowerDefence/Saved/Autosaves/Game/Assets/Audio/SFX/BatlleMusic1_Auto1.uasset'
+[2021.04.15-17.31.46:234][799]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/Assets/Audio/SFX/battlecry] ([1] browsable assets)...
+[2021.04.15-17.31.46:237][799]OBJ SavePackage:     Rendered thumbnail for [SoundWave /Game/Assets/Audio/SFX/battlecry.battlecry]
+[2021.04.15-17.31.46:237][799]OBJ SavePackage: Finished generating thumbnails for package [/Game/Assets/Audio/SFX/battlecry]
+[2021.04.15-17.31.46:242][799]LogSavePackage: Moving 'C:/Users/sethg/Desktop/High Level Development II/W21_GAM1528_NoNameYet/TowerDefence/Saved/battlecry_Auto11AB5A474442FF265B2A87D8930E5C885.tmp' to 'C:/Users/sethg/Desktop/High Level Development II/W21_GAM1528_NoNameYet/TowerDefence/Saved/Autosaves/Game/Assets/Audio/SFX/battlecry_Auto1.uasset'
+[2021.04.15-17.31.46:244][799]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/Assets/Audio/SFX/battlecry2] ([1] browsable assets)...
+[2021.04.15-17.31.46:247][799]OBJ SavePackage:     Rendered thumbnail for [SoundWave /Game/Assets/Audio/SFX/battlecry2.battlecry2]
+[2021.04.15-17.31.46:247][799]OBJ SavePackage: Finished generating thumbnails for package [/Game/Assets/Audio/SFX/battlecry2]
+[2021.04.15-17.31.46:252][799]LogSavePackage: Moving 'C:/Users/sethg/Desktop/High Level Development II/W21_GAM1528_NoNameYet/TowerDefence/Saved/battlecry2_Auto1818696D14ED9B4CB693124B5E8BEA385.tmp' to 'C:/Users/sethg/Desktop/High Level Development II/W21_GAM1528_NoNameYet/TowerDefence/Saved/Autosaves/Game/Assets/Audio/SFX/battlecry2_Auto1.uasset'
+[2021.04.15-17.31.46:254][799]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/Assets/Audio/SFX/BattleMusic2] ([1] browsable assets)...
+[2021.04.15-17.31.46:254][799]OBJ SavePackage: Finished generating thumbnails for package [/Game/Assets/Audio/SFX/BattleMusic2]
+[2021.04.15-17.31.46:257][799]LogSavePackage: Moving 'C:/Users/sethg/Desktop/High Level Development II/W21_GAM1528_NoNameYet/TowerDefence/Saved/BattleMusic2_Auto15EF646164791EE0771766AB09C132AEE.tmp' to 'C:/Users/sethg/Desktop/High Level Development II/W21_GAM1528_NoNameYet/TowerDefence/Saved/Autosaves/Game/Assets/Audio/SFX/BattleMusic2_Auto1.uasset'
+[2021.04.15-17.31.46:258][799]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/Assets/Audio/SFX/BattleStart] ([1] browsable assets)...
+[2021.04.15-17.31.46:263][799]OBJ SavePackage:     Rendered thumbnail for [SoundWave /Game/Assets/Audio/SFX/BattleStart.BattleStart]
+[2021.04.15-17.31.46:263][799]OBJ SavePackage: Finished generating thumbnails for package [/Game/Assets/Audio/SFX/BattleStart]
+[2021.04.15-17.31.46:267][799]LogSavePackage: Moving 'C:/Users/sethg/Desktop/High Level Development II/W21_GAM1528_NoNameYet/TowerDefence/Saved/BattleStart_Auto176A41E6040D2FC52878C7F8114125DF3.tmp' to 'C:/Users/sethg/Desktop/High Level Development II/W21_GAM1528_NoNameYet/TowerDefence/Saved/Autosaves/Game/Assets/Audio/SFX/BattleStart_Auto1.uasset'
+[2021.04.15-17.31.46:269][799]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/Assets/Audio/SFX/chaching] ([1] browsable assets)...
+[2021.04.15-17.31.46:269][799]OBJ SavePackage: Finished generating thumbnails for package [/Game/Assets/Audio/SFX/chaching]
+[2021.04.15-17.31.46:271][799]LogSavePackage: Moving 'C:/Users/sethg/Desktop/High Level Development II/W21_GAM1528_NoNameYet/TowerDefence/Saved/chaching_Auto189CFEAB34CD41361655887885C6C83CC.tmp' to 'C:/Users/sethg/Desktop/High Level Development II/W21_GAM1528_NoNameYet/TowerDefence/Saved/Autosaves/Game/Assets/Audio/SFX/chaching_Auto1.uasset'
+[2021.04.15-17.31.46:272][799]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/Assets/Audio/SFX/fireball] ([1] browsable assets)...
+[2021.04.15-17.31.46:275][799]OBJ SavePackage:     Rendered thumbnail for [SoundWave /Game/Assets/Audio/SFX/fireball.fireball]
+[2021.04.15-17.31.46:275][799]OBJ SavePackage: Finished generating thumbnails for package [/Game/Assets/Audio/SFX/fireball]
+[2021.04.15-17.31.46:280][799]LogSavePackage: Moving 'C:/Users/sethg/Desktop/High Level Development II/W21_GAM1528_NoNameYet/TowerDefence/Saved/fireball_Auto137E188B0460EA7D45E89FC886E07D4F6.tmp' to 'C:/Users/sethg/Desktop/High Level Development II/W21_GAM1528_NoNameYet/TowerDefence/Saved/Autosaves/Game/Assets/Audio/SFX/fireball_Auto1.uasset'
+[2021.04.15-17.31.46:282][799]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/Assets/Audio/SFX/giantstep] ([1] browsable assets)...
+[2021.04.15-17.31.46:287][799]OBJ SavePackage:     Rendered thumbnail for [SoundWave /Game/Assets/Audio/SFX/giantstep.giantstep]
+[2021.04.15-17.31.46:287][799]OBJ SavePackage: Finished generating thumbnails for package [/Game/Assets/Audio/SFX/giantstep]
+[2021.04.15-17.31.46:290][799]LogSavePackage: Moving 'C:/Users/sethg/Desktop/High Level Development II/W21_GAM1528_NoNameYet/TowerDefence/Saved/giantstep_Auto1809653BD4F5BD5480A750E81D9622E7E.tmp' to 'C:/Users/sethg/Desktop/High Level Development II/W21_GAM1528_NoNameYet/TowerDefence/Saved/Autosaves/Game/Assets/Audio/SFX/giantstep_Auto1.uasset'
+[2021.04.15-17.31.46:292][799]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/Assets/Audio/SFX/goblinlaugh] ([1] browsable assets)...
+[2021.04.15-17.31.46:295][799]OBJ SavePackage:     Rendered thumbnail for [SoundWave /Game/Assets/Audio/SFX/goblinlaugh.goblinlaugh]
+[2021.04.15-17.31.46:295][799]OBJ SavePackage: Finished generating thumbnails for package [/Game/Assets/Audio/SFX/goblinlaugh]
+[2021.04.15-17.31.46:298][799]LogSavePackage: Moving 'C:/Users/sethg/Desktop/High Level Development II/W21_GAM1528_NoNameYet/TowerDefence/Saved/goblinlaugh_Auto1F47B30F64C925C52785FD0A2B07EF228.tmp' to 'C:/Users/sethg/Desktop/High Level Development II/W21_GAM1528_NoNameYet/TowerDefence/Saved/Autosaves/Game/Assets/Audio/SFX/goblinlaugh_Auto1.uasset'
+[2021.04.15-17.31.46:300][799]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/Assets/Audio/SFX/lose1] ([1] browsable assets)...
+[2021.04.15-17.31.46:303][799]OBJ SavePackage:     Rendered thumbnail for [SoundWave /Game/Assets/Audio/SFX/lose1.lose1]
+[2021.04.15-17.31.46:303][799]OBJ SavePackage: Finished generating thumbnails for package [/Game/Assets/Audio/SFX/lose1]
+[2021.04.15-17.31.46:307][799]LogSavePackage: Moving 'C:/Users/sethg/Desktop/High Level Development II/W21_GAM1528_NoNameYet/TowerDefence/Saved/lose1_Auto164E74B6349A5CC43A5ED31BE7CB2691F.tmp' to 'C:/Users/sethg/Desktop/High Level Development II/W21_GAM1528_NoNameYet/TowerDefence/Saved/Autosaves/Game/Assets/Audio/SFX/lose1_Auto1.uasset'
+[2021.04.15-17.31.46:308][799]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/Assets/Audio/SFX/lose2] ([1] browsable assets)...
+[2021.04.15-17.31.46:314][799]OBJ SavePackage:     Rendered thumbnail for [SoundWave /Game/Assets/Audio/SFX/lose2.lose2]
+[2021.04.15-17.31.46:314][799]OBJ SavePackage: Finished generating thumbnails for package [/Game/Assets/Audio/SFX/lose2]
+[2021.04.15-17.31.46:318][799]LogSavePackage: Moving 'C:/Users/sethg/Desktop/High Level Development II/W21_GAM1528_NoNameYet/TowerDefence/Saved/lose2_Auto19287DB874B29C95B7A45B78F6A74EC36.tmp' to 'C:/Users/sethg/Desktop/High Level Development II/W21_GAM1528_NoNameYet/TowerDefence/Saved/Autosaves/Game/Assets/Audio/SFX/lose2_Auto1.uasset'
+[2021.04.15-17.31.46:320][799]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/Assets/Audio/SFX/MenuMusic] ([1] browsable assets)...
+[2021.04.15-17.31.46:320][799]OBJ SavePackage: Finished generating thumbnails for package [/Game/Assets/Audio/SFX/MenuMusic]
+[2021.04.15-17.31.46:321][799]LogSavePackage: Moving 'C:/Users/sethg/Desktop/High Level Development II/W21_GAM1528_NoNameYet/TowerDefence/Saved/MenuMusic_Auto1FC3AD5D0413C3FD65CDBC2BB6AC7338F.tmp' to 'C:/Users/sethg/Desktop/High Level Development II/W21_GAM1528_NoNameYet/TowerDefence/Saved/Autosaves/Game/Assets/Audio/SFX/MenuMusic_Auto1.uasset'
+[2021.04.15-17.31.46:323][799]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/Assets/Audio/SFX/towersmash] ([1] browsable assets)...
+[2021.04.15-17.31.46:326][799]OBJ SavePackage:     Rendered thumbnail for [SoundWave /Game/Assets/Audio/SFX/towersmash.towersmash]
+[2021.04.15-17.31.46:326][799]OBJ SavePackage: Finished generating thumbnails for package [/Game/Assets/Audio/SFX/towersmash]
+[2021.04.15-17.31.46:329][799]LogSavePackage: Moving 'C:/Users/sethg/Desktop/High Level Development II/W21_GAM1528_NoNameYet/TowerDefence/Saved/towersmash_Auto1BB7D619A48DD475993A456B3EDF38132.tmp' to 'C:/Users/sethg/Desktop/High Level Development II/W21_GAM1528_NoNameYet/TowerDefence/Saved/Autosaves/Game/Assets/Audio/SFX/towersmash_Auto1.uasset'
+[2021.04.15-17.31.46:330][799]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/Assets/Audio/SFX/winsound] ([1] browsable assets)...
+[2021.04.15-17.31.46:334][799]OBJ SavePackage:     Rendered thumbnail for [SoundWave /Game/Assets/Audio/SFX/winsound.winsound]
+[2021.04.15-17.31.46:334][799]OBJ SavePackage: Finished generating thumbnails for package [/Game/Assets/Audio/SFX/winsound]
+[2021.04.15-17.31.46:338][799]LogSavePackage: Moving 'C:/Users/sethg/Desktop/High Level Development II/W21_GAM1528_NoNameYet/TowerDefence/Saved/winsound_Auto103FFAEE64929341BDB00E0ABE0DAA433.tmp' to 'C:/Users/sethg/Desktop/High Level Development II/W21_GAM1528_NoNameYet/TowerDefence/Saved/Autosaves/Game/Assets/Audio/SFX/winsound_Auto1.uasset'
+[2021.04.15-17.31.46:339][799]LogFileHelpers: Auto-saving content packages took 0.265
+[2021.04.15-17.32.44:505][170]LogUObjectHash: Compacting FUObjectHashTables data took   1.62ms
+[2021.04.15-17.32.49:313][170]LogSlate: Window 'Save Content' being destroyed
+[2021.04.15-17.32.52:530][333]LogUObjectHash: Compacting FUObjectHashTables data took   1.70ms
+[2021.04.15-17.32.53:607][333]LogSlate: Window 'Delete Assets' being destroyed
+[2021.04.15-17.32.53:815][333]LogUObjectHash: Compacting FUObjectHashTables data took   1.72ms
+[2021.04.15-17.32.56:052][460]LogUObjectHash: Compacting FUObjectHashTables data took   0.49ms
+[2021.04.15-17.32.57:474][460]LogSlate: Window 'Save Content' being destroyed
+[2021.04.15-17.32.57:667][460]LogSavePackage: Moving 'C:/Users/sethg/Desktop/High Level Development II/W21_GAM1528_NoNameYet/TowerDefence/Saved/arrowshoot40CBAD2B4F162264A9E88ABDF81ECD51.tmp' to 'C:/Users/sethg/Desktop/High Level Development II/W21_GAM1528_NoNameYet/TowerDefence/Content/Assets/Audio/SFX/arrowshoot.uasset'
+[2021.04.15-17.32.57:673][460]LogSavePackage: Moving 'C:/Users/sethg/Desktop/High Level Development II/W21_GAM1528_NoNameYet/TowerDefence/Saved/battlecryD3D7A9844000A991258FED827989AC02.tmp' to 'C:/Users/sethg/Desktop/High Level Development II/W21_GAM1528_NoNameYet/TowerDefence/Content/Assets/Audio/SFX/battlecry.uasset'
+[2021.04.15-17.32.57:683][460]LogSavePackage: Moving 'C:/Users/sethg/Desktop/High Level Development II/W21_GAM1528_NoNameYet/TowerDefence/Saved/battlecry245CB27E34153252DADBE2685331F9AD2.tmp' to 'C:/Users/sethg/Desktop/High Level Development II/W21_GAM1528_NoNameYet/TowerDefence/Content/Assets/Audio/SFX/battlecry2.uasset'
+[2021.04.15-17.32.57:692][460]LogSavePackage: Moving 'C:/Users/sethg/Desktop/High Level Development II/W21_GAM1528_NoNameYet/TowerDefence/Saved/BattleStart8F5D6CD14CBFED99DC169AB3BCE48E1C.tmp' to 'C:/Users/sethg/Desktop/High Level Development II/W21_GAM1528_NoNameYet/TowerDefence/Content/Assets/Audio/SFX/BattleStart.uasset'
+[2021.04.15-17.32.57:698][460]LogSavePackage: Moving 'C:/Users/sethg/Desktop/High Level Development II/W21_GAM1528_NoNameYet/TowerDefence/Saved/fireball48BAE88E408287CAC74E869C1ABF26CC.tmp' to 'C:/Users/sethg/Desktop/High Level Development II/W21_GAM1528_NoNameYet/TowerDefence/Content/Assets/Audio/SFX/fireball.uasset'
+[2021.04.15-17.32.57:705][460]LogSavePackage: Moving 'C:/Users/sethg/Desktop/High Level Development II/W21_GAM1528_NoNameYet/TowerDefence/Saved/giantstep26F2E6EA4E8FF7EE03802C99306A7281.tmp' to 'C:/Users/sethg/Desktop/High Level Development II/W21_GAM1528_NoNameYet/TowerDefence/Content/Assets/Audio/SFX/giantstep.uasset'
+[2021.04.15-17.32.57:712][460]LogSavePackage: Moving 'C:/Users/sethg/Desktop/High Level Development II/W21_GAM1528_NoNameYet/TowerDefence/Saved/goblinlaughF65F0CB544EA109DE7B52380B1559A2B.tmp' to 'C:/Users/sethg/Desktop/High Level Development II/W21_GAM1528_NoNameYet/TowerDefence/Content/Assets/Audio/SFX/goblinlaugh.uasset'
+[2021.04.15-17.32.57:718][460]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Assets/Audio/SFX/lose1" FILE="C:/Users/sethg/Desktop/High Level Development II/W21_GAM1528_NoNameYet/TowerDefence/Content/Assets/Audio/SFX/lose1.uasset" SILENT=true
+[2021.04.15-17.32.57:721][460]LogSavePackage: Moving 'C:/Users/sethg/Desktop/High Level Development II/W21_GAM1528_NoNameYet/TowerDefence/Saved/lose1A12E6F3944A8E555F39864B76F05800E.tmp' to 'C:/Users/sethg/Desktop/High Level Development II/W21_GAM1528_NoNameYet/TowerDefence/Content/Assets/Audio/SFX/lose1.uasset'
+[2021.04.15-17.32.57:725][460]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Assets/Audio/SFX/lose2" FILE="C:/Users/sethg/Desktop/High Level Development II/W21_GAM1528_NoNameYet/TowerDefence/Content/Assets/Audio/SFX/lose2.uasset" SILENT=true
+[2021.04.15-17.32.57:729][460]LogSavePackage: Moving 'C:/Users/sethg/Desktop/High Level Development II/W21_GAM1528_NoNameYet/TowerDefence/Saved/lose2B7E4C04A4374E522EB6BB3831E923B12.tmp' to 'C:/Users/sethg/Desktop/High Level Development II/W21_GAM1528_NoNameYet/TowerDefence/Content/Assets/Audio/SFX/lose2.uasset'
+[2021.04.15-17.32.57:735][460]LogSavePackage: Moving 'C:/Users/sethg/Desktop/High Level Development II/W21_GAM1528_NoNameYet/TowerDefence/Saved/towersmash1DA93B94458F3D41E26DDD993F67ACD4.tmp' to 'C:/Users/sethg/Desktop/High Level Development II/W21_GAM1528_NoNameYet/TowerDefence/Content/Assets/Audio/SFX/towersmash.uasset'
+[2021.04.15-17.32.57:740][460]LogSavePackage: Moving 'C:/Users/sethg/Desktop/High Level Development II/W21_GAM1528_NoNameYet/TowerDefence/Saved/winsoundD696F17242623E0ADD4CD8BCC0D37D5B.tmp' to 'C:/Users/sethg/Desktop/High Level Development II/W21_GAM1528_NoNameYet/TowerDefence/Content/Assets/Audio/SFX/winsound.uasset'
+[2021.04.15-17.32.57:795][460]AssetCheck: New page: Asset Save: multiple assets
+[2021.04.15-17.32.57:795][460]LogContentValidation: Display: Validating SoundWave /Game/Assets/Audio/SFX/arrowshoot.arrowshoot
+[2021.04.15-17.32.57:795][460]LogContentValidation: Display: Validating SoundWave /Game/Assets/Audio/SFX/battlecry.battlecry
+[2021.04.15-17.32.57:795][460]LogContentValidation: Display: Validating SoundWave /Game/Assets/Audio/SFX/battlecry2.battlecry2
+[2021.04.15-17.32.57:795][460]LogContentValidation: Display: Validating SoundWave /Game/Assets/Audio/SFX/BattleStart.BattleStart
+[2021.04.15-17.32.57:795][460]LogContentValidation: Display: Validating SoundWave /Game/Assets/Audio/SFX/fireball.fireball
+[2021.04.15-17.32.57:795][460]LogContentValidation: Display: Validating SoundWave /Game/Assets/Audio/SFX/giantstep.giantstep
+[2021.04.15-17.32.57:795][460]LogContentValidation: Display: Validating SoundWave /Game/Assets/Audio/SFX/goblinlaugh.goblinlaugh
+[2021.04.15-17.32.57:796][460]LogContentValidation: Display: Validating SoundWave /Game/Assets/Audio/SFX/lose1.lose1
+[2021.04.15-17.32.57:796][460]LogContentValidation: Display: Validating SoundWave /Game/Assets/Audio/SFX/lose2.lose2
+[2021.04.15-17.32.57:796][460]LogContentValidation: Display: Validating SoundWave /Game/Assets/Audio/SFX/towersmash.towersmash
+[2021.04.15-17.32.57:796][460]LogContentValidation: Display: Validating SoundWave /Game/Assets/Audio/SFX/winsound.winsound
+[2021.04.15-17.35.11:022][858]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/Blueprints/Troops/BP_Troop_Ranged.BP_Troop_Ranged
+[2021.04.15-17.35.12:639][904]LogSlate: Window 'BP_Troop_Ranged' being destroyed
+[2021.04.15-17.35.12:662][904]LogWorld: UWorld::CleanupWorld for World_7, bSessionEnded=true, bCleanupResources=true
+[2021.04.15-17.35.12:662][904]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.04.15-17.35.12:745][904]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/Blueprints/Troops/BP_Troop_Ranged.BP_Troop_Ranged
+[2021.04.15-17.35.13:524][904]LogSlate: Took 0.337939 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-BoldCondensed.ttf' (158K)
+[2021.04.15-17.35.48:205][648]BlueprintLog: New page: Compile BP_Troop_Ranged
+[2021.04.15-17.35.48:287][648]LogUObjectHash: Compacting FUObjectHashTables data took   1.72ms
+[2021.04.15-17.35.48:391][648]LogSavePackage: Moving 'C:/Users/sethg/Desktop/High Level Development II/W21_GAM1528_NoNameYet/TowerDefence/Saved/BP_Troop_RangedA60D49CC406DED14185F46A245737952.tmp' to 'C:/Users/sethg/Desktop/High Level Development II/W21_GAM1528_NoNameYet/TowerDefence/Content/Blueprints/Troops/BP_Troop_Ranged.uasset'
+[2021.04.15-17.35.48:413][648]AssetCheck: New page: Asset Save: BP_Troop_Ranged
+[2021.04.15-17.35.48:413][648]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/Troops/BP_Troop_Ranged.BP_Troop_Ranged
+[2021.04.15-17.35.51:388][796]LogSlate: Window 'BP_Troop_Ranged' being destroyed
+[2021.04.15-17.35.51:397][796]LogSlate: Window 'BP_Troop_Ranged' being destroyed
+[2021.04.15-17.35.51:402][796]LogWorld: UWorld::CleanupWorld for World_9, bSessionEnded=true, bCleanupResources=true
+[2021.04.15-17.35.51:402][796]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.04.15-17.35.54:624][978]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/Blueprints/Troops/BP_Troop_melee.bp_Troop_melee
+[2021.04.15-17.35.56:360][ 29]LogSlate: Window 'bp_Troop_melee' being destroyed
+[2021.04.15-17.35.56:380][ 29]LogWorld: UWorld::CleanupWorld for World_10, bSessionEnded=true, bCleanupResources=true
+[2021.04.15-17.35.56:381][ 29]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.04.15-17.35.56:505][ 29]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/Blueprints/Troops/BP_Troop_melee.bp_Troop_melee
+[2021.04.15-17.36.00:585][218]LogSlate: Window 'bp_Troop_melee' being destroyed
+[2021.04.15-17.36.00:600][218]LogSlate: Window 'bp_Troop_melee' being destroyed
+[2021.04.15-17.36.00:605][218]LogWorld: UWorld::CleanupWorld for World_11, bSessionEnded=true, bCleanupResources=true
+[2021.04.15-17.36.00:605][218]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.04.15-17.36.01:727][273]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/Blueprints/Troops/BP_Troop_Giant.BP_Troop_Giant
+[2021.04.15-17.36.03:499][329]LogSlate: Window 'BP_Troop_Giant' being destroyed
+[2021.04.15-17.36.03:519][329]LogWorld: UWorld::CleanupWorld for World_12, bSessionEnded=true, bCleanupResources=true
+[2021.04.15-17.36.03:519][329]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.04.15-17.36.03:605][329]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/Blueprints/Troops/BP_Troop_Giant.BP_Troop_Giant
+[2021.04.15-17.36.34:371][960]LogAssetEditorSubsystem: Opening Asset editor for SoundWave /Game/Assets/Audio/SFX/fireball.fireball
+[2021.04.15-17.38.46:958][381]BlueprintLog: New page: Compile BP_Troop_Giant
+[2021.04.15-17.38.47:012][381]LogUObjectHash: Compacting FUObjectHashTables data took   2.50ms
+[2021.04.15-17.38.47:066][381]LogSavePackage: Moving 'C:/Users/sethg/Desktop/High Level Development II/W21_GAM1528_NoNameYet/TowerDefence/Saved/BP_Troop_GiantB657F1E14CFC9FBE02E5CCB155CEE274.tmp' to 'C:/Users/sethg/Desktop/High Level Development II/W21_GAM1528_NoNameYet/TowerDefence/Content/Blueprints/Troops/BP_Troop_Giant.uasset'
+[2021.04.15-17.38.47:084][381]AssetCheck: New page: Asset Save: BP_Troop_Giant
+[2021.04.15-17.38.47:084][381]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/Troops/BP_Troop_Giant.BP_Troop_Giant
+[2021.04.15-17.38.52:388][666]LogSlate: Window 'BP_Troop_Giant' being destroyed
+[2021.04.15-17.38.52:397][666]LogSlate: Window 'BP_Troop_Giant' being destroyed
+[2021.04.15-17.38.52:398][666]LogWorld: UWorld::CleanupWorld for World_13, bSessionEnded=true, bCleanupResources=true
+[2021.04.15-17.38.52:398][666]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.04.15-17.39.01:568][207]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/Blueprints/Troops/BP_Troop_Giant.BP_Troop_Giant
+[2021.04.15-17.39.04:916][351]LogSlate: Window 'BP_Troop_Giant' being destroyed
+[2021.04.15-17.39.04:931][351]LogSlate: Window 'BP_Troop_Giant' being destroyed
+[2021.04.15-17.39.04:934][351]LogWorld: UWorld::CleanupWorld for World_14, bSessionEnded=true, bCleanupResources=true
+[2021.04.15-17.39.04:934][351]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.04.15-17.39.32:554][829]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/Blueprints/Towers/BP_Projectile_canon.BP_Projectile_canon
+[2021.04.15-17.39.34:636][906]LogSlate: Window 'BP_Projectile_canon' being destroyed
+[2021.04.15-17.39.34:653][906]LogWorld: UWorld::CleanupWorld for World_19, bSessionEnded=true, bCleanupResources=true
+[2021.04.15-17.39.34:654][906]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.04.15-17.39.34:751][906]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/Blueprints/Towers/BP_Projectile_canon.BP_Projectile_canon
+[2021.04.15-17.39.56:761][122]LogSlate: Window 'BP_Projectile_canon' being destroyed
+[2021.04.15-17.39.56:771][122]LogSlate: Window 'BP_Projectile_canon' being destroyed
+[2021.04.15-17.39.56:778][122]LogWorld: UWorld::CleanupWorld for World_21, bSessionEnded=true, bCleanupResources=true
+[2021.04.15-17.39.56:778][122]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.04.15-17.39.59:834][291]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/Blueprints/Towers/BPTower_Canon.BPTower_Canon
+[2021.04.15-17.40.01:485][354]LogSlate: Window 'BPTower_Canon' being destroyed
+[2021.04.15-17.40.01:501][354]LogWorld: UWorld::CleanupWorld for World_22, bSessionEnded=true, bCleanupResources=true
+[2021.04.15-17.40.01:502][354]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.04.15-17.40.01:625][354]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/Blueprints/Towers/BPTower_Canon.BPTower_Canon
+[2021.04.15-17.40.10:365][768]LogSlate: Took 0.099375 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Italic.ttf' (157K)
+[2021.04.15-17.40.12:089][851]BlueprintLog: New page: Compile BPTower_Canon
+[2021.04.15-17.40.12:150][851]LogUObjectHash: Compacting FUObjectHashTables data took   2.30ms
+[2021.04.15-17.40.12:230][851]LogSavePackage: Moving 'C:/Users/sethg/Desktop/High Level Development II/W21_GAM1528_NoNameYet/TowerDefence/Saved/BPTower_Canon57F312F144FC356AC3374CAC9D085A24.tmp' to 'C:/Users/sethg/Desktop/High Level Development II/W21_GAM1528_NoNameYet/TowerDefence/Content/Blueprints/Towers/BPTower_Canon.uasset'
+[2021.04.15-17.40.12:252][851]AssetCheck: New page: Asset Save: BPTower_Canon
+[2021.04.15-17.40.12:252][851]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/Towers/BPTower_Canon.BPTower_Canon
+[2021.04.15-17.40.13:098][894]LogSlate: Window 'BPTower_Canon' being destroyed
+[2021.04.15-17.40.13:109][894]LogSlate: Window 'BPTower_Canon' being destroyed
+[2021.04.15-17.40.13:116][894]LogWorld: UWorld::CleanupWorld for World_23, bSessionEnded=true, bCleanupResources=true
+[2021.04.15-17.40.13:116][894]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.04.15-17.40.15:268][  9]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/Blueprints/Towers/BP_Tower_Canon.BP_Tower_Canon
+[2021.04.15-17.40.17:034][ 79]LogSlate: Window 'BP_Tower_Canon' being destroyed
+[2021.04.15-17.40.17:054][ 79]LogWorld: UWorld::CleanupWorld for World_24, bSessionEnded=true, bCleanupResources=true
+[2021.04.15-17.40.17:054][ 79]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.04.15-17.40.17:138][ 79]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/Blueprints/Towers/BP_Tower_Canon.BP_Tower_Canon
+[2021.04.15-17.40.21:618][292]LogSlate: Window 'BP_Tower_Canon' being destroyed
+[2021.04.15-17.40.21:641][292]LogSlate: Window 'BP_Tower_Canon' being destroyed
+[2021.04.15-17.40.21:645][292]LogWorld: UWorld::CleanupWorld for World_25, bSessionEnded=true, bCleanupResources=true
+[2021.04.15-17.40.21:645][292]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.04.15-17.40.22:653][340]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/Blueprints/Towers/BPTower_Canon.BPTower_Canon
+[2021.04.15-17.40.27:312][541]BlueprintLog: New page: Compile BPTower_Canon
+[2021.04.15-17.40.27:368][541]LogUObjectHash: Compacting FUObjectHashTables data took   2.86ms
+[2021.04.15-17.40.27:422][541]LogSavePackage: Moving 'C:/Users/sethg/Desktop/High Level Development II/W21_GAM1528_NoNameYet/TowerDefence/Saved/BPTower_Canon5AC01E0F46C18994689CFABE642134A3.tmp' to 'C:/Users/sethg/Desktop/High Level Development II/W21_GAM1528_NoNameYet/TowerDefence/Content/Blueprints/Towers/BPTower_Canon.uasset'
+[2021.04.15-17.40.27:440][541]AssetCheck: New page: Asset Save: BPTower_Canon
+[2021.04.15-17.40.27:440][541]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/Towers/BPTower_Canon.BPTower_Canon
+[2021.04.15-17.40.28:300][585]LogSlate: Window 'BPTower_Canon' being destroyed
+[2021.04.15-17.40.28:309][585]LogSlate: Window 'BPTower_Canon' being destroyed
+[2021.04.15-17.40.28:309][585]LogWorld: UWorld::CleanupWorld for World_26, bSessionEnded=true, bCleanupResources=true
+[2021.04.15-17.40.28:309][585]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.04.15-17.40.55:442][168]LogAssetEditorSubsystem: Opening Asset editor for WidgetBlueprint /Game/Blueprints/UI/InventoryItem.InventoryItem
+[2021.04.15-17.41.10:375][912]LogSlate: Window 'InventoryItem' being destroyed
+[2021.04.15-17.41.10:386][912]LogSlate: Window 'InventoryItem' being destroyed
+[2021.04.15-17.41.10:500][912]LogWorld: UWorld::CleanupWorld for World_28, bSessionEnded=true, bCleanupResources=true
+[2021.04.15-17.41.10:501][912]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.04.15-17.41.10:511][912]LogWorld: UWorld::CleanupWorld for World_27, bSessionEnded=true, bCleanupResources=true
+[2021.04.15-17.41.10:512][912]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.04.15-17.41.13:007][ 45]LogAssetEditorSubsystem: Opening Asset editor for WidgetBlueprint /Game/Blueprints/UI/GameUI_attacker.GameUI_attacker
+[2021.04.15-17.41.17:903][283]LogSlate: Window 'GameUI_attacker' being destroyed
+[2021.04.15-17.41.17:917][283]LogSlate: Window 'GameUI_attacker' being destroyed
+[2021.04.15-17.41.17:924][283]LogWorld: UWorld::CleanupWorld for World_30, bSessionEnded=true, bCleanupResources=true
+[2021.04.15-17.41.17:924][283]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.04.15-17.41.17:938][283]LogWorld: UWorld::CleanupWorld for World_29, bSessionEnded=true, bCleanupResources=true
+[2021.04.15-17.41.17:938][283]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.04.15-17.41.25:705][729]LogAssetEditorSubsystem: Opening Asset editor for WidgetBlueprint /Game/Blueprints/UI/ShopScreen_attack.ShopScreen_attack
+[2021.04.15-17.42.26:792][869]BlueprintLog: New page: Compile ShopScreen_attack
+[2021.04.15-17.42.26:908][869]LogUObjectHash: Compacting FUObjectHashTables data took   3.37ms
+[2021.04.15-17.42.27:310][869]LogSavePackage: Moving 'C:/Users/sethg/Desktop/High Level Development II/W21_GAM1528_NoNameYet/TowerDefence/Saved/ShopScreen_attack8235A37C453CC4D473BA3AA01DC3097D.tmp' to 'C:/Users/sethg/Desktop/High Level Development II/W21_GAM1528_NoNameYet/TowerDefence/Content/Blueprints/UI/ShopScreen_attack.uasset'
+[2021.04.15-17.42.27:332][869]AssetCheck: New page: Asset Save: ShopScreen_attack
+[2021.04.15-17.42.27:332][869]LogContentValidation: Display: Validating WidgetBlueprint /Game/Blueprints/UI/ShopScreen_attack.ShopScreen_attack
+[2021.04.15-17.42.30:468][ 25]LogSlate: Window 'ShopScreen_attack' being destroyed
+[2021.04.15-17.42.30:485][ 25]LogSlate: Window 'ShopScreen_attack' being destroyed
+[2021.04.15-17.42.30:490][ 25]LogWorld: UWorld::CleanupWorld for World_32, bSessionEnded=true, bCleanupResources=true
+[2021.04.15-17.42.30:490][ 25]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.04.15-17.42.30:499][ 25]LogWorld: UWorld::CleanupWorld for World_31, bSessionEnded=true, bCleanupResources=true
+[2021.04.15-17.42.30:499][ 25]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.04.15-17.42.32:241][121]LogTemp: Repeating last play command: Selected Viewport
+[2021.04.15-17.42.32:249][121]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2021.04.15-17.42.32:249][121]PIE: New page: PIE session: Test (Apr. 15, 2021, 9:42:32 a.m.)
+[2021.04.15-17.42.32:251][121]LogOnline: OSS: Creating online subsystem instance for: NULL
+[2021.04.15-17.42.32:253][121]LogOnline: OSS: TryLoadSubsystemAndSetDefault: Loaded subsystem for module [NULL]
+[2021.04.15-17.42.32:253][121]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_Test
+[2021.04.15-17.42.32:256][121]LogPlayLevel: PIE: StaticDuplicateObject took: (0.003316s)
+[2021.04.15-17.42.32:257][121]LogAIModule: Creating AISystem for world Test
+[2021.04.15-17.42.32:257][121]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (000001B9CDF7EE00), frame # 37121
+[2021.04.15-17.42.32:257][121]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (000001B9D26E6FC0), frame # 37121
+[2021.04.15-17.42.32:258][121]LogPlayLevel: PIE: World Init took: (0.001102s)
+[2021.04.15-17.42.32:258][121]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/Test.Test to /Game/Maps/UEDPIE_0_Test.Test (0.004553s)
+[2021.04.15-17.42.32:306][121]LogUObjectHash: Compacting FUObjectHashTables data took   2.70ms
+[2021.04.15-17.42.32:308][121]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2021.04.15-17.42.32:308][121]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2021.04.15-17.42.32:308][121]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2021.04.15-17.42.32:308][121]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2021.04.15-17.42.32:308][121]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2021.04.15-17.42.32:308][121]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2021.04.15-17.42.32:308][121]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2021.04.15-17.42.32:308][121]LogAudio: Display: AudioDevice MaxSources: 32
+[2021.04.15-17.42.32:309][121]LogAudio: Display: Using built-in audio occlusion.
+[2021.04.15-17.42.32:309][121]LogAudioMixer: Display: Initializing audio mixer.
+[2021.04.15-17.42.32:313][121]LogAudioMixer: Display: 0: FrontLeft
+[2021.04.15-17.42.32:313][121]LogAudioMixer: Display: 1: FrontRight
+[2021.04.15-17.42.32:351][121]LogAudioMixer: Display: Using Audio Device Speakers (Realtek(R) Audio)
+[2021.04.15-17.42.32:351][121]LogAudioMixer: Display: Initializing Sound Submixes...
+[2021.04.15-17.42.32:351][121]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2021.04.15-17.42.32:351][121]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2021.04.15-17.42.32:352][121]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2021.04.15-17.42.32:367][121]LogInit: FAudioDevice initialized.
+[2021.04.15-17.42.32:375][121]LogLoad: Game class is 'BP_GameMode_C'
+[2021.04.15-17.42.32:376][121]LogWorld: Bringing World /Game/Maps/UEDPIE_0_Test.Test up for play (max tick rate 60) at 2021.04.15-13.42.32
+[2021.04.15-17.42.32:377][121]LogWorld: Bringing up level for play took: 0.000908
+[2021.04.15-17.42.32:377][121]LogOnline: OSS: Creating online subsystem instance for: :Context_34
+[2021.04.15-17.42.32:390][121]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0005 seconds. Added 20 classes and 0 folders.
+[2021.04.15-17.42.32:392][121]PIE: Server logged in
+[2021.04.15-17.42.32:394][121]PIE: Play in editor total start time 0.148 seconds.
+[2021.04.15-17.42.36:894][366]LogScript: Warning: Accessed None trying to read property Item
+	InventoryItem_C /Engine/Transient.UnrealEdEngine_0:GameInstance_0.InventoryItem_C_0
+	Function /Game/Blueprints/UI/InventoryItem.InventoryItem_C:GetThumbnail:0027
+[2021.04.15-17.42.36:897][366]LogScript: Warning: Accessed None trying to read property Item
+	InventoryItem_C /Engine/Transient.UnrealEdEngine_0:GameInstance_0.InventoryItem_C_0
+	Function /Game/Blueprints/UI/InventoryItem.InventoryItem_C:GetThumbnail:0027
+[2021.04.15-17.42.36:897][366]LogScript: Warning: Accessed None trying to read property Item
+	InventoryItem_C /Engine/Transient.UnrealEdEngine_0:GameInstance_0.InventoryItem_C_0
+	Function /Game/Blueprints/UI/InventoryItem.InventoryItem_C:Get_name:001F
+[2021.04.15-17.42.36:897][366]LogScript: Warning: Accessed None trying to read property Item
+	InventoryItem_C /Engine/Transient.UnrealEdEngine_0:GameInstance_0.InventoryItem_C_0
+	Function /Game/Blueprints/UI/InventoryItem.InventoryItem_C:Get_count:00BB
+[2021.04.15-17.42.36:899][366]LogScript: Warning: Accessed None trying to read property Item
+	InventoryItem_C /Engine/Transient.UnrealEdEngine_0:GameInstance_0.InventoryItem_C_0
+	Function /Game/Blueprints/UI/InventoryItem.InventoryItem_C:GetThumbnail:0027
+[2021.04.15-17.42.36:904][367]LogScript: Warning: Accessed None trying to read property Item
+	InventoryItem_C /Engine/Transient.UnrealEdEngine_0:GameInstance_0.InventoryItem_C_0
+	Function /Game/Blueprints/UI/InventoryItem.InventoryItem_C:GetThumbnail:0027
+[2021.04.15-17.42.36:904][367]LogScript: Warning: Accessed None trying to read property Item
+	InventoryItem_C /Engine/Transient.UnrealEdEngine_0:GameInstance_0.InventoryItem_C_0
+	Function /Game/Blueprints/UI/InventoryItem.InventoryItem_C:Get_name:001F
+[2021.04.15-17.42.36:904][367]LogScript: Warning: Accessed None trying to read property Item
+	InventoryItem_C /Engine/Transient.UnrealEdEngine_0:GameInstance_0.InventoryItem_C_0
+	Function /Game/Blueprints/UI/InventoryItem.InventoryItem_C:Get_count:00BB
+[2021.04.15-17.42.36:906][367]LogScript: Warning: Accessed None trying to read property Item
+	InventoryItem_C /Engine/Transient.UnrealEdEngine_0:GameInstance_0.InventoryItem_C_0
+	Function /Game/Blueprints/UI/InventoryItem.InventoryItem_C:GetThumbnail:0027
+[2021.04.15-17.42.36:920][368]LogScript: Warning: Accessed None trying to read property Item
+	InventoryItem_C /Engine/Transient.UnrealEdEngine_0:GameInstance_0.InventoryItem_C_0
+	Function /Game/Blueprints/UI/InventoryItem.InventoryItem_C:GetThumbnail:0027
+[2021.04.15-17.42.36:920][368]LogScript: Warning: Accessed None trying to read property Item
+	InventoryItem_C /Engine/Transient.UnrealEdEngine_0:GameInstance_0.InventoryItem_C_0
+	Function /Game/Blueprints/UI/InventoryItem.InventoryItem_C:Get_name:001F
+[2021.04.15-17.42.36:920][368]LogScript: Warning: Accessed None trying to read property Item
+	InventoryItem_C /Engine/Transient.UnrealEdEngine_0:GameInstance_0.InventoryItem_C_0
+	Function /Game/Blueprints/UI/InventoryItem.InventoryItem_C:Get_count:00BB
+[2021.04.15-17.42.36:922][368]LogScript: Warning: Accessed None trying to read property Item
+	InventoryItem_C /Engine/Transient.UnrealEdEngine_0:GameInstance_0.InventoryItem_C_0
+	Function /Game/Blueprints/UI/InventoryItem.InventoryItem_C:GetThumbnail:0027
+[2021.04.15-17.42.36:939][369]LogScript: Warning: Accessed None trying to read property Item
+	InventoryItem_C /Engine/Transient.UnrealEdEngine_0:GameInstance_0.InventoryItem_C_0
+	Function /Game/Blueprints/UI/InventoryItem.InventoryItem_C:GetThumbnail:0027
+[2021.04.15-17.42.36:939][369]LogScript: Warning: Accessed None trying to read property Item
+	InventoryItem_C /Engine/Transient.UnrealEdEngine_0:GameInstance_0.InventoryItem_C_0
+	Function /Game/Blueprints/UI/InventoryItem.InventoryItem_C:Get_name:001F
+[2021.04.15-17.42.36:939][369]LogScript: Warning: Accessed None trying to read property Item
+	InventoryItem_C /Engine/Transient.UnrealEdEngine_0:GameInstance_0.InventoryItem_C_0
+	Function /Game/Blueprints/UI/InventoryItem.InventoryItem_C:Get_count:00BB
+[2021.04.15-17.42.36:942][369]LogScript: Warning: Accessed None trying to read property Item
+	InventoryItem_C /Engine/Transient.UnrealEdEngine_0:GameInstance_0.InventoryItem_C_0
+	Function /Game/Blueprints/UI/InventoryItem.InventoryItem_C:GetThumbnail:0027
+[2021.04.15-17.42.37:268][386]LogScript: Warning: Accessed None trying to read property Item
+	InventoryItem_C /Engine/Transient.UnrealEdEngine_0:GameInstance_0.InventoryItem_C_1
+	Function /Game/Blueprints/UI/InventoryItem.InventoryItem_C:GetThumbnail:0027
+[2021.04.15-17.42.37:289][386]PIE: Error: Blueprint Runtime Error: "Accessed None trying to read property Item". Blueprint:  InventoryItem Function:  Get Thumbnail Graph:  GetThumbnail Node:  Return Node
+[2021.04.15-17.42.37:291][386]LogScript: Warning: Accessed None trying to read property Item
+	InventoryItem_C /Engine/Transient.UnrealEdEngine_0:GameInstance_0.InventoryItem_C_1
+	Function /Game/Blueprints/UI/InventoryItem.InventoryItem_C:GetThumbnail:0027
+[2021.04.15-17.42.37:291][386]LogScript: Warning: Accessed None trying to read property Item
+	InventoryItem_C /Engine/Transient.UnrealEdEngine_0:GameInstance_0.InventoryItem_C_1
+	Function /Game/Blueprints/UI/InventoryItem.InventoryItem_C:Get_name:001F
+[2021.04.15-17.42.37:291][386]LogScript: Warning: Accessed None trying to read property Item
+	InventoryItem_C /Engine/Transient.UnrealEdEngine_0:GameInstance_0.InventoryItem_C_1
+	Function /Game/Blueprints/UI/InventoryItem.InventoryItem_C:Get_count:00BB
+[2021.04.15-17.42.37:292][386]LogScript: Warning: Accessed None trying to read property Item
+	InventoryItem_C /Engine/Transient.UnrealEdEngine_0:GameInstance_0.InventoryItem_C_1
+	Function /Game/Blueprints/UI/InventoryItem.InventoryItem_C:GetThumbnail:0027
+[2021.04.15-17.42.37:298][387]LogScript: Warning: Accessed None trying to read property Item
+	InventoryItem_C /Engine/Transient.UnrealEdEngine_0:GameInstance_0.InventoryItem_C_1
+	Function /Game/Blueprints/UI/InventoryItem.InventoryItem_C:GetThumbnail:0027
+[2021.04.15-17.42.37:298][387]LogScript: Warning: Accessed None trying to read property Item
+	InventoryItem_C /Engine/Transient.UnrealEdEngine_0:GameInstance_0.InventoryItem_C_1
+	Function /Game/Blueprints/UI/InventoryItem.InventoryItem_C:Get_name:001F
+[2021.04.15-17.42.37:298][387]LogScript: Warning: Accessed None trying to read property Item
+	InventoryItem_C /Engine/Transient.UnrealEdEngine_0:GameInstance_0.InventoryItem_C_1
+	Function /Game/Blueprints/UI/InventoryItem.InventoryItem_C:Get_count:00BB
+[2021.04.15-17.42.37:300][387]LogScript: Warning: Accessed None trying to read property Item
+	InventoryItem_C /Engine/Transient.UnrealEdEngine_0:GameInstance_0.InventoryItem_C_1
+	Function /Game/Blueprints/UI/InventoryItem.InventoryItem_C:GetThumbnail:0027
+[2021.04.15-17.42.37:316][388]LogScript: Warning: Accessed None trying to read property Item
+	InventoryItem_C /Engine/Transient.UnrealEdEngine_0:GameInstance_0.InventoryItem_C_1
+	Function /Game/Blueprints/UI/InventoryItem.InventoryItem_C:GetThumbnail:0027
+[2021.04.15-17.42.37:316][388]LogScript: Warning: Accessed None trying to read property Item
+	InventoryItem_C /Engine/Transient.UnrealEdEngine_0:GameInstance_0.InventoryItem_C_1
+	Function /Game/Blueprints/UI/InventoryItem.InventoryItem_C:Get_name:001F
+[2021.04.15-17.42.37:316][388]LogScript: Warning: Accessed None trying to read property Item
+	InventoryItem_C /Engine/Transient.UnrealEdEngine_0:GameInstance_0.InventoryItem_C_1
+	Function /Game/Blueprints/UI/InventoryItem.InventoryItem_C:Get_count:00BB
+[2021.04.15-17.42.37:319][388]LogScript: Warning: Accessed None trying to read property Item
+	InventoryItem_C /Engine/Transient.UnrealEdEngine_0:GameInstance_0.InventoryItem_C_1
+	Function /Game/Blueprints/UI/InventoryItem.InventoryItem_C:GetThumbnail:0027
+[2021.04.15-17.42.37:332][389]LogScript: Warning: Accessed None trying to read property Item
+	InventoryItem_C /Engine/Transient.UnrealEdEngine_0:GameInstance_0.InventoryItem_C_1
+	Function /Game/Blueprints/UI/InventoryItem.InventoryItem_C:GetThumbnail:0027
+[2021.04.15-17.42.37:332][389]LogScript: Warning: Accessed None trying to read property Item
+	InventoryItem_C /Engine/Transient.UnrealEdEngine_0:GameInstance_0.InventoryItem_C_1
+	Function /Game/Blueprints/UI/InventoryItem.InventoryItem_C:Get_name:001F
+[2021.04.15-17.42.37:332][389]LogScript: Warning: Accessed None trying to read property Item
+	InventoryItem_C /Engine/Transient.UnrealEdEngine_0:GameInstance_0.InventoryItem_C_1
+	Function /Game/Blueprints/UI/InventoryItem.InventoryItem_C:Get_count:00BB
+[2021.04.15-17.42.37:333][389]LogScript: Warning: Accessed None trying to read property Item
+	InventoryItem_C /Engine/Transient.UnrealEdEngine_0:GameInstance_0.InventoryItem_C_1
+	Function /Game/Blueprints/UI/InventoryItem.InventoryItem_C:GetThumbnail:0027
+[2021.04.15-17.42.46:985][965]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.04.15-17.42.46:985][965]LogWorld: BeginTearingDown for /Game/Maps/UEDPIE_0_Test
+[2021.04.15-17.42.46:986][965]LogWorld: UWorld::CleanupWorld for Test, bSessionEnded=true, bCleanupResources=true
+[2021.04.15-17.42.46:986][965]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.04.15-17.42.46:992][965]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2021.04.15-17.42.46:996][965]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.04.15-17.42.47:039][965]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.04.15-17.42.47:053][965]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (000001B9D26E6FC0), frame # 37965
+[2021.04.15-17.42.47:053][965]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (000001B9CDF7EE00), frame # 37965
+[2021.04.15-17.42.47:084][965]LogUObjectHash: Compacting FUObjectHashTables data took   4.16ms
+[2021.04.15-17.42.47:193][966]LogPlayLevel: Display: Destroying online subsystem :Context_34
+[2021.04.15-17.42.48:912][ 56]LogSlate: Window 'Message Log' being destroyed
+[2021.04.15-17.42.48:925][ 56]LogSlate: Window 'Message Log' being destroyed
+[2021.04.15-17.42.51:677][214]LogAssetEditorSubsystem: Opening Asset editor for WidgetBlueprint /Game/Blueprints/UI/ShopScreen_defender.ShopScreen_defender
+[2021.04.15-17.43.14:490][395]BlueprintLog: New page: Compile ShopScreen_defender
+[2021.04.15-17.43.14:563][395]LogUObjectHash: Compacting FUObjectHashTables data took   2.93ms
+[2021.04.15-17.43.14:627][395]LogSavePackage: Moving 'C:/Users/sethg/Desktop/High Level Development II/W21_GAM1528_NoNameYet/TowerDefence/Saved/ShopScreen_defenderC6205A7B441B060F96187EA3D378EB86.tmp' to 'C:/Users/sethg/Desktop/High Level Development II/W21_GAM1528_NoNameYet/TowerDefence/Content/Blueprints/UI/ShopScreen_defender.uasset'
+[2021.04.15-17.43.14:651][395]AssetCheck: New page: Asset Save: ShopScreen_defender
+[2021.04.15-17.43.14:651][395]LogContentValidation: Display: Validating WidgetBlueprint /Game/Blueprints/UI/ShopScreen_defender.ShopScreen_defender
+[2021.04.15-17.43.17:015][512]LogSlate: Window 'ShopScreen_defender' being destroyed
+[2021.04.15-17.43.17:028][512]LogSlate: Window 'ShopScreen_defender' being destroyed
+[2021.04.15-17.43.17:031][512]LogWorld: UWorld::CleanupWorld for World_34, bSessionEnded=true, bCleanupResources=true
+[2021.04.15-17.43.17:032][512]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.04.15-17.43.17:042][512]LogWorld: UWorld::CleanupWorld for World_33, bSessionEnded=true, bCleanupResources=true
+[2021.04.15-17.43.17:042][512]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.04.15-17.45.29:211][416]LogUObjectHash: Compacting FUObjectHashTables data took   2.40ms
+[2021.04.15-17.45.31:067][526]LogUObjectHash: Compacting FUObjectHashTables data took   1.65ms
+[2021.04.15-17.45.31:098][526]LogSlate: Window 'TowerDefence - Unreal Editor' being destroyed
+[2021.04.15-17.45.31:315][527]Cmd: QUIT_EDITOR
+[2021.04.15-17.45.31:315][527]LogCore: Engine exit requested (reason: UUnrealEdEngine::CloseEditor())
+[2021.04.15-17.45.31:324][527]LogCore: Engine exit requested (reason: EngineExit() was called; note: exit was already requested)
+[2021.04.15-17.45.31:775][527]LogWindowsTextInputMethodSystem: Display: IME system now deactivated.
+[2021.04.15-17.45.31:787][527]LogExit: Preparing to exit.
+[2021.04.15-17.45.32:136][527]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2021.04.15-17.45.32:136][527]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2021.04.15-17.45.32:136][527]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2021.04.15-17.45.32:136][527]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2021.04.15-17.45.32:136][527]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2021.04.15-17.45.32:136][527]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2021.04.15-17.45.32:136][527]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2021.04.15-17.45.32:136][527]LogWorld: UWorld::CleanupWorld for None, bSessionEnded=true, bCleanupResources=true
+[2021.04.15-17.45.32:138][527]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2021.04.15-17.45.32:138][527]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2021.04.15-17.45.32:138][527]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2021.04.15-17.45.32:138][527]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2021.04.15-17.45.32:138][527]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2021.04.15-17.45.32:138][527]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2021.04.15-17.45.32:138][527]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2021.04.15-17.45.32:138][527]LogWorld: UWorld::CleanupWorld for None, bSessionEnded=true, bCleanupResources=true
+[2021.04.15-17.45.32:140][527]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2021.04.15-17.45.32:140][527]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2021.04.15-17.45.32:140][527]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2021.04.15-17.45.32:140][527]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2021.04.15-17.45.32:140][527]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2021.04.15-17.45.32:140][527]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2021.04.15-17.45.32:140][527]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2021.04.15-17.45.32:140][527]LogWorld: UWorld::CleanupWorld for None, bSessionEnded=true, bCleanupResources=true
+[2021.04.15-17.45.32:142][527]LogWorld: UWorld::CleanupWorld for World_4, bSessionEnded=true, bCleanupResources=true
+[2021.04.15-17.45.32:145][527]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2021.04.15-17.45.32:145][527]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2021.04.15-17.45.32:145][527]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2021.04.15-17.45.32:145][527]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2021.04.15-17.45.32:145][527]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2021.04.15-17.45.32:145][527]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2021.04.15-17.45.32:145][527]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2021.04.15-17.45.32:145][527]LogWorld: UWorld::CleanupWorld for None, bSessionEnded=true, bCleanupResources=true
+[2021.04.15-17.45.32:147][527]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2021.04.15-17.45.32:147][527]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2021.04.15-17.45.32:147][527]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2021.04.15-17.45.32:147][527]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2021.04.15-17.45.32:147][527]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2021.04.15-17.45.32:147][527]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2021.04.15-17.45.32:147][527]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2021.04.15-17.45.32:147][527]LogWorld: UWorld::CleanupWorld for None, bSessionEnded=true, bCleanupResources=true
+[2021.04.15-17.45.32:149][527]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2021.04.15-17.45.32:149][527]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2021.04.15-17.45.32:149][527]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2021.04.15-17.45.32:149][527]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2021.04.15-17.45.32:149][527]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2021.04.15-17.45.32:149][527]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2021.04.15-17.45.32:149][527]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2021.04.15-17.45.32:149][527]LogWorld: UWorld::CleanupWorld for None, bSessionEnded=true, bCleanupResources=true
+[2021.04.15-17.45.32:151][527]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2021.04.15-17.45.32:151][527]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2021.04.15-17.45.32:151][527]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2021.04.15-17.45.32:151][527]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2021.04.15-17.45.32:151][527]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2021.04.15-17.45.32:151][527]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2021.04.15-17.45.32:151][527]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2021.04.15-17.45.32:151][527]LogWorld: UWorld::CleanupWorld for None, bSessionEnded=true, bCleanupResources=true
+[2021.04.15-17.45.32:153][527]LogWorld: UWorld::CleanupWorld for World_5, bSessionEnded=true, bCleanupResources=true
+[2021.04.15-17.45.32:154][527]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2021.04.15-17.45.32:154][527]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2021.04.15-17.45.32:154][527]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2021.04.15-17.45.32:154][527]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2021.04.15-17.45.32:154][527]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2021.04.15-17.45.32:154][527]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2021.04.15-17.45.32:154][527]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2021.04.15-17.45.32:154][527]LogWorld: UWorld::CleanupWorld for None, bSessionEnded=true, bCleanupResources=true
+[2021.04.15-17.45.32:156][527]LogWorld: UWorld::CleanupWorld for World_6, bSessionEnded=true, bCleanupResources=true
+[2021.04.15-17.45.32:157][527]LogWorld: UWorld::CleanupWorld for World_8, bSessionEnded=true, bCleanupResources=true
+[2021.04.15-17.45.32:173][527]LogWorld: UWorld::CleanupWorld for None, bSessionEnded=true, bCleanupResources=true
+[2021.04.15-17.45.32:174][527]LogExit: Editor shut down
+[2021.04.15-17.45.32:174][527]LogExit: Transaction tracking system shut down
+[2021.04.15-17.45.32:176][527]LogDemo: Cleaned up 0 splitscreen connections with owner deletion
+[2021.04.15-17.45.32:297][527]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (000001B8A3CAFE00), frame # 47527
+[2021.04.15-17.45.32:297][527]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (000001B8A3D53B00), frame # 47527
+[2021.04.15-17.45.32:664][527]LogAISub: UAISubsystem::~UAISubsystem AISubsystem (000001B8B44B8380), frame # 47527
+[2021.04.15-17.45.32:664][527]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (000001B8B43BFD80), frame # 47527
+[2021.04.15-17.45.32:664][527]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (000001B8B444CA00), frame # 47527
+[2021.04.15-17.45.32:731][527]LogExit: Object subsystem successfully closed.
+[2021.04.15-17.45.32:764][527]LogShaderCompilers: Display: Shaders left to compile 0
+[2021.04.15-17.45.32:778][527]LogModuleManager: Shutting down and abandoning module MovieSceneCapture (800)
+[2021.04.15-17.45.32:799][527]LogModuleManager: Shutting down and abandoning module Voice (798)
+[2021.04.15-17.45.32:822][527]LogModuleManager: Shutting down and abandoning module SequencerWidgets (796)
+[2021.04.15-17.45.32:823][527]LogModuleManager: Shutting down and abandoning module BlueprintGraph (794)
+[2021.04.15-17.45.32:823][527]LogModuleManager: Shutting down and abandoning module HierarchicalLODOutliner (792)
+[2021.04.15-17.45.32:823][527]LogModuleManager: Shutting down and abandoning module SceneOutliner (790)
+[2021.04.15-17.45.32:823][527]LogModuleManager: Shutting down and abandoning module AddContentDialog (788)
+[2021.04.15-17.45.32:823][527]LogModuleManager: Shutting down and abandoning module WidgetCarousel (787)
+[2021.04.15-17.45.32:823][527]LogModuleManager: Shutting down and abandoning module EditorWidgets (784)
+[2021.04.15-17.45.32:823][527]LogModuleManager: Shutting down and abandoning module CollectionManager (782)
+[2021.04.15-17.45.32:823][527]LogModuleManager: Shutting down and abandoning module StatsViewer (780)
+[2021.04.15-17.45.32:823][527]LogModuleManager: Shutting down and abandoning module VirtualTexturingEditor (778)
+[2021.04.15-17.45.32:823][527]LogModuleManager: Shutting down and abandoning module FoliageEdit (776)
+[2021.04.15-17.45.32:823][527]LogModuleManager: Shutting down and abandoning module LandscapeEditor (774)
+[2021.04.15-17.45.32:823][527]LogModuleManager: Shutting down and abandoning module MeshPaintMode (772)
+[2021.04.15-17.45.32:823][527]LogModuleManager: Shutting down and abandoning module SceneDepthPickerMode (770)
+[2021.04.15-17.45.32:823][527]LogModuleManager: Shutting down and abandoning module ActorPickerMode (768)
+[2021.04.15-17.45.32:823][527]LogModuleManager: Shutting down and abandoning module PIEPreviewDeviceProfileSelector (766)
+[2021.04.15-17.45.32:823][527]LogModuleManager: Shutting down and abandoning module SequenceRecorderSections (764)
+[2021.04.15-17.45.32:823][527]LogModuleManager: Shutting down and abandoning module AutomationWorker (762)
+[2021.04.15-17.45.32:823][527]LogModuleManager: Shutting down and abandoning module SteamVREditor (760)
+[2021.04.15-17.45.32:824][527]LogModuleManager: Shutting down and abandoning module OculusMR (758)
+[2021.04.15-17.45.32:824][527]LogModuleManager: Shutting down and abandoning module GooglePADEditor (756)
+[2021.04.15-17.45.32:824][527]LogModuleManager: Shutting down and abandoning module AudioCaptureEditor (754)
+[2021.04.15-17.45.32:824][527]LogModuleManager: Shutting down and abandoning module TemplateSequenceEditor (752)
+[2021.04.15-17.45.32:824][527]LogModuleManager: Shutting down and abandoning module MatineeToLevelSequence (750)
+[2021.04.15-17.45.32:824][527]LogModuleManager: Shutting down and abandoning module LevelSequenceEditor (748)
+[2021.04.15-17.45.32:824][527]LogModuleManager: Shutting down and abandoning module ActorSequenceEditor (746)
+[2021.04.15-17.45.32:824][527]LogModuleManager: Shutting down and abandoning module WmfMediaFactory (744)
+[2021.04.15-17.45.32:824][527]LogModuleManager: Shutting down and abandoning module WmfMediaEditor (742)
+[2021.04.15-17.45.32:824][527]LogModuleManager: Shutting down and abandoning module WebMMediaFactory (740)
+[2021.04.15-17.45.32:824][527]LogModuleManager: Shutting down and abandoning module WebMMediaEditor (738)
+[2021.04.15-17.45.32:824][527]LogModuleManager: Shutting down and abandoning module WebMMedia (736)
+[2021.04.15-17.45.32:824][527]LogModuleManager: Shutting down and abandoning module MediaPlayerEditor (734)
+[2021.04.15-17.45.32:824][527]LogModuleManager: Shutting down and abandoning module MediaCompositingEditor (732)
+[2021.04.15-17.45.32:824][527]LogModuleManager: Shutting down and abandoning module SequenceRecorder (731)
+[2021.04.15-17.45.32:824][527]LogModuleManager: Shutting down and abandoning module OpenExrWrapper (728)
+[2021.04.15-17.45.32:824][527]LogModuleManager: Shutting down and abandoning module ImgMediaFactory (726)
+[2021.04.15-17.45.32:824][527]LogModuleManager: Shutting down and abandoning module ImgMediaEditor (724)
+[2021.04.15-17.45.32:824][527]LogModuleManager: Shutting down and abandoning module AvfMediaFactory (722)
+[2021.04.15-17.45.32:824][527]LogModuleManager: Shutting down and abandoning module AvfMediaEditor (720)
+[2021.04.15-17.45.32:824][527]LogModuleManager: Shutting down and abandoning module AndroidMediaFactory (718)
+[2021.04.15-17.45.32:824][527]LogModuleManager: Shutting down and abandoning module AndroidMediaEditor (716)
+[2021.04.15-17.45.32:824][527]LogModuleManager: Shutting down and abandoning module MagicLeapMediaCodecFactory (714)
+[2021.04.15-17.45.32:824][527]LogModuleManager: Shutting down and abandoning module MagicLeapMediaFactory (712)
+[2021.04.15-17.45.32:824][527]LogModuleManager: Shutting down and abandoning module MagicLeapMediaEditor (710)
+[2021.04.15-17.45.32:824][527]LogModuleManager: Shutting down and abandoning module PlanarCut (708)
+[2021.04.15-17.45.32:824][527]LogModuleManager: Shutting down and abandoning module CharacterAI (706)
+[2021.04.15-17.45.32:824][527]LogModuleManager: Shutting down and abandoning module TextureAlignMode (704)
+[2021.04.15-17.45.32:824][527]LogModuleManager: Shutting down and abandoning module BspMode (702)
+[2021.04.15-17.45.32:824][527]LogModuleManager: Shutting down and abandoning module PlacementMode (701)
+[2021.04.15-17.45.32:824][527]LogModuleManager: Shutting down and abandoning module GeometryMode (698)
+[2021.04.15-17.45.32:824][527]LogModuleManager: Shutting down and abandoning module CameraShakePreviewer (696)
+[2021.04.15-17.45.32:824][527]LogModuleManager: Shutting down and abandoning module SmartSnapping (694)
+[2021.04.15-17.45.32:824][527]LogModuleManager: Shutting down and abandoning module SessionServices (692)
+[2021.04.15-17.45.32:824][527]LogModuleManager: Shutting down and abandoning module MeshPaint (690)
+[2021.04.15-17.45.32:824][527]LogModuleManager: Shutting down and abandoning module ViewportSnapping (688)
+[2021.04.15-17.45.32:824][527]LogModuleManager: Shutting down and abandoning module ViewportInteraction (686)
+[2021.04.15-17.45.32:824][527]LogModuleManager: Shutting down and abandoning module ClothPainter (684)
+[2021.04.15-17.45.32:824][527]LogModuleManager: Shutting down and abandoning module SkeletalMeshEditor (683)
+[2021.04.15-17.45.32:824][527]LogModuleManager: Shutting down and abandoning module LogVisualizer (680)
+[2021.04.15-17.45.32:824][527]LogModuleManager: Shutting down and abandoning module IntroTutorials (678)
+[2021.04.15-17.45.32:824][527]LogModuleManager: Shutting down and abandoning module GameProjectGeneration (677)
+[2021.04.15-17.45.32:824][527]LogModuleManager: Shutting down and abandoning module LuminPlatformEditor (674)
+[2021.04.15-17.45.32:824][527]LogModuleManager: Shutting down and abandoning module IOSPlatformEditor (672)
+[2021.04.15-17.45.32:825][527]LogModuleManager: Shutting down and abandoning module AndroidPlatformEditor (670)
+[2021.04.15-17.45.32:825][527]LogModuleManager: Shutting down and abandoning module AndroidDeviceDetection (669)
+[2021.04.15-17.45.33:125][527]LogModuleManager: Shutting down and abandoning module WindowsPlatformEditor (666)
+[2021.04.15-17.45.33:125][527]LogModuleManager: Shutting down and abandoning module LuminRuntimeSettings (664)
+[2021.04.15-17.45.33:125][527]LogModuleManager: Shutting down and abandoning module IOSRuntimeSettings (662)
+[2021.04.15-17.45.33:125][527]LogModuleManager: Shutting down and abandoning module AndroidRuntimeSettings (660)
+[2021.04.15-17.45.33:125][527]LogModuleManager: Shutting down and abandoning module TraceInsights (658)
+[2021.04.15-17.45.33:125][527]LogModuleManager: Shutting down and abandoning module TraceServices (657)
+[2021.04.15-17.45.33:126][527]LogModuleManager: Shutting down and abandoning module EditorInteractiveToolsFramework (654)
+[2021.04.15-17.45.33:126][527]LogModuleManager: Shutting down and abandoning module TimeManagementEditor (652)
+[2021.04.15-17.45.33:126][527]LogModuleManager: Shutting down and abandoning module InputBindingEditor (650)
+[2021.04.15-17.45.33:126][527]LogModuleManager: Shutting down and abandoning module MergeActors (648)
+[2021.04.15-17.45.33:126][527]LogModuleManager: Shutting down and abandoning module LocalizationDashboard (646)
+[2021.04.15-17.45.33:126][527]LogModuleManager: Shutting down and abandoning module LocalizationService (645)
+[2021.04.15-17.45.33:126][527]LogModuleManager: Shutting down and abandoning module HardwareTargeting (642)
+[2021.04.15-17.45.33:126][527]LogModuleManager: Shutting down and abandoning module DeviceProfileEditor (640)
+[2021.04.15-17.45.33:126][527]LogModuleManager: Shutting down and abandoning module UndoHistory (638)
+[2021.04.15-17.45.33:126][527]LogModuleManager: Shutting down and abandoning module XmlParser (636)
+[2021.04.15-17.45.33:126][527]LogModuleManager: Shutting down and abandoning module Blutility (634)
+[2021.04.15-17.45.33:126][527]LogModuleManager: Shutting down and abandoning module ProjectSettingsViewer (632)
+[2021.04.15-17.45.33:126][527]LogModuleManager: Shutting down and abandoning module ProjectTargetPlatformEditor (631)
+[2021.04.15-17.45.33:126][527]LogModuleManager: Shutting down and abandoning module EditorSettingsViewer (628)
+[2021.04.15-17.45.33:126][527]LogModuleManager: Shutting down and abandoning module SettingsEditor (626)
+[2021.04.15-17.45.33:126][527]LogModuleManager: Shutting down and abandoning module ProjectLauncher (624)
+[2021.04.15-17.45.33:126][527]LogModuleManager: Shutting down and abandoning module SessionFrontend (622)
+[2021.04.15-17.45.33:126][527]LogModuleManager: Shutting down and abandoning module ProfilerClient (620)
+[2021.04.15-17.45.33:126][527]LogModuleManager: Shutting down and abandoning module DeviceManager (618)
+[2021.04.15-17.45.33:126][527]LogModuleManager: Shutting down and abandoning module TargetDeviceServices (617)
+[2021.04.15-17.45.33:158][527]LogModuleManager: Shutting down and abandoning module AutomationController (614)
+[2021.04.15-17.45.33:158][527]LogModuleManager: Shutting down and abandoning module AutomationWindow (612)
+[2021.04.15-17.45.33:158][527]LogModuleManager: Shutting down and abandoning module Layers (610)
+[2021.04.15-17.45.33:158][527]LogModuleManager: Shutting down and abandoning module ComponentVisualizers (608)
+[2021.04.15-17.45.33:158][527]LogModuleManager: Shutting down and abandoning module DetailCustomizations (606)
+[2021.04.15-17.45.33:158][527]LogModuleManager: Shutting down and abandoning module PackagesDialog (604)
+[2021.04.15-17.45.33:158][527]LogModuleManager: Shutting down and abandoning module AnimationBlueprintEditor (602)
+[2021.04.15-17.45.33:158][527]LogModuleManager: Shutting down and abandoning module Persona (600)
+[2021.04.15-17.45.33:158][527]LogModuleManager: Shutting down and abandoning module AdvancedPreviewScene (599)
+[2021.04.15-17.45.33:158][527]LogModuleManager: Shutting down and abandoning module AnimGraph (597)
+[2021.04.15-17.45.33:158][527]LogModuleManager: Shutting down and abandoning module Kismet (594)
+[2021.04.15-17.45.33:165][527]LogModuleManager: Shutting down and abandoning module KismetWidgets (593)
+[2021.04.15-17.45.33:165][527]LogModuleManager: Shutting down and abandoning module GraphEditor (590)
+[2021.04.15-17.45.33:165][527]LogModuleManager: Shutting down and abandoning module StructViewer (588)
+[2021.04.15-17.45.33:165][527]LogModuleManager: Shutting down and abandoning module ClassViewer (586)
+[2021.04.15-17.45.33:165][527]LogModuleManager: Shutting down and abandoning module Toolbox (584)
+[2021.04.15-17.45.33:165][527]LogModuleManager: Shutting down and abandoning module ModuleUI (582)
+[2021.04.15-17.45.33:165][527]LogModuleManager: Shutting down and abandoning module OutputLog (580)
+[2021.04.15-17.45.33:166][527]LogModuleManager: Shutting down and abandoning module GammaUI (578)
+[2021.04.15-17.45.33:166][527]LogModuleManager: Shutting down and abandoning module Documentation (576)
+[2021.04.15-17.45.33:166][527]LogModuleManager: Shutting down and abandoning module LiveCoding (574)
+[2021.04.15-17.45.33:166][527]LogModuleManager: Shutting down and abandoning module LevelSequence (572)
+[2021.04.15-17.45.33:166][527]LogModuleManager: Shutting down and abandoning module MovieSceneTracks (570)
+[2021.04.15-17.45.33:166][527]LogModuleManager: Shutting down and abandoning module MovieScene (568)
+[2021.04.15-17.45.33:166][527]LogModuleManager: Shutting down and abandoning module StreamingPauseRendering (566)
+[2021.04.15-17.45.33:166][527]LogModuleManager: Shutting down and abandoning module LauncherPlatform (564)
+[2021.04.15-17.45.33:166][527]LogModuleManager: Shutting down and abandoning module AnalyticsET (562)
+[2021.04.15-17.45.33:166][527]LogModuleManager: Shutting down and abandoning module PortalServices (560)
+[2021.04.15-17.45.33:166][527]LogModuleManager: Shutting down and abandoning module PortalRpc (558)
+[2021.04.15-17.45.33:166][527]LogModuleManager: Shutting down and abandoning module MessagingRpc (556)
+[2021.04.15-17.45.33:166][527]LogModuleManager: Shutting down and abandoning module AudioMixerXAudio2 (554)
+[2021.04.15-17.45.33:166][527]LogModuleManager: Shutting down and abandoning module AudioMixerCore (553)
+[2021.04.15-17.45.33:166][527]LogModuleManager: Shutting down and abandoning module AIModule (550)
+[2021.04.15-17.45.33:166][527]LogModuleManager: Shutting down and abandoning module GameplayDebugger (549)
+[2021.04.15-17.45.33:166][527]LogModuleManager: Shutting down and abandoning module AITestSuite (547)
+[2021.04.15-17.45.33:166][527]LogModuleManager: Shutting down and abandoning module NavigationSystem (545)
+[2021.04.15-17.45.33:166][527]LogModuleManager: Shutting down and abandoning module ProfilerService (542)
+[2021.04.15-17.45.33:255][527]LogModuleManager: Shutting down and abandoning module TaskGraph (540)
+[2021.04.15-17.45.33:255][527]LogModuleManager: Shutting down and abandoning module ScreenshotTools (538)
+[2021.04.15-17.45.33:255][527]LogModuleManager: Shutting down and abandoning module SynthesisEditor (536)
+[2021.04.15-17.45.33:255][527]LogModuleManager: Shutting down and abandoning module Synthesis (534)
+[2021.04.15-17.45.33:255][527]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponentEditor (532)
+[2021.04.15-17.45.33:255][527]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponent (530)
+[2021.04.15-17.45.33:255][527]LogModuleManager: Shutting down and abandoning module OculusEditor (528)
+[2021.04.15-17.45.33:255][527]LogModuleManager: Shutting down and abandoning module OculusInput (526)
+[2021.04.15-17.45.33:255][527]LogModuleManager: Shutting down and abandoning module MobilePatchingUtils (524)
+[2021.04.15-17.45.33:255][527]LogModuleManager: Shutting down and abandoning module GooglePAD (522)
+[2021.04.15-17.45.33:255][527]LogModuleManager: Shutting down and abandoning module EditableMesh (520)
+[2021.04.15-17.45.33:255][527]LogModuleManager: Shutting down and abandoning module CustomMeshComponent (518)
+[2021.04.15-17.45.33:255][527]LogModuleManager: Shutting down and abandoning module CableComponent (516)
+[2021.04.15-17.45.33:255][527]LogModuleManager: Shutting down and abandoning module AudioCapture (514)
+[2021.04.15-17.45.33:255][527]LogModuleManager: Shutting down and abandoning module AudioCaptureRtAudio (513)
+[2021.04.15-17.45.33:255][527]LogModuleManager: Shutting down and abandoning module AssetTags (510)
+[2021.04.15-17.45.33:255][527]LogModuleManager: Shutting down and abandoning module ArchVisCharacter (508)
+[2021.04.15-17.45.33:255][527]LogModuleManager: Shutting down and abandoning module AppleImageUtilsBlueprintSupport (506)
+[2021.04.15-17.45.33:255][527]LogModuleManager: Shutting down and abandoning module AppleImageUtils (504)
+[2021.04.15-17.45.33:255][527]LogModuleManager: Shutting down and abandoning module AndroidPermission (502)
+[2021.04.15-17.45.33:255][527]LogModuleManager: Shutting down and abandoning module NUTUnrealEngine4 (500)
+[2021.04.15-17.45.33:255][527]LogModuleManager: Shutting down and abandoning module NetcodeUnitTest (498)
+[2021.04.15-17.45.33:255][527]LogModuleManager: Shutting down and abandoning module TemplateSequence (496)
+[2021.04.15-17.45.33:255][527]LogModuleManager: Shutting down and abandoning module MovieRenderPipelineEditor (494)
+[2021.04.15-17.45.33:255][527]LogModuleManager: Shutting down and abandoning module MovieRenderPipelineRenderPasses (492)
+[2021.04.15-17.45.33:255][527]LogModuleManager: Shutting down and abandoning module MovieRenderPipelineSettings (490)
+[2021.04.15-17.45.33:255][527]LogModuleManager: Shutting down and abandoning module MovieRenderPipelineCore (488)
+[2021.04.15-17.45.33:255][527]LogModuleManager: Shutting down and abandoning module ImageWriteQueue (487)
+[2021.04.15-17.45.33:259][527]LogModuleManager: Shutting down and abandoning module MeshPaintingToolset (484)
+[2021.04.15-17.45.33:259][527]LogModuleManager: Shutting down and abandoning module MeshPaintEditorMode (482)
+[2021.04.15-17.45.33:259][527]LogModuleManager: Shutting down and abandoning module MediaCompositing (480)
+[2021.04.15-17.45.33:259][527]LogModuleManager: Shutting down and abandoning module ImgMedia (478)
+[2021.04.15-17.45.33:259][527]LogModuleManager: Shutting down and abandoning module MagicLeapSharedWorld (476)
+[2021.04.15-17.45.33:259][527]LogModuleManager: Shutting down and abandoning module MagicLeapLightEstimation (474)
+[2021.04.15-17.45.33:259][527]LogModuleManager: Shutting down and abandoning module MagicLeapHelperVulkan (472)
+[2021.04.15-17.45.33:259][527]LogModuleManager: Shutting down and abandoning module MagicLeapHelperOpenGL (470)
+[2021.04.15-17.45.33:259][527]LogModuleManager: Shutting down and abandoning module MagicLeapAudio (468)
+[2021.04.15-17.45.33:259][527]LogModuleManager: Shutting down and abandoning module NiagaraEditorWidgets (466)
+[2021.04.15-17.45.33:259][527]LogModuleManager: Shutting down and abandoning module MeshSolverUtilities (464)
+[2021.04.15-17.45.33:259][527]LogModuleManager: Shutting down and abandoning module MeshConversion (462)
+[2021.04.15-17.45.33:259][527]LogModuleManager: Shutting down and abandoning module DynamicMesh (460)
+[2021.04.15-17.45.33:259][527]LogModuleManager: Shutting down and abandoning module GeometryAlgorithms (458)
+[2021.04.15-17.45.33:259][527]LogModuleManager: Shutting down and abandoning module GeometricObjects (456)
+[2021.04.15-17.45.33:259][527]LogModuleManager: Shutting down and abandoning module GeometryCollectionTracks (454)
+[2021.04.15-17.45.33:259][527]LogModuleManager: Shutting down and abandoning module GeometryCollectionSequencer (453)
+[2021.04.15-17.45.33:259][527]LogModuleManager: Shutting down and abandoning module GeometryCollectionEditor (450)
+[2021.04.15-17.45.33:259][527]LogModuleManager: Shutting down and abandoning module GeometryCacheTracks (448)
+[2021.04.15-17.45.33:259][527]LogModuleManager: Shutting down and abandoning module GeometryCacheSequencer (446)
+[2021.04.15-17.45.33:259][527]LogModuleManager: Shutting down and abandoning module ChaosSolverEditor (444)
+[2021.04.15-17.45.33:259][527]LogModuleManager: Shutting down and abandoning module ChaosNiagara (442)
+[2021.04.15-17.45.33:259][527]LogModuleManager: Shutting down and abandoning module FractureEditor (440)
+[2021.04.15-17.45.33:259][527]LogModuleManager: Shutting down and abandoning module ChaosClothEditor (438)
+[2021.04.15-17.45.33:259][527]LogModuleManager: Shutting down and abandoning module ChaosCloth (436)
+[2021.04.15-17.45.33:259][527]LogModuleManager: Shutting down and abandoning module BackChannel (434)
+[2021.04.15-17.45.33:259][527]LogModuleManager: Shutting down and abandoning module AutomationUtilsEditor (432)
+[2021.04.15-17.45.33:259][527]LogModuleManager: Shutting down and abandoning module AutomationUtils (430)
+[2021.04.15-17.45.33:259][527]LogModuleManager: Shutting down and abandoning module AlembicImporter (428)
+[2021.04.15-17.45.33:260][527]LogModuleManager: Shutting down and abandoning module AlembicLibrary (427)
+[2021.04.15-17.45.33:260][527]LogModuleManager: Shutting down and abandoning module GeometryCache (426)
+[2021.04.15-17.45.33:260][527]LogModuleManager: Shutting down and abandoning module GeometryCacheEd (425)
+[2021.04.15-17.45.33:260][527]LogModuleManager: Shutting down and abandoning module VariantManagerContentEditor (420)
+[2021.04.15-17.45.33:260][527]LogModuleManager: Shutting down and abandoning module DatasmithContentEditor (418)
+[2021.04.15-17.45.33:260][527]LogModuleManager: Shutting down and abandoning module SpeedTreeImporter (416)
+[2021.04.15-17.45.33:260][527]LogModuleManager: Shutting down and abandoning module PluginBrowser (414)
+[2021.04.15-17.45.33:260][527]LogModuleManager: Shutting down and abandoning module MobileLauncherProfileWizard (412)
+[2021.04.15-17.45.33:260][527]LogModuleManager: Shutting down and abandoning module MaterialAnalyzer (410)
+[2021.04.15-17.45.33:260][527]LogModuleManager: Shutting down and abandoning module EditorScriptingUtilities (408)
+[2021.04.15-17.45.33:260][527]LogModuleManager: Shutting down and abandoning module CurveEditorTools (406)
+[2021.04.15-17.45.33:260][527]LogModuleManager: Shutting down and abandoning module CryptoKeysOpenSSL (404)
+[2021.04.15-17.45.33:260][527]LogModuleManager: Shutting down and abandoning module CryptoKeys (402)
+[2021.04.15-17.45.33:260][527]LogModuleManager: Shutting down and abandoning module VisualStudioSourceCodeAccess (400)
+[2021.04.15-17.45.33:260][527]LogModuleManager: Shutting down and abandoning module VisualStudioCodeSourceCodeAccess (398)
+[2021.04.15-17.45.33:260][527]LogModuleManager: Shutting down and abandoning module UObjectPlugin (396)
+[2021.04.15-17.45.33:260][527]LogModuleManager: Shutting down and abandoning module SubversionSourceControl (394)
+[2021.04.15-17.45.33:260][527]LogModuleManager: Shutting down and abandoning module RiderSourceCodeAccess (392)
+[2021.04.15-17.45.33:260][527]LogModuleManager: Shutting down and abandoning module PlasticSourceControl (390)
+[2021.04.15-17.45.33:260][527]LogModuleManager: Shutting down and abandoning module PerforceSourceControl (388)
+[2021.04.15-17.45.33:260][527]LogModuleManager: Shutting down and abandoning module GitSourceControl (386)
+[2021.04.15-17.45.33:260][527]LogModuleManager: Shutting down and abandoning module SourceControl (385)
+[2021.04.15-17.45.33:260][527]LogModuleManager: Shutting down and abandoning module CLionSourceCodeAccess (382)
+[2021.04.15-17.45.33:260][527]LogModuleManager: Shutting down and abandoning module AnimationSharingEd (380)
+[2021.04.15-17.45.33:260][527]LogModuleManager: Shutting down and abandoning module ActorLayerUtilitiesEditor (378)
+[2021.04.15-17.45.33:260][527]LogModuleManager: Shutting down and abandoning module ActorLayerUtilities (376)
+[2021.04.15-17.45.33:260][527]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeEditor (374)
+[2021.04.15-17.45.33:260][527]LogModuleManager: Shutting down and abandoning module PaperTiledImporter (372)
+[2021.04.15-17.45.33:260][527]LogModuleManager: Shutting down and abandoning module PaperSpriteSheetImporter (370)
+[2021.04.15-17.45.33:260][527]LogModuleManager: Shutting down and abandoning module Paper2DEditor (368)
+[2021.04.15-17.45.33:260][527]LogModuleManager: Shutting down and abandoning module TowerDefence (366)
+[2021.04.15-17.45.33:260][527]LogModuleManager: Shutting down and abandoning module SoundFields (364)
+[2021.04.15-17.45.33:260][527]LogModuleManager: Shutting down and abandoning module SignificanceManager (362)
+[2021.04.15-17.45.33:260][527]LogModuleManager: Shutting down and abandoning module RuntimePhysXCooking (360)
+[2021.04.15-17.45.33:260][527]LogModuleManager: Shutting down and abandoning module PhysXVehiclesEditor (358)
+[2021.04.15-17.45.33:260][527]LogModuleManager: Shutting down and abandoning module LocationServicesBPLibrary (354)
+[2021.04.15-17.45.33:260][527]LogModuleManager: Shutting down and abandoning module ActorSequence (352)
+[2021.04.15-17.45.33:260][527]LogModuleManager: Shutting down and abandoning module UdpMessaging (350)
+[2021.04.15-17.45.33:361][527]LogModuleManager: Shutting down and abandoning module TcpMessaging (348)
+[2021.04.15-17.45.33:462][527]LogModuleManager: Shutting down and abandoning module MagicLeapARPin (346)
+[2021.04.15-17.45.33:462][527]LogModuleManager: Shutting down and abandoning module MagicLeapHandMeshing (344)
+[2021.04.15-17.45.33:462][527]LogModuleManager: Shutting down and abandoning module MagicLeapSecureStorage (342)
+[2021.04.15-17.45.33:462][527]LogModuleManager: Shutting down and abandoning module MagicLeapPrivileges (340)
+[2021.04.15-17.45.33:462][527]LogModuleManager: Shutting down and abandoning module MagicLeapPlanes (338)
+[2021.04.15-17.45.33:462][527]LogMagicLeapPlanes: Planes tracker already destroyed.
+[2021.04.15-17.45.33:462][527]LogModuleManager: Shutting down and abandoning module MagicLeapImageTracker (336)
+[2021.04.15-17.45.33:462][527]LogModuleManager: Shutting down and abandoning module MagicLeapIdentity (334)
+[2021.04.15-17.45.33:462][527]LogModuleManager: Shutting down and abandoning module MagicLeapHandTracking (332)
+[2021.04.15-17.45.33:462][527]LogModuleManager: Shutting down and abandoning module MagicLeapEyeTracker (330)
+[2021.04.15-17.45.33:462][527]LogModuleManager: Shutting down and abandoning module MagicLeapController (328)
+[2021.04.15-17.45.33:462][527]LogSlate: Slate User Destroyed.  User Index 0, Is Virtual User: 0
+[2021.04.15-17.45.33:462][527]LogModuleManager: Shutting down and abandoning module MagicLeapARPinImpl (326)
+[2021.04.15-17.45.33:462][527]LogModuleManager: Shutting down and abandoning module MagicLeapAR (324)
+[2021.04.15-17.45.33:462][527]LogModuleManager: Shutting down and abandoning module AugmentedReality (323)
+[2021.04.15-17.45.33:462][527]LogModuleManager: Shutting down and abandoning module NiagaraAnimNotifies (320)
+[2021.04.15-17.45.33:462][527]LogModuleManager: Shutting down and abandoning module Niagara (318)
+[2021.04.15-17.45.33:462][527]LogModuleManager: Shutting down and abandoning module SignalProcessing (317)
+[2021.04.15-17.45.33:462][527]LogModuleManager: Shutting down and abandoning module NiagaraEditor (315)
+[2021.04.15-17.45.33:462][527]LogModuleManager: Shutting down and abandoning module NiagaraCore (312)
+[2021.04.15-17.45.33:462][527]LogModuleManager: Shutting down and abandoning module GameplayTagsEditor (310)
+[2021.04.15-17.45.33:462][527]LogModuleManager: Shutting down and abandoning module FacialAnimationEditor (308)
+[2021.04.15-17.45.33:462][527]LogModuleManager: Shutting down and abandoning module FacialAnimation (306)
+[2021.04.15-17.45.33:462][527]LogModuleManager: Shutting down and abandoning module DataValidation (304)
+[2021.04.15-17.45.33:462][527]LogModuleManager: Shutting down and abandoning module AssetManagerEditor (302)
+[2021.04.15-17.45.33:462][527]LogModuleManager: Shutting down and abandoning module LevelEditor (301)
+[2021.04.15-17.45.33:463][527]LogModuleManager: Shutting down and abandoning module PixelInspectorModule (300)
+[2021.04.15-17.45.33:463][527]LogModuleManager: Shutting down and abandoning module CommonMenuExtensions (298)
+[2021.04.15-17.45.33:463][527]LogModuleManager: Shutting down and abandoning module MainFrame (296)
+[2021.04.15-17.45.33:463][527]LogModuleManager: Shutting down and abandoning module HotReload (295)
+[2021.04.15-17.45.33:464][527]LogModuleManager: Shutting down and abandoning module ToolMenus (291)
+[2021.04.15-17.45.33:464][527]LogModuleManager: Shutting down and abandoning module TreeMap (289)
+[2021.04.15-17.45.33:464][527]LogModuleManager: Shutting down and abandoning module AnimationSharing (286)
+[2021.04.15-17.45.33:464][527]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeRuntime (284)
+[2021.04.15-17.45.33:464][527]LogModuleManager: Shutting down and abandoning module Paper2D (282)
+[2021.04.15-17.45.33:464][527]LogModuleManager: Shutting down and abandoning module WindowsMoviePlayer (280)
+[2021.04.15-17.45.33:464][527]LogModuleManager: Shutting down and abandoning module WebMMoviePlayer (278)
+[2021.04.15-17.45.33:464][527]LogModuleManager: Shutting down and abandoning module NetworkReplayStreaming (276)
+[2021.04.15-17.45.33:464][527]LogModuleManager: Shutting down and abandoning module PacketHandler (274)
+[2021.04.15-17.45.33:464][527]LogModuleManager: Shutting down and abandoning module ClothingSystemEditor (272)
+[2021.04.15-17.45.33:464][527]LogModuleManager: Shutting down and abandoning module ClothingSystemRuntimeNv (270)
+[2021.04.15-17.45.33:464][527]LogModuleManager: Shutting down and abandoning module MediaAssets (268)
+[2021.04.15-17.45.33:464][527]LogModuleManager: Shutting down and abandoning module Overlay (266)
+[2021.04.15-17.45.33:464][527]LogModuleManager: Shutting down and abandoning module OverlayEditor (265)
+[2021.04.15-17.45.33:464][527]LogModuleManager: Shutting down and abandoning module VREditor (262)
+[2021.04.15-17.45.33:464][527]LogModuleManager: Shutting down and abandoning module StringTableEditor (260)
+[2021.04.15-17.45.33:464][527]LogModuleManager: Shutting down and abandoning module GameplayTasksEditor (258)
+[2021.04.15-17.45.33:464][527]LogModuleManager: Shutting down and abandoning module BehaviorTreeEditor (256)
+[2021.04.15-17.45.33:464][527]LogModuleManager: Shutting down and abandoning module FunctionalTesting (254)
+[2021.04.15-17.45.33:464][527]LogModuleManager: Shutting down and abandoning module CollisionAnalyzer (252)
+[2021.04.15-17.45.33:464][527]LogModuleManager: Shutting down and abandoning module UMG (250)
+[2021.04.15-17.45.33:464][527]LogModuleManager: Shutting down and abandoning module UMGEditor (249)
+[2021.04.15-17.45.33:464][527]LogModuleManager: Shutting down and abandoning module MessageLog (247)
+[2021.04.15-17.45.33:464][527]LogModuleManager: Shutting down and abandoning module MaterialEditor (245)
+[2021.04.15-17.45.33:464][527]LogModuleManager: Shutting down and abandoning module ContentBrowser (244)
+[2021.04.15-17.45.33:465][527]LogModuleManager: Shutting down and abandoning module WorkspaceMenuStructure (243)
+[2021.04.15-17.45.33:465][527]LogModuleManager: Shutting down and abandoning module SlateReflector (236)
+[2021.04.15-17.45.33:465][527]LogModuleManager: Shutting down and abandoning module Slate (234)
+[2021.04.15-17.45.33:465][527]LogModuleManager: Shutting down and abandoning module SlateCore (232)
+[2021.04.15-17.45.33:465][527]LogModuleManager: Shutting down and abandoning module LandscapeEditorUtilities (230)
+[2021.04.15-17.45.33:465][527]LogModuleManager: Shutting down and abandoning module UnrealEd (228)
+[2021.04.15-17.45.33:465][527]LogModuleManager: Shutting down and abandoning module MRMesh (226)
+[2021.04.15-17.45.33:465][527]LogModuleManager: Shutting down and abandoning module SourceCodeAccess (224)
+[2021.04.15-17.45.33:465][527]LogModuleManager: Shutting down and abandoning module HeadMountedDisplay (222)
+[2021.04.15-17.45.33:465][527]LogModuleManager: Shutting down and abandoning module XAudio2 (220)
+[2021.04.15-17.45.33:465][527]LogModuleManager: Shutting down and abandoning module Networking (218)
+[2021.04.15-17.45.33:465][527]LogModuleManager: Shutting down and abandoning module Core (216)
+[2021.04.15-17.45.33:465][527]LogModuleManager: Shutting down and abandoning module MovieSceneTools (214)
+[2021.04.15-17.45.33:465][527]LogModuleManager: Shutting down and abandoning module CurveEditor (213)
+[2021.04.15-17.45.33:465][527]LogModuleManager: Shutting down and abandoning module Sequencer (211)
+[2021.04.15-17.45.33:465][527]LogModuleManager: Shutting down and abandoning module EditorStyle (210)
+[2021.04.15-17.45.33:466][527]LogModuleManager: Shutting down and abandoning module KismetCompiler (206)
+[2021.04.15-17.45.33:466][527]LogModuleManager: Shutting down and abandoning module MeshBuilder (204)
+[2021.04.15-17.45.33:466][527]LogModuleManager: Shutting down and abandoning module MeshUtilities (202)
+[2021.04.15-17.45.33:466][527]LogModuleManager: Shutting down and abandoning module MeshMergeUtilities (201)
+[2021.04.15-17.45.33:466][527]LogModuleManager: Shutting down and abandoning module MeshReductionInterface (200)
+[2021.04.15-17.45.33:466][527]LogModuleManager: Shutting down and abandoning module MeshBoneReduction (199)
+[2021.04.15-17.45.33:466][527]LogModuleManager: Shutting down and abandoning module SkeletalMeshReduction (197)
+[2021.04.15-17.45.33:466][527]LogModuleManager: Shutting down and abandoning module ProxyLODMeshReduction (195)
+[2021.04.15-17.45.33:466][527]LogModuleManager: Shutting down and abandoning module QuadricMeshReduction (193)
+[2021.04.15-17.45.33:466][527]LogModuleManager: Shutting down and abandoning module MaterialBaking (189)
+[2021.04.15-17.45.33:466][527]LogModuleManager: Shutting down and abandoning module NullInstallBundleManager (184)
+[2021.04.15-17.45.33:466][527]LogModuleManager: Shutting down and abandoning module DerivedDataCache (182)
+[2021.04.15-17.45.33:466][527]LogModuleManager: Shutting down and abandoning module XGEController (180)
+[2021.04.15-17.45.33:466][527]LogXGEController: Cleaning working directory: C:/Users/sethg/AppData/Local/Temp/UnrealXGEWorkingDir/
+[2021.04.15-17.45.33:466][527]LogModuleManager: Shutting down and abandoning module TargetPlatform (178)
+[2021.04.15-17.45.33:466][527]LogModuleManager: Shutting down and abandoning module VulkanShaderFormat (177)
+[2021.04.15-17.45.33:466][527]LogModuleManager: Shutting down and abandoning module ShaderFormatVectorVM (175)
+[2021.04.15-17.45.33:466][527]LogModuleManager: Shutting down and abandoning module ShaderFormatOpenGL (173)
+[2021.04.15-17.45.33:466][527]LogModuleManager: Shutting down and abandoning module ShaderFormatD3D (171)
+[2021.04.15-17.45.33:466][527]LogModuleManager: Shutting down and abandoning module MetalShaderFormat (169)
+[2021.04.15-17.45.33:466][527]LogModuleManager: Shutting down and abandoning module TextureFormatUncompressed (167)
+[2021.04.15-17.45.33:466][527]LogModuleManager: Shutting down and abandoning module TextureFormatPVR (165)
+[2021.04.15-17.45.33:466][527]LogModuleManager: Shutting down and abandoning module TextureFormatDXT (163)
+[2021.04.15-17.45.33:466][527]LogModuleManager: Shutting down and abandoning module TextureFormatIntelISPCTexComp (161)
+[2021.04.15-17.45.33:467][527]LogModuleManager: Shutting down and abandoning module TextureFormatASTC (159)
+[2021.04.15-17.45.33:467][527]LogModuleManager: Shutting down and abandoning module ImageWrapper (158)
+[2021.04.15-17.45.33:467][527]LogModuleManager: Shutting down and abandoning module TextureFormatAndroid (155)
+[2021.04.15-17.45.33:467][527]LogModuleManager: Shutting down and abandoning module AudioFormatOpus (153)
+[2021.04.15-17.45.33:467][527]LogModuleManager: Shutting down and abandoning module AudioFormatOgg (151)
+[2021.04.15-17.45.33:467][527]LogModuleManager: Shutting down and abandoning module AudioFormatADPCM (149)
+[2021.04.15-17.45.33:467][527]LogModuleManager: Shutting down and abandoning module WindowsServerTargetPlatform (147)
+[2021.04.15-17.45.33:467][527]LogModuleManager: Shutting down and abandoning module WindowsClientTargetPlatform (145)
+[2021.04.15-17.45.33:467][527]LogModuleManager: Shutting down and abandoning module WindowsTargetPlatform (143)
+[2021.04.15-17.45.33:467][527]LogModuleManager: Shutting down and abandoning module WindowsNoEditorTargetPlatform (141)
+[2021.04.15-17.45.33:467][527]LogModuleManager: Shutting down and abandoning module TVOSTargetPlatform (139)
+[2021.04.15-17.45.33:467][527]LogModuleManager: Shutting down and abandoning module LuminTargetPlatform (137)
+[2021.04.15-17.45.33:468][527]LogModuleManager: Shutting down and abandoning module LinuxAArch64ServerTargetPlatform (135)
+[2021.04.15-17.45.33:468][527]LogModuleManager: Shutting down and abandoning module LinuxAArch64ClientTargetPlatform (133)
+[2021.04.15-17.45.33:468][527]LogModuleManager: Shutting down and abandoning module LinuxAArch64NoEditorTargetPlatform (131)
+[2021.04.15-17.45.33:468][527]LogModuleManager: Shutting down and abandoning module LinuxServerTargetPlatform (129)
+[2021.04.15-17.45.33:468][527]LogModuleManager: Shutting down and abandoning module LinuxClientTargetPlatform (127)
+[2021.04.15-17.45.33:468][527]LogModuleManager: Shutting down and abandoning module LinuxNoEditorTargetPlatform (125)
+[2021.04.15-17.45.33:468][527]LogModuleManager: Shutting down and abandoning module LinuxTargetPlatform (123)
+[2021.04.15-17.45.33:468][527]LogModuleManager: Shutting down and abandoning module Messaging (121)
+[2021.04.15-17.45.33:468][527]LogModuleManager: Shutting down and abandoning module IOSTargetPlatform (119)
+[2021.04.15-17.45.33:469][527]LogModuleManager: Shutting down and abandoning module AndroidTargetPlatform (117)
+[2021.04.15-17.45.33:472][527]LogModuleManager: Shutting down and abandoning module AllDesktopTargetPlatform (115)
+[2021.04.15-17.45.33:472][527]LogModuleManager: Shutting down and abandoning module InputCore (112)
+[2021.04.15-17.45.33:472][527]LogModuleManager: Shutting down and abandoning module Settings (110)
+[2021.04.15-17.45.33:472][527]LogModuleManager: Shutting down and abandoning module DirectoryWatcher (108)
+[2021.04.15-17.45.33:472][527]LogModuleManager: Shutting down and abandoning module PhysXCooking (106)
+[2021.04.15-17.45.33:472][527]LogModuleManager: Shutting down and abandoning module ChaosSolvers (104)
+[2021.04.15-17.45.33:472][527]LogModuleManager: Shutting down and abandoning module FieldSystemEngine (103)
+[2021.04.15-17.45.33:472][527]LogModuleManager: Shutting down and abandoning module Chaos (100)
+[2021.04.15-17.45.33:472][527]LogModuleManager: Shutting down and abandoning module WindowsPlatformFeatures (98)
+[2021.04.15-17.45.33:472][527]LogModuleManager: Shutting down and abandoning module GameplayMediaEncoder (97)
+[2021.04.15-17.45.33:472][527]LogModuleManager: Shutting down and abandoning module AVEncoder (96)
+[2021.04.15-17.45.33:472][527]LogModuleManager: Shutting down and abandoning module SteamVRInputDevice (92)
+[2021.04.15-17.45.33:472][527]LogModuleManager: Shutting down and abandoning module SteamVRInput (90)
+[2021.04.15-17.45.33:472][527]LogModuleManager: Shutting down and abandoning module SteamVR (88)
+[2021.04.15-17.45.33:472][527]LogHMD: Freeing OpenVRDLLHandle.
+[2021.04.15-17.45.33:472][527]LogModuleManager: Shutting down and abandoning module OculusHMD (86)
+[2021.04.15-17.45.33:472][527]LogModuleManager: Shutting down and abandoning module ExampleDeviceProfileSelector (84)
+[2021.04.15-17.45.33:472][527]LogModuleManager: Shutting down and abandoning module LauncherChunkInstaller (82)
+[2021.04.15-17.45.33:472][527]LogModuleManager: Shutting down and abandoning module OnlineBlueprintSupport (80)
+[2021.04.15-17.45.33:472][527]LogModuleManager: Shutting down and abandoning module OnlineSubsystem (76)
+[2021.04.15-17.45.33:473][527]LogModuleManager: Shutting down and abandoning module XMPP (71)
+[2021.04.15-17.45.33:473][527]LogModuleManager: Shutting down and abandoning module WebSockets (70)
+[2021.04.15-17.45.33:477][527]LogModuleManager: Shutting down and abandoning module HTTP (67)
+[2021.04.15-17.45.33:477][527]LogHttp: Display: Http module shutting down, but needs to wait on 1 outstanding Http requests:
+[2021.04.15-17.45.33:477][527]LogHttp: Display: 	verb=[POST] url=[https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7BC39EF576-469B-736B-68B8-869A9E3ACFAE%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.25.3-13942748%2B%2B%2BUE4%2BRelease-4.25&UserID=30de59664103ad04bd2724b8a8096476%7C21f07d7e28464b44aa16949098b70d2d%7C00c52282-9b2c-4f17-84a3-554a92fb4b23&AppEnvironment=datacollector-source&UploadType=eteventstream] refs=[1] status=Processing
+[2021.04.15-17.45.33:488][527]LogModuleManager: Shutting down and abandoning module SSL (66)
+[2021.04.15-17.45.33:489][527]LogModuleManager: Shutting down and abandoning module WmfMedia (62)
+[2021.04.15-17.45.33:491][527]LogModuleManager: Shutting down and abandoning module Media (61)
+[2021.04.15-17.45.33:491][527]LogModuleManager: Shutting down and abandoning module MagicLeap (58)
+[2021.04.15-17.45.33:491][527]LogModuleManager: Shutting down and abandoning module NiagaraVertexFactories (56)
+[2021.04.15-17.45.33:491][527]LogModuleManager: Shutting down and abandoning module NiagaraShader (54)
+[2021.04.15-17.45.33:492][527]LogModuleManager: Shutting down and abandoning module VariantManagerContent (52)
+[2021.04.15-17.45.33:492][527]LogModuleManager: Shutting down and abandoning module DatasmithContent (50)
+[2021.04.15-17.45.33:492][527]LogModuleManager: Shutting down and abandoning module AISupportModule (48)
+[2021.04.15-17.45.33:492][527]LogModuleManager: Shutting down and abandoning module DesktopPlatform (46)
+[2021.04.15-17.45.33:492][527]LogModuleManager: Shutting down and abandoning module PlatformCryptoOpenSSL (44)
+[2021.04.15-17.45.33:492][527]LogModuleManager: Shutting down and abandoning module PlatformCryptoTypes (42)
+[2021.04.15-17.45.33:492][527]LogModuleManager: Shutting down and abandoning module PlatformCrypto (40)
+[2021.04.15-17.45.33:492][527]LogModuleManager: Shutting down and abandoning module AnimationModifiers (38)
+[2021.04.15-17.45.33:492][527]LogModuleManager: Shutting down and abandoning module PropertyEditor (37)
+[2021.04.15-17.45.33:492][527]LogModuleManager: Shutting down and abandoning module AudioEditor (34)
+[2021.04.15-17.45.33:492][527]LogModuleManager: Shutting down and abandoning module TextureCompressor (32)
+[2021.04.15-17.45.33:492][527]LogModuleManager: Shutting down and abandoning module RenderCore (30)
+[2021.04.15-17.45.33:492][527]LogModuleManager: Shutting down and abandoning module Landscape (28)
+[2021.04.15-17.45.33:492][527]LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (26)
+[2021.04.15-17.45.33:493][527]LogModuleManager: Shutting down and abandoning module OpenGLDrv (24)
+[2021.04.15-17.45.33:493][527]LogModuleManager: Shutting down and abandoning module D3D11RHI (22)
+[2021.04.15-17.45.33:493][527]LogModuleManager: Shutting down and abandoning module AnimGraphRuntime (20)
+[2021.04.15-17.45.33:493][527]LogModuleManager: Shutting down and abandoning module Renderer (18)
+[2021.04.15-17.45.33:493][527]LogModuleManager: Shutting down and abandoning module Engine (16)
+[2021.04.15-17.45.33:493][527]LogModuleManager: Shutting down and abandoning module CoreUObject (14)
+[2021.04.15-17.45.33:493][527]LogModuleManager: Shutting down and abandoning module NetworkFile (12)
+[2021.04.15-17.45.33:493][527]LogModuleManager: Shutting down and abandoning module CookedIterativeFile (10)
+[2021.04.15-17.45.33:493][527]LogModuleManager: Shutting down and abandoning module StreamingFile (8)
+[2021.04.15-17.45.33:493][527]LogModuleManager: Shutting down and abandoning module SandboxFile (6)
+[2021.04.15-17.45.33:493][527]LogModuleManager: Shutting down and abandoning module PakFile (4)
+[2021.04.15-17.45.33:493][527]LogModuleManager: Shutting down and abandoning module RSA (3)
+[2021.04.15-17.45.33:493][527]LogContentStreaming: Display: There are 1 unreleased StreamingManagers
+[2021.04.15-17.45.33:495][527]LogD3D11RHI: Shutdown
+[2021.04.15-17.45.33:495][527]LogD3D11RHI: CleanupD3DDevice
+[2021.04.15-17.45.33:510][527]LogExit: Exiting.
+[2021.04.15-17.45.33:522][527]Log file closed, 04/15/21 13:45:33

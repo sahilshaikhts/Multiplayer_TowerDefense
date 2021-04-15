@@ -49,6 +49,14 @@ public:
 
 	class AMyGameStateBase* gameState;
 
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "AudioComponent")
+		class UAudioComponent* AudioComponent;
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Sound")
+		class USoundBase* sfx_SpawnRanged;
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Sound")
+		class USoundBase* sfx_SpawnMelee;
+
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;

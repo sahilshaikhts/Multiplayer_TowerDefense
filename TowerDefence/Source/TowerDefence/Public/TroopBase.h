@@ -40,9 +40,9 @@ public:
 	UPROPERTY(EditAnywhere)
 		class UAIMovementComponent* movmentComponent;
 
-	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "AduioComponent")
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "AudioComponent")
 		class UAudioComponent* AudioComponent;
-	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "AduioComponent")
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "AudioComponent")
 		class UAudioComponent* AudioComponent_2;
 
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Sound")

@@ -17,7 +17,11 @@ class TOWERDEFENCE_API ATroop_Giant : public ATroopBase
 public:
 	ATroop_Giant();
 
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "AudioComponent")
+		class UAudioComponent* WalkingAudio;
 
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Sound")
+		class USoundBase* sfx_Walking;
 protected:
 
 	virtual void BeginPlay() override;

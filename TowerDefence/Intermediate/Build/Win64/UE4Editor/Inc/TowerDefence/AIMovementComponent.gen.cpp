@@ -104,14 +104,14 @@ void EmptyLinkFunctionForGeneratedCodeAIMovementComponent() {}
 		static const UE4CodeGen_Private::FArrayPropertyParams NewProp_PathNodes;
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_PathNodes_Inner;
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_owner_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_owner;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_bPatrol_MetaData[];
 #endif
 		static void NewProp_bPatrol_SetBit(void* Obj);
 		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_bPatrol;
-#if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_owner_MetaData[];
-#endif
-		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_owner;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
@@ -142,6 +142,12 @@ void EmptyLinkFunctionForGeneratedCodeAIMovementComponent() {}
 	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UAIMovementComponent_Statics::NewProp_PathNodes = { "PathNodes", nullptr, (EPropertyFlags)0x0020080000000801, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UAIMovementComponent, PathNodes), EArrayPropertyFlags::None, METADATA_PARAMS(Z_Construct_UClass_UAIMovementComponent_Statics::NewProp_PathNodes_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UAIMovementComponent_Statics::NewProp_PathNodes_MetaData)) };
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UAIMovementComponent_Statics::NewProp_PathNodes_Inner = { "PathNodes", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UAIMovementComponent_Statics::NewProp_owner_MetaData[] = {
+		{ "ModuleRelativePath", "Public/AIMovementComponent.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UAIMovementComponent_Statics::NewProp_owner = { "owner", nullptr, (EPropertyFlags)0x0020080000000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UAIMovementComponent, owner), Z_Construct_UClass_ATroopBase_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UAIMovementComponent_Statics::NewProp_owner_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UAIMovementComponent_Statics::NewProp_owner_MetaData)) };
+#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UAIMovementComponent_Statics::NewProp_bPatrol_MetaData[] = {
 		{ "Category", "AI" },
 		{ "ModuleRelativePath", "Public/AIMovementComponent.h" },
@@ -151,18 +157,12 @@ void EmptyLinkFunctionForGeneratedCodeAIMovementComponent() {}
 	{
 		((UAIMovementComponent*)Obj)->bPatrol = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UAIMovementComponent_Statics::NewProp_bPatrol = { "bPatrol", nullptr, (EPropertyFlags)0x0020080000000801, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(UAIMovementComponent), &Z_Construct_UClass_UAIMovementComponent_Statics::NewProp_bPatrol_SetBit, METADATA_PARAMS(Z_Construct_UClass_UAIMovementComponent_Statics::NewProp_bPatrol_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UAIMovementComponent_Statics::NewProp_bPatrol_MetaData)) };
-#if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UAIMovementComponent_Statics::NewProp_owner_MetaData[] = {
-		{ "ModuleRelativePath", "Public/AIMovementComponent.h" },
-	};
-#endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UAIMovementComponent_Statics::NewProp_owner = { "owner", nullptr, (EPropertyFlags)0x0020080000000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UAIMovementComponent, owner), Z_Construct_UClass_ATroopBase_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UAIMovementComponent_Statics::NewProp_owner_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UAIMovementComponent_Statics::NewProp_owner_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UAIMovementComponent_Statics::NewProp_bPatrol = { "bPatrol", nullptr, (EPropertyFlags)0x0010000000000801, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(UAIMovementComponent), &Z_Construct_UClass_UAIMovementComponent_Statics::NewProp_bPatrol_SetBit, METADATA_PARAMS(Z_Construct_UClass_UAIMovementComponent_Statics::NewProp_bPatrol_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UAIMovementComponent_Statics::NewProp_bPatrol_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UAIMovementComponent_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UAIMovementComponent_Statics::NewProp_PathNodes,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UAIMovementComponent_Statics::NewProp_PathNodes_Inner,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UAIMovementComponent_Statics::NewProp_bPatrol,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UAIMovementComponent_Statics::NewProp_owner,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UAIMovementComponent_Statics::NewProp_bPatrol,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_UAIMovementComponent_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<UAIMovementComponent>::IsAbstract,
@@ -191,7 +191,7 @@ void EmptyLinkFunctionForGeneratedCodeAIMovementComponent() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UAIMovementComponent, 1856261290);
+	IMPLEMENT_CLASS(UAIMovementComponent, 2950712634);
 	template<> TOWERDEFENCE_API UClass* StaticClass<UAIMovementComponent>()
 	{
 		return UAIMovementComponent::StaticClass();

@@ -67,6 +67,10 @@ bool ATowerBase::GetDamage(float value)
 
 void ATowerBase::StartDestroy()
 {
+	AudioComponent->Stop();
+	AudioComponent->SetSound(sfx_Destroy);
+	AudioComponent->Play();
+
 	if(player)
 	player->OnUnitKilled(unitType);
 	Destroy();

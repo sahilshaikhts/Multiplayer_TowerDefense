@@ -264,7 +264,7 @@ void EmptyLinkFunctionForGeneratedCodeTroop_melee() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ATroop_melee, 2815466102);
+	IMPLEMENT_CLASS(ATroop_melee, 3194697989);
 	template<> TOWERDEFENCE_API UClass* StaticClass<ATroop_melee>()
 	{
 		return ATroop_melee::StaticClass();

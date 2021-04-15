@@ -80,13 +80,27 @@ public:
 	bool bIntermissionStart = false;
 	bool bRoundStart = false;
 
-	float RoundTimer = 5.0f;
+	float RoundTimer = 35.0f;
 	float IntermissionTimer = 5.0f;
 
 	FTimerHandle RoundTimerHandle;
 	FTimerHandle IntermissionTimerHandle;
 
 	MyStates::GameState State;
+
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "AudioComponent")
+		class UAudioComponent* AudioComponent;
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "AudioComponent")
+		class UAudioComponent* AudioComponent2;
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Sound")
+		class USoundBase* sfx_RoundStart;
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Sound")
+		class USoundBase* sfx_Lose;
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Sound")
+		class USoundBase* sfx_Win;
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Sound")
+		class USoundBase* sfx_BattleMusic;
 
 protected:
 	

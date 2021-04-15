@@ -89,7 +89,7 @@ void EmptyLinkFunctionForGeneratedCodeTower_XBow() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ATower_XBow, 2684195970);
+	IMPLEMENT_CLASS(ATower_XBow, 2116720230);
 	template<> TOWERDEFENCE_API UClass* StaticClass<ATower_XBow>()
 	{
 		return ATower_XBow::StaticClass();

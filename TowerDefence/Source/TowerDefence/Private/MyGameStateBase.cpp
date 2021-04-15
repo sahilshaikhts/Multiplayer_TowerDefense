@@ -3,6 +3,7 @@
 
 #include "MyGameStateBase.h"
 #include "Blueprint/UserWidget.h"
+#include "Components/AudioComponent.h"
 #include "ShopSystem.h"
 #include "RewardSystem.h"
 #include "GameFramework/PlayerState.h"
@@ -15,6 +16,16 @@ AMyGameStateBase::AMyGameStateBase()
 	State = MyStates::GameState::Intermission;
 
 	Round = 0;
+
+	AudioComponent = CreateDefaultSubobject<UAudioComponent>(TEXT("AudioComponent"));
+	AudioComponent->bAutoActivate = false;
+	AudioComponent->SetRelativeLocation(FVector(0.0f, 0.0f, 0.0f));
+	AudioComponent->SetupAttachment(RootComponent);
+
+	AudioComponent2 = CreateDefaultSubobject<UAudioComponent>(TEXT("AudioComponent2"));
+	AudioComponent2->bAutoActivate = false;
+	AudioComponent2->SetRelativeLocation(FVector(0.0f, 0.0f, 0.0f));
+	AudioComponent2->SetupAttachment(RootComponent);
 }
 void AMyGameStateBase::BeginPlay()
 {
@@ -73,6 +84,13 @@ void AMyGameStateBase::EndIntermission()
 	SetGameState(MyStates::GameState::Play);
 	bIntermissionStart = false;
 	SwitchUI(1);
+
+	if (Round == 0)
+	{
+		AudioComponent->Stop();
+		AudioComponent->SetSound(sfx_RoundStart);
+		AudioComponent->Play();
+	}
 }
 
 void AMyGameStateBase::EndRound()
@@ -138,6 +156,12 @@ void AMyGameStateBase::Tick(float DeltaTime)
 			GetWorldTimerManager().SetTimer(RoundTimerHandle, this, &AMyGameStateBase::EndRound, RoundTimer);
 			bRoundStart = true;
 			Round++;
+		}
+
+		if (AudioComponent->IsPlaying() == false && AudioComponent2->IsPlaying() == false)
+		{
+			AudioComponent2->SetSound(sfx_BattleMusic);
+			AudioComponent2->Play();
 		}
 	}
 	else if (State == MyStates::GameState::GameOver)

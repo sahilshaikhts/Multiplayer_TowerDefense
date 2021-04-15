@@ -196,7 +196,7 @@ void EmptyLinkFunctionForGeneratedCodeTroopBase() {}
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ATroopBase_Statics::NewProp_sfx_attack = { "sfx_attack", nullptr, (EPropertyFlags)0x0010000000000015, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ATroopBase, sfx_attack), Z_Construct_UClass_USoundBase_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ATroopBase_Statics::NewProp_sfx_attack_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ATroopBase_Statics::NewProp_sfx_attack_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ATroopBase_Statics::NewProp_AudioComponent_2_MetaData[] = {
-		{ "Category", "AduioComponent" },
+		{ "Category", "AudioComponent" },
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "Public/TroopBase.h" },
 	};
@@ -204,7 +204,7 @@ void EmptyLinkFunctionForGeneratedCodeTroopBase() {}
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ATroopBase_Statics::NewProp_AudioComponent_2 = { "AudioComponent_2", nullptr, (EPropertyFlags)0x00100000000a001d, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ATroopBase, AudioComponent_2), Z_Construct_UClass_UAudioComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ATroopBase_Statics::NewProp_AudioComponent_2_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ATroopBase_Statics::NewProp_AudioComponent_2_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ATroopBase_Statics::NewProp_AudioComponent_MetaData[] = {
-		{ "Category", "AduioComponent" },
+		{ "Category", "AudioComponent" },
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "Public/TroopBase.h" },
 	};
@@ -280,7 +280,7 @@ void EmptyLinkFunctionForGeneratedCodeTroopBase() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ATroopBase, 160447144);
+	IMPLEMENT_CLASS(ATroopBase, 2206432393);
 	template<> TOWERDEFENCE_API UClass* StaticClass<ATroopBase>()
 	{
 		return ATroopBase::StaticClass();

@@ -27,6 +27,9 @@ public:
 	// Sets default values for this component's properties
 	UAIMovementComponent();
 	void SetPathNodes(TArray<AActor*>* aPatrolPoints);
+
+	UPROPERTY(EditInstanceOnly, Category = "AI")
+		bool bPatrol;
 protected:
 	// Called when the game starts
 	virtual void BeginPlay() override;
@@ -34,8 +37,6 @@ protected:
 	UPROPERTY()
 	class ATroopBase* owner;
 
-	UPROPERTY(EditInstanceOnly, Category = "AI")
-		bool bPatrol;
 
 	UPROPERTY(EditInstanceOnly, Category = "AI", meta = (EditCondition = "bPatrol"))
 		TArray<AActor*> PathNodes;

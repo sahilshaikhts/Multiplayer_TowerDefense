@@ -16,6 +16,11 @@ ATroop_Giant::ATroop_Giant()
 
 	attackRate = 3.0f;
 	unitType = MyEnums::Item::troop_giant;
+
+	WalkingAudio = CreateDefaultSubobject<UAudioComponent>(TEXT("WalkingAudio"));
+	WalkingAudio->bAutoActivate = false;
+	WalkingAudio->SetRelativeLocation(FVector(0.0f, 0.0f, 0.0f));
+	WalkingAudio->SetupAttachment(RootComponent);
 }
 
 // Called when the game starts or when spawned
@@ -84,6 +89,19 @@ void ATroop_Giant::Tick(float DeltaTime)
 				follow = false;
 				attack = true;
 			}
+		}
+
+		if (follow == true || movmentComponent->bPatrol == true)
+		{
+			if (WalkingAudio->IsPlaying() == false)
+			{
+				WalkingAudio->SetSound(sfx_Walking);
+				WalkingAudio->Play();
+			}
+		}
+		else
+		{
+			WalkingAudio->Stop();
 		}
 		CheckForTowers();
 

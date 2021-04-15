@@ -92,6 +92,10 @@ void EmptyLinkFunctionForGeneratedCodeTowerBase() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_sfx_Destroy_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_sfx_Destroy;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_sfx_fire_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_sfx_fire;
@@ -128,6 +132,13 @@ void EmptyLinkFunctionForGeneratedCodeTowerBase() {}
 		{ "ModuleRelativePath", "Public/TowerBase.h" },
 	};
 #endif
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ATowerBase_Statics::NewProp_sfx_Destroy_MetaData[] = {
+		{ "Category", "Sound" },
+		{ "ModuleRelativePath", "Public/TowerBase.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ATowerBase_Statics::NewProp_sfx_Destroy = { "sfx_Destroy", nullptr, (EPropertyFlags)0x0010000000000015, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ATowerBase, sfx_Destroy), Z_Construct_UClass_USoundBase_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ATowerBase_Statics::NewProp_sfx_Destroy_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ATowerBase_Statics::NewProp_sfx_Destroy_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ATowerBase_Statics::NewProp_sfx_fire_MetaData[] = {
 		{ "Category", "Sound" },
@@ -168,6 +179,7 @@ void EmptyLinkFunctionForGeneratedCodeTowerBase() {}
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ATowerBase_Statics::NewProp_collider = { "collider", nullptr, (EPropertyFlags)0x00100000000a0009, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ATowerBase, collider), Z_Construct_UClass_UBoxComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ATowerBase_Statics::NewProp_collider_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ATowerBase_Statics::NewProp_collider_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ATowerBase_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ATowerBase_Statics::NewProp_sfx_Destroy,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ATowerBase_Statics::NewProp_sfx_fire,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ATowerBase_Statics::NewProp_AudioComponent,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ATowerBase_Statics::NewProp_col_troopDetection,
@@ -201,7 +213,7 @@ void EmptyLinkFunctionForGeneratedCodeTowerBase() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ATowerBase, 2571251374);
+	IMPLEMENT_CLASS(ATowerBase, 2103492724);
 	template<> TOWERDEFENCE_API UClass* StaticClass<ATowerBase>()
 	{
 		return ATowerBase::StaticClass();

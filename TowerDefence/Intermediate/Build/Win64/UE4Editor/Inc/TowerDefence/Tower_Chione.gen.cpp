@@ -72,7 +72,7 @@ void EmptyLinkFunctionForGeneratedCodeTower_Chione() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ATower_Chione, 290322624);
+	IMPLEMENT_CLASS(ATower_Chione, 1492088808);
 	template<> TOWERDEFENCE_API UClass* StaticClass<ATower_Chione>()
 	{
 		return ATower_Chione::StaticClass();

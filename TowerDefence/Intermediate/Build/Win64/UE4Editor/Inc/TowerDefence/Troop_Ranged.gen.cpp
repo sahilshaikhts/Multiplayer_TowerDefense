@@ -103,7 +103,7 @@ void EmptyLinkFunctionForGeneratedCodeTroop_Ranged() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ATroop_Ranged, 2441235668);
+	IMPLEMENT_CLASS(ATroop_Ranged, 2984645579);
 	template<> TOWERDEFENCE_API UClass* StaticClass<ATroop_Ranged>()
 	{
 		return ATroop_Ranged::StaticClass();

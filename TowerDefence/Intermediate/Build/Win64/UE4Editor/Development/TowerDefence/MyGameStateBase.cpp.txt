@@ -126,6 +126,8 @@ D:\Epic Games Files\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Proper
 D:\Epic Games Files\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UMG\DynamicPropertyPath.generated.h
 D:\Epic Games Files\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UMG\WidgetBlueprintGeneratedClass.generated.h
 D:\Epic Games Files\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UMG\UserWidget.generated.h
+D:\Epic Games Files\UE_4.25\Engine\Source\Runtime\Engine\Classes\Components/AudioComponent.h
+D:\Epic Games Files\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\AudioComponent.generated.h
 C:\Users\sethg\Desktop\High Level Development II\W21_GAM1528_NoNameYet\TowerDefence\Source\TowerDefence\Public\ShopSystem.h
 C:\Users\sethg\Desktop\High Level Development II\W21_GAM1528_NoNameYet\TowerDefence\Intermediate\Build\Win64\UE4Editor\Inc\TowerDefence\ShopSystem.generated.h
 C:\Users\sethg\Desktop\High Level Development II\W21_GAM1528_NoNameYet\TowerDefence\Source\TowerDefence\Public\RewardSystem.h

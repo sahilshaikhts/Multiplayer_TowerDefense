@@ -5,6 +5,7 @@
 #include"Camera/CameraComponent.h"
 #include "GameFramework/SpringArmComponent.h"
 #include "TowerDefence/Public/Troop_melee.h"
+#include "Components/AudioComponent.h"
 #include "TroopBase.h"
 #include "Tower_Canon.h"
 #include "Troop_Ranged.h"
@@ -40,7 +41,10 @@ AMyPlayer::AMyPlayer()
 
 	AutoPossessPlayer = EAutoReceiveInput::Player0;
 
-	
+	AudioComponent = CreateDefaultSubobject<UAudioComponent>(TEXT("AudioComponent"));
+	AudioComponent->bAutoActivate = false;
+	AudioComponent->SetRelativeLocation(FVector(0.0f, 0.0f, 0.0f));
+	AudioComponent->SetupAttachment(RootComponent);
 }
 
 AInventory* AMyPlayer::GetInventory()
@@ -139,10 +143,28 @@ void AMyPlayer::SpawnItem(MyEnums::Item type, AActor* hitActor)
 
 				spwndObj->SetPatrolPoints(&spawnPoint->PatrolPoints);
 				spwndObj->player = this;
+
+				AudioComponent->Stop();
+				AudioComponent->SetSound(sfx_SpawnMelee);
+				AudioComponent->Play();
 			}
 		}
 		break;
 		case MyEnums::troop_archer:
+		{
+			ATroopBase* spwndObj = GetWorld()->SpawnActor<ATroop_Ranged>(t_troopRanged, hitActor->GetActorLocation() + hitActor->GetActorUpVector(), FRotator(0.0f, 0.0f, 0.0f));
+			if (spwndObj)
+			{
+				ATroopSpawnPoint* spawnPoint = Cast<ATroopSpawnPoint>(hitActor);
+
+				spwndObj->SetPatrolPoints(&spawnPoint->PatrolPoints);
+				spwndObj->player = this;
+
+				AudioComponent->Stop();
+				AudioComponent->SetSound(sfx_SpawnRanged);
+				AudioComponent->Play();
+			}
+		}
 			break;
 		case MyEnums::tower_XBow:
 			break;

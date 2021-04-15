@@ -70,7 +70,6 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UAIMovementComponent); \
 
 #define TowerDefence_Source_TowerDefence_Public_AIMovementComponent_h_24_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__owner() { return STRUCT_OFFSET(UAIMovementComponent, owner); } \
-	FORCEINLINE static uint32 __PPO__bPatrol() { return STRUCT_OFFSET(UAIMovementComponent, bPatrol); } \
 	FORCEINLINE static uint32 __PPO__PathNodes() { return STRUCT_OFFSET(UAIMovementComponent, PathNodes); }
 
 

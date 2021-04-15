@@ -41,6 +41,8 @@ public:
 
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Sound")
 		class USoundBase* sfx_fire;
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Sound")
+		class USoundBase* sfx_Destroy;
 	
 
 	bool enabled,fire, isAlive;

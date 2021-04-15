@@ -171,7 +171,7 @@ void EmptyLinkFunctionForGeneratedCodeTower_Canon() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ATower_Canon, 3342788620);
+	IMPLEMENT_CLASS(ATower_Canon, 3415279513);
 	template<> TOWERDEFENCE_API UClass* StaticClass<ATower_Canon>()
 	{
 		return ATower_Canon::StaticClass();

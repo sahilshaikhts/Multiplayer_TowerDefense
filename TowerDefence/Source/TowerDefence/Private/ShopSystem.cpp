@@ -20,10 +20,13 @@ void AShopSystem::BeginPlay()
 	if (t_UI_AShop) {
 		UI_AShop = CreateWidget<UUserWidget>(GetGameInstance(), t_UI_AShop);
 		UI_AShop->AddToViewport();
+		UI_AShop->SetVisibility(ESlateVisibility::Hidden);
 	}
 	if (t_UI_DShop) {
 		UI_DShop = CreateWidget<UUserWidget>(GetGameInstance(), t_UI_DShop);
 		UI_DShop->AddToViewport();
+		UI_DShop->SetVisibility(ESlateVisibility::Hidden);
+
 	}
 
 }
@@ -40,12 +43,12 @@ void AShopSystem::SwitchUI(int type)//-1=Hide all;0=Attacker shop;1=Defender sho
 	{
 		UI_DShop->SetVisibility(ESlateVisibility::Hidden);
 		UI_AShop->SetVisibility(ESlateVisibility::Hidden);
-	}
+	}else
 	if (type == 0)
 	{
 		UI_DShop->SetVisibility(ESlateVisibility::Hidden);
 		UI_AShop->SetVisibility(ESlateVisibility::Visible);
-	}
+	}else
 	if (type == 1)
 	{
 		UI_DShop->SetVisibility(ESlateVisibility::Visible);

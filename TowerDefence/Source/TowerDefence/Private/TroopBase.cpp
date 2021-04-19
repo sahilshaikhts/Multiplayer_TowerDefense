@@ -7,7 +7,9 @@
 #include "Components/CapsuleComponent.h"
 #include "AIMovementComponent.h"
 #include "Components/AudioComponent.h"
-
+#include "Components/SkeletalMeshComponent.h"
+#include "Engine/World.h"
+#include "NetwPlayer.h"
 // Sets default values
 ATroopBase::ATroopBase()
 {
@@ -19,11 +21,10 @@ ATroopBase::ATroopBase()
 	collider->SetCollisionEnabled(ECollisionEnabled::QueryAndPhysics);
 	collider->SetSimulatePhysics(true);
 	collider->SetNotifyRigidBodyCollision(true);
-	
 
 	RootComponent = collider;
 
-	mesh = CreateDefaultSubobject<UStaticMeshComponent>("Mesh");
+	mesh = CreateDefaultSubobject<USkeletalMeshComponent>("Mesh");
 	mesh->SetCollisionProfileName("NoCollision");
 	mesh->SetupAttachment(RootComponent);
 
@@ -46,6 +47,15 @@ ATroopBase::ATroopBase()
 
 	hp = 100;
 	enabled =true;
+
+	bAlwaysRelevant = true;
+	SetReplicateMovement(true);
+	SetReplicates(true);
+}
+
+bool ATroopBase::GetAttack()
+{
+	return attack;
 }
 
 // Called when the game starts or when spawned
@@ -65,45 +75,79 @@ void ATroopBase::Tick(float DeltaTime)
 }
 void ATroopBase::CheckForTowers()
 {
-	if (currentTarget == nullptr)
+	if (GetLocalRole() == ROLE_Authority)
 	{
-		TArray<ATowerBase*> objTowers;
-
-		TArray<UPrimitiveComponent*> allComponents;
-		col_towerDetection->GetOverlappingComponents(allComponents);
-
-		//Verify each colliders owner and type ,and store it in a list of towers
-		for (UPrimitiveComponent* comp : allComponents)
+		if (currentTarget == nullptr)
 		{
-			if (comp->GetOwner()->ActorHasTag("tower") && comp->ComponentHasTag("collider_physical"))
-			{
-				objTowers.Add(Cast<ATowerBase>(comp->GetOwner()));
-			}
-		}
+			TArray<ATowerBase*> objTowers;
 
-		//Checking nearest tower which is also alive
-		if (objTowers.Num() > 0) 
-		{
-			float lastBestDist = GetDistanceTo(objTowers[0]);
-			currentTarget = objTowers[0];
+			TArray<UPrimitiveComponent*> allComponents;
+			col_towerDetection->GetOverlappingComponents(allComponents);
 
-			for (ATowerBase* obj : objTowers)
+			//Verify each colliders owner and type ,and store it in a list of towers
+			for (UPrimitiveComponent* comp : allComponents)
 			{
-				float dist = GetDistanceTo(obj);
-				if (dist < lastBestDist && obj->isAlive)
+				if (comp->GetOwner()->ActorHasTag("tower") && comp->ComponentHasTag("collider_physical"))
 				{
-					currentTarget = obj;
-					lastBestDist = dist;
+					objTowers.Add(Cast<ATowerBase>(comp->GetOwner()));
+				}
+			}
+
+			//Checking nearest tower which is also alive
+			if (objTowers.Num() > 0)
+			{
+				float lastBestDist = GetDistanceTo(objTowers[0]);
+				currentTarget = objTowers[0];
+
+				for (ATowerBase* obj : objTowers)
+				{
+					float dist = GetDistanceTo(obj);
+					if (dist < lastBestDist && obj->isAlive)
+					{
+						currentTarget = obj;
+						lastBestDist = dist;
+					}
+
 				}
 
+				follow = true;
+				if (!currentTarget->isAlive)
+					currentTarget = nullptr;
 			}
-
-			follow = true;
 		}
+
 	}
 }
+
 
 bool ATroopBase::GetDamage(float value)
 {
 	return false;
+}
+void ATroopBase::StartDestroy()
+{
+	if (GetLocalRole() == ROLE_Authority)
+	{
+		isAlive = false;
+		if (player != nullptr)
+			player->OnUnitKilled(unitType);
+
+		Destroy();
+	}
+}
+void ATroopBase::SlowMo()
+{
+	if (GetLocalRole() == ROLE_Authority)
+	{
+		if (slowMoMultiplier == 1)
+		{
+			slowMoMultiplier = 0.5f;
+			GetWorld()->GetTimerManager().SetTimer(SlowMoTimer, this, &ATroopBase::SlowMo, 5, false);
+		}
+		else
+		{
+			slowMoMultiplier = 1;
+			GetWorld()->GetTimerManager().ClearTimer(SlowMoTimer);
+		}
+	}
 }

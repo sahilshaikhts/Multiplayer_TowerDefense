@@ -2,21 +2,17 @@
 
 
 #include "TowerSpawnPoint.h"
-#include "Components/SphereComponent.h"
 
 // Sets default values
 ATowerSpawnPoint::ATowerSpawnPoint()
 {
  	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
-	collider = CreateDefaultSubobject<USphereComponent>("collision");
-	collider->SetCollisionProfileName("OverlapAll");
-	collider->SetCollisionEnabled(ECollisionEnabled::QueryOnly);
-	collider->SetupAttachment(RootComponent);
-
+	
 	mesh = CreateDefaultSubobject<UStaticMeshComponent>("Mesh");
 	mesh->SetCollisionProfileName("NoCollision");
-	mesh->SetupAttachment(collider);
+	RootComponent = mesh;
+
 	Tags.Add("TowerSpawnPoint");
 }
 

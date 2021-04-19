@@ -15,6 +15,7 @@ Description:TroopBase class is common class every troop class will derive from.I
 #pragma once
 
 #include "CoreMinimal.h"
+#include "Inventory.h"
 #include "GameFramework/Actor.h"
 #include "TroopBase.generated.h"
 
@@ -24,37 +25,43 @@ class TOWERDEFENCE_API ATroopBase : public AActor
 	GENERATED_BODY()
 
 public:
+	MyEnums::Item unitType;
 	// Sets default values for this actor's properties
 	ATroopBase();
+	class ANetwPlayer* player;
+	FTimerHandle SlowMoTimer;
 
 	UPROPERTY(VisibleAnywhere, Category = "Collider")
 		class UCapsuleComponent* collider;
 	UPROPERTY(VisibleAnywhere, Category = "Mesh")
-		UStaticMeshComponent* mesh;
+		USkeletalMeshComponent* mesh;
 	UPROPERTY(VisibleAnywhere)
 		class UBoxComponent* col_towerDetection;
 	UPROPERTY(EditAnywhere)
 		class UAIMovementComponent* movmentComponent;
-	
+
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "AduioComponent")
 		class UAudioComponent* AudioComponent;
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "AduioComponent")
 		class UAudioComponent* AudioComponent_2;
-	
+
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Sound")
 		class USoundBase* sfx_attack;
-	UPROPERTY(EditAnywhere,Category = "Sound")
+	UPROPERTY(EditAnywhere, Category = "Sound")
 		class USoundBase* sfx_hurt;//AC_2
-	UPROPERTY(EditAnywhere,Category = "Sound")
+	UPROPERTY(EditAnywhere, Category = "Sound")
 		class USoundBase* sfx_die;//AC_2
 
 	FVector moveDirection;
-	bool enabled,follow, attack,beingSpawned;
-	class ATowerBase* currentTarget;
-	float hp;
-	float attackRate, countDown;//Times attack per second
+	UFUNCTION(BlueprintCallable)
+		bool GetAttack();
+	bool attack;
+	bool enabled, follow, beingSpawned;
 
-	float damage;//Damage given per attack
+	class ATowerBase* currentTarget;
+	float slowMoMultiplier=1;
+	float attackRate, countDown;//Times attack per second
+	float damage, hp;//Damage given per attack
 
 		// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
@@ -63,9 +70,14 @@ public:
 
 
 public:
+	bool isAlive=true;
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 	void CheckForTowers();
 	virtual bool GetDamage(float value);
 
+	void StartDestroy();
+
+	UFUNCTION()
+	void SlowMo();
 };

@@ -28,7 +28,7 @@ public:
 		TArray<AActor*> PatrolPoints;
 	
 	UPROPERTY(EditAnywhere)
-		class USphereComponent* collider;
+		class UBoxComponent* collider;
 	UPROPERTY(EditAnywhere, Category = "Mesh")
 		UStaticMeshComponent* mesh;
 	

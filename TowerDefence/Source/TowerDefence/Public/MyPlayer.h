@@ -14,6 +14,7 @@ Description: MyPlayer class handles player's input,it checks and spawn troops an
 
 #include "CoreMinimal.h"
 #include "GameFramework/Pawn.h"
+#include "Inventory.h"
 #include "MyPlayer.generated.h"
 
 UCLASS()
@@ -36,22 +37,29 @@ public:
 	UPROPERTY(EditAnywhere)
 		TSubclassOf<class ATroop_melee> t_troopMelee;
 
+	UPROPERTY(EditAnywhere)
+		TSubclassOf<class ATroopBase> t_troopRanged;
+
 	bool isAttacking;//True: player is in attacking role ; False: player is in defensing role
 
 	UFUNCTION(BlueprintCallable)
 		class AInventory* GetInventory();
+
+	void OnUnitKilled(MyEnums::Item unit);
+
+	class AMyGameStateBase* gameState;
 
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 	class UWorld* world;
 	class AInventory* inventory;
-
-public:	
+	void SpawnItem(MyEnums::Item type, AActor* hitActor);
+public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
-
-	void LeftMouseClick();
+	UFUNCTION(Server, WithValidation, Reliable)
+	void Server_LeftMouseClick();
 };

@@ -14,6 +14,7 @@ Description:TowerBase class is common class every tower class will derive from.I
 #pragma once
 
 #include "CoreMinimal.h"
+#include "Inventory.h"
 #include "GameFramework/Actor.h"
 #include "TowerBase.generated.h"
 
@@ -29,7 +30,7 @@ public:
 	
 	UPROPERTY(VisibleAnywhere)
 		class UBoxComponent* collider;
-	UPROPERTY(VisibleAnywhere, Category = "Mesh")
+	UPROPERTY(EditAnywhere, Category = "Mesh")
 		UStaticMeshComponent* mesh;
 	UPROPERTY(VisibleAnywhere)
 		class USphereComponent* col_troopDetection;
@@ -44,9 +45,13 @@ public:
 
 	bool enabled,fire, isAlive;
 	AActor* currentTarget;
+	class ANetwPlayer* player;
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
+	void StartDestroy();
+
+	MyEnums::Item unitType;
 	float hp;
 	float timer;//Times attack per second
 	float attackRate;//Times attack per second

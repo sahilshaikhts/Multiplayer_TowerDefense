@@ -19,12 +19,12 @@ Description:It keeps tracks of player’s bought items and player’s money.
 UENUM(BlueprintType)
 namespace MyEnums	//Custom enums
 {
-	enum Item
+	enum  Item					//Arranged according to how powerful(hp,attackRate,damge) the item is
 	{
 		troop_swordsMan = 0,
 		troop_archer,
-		tower_canon,
 		tower_XBow,
+		tower_canon,
 		TypesCount,
 		none
 	};
@@ -36,27 +36,38 @@ class TOWERDEFENCE_API AInventory : public AActor
 	AInventory();
 	GENERATED_BODY()
 public:
-
-
 	bool isAttacker;
 
+	UPROPERTY( BlueprintReadWrite, replicated)
 	TArray<int> ItemList;//ItemList's index are in order as the Enum Item,the value's of at each index defines quantity
-	MyEnums::Item slectedItem;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite,replicated)
+		TEnumAsByte<MyEnums::Item> selectedItem;
 protected:
 	virtual void BeginPlay() override;
 
 public:
 	virtual void Tick(float DeltaTime) override;
 
+	void AddGold(int amount);//can be also used to deduct(-ve value in param)
 	void AddItem(MyEnums::Item type, int count);//Add an item of a type
 	void RemoveItem(MyEnums::Item type, int count);//Remove an item of a type
-
-	void AddGold(int amount);//can be also used to deduct(-ve value in param)
+		
+	UFUNCTION(BlueprintCallable)
 	int GetGoldCount();
 
 	UFUNCTION(BlueprintCallable)
+	void ChangeSelectedItem(MyEnums::Item item);
+	UFUNCTION(BlueprintCallable)
 		int GetItemCount(MyEnums::Item item); //Get number of items player have of a type
+	UFUNCTION(BlueprintCallable)
+		int GetItemCountByIndex(int itemIndex); //Get number of items player have of a type
+
 	void RemoveItem(MyEnums::Item item);
+	UFUNCTION(Server, WithValidation, Reliable)
+		void Server_AddCoins(int amount);
 private:
+
+	UPROPERTY(replicated)
 	int gold;
 };

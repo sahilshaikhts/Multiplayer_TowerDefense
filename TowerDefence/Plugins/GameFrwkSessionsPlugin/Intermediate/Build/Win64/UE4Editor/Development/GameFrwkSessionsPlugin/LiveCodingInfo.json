@@ -1,0 +1,27 @@
+{
+	"RemapUnityFiles": 
+	{
+		"Module.GameFrwkSessionsPlugin.cpp.obj": [
+			"LobbyGameMode.cpp.obj",
+			"InGameMenu.cpp.obj",
+			"MainMenu.cpp.obj",
+			"MenuInterface.cpp.obj",
+			"MenuWidget.cpp.obj",
+			"ServerRow.cpp.obj",
+			"OnlineGameInstance.cpp.obj",
+			"OnlineGameMode.cpp.obj",
+			"GameFrwkSessionsPlugin.cpp.obj"
+		],
+		"Module.GameFrwkSessionsPlugin.gen.cpp.obj": [
+			"GameFrwkSessionsPlugin.init.gen.cpp.obj",
+			"InGameMenu.gen.cpp.obj",
+			"LobbyGameMode.gen.cpp.obj",
+			"MainMenu.gen.cpp.obj",
+			"MenuInterface.gen.cpp.obj",
+			"MenuWidget.gen.cpp.obj",
+			"OnlineGameInstance.gen.cpp.obj",
+			"OnlineGameMode.gen.cpp.obj",
+			"ServerRow.gen.cpp.obj"
+		]
+	}
+}

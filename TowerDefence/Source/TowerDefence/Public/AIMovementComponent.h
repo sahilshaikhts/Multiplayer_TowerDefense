@@ -45,12 +45,14 @@ protected:
 	
 	UFUNCTION()
 		void MoveToNextPathNode();
+
 	UFUNCTION()
 	void SwichtNextNodeToNearest();
 
 public:	
 	// Called every frame
 	virtual void TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction) override;
+
 	void isPatroling(bool value) { bPatrol = value; }
 private:
 

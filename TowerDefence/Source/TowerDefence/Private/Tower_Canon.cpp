@@ -6,22 +6,26 @@
 #include "Kismet/KismetMathLibrary.h"
 #include "GameFramework/ProjectileMovementComponent.h"
 #include "Components/AudioComponent.h"
+#include "Net/UnrealNetwork.h"
 
 void ATower_Canon::BeginPlay()
 {
 	Super::BeginPlay();
 	col_troopDetection->OnComponentEndOverlap.AddDynamic(this, &ATower_Canon::OnOverlapEnd);
 	Tags.Add("Tower_Canon");
-	fire = false;
+	
 	attackRate = 4;
-	isAlive = true;
+	unitType = MyEnums::Item::tower_canon;
+	hp = 170;
+
 }
 
 void ATower_Canon::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
-	if (isAlive) {
+	if (isAlive && GetLocalRole() == ROLE_Authority)
+	{
 		CheckForTroops();
 
 		timer -= DeltaTime;
@@ -45,7 +49,17 @@ void ATower_Canon::Tick(float DeltaTime)
 		}
 	}
 }
+//calls fire on server
 void ATower_Canon::Fire()
+{
+	Server_Fire();
+}
+bool ATower_Canon::Server_Fire_Validate()
+{
+	return true;
+}
+//shoots projectile towards target
+void ATower_Canon::Server_Fire_Implementation()
 {
 	if (currentTarget != nullptr)
 	{
@@ -82,9 +96,9 @@ void ATower_Canon::Fire()
 			spwndObj->hasMoved = false;
 		}
 
-			AudioComponent->SetSound(sfx_fire);
-			AudioComponent->SetPitchMultiplier(FMath::RandRange(0.5f, 0.1f));
-			AudioComponent->Play();
+		AudioComponent->SetSound(sfx_fire);
+		AudioComponent->SetPitchMultiplier(FMath::RandRange(0.5f, 0.1f));
+		AudioComponent->Play();
 	}
 }
 
@@ -93,9 +107,9 @@ bool ATower_Canon::GetDamage(float value)
 	if (hp > 0)
 		hp -= value;
 	else {
-		mesh->SetMaterial(0,nullptr);
-		//Destroy(); change model/shrink
+
 		isAlive = false;
+		StartDestroy();
 		return false;
 	}
 	return true;
@@ -103,8 +117,5 @@ bool ATower_Canon::GetDamage(float value)
 
 void ATower_Canon::OnOverlapEnd(class UPrimitiveComponent* OverlappedComp, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex)
 {
-	if (currentTarget != nullptr && OtherActor == currentTarget)
-	{
-		currentTarget = false;
-	}
+	
 }

@@ -44,6 +44,9 @@ AProjectile_canon::AProjectile_canon()
 	hasMoved = true;
 	InitialLifeSpan = 3.0f;
 
+	bAlwaysRelevant = true;
+	SetReplicates(true);
+
 	Tags.Add("Projectile_canon");
 }
 

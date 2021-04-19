@@ -16,8 +16,6 @@ void ATower_Canon::BeginPlay()
 	
 	attackRate = 4;
 	unitType = MyEnums::Item::tower_canon;
-	hp = 170;
-
 }
 
 void ATower_Canon::Tick(float DeltaTime)
@@ -49,7 +47,6 @@ void ATower_Canon::Tick(float DeltaTime)
 		}
 	}
 }
-//calls fire on server
 void ATower_Canon::Fire()
 {
 	Server_Fire();
@@ -58,7 +55,6 @@ bool ATower_Canon::Server_Fire_Validate()
 {
 	return true;
 }
-//shoots projectile towards target
 void ATower_Canon::Server_Fire_Implementation()
 {
 	if (currentTarget != nullptr)

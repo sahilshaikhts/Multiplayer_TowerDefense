@@ -53,7 +53,7 @@ void AProjectile_RangedTroop::OnHit(UPrimitiveComponent* HitComp, AActor* OtherA
 {
 	if (OtherActor != nullptr && OtherActor->ActorHasTag("Tower") == true)
 	{
-		Cast<ATowerBase>(OtherActor)->GetDamage(15);
+		Cast<ATowerBase>(OtherActor)->GetDamage(20);
 	}
 
 	UGameplayStatics::PlaySoundAtLocation(this->GetWorld(), ImpactSound, GetActorLocation());

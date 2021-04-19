@@ -1,4 +1,5 @@
 // Fill out your copyright notice in the Description page of Project Settings.
+///?/?selected item updated on server by clietn throu server function,but cant be called on server 
 
 #include "NetwPlayer.h"
 #include"Camera/CameraComponent.h"
@@ -93,7 +94,6 @@ void ANetwPlayer::BeginPlay()
 	if (GetLocalRole() == ROLE_Authority)
 	{
 		isAttacking = gameState->AssignTeam();
-		AddGold(100);
 	}
 }
 
@@ -114,20 +114,20 @@ void ANetwPlayer::SetupPlayerInputComponent(UInputComponent* PlayerInputComponen
 }
 
 
-//Spawn inventory on server 
+
 void ANetwPlayer::Server_CreateInventory_Implementation()
 {
 	if (T_Inventory)
 	{
 		inventory = GetWorld()->SpawnActor<AInventory>(T_Inventory, FVector::ZeroVector, FRotator(0, 0, 0));
-		inventory->SetOwner(this);
 	}
 }
-//Called when mouse click detected
 void ANetwPlayer::LeftMouseClick()
 {
 	if (gameState->GetGameState() == MyStates::GameState::Play)
 	{
+		bool isAttackS = gameState->isLocalRoleAttacking;
+
 		FHitResult hitResult;
 		GetWorld()->GetFirstPlayerController()->GetHitResultUnderCursorByChannel(UEngineTypes::ConvertToTraceType(ECC_Visibility), true, hitResult);
 		Server_LeftMouseClick(hitResult);
@@ -140,7 +140,6 @@ bool ANetwPlayer::Server_LeftMouseClick_Validate(FHitResult hitResult)
 
 void ANetwPlayer::Server_LeftMouseClick_Implementation(FHitResult hitResult)
 {
-	//Check if game is in playe state
 	if (gameState->GetGameState() == MyStates::GameState::Play)
 	{
 		FVector worldPos = hitResult.Location;
@@ -148,7 +147,6 @@ void ANetwPlayer::Server_LeftMouseClick_Implementation(FHitResult hitResult)
 		if (!hitResult.GetActor())
 			return;
 
-		//check if attacker or defender
 		if (isAttacking)
 		{
 
@@ -167,11 +165,10 @@ void ANetwPlayer::Server_LeftMouseClick_Implementation(FHitResult hitResult)
 	}
 }
 
-//Check if there is any units still left,used to end game and declare victory for defender when attacker has no more troops left
+
 void ANetwPlayer::CheckIfInventoryEmpty()
 {
 	bool anyUnitLeft = false;
-	//check each items count if any greater than 1 exit
 	for (int i = 0; i < MyEnums::Item::TypesCount; i++)
 	{
 		if (inventory->GetItemCount((MyEnums::Item)i))
@@ -202,7 +199,6 @@ void ANetwPlayer::CheckIfInventoryEmpty()
 	}
 
 }
-//Spawn unit (on server) after player left click and unit has been validated
 void ANetwPlayer::SpawnItem(MyEnums::Item type, AActor* hitActor)
 {
 	if (inventory->GetItemCount(type))
@@ -294,15 +290,11 @@ void ANetwPlayer::Server_AddToInventory_Implementation(MyEnums::Item item, int c
 {
 	if (inventory)
 	{
-		if (GetCoins() >= cost) 
-		{
-			inventory->AddItem(item, 1);
-			inventory->AddGold(-cost);
-		}
+		inventory->AddItem(item, 1);
+		inventory->AddGold(-cost);
 	}
 
 }
-//Change selected unit when playing
 void ANetwPlayer::ChangeSelectedItem(MyEnums::Item item)
 {
 	Server_ChangeSelectedItem(item);
@@ -319,11 +311,6 @@ int ANetwPlayer::GetWinCounts()
 {
 	return RoundsWon;
 }
-
-void ANetwPlayer::AddGold(int amount)
-{
-	inventory->AddGold(amount);
-}
 int ANetwPlayer::GetCoins()
 {
 	if (inventory)
@@ -335,7 +322,6 @@ void ANetwPlayer::IncrementWonCount()
 {
 	RoundsWon++;
 }
-
 void ANetwPlayer::UpdateRoundScores()
 {
 	if (GetLocalRole() == ROLE_Authority)

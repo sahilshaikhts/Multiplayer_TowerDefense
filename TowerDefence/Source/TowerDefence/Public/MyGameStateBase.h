@@ -8,6 +8,7 @@ Author: Seth Grinstead & Sahil Shaikh
 Description:GameState is currently responsible to switch between UI widget based on current state of the game. 
 			It tells ShopSystem to display which widget based on the player's role(attacking/defending).
 			It is also intended to be used in future to handle match(start, win/loss conditions) related things when multiplayer is implemented.
+
 **********************************************************/
 
 #pragma once
@@ -40,6 +41,10 @@ class TOWERDEFENCE_API AMyGameStateBase : public AGameStateBase
 public:
 	virtual void BeginPlay() override;
 
+
+
+	UPROPERTY(EditAnywhere)
+		TSubclassOf<AInventory> T_Inventory;
 	UPROPERTY(EditAnywhere)
 		TSubclassOf<class AShopSystem> T_ShopSystem;
 	UPROPERTY(EditAnywhere)
@@ -97,6 +102,9 @@ public:
 	UPROPERTY(replicated)
 		int netwState;
 	MyStates::GameState State;
+
+	UPROPERTY(EditAnywhere)//for debugging
+		bool isLocalRoleAttacking;//True: local player is in attacking role ; False: local player is in defensing role
 
 	UPROPERTY(replicated, BlueprintReadOnly)
 		int Round;

@@ -95,7 +95,7 @@ void ATroop_melee::BeginOverlap(UPrimitiveComponent* OverlappedComponent, AActor
 	{
 		if (OtherActor->ActorHasTag("Projectile_canon") && enabled)
 		{
-			GetDamage(35);
+			GetDamage(100);
 
 			if (OtherActor != nullptr)
 				OtherActor->Destroy();

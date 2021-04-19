@@ -1,5 +1,17 @@
 // Fill out your copyright notice in the Description page of Project Settings.
+// Fill out your copyright notice in the Description page of Project Settings.
+/**********************************************************
+Team: No Name Yet
 
+Section: 2
+
+Author: Sahil Shaikh
+
+Description: MyPlayer class handles player's input,it checks and spawn troops and tower and perform checks in inventory if the item is available or not.
+
+Log:
+[19/04/2021] Added newtowrked functionality,most of the UI uses this class to get inventory related infor,instead of directly.
+************************************************************/
 #pragma once
 
 #include "CoreMinimal.h"
@@ -94,9 +106,8 @@ public:
 		void Server_LeftMouseClick(FHitResult hitResult);
 		void LeftMouseClick();
 		
-		void AddGold(int amount);
 	UFUNCTION(BlueprintCallable)
-	int GetCoins();
+		int GetCoins();
 	UFUNCTION(BlueprintCallable)
 		int GetWinCounts();
 	UFUNCTION(BlueprintCallable)

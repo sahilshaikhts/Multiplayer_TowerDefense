@@ -14,9 +14,8 @@ void ATower_XBow::BeginPlay()
 
 	Tags.Add("Tower_XBow");
 	fire = false;
-	attackRate = 2;
+	attackRate = 8;
 	isAlive = true;
-	hp = 130;
 }
 
 void ATower_XBow::Tick(float DeltaTime)
@@ -47,7 +46,7 @@ void ATower_XBow::Tick(float DeltaTime)
 		}
 	}
 }
-//calls fire on server
+
 void ATower_XBow::Fire()
 {
 	Server_Fire();
@@ -56,8 +55,6 @@ bool ATower_XBow::Server_Fire_Validate()
 {
 	return true;
 }
-//shoots projectile towards target
-
 void ATower_XBow::Server_Fire_Implementation()
 {
 	FActorSpawnParameters SpawnInfo;
@@ -79,6 +76,7 @@ void ATower_XBow::Server_Fire_Implementation()
 
 	currentTarget = nullptr;
 }
+
 bool ATower_XBow::GetDamage(float value)
 {
 	if (hp > 0)

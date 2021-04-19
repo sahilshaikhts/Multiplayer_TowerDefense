@@ -64,8 +64,6 @@ public:
 		int GetItemCountByIndex(int itemIndex); //Get number of items player have of a type
 
 	void RemoveItem(MyEnums::Item item);
-	UFUNCTION(Server, WithValidation, Reliable)
-		void Server_AddCoins(int amount);
 private:
 
 	UPROPERTY(replicated)

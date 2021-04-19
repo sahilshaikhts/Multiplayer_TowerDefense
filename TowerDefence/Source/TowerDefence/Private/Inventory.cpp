@@ -40,13 +40,13 @@ void AInventory::Tick(float DeltaTime)
 
 }
 
-//add item of type to ItemList
+
 void AInventory::AddItem(MyEnums::Item type,int count)
 {
 	ItemList[type] += count;
 }
 
-//Remove numbers of item of type from ItemList
+
 void AInventory::RemoveItem(MyEnums::Item type,int count)
 {
 	if (ItemList[type] > count)
@@ -67,7 +67,8 @@ void AInventory::ChangeSelectedItem(MyEnums::Item item)
 void AInventory::AddGold(int amount)
 {
 	//Also used to deduct gold,so only change when more than 0
-	Server_AddCoins(amount);
+	if(gold>0)
+	gold += amount;
 }
 
 int AInventory::GetGoldCount()
@@ -94,15 +95,4 @@ void AInventory::RemoveItem(MyEnums::Item item)
 	//Remove Item from inventory
 	if(ItemList[item]>0)
 	ItemList[item]-=1;
-}
-
-
-bool AInventory::Server_AddCoins_Validate(int amount)
-{
-	return true;
-}
-void AInventory::Server_AddCoins_Implementation(int amount)
-{
-	if (gold > 0)
-		gold += amount;
 }

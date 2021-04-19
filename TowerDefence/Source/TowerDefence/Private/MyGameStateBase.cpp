@@ -142,15 +142,11 @@ void AMyGameStateBase::StartEndingRound(ANetwPlayer* attacker)
 			if (player0 != attacker)
 			{
 				player0->IncrementWonCount();
-				player0->GetInventory()->AddGold(50);
-					player1->GetInventory()->AddGold(20);
 			}
 			else
 				if (player1 != attacker)
 				{
 					player1->IncrementWonCount();
-					player1->GetInventory()->AddGold(50);
-					player0->GetInventory()->AddGold(20);
 				}
 
 			//Update both player's win counts of each other
@@ -160,14 +156,10 @@ void AMyGameStateBase::StartEndingRound(ANetwPlayer* attacker)
 			if (player0->isAttacking)
 			{
 				player0->IncrementWonCount();
-				player0->GetInventory()->AddGold(50);
-				player1->GetInventory()->AddGold(20);
 			}
 			else
 			{
 				player1->IncrementWonCount();
-				player1->GetInventory()->AddGold(50);
-				player0->GetInventory()->AddGold(20);
 			}
 		}
 		Server_DestroyAllUnits();

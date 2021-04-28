@@ -42,12 +42,8 @@ protected:
 	virtual void Tick(float DeltaTime) override;
 
 	//Fire projectile when a troop is in range
-<<<<<<< HEAD:TowerDefence/Source/TowerDefence/Public/Tower_Canon.h
-
-=======
 	UFUNCTION(Server, WithValidation, Reliable)
 		void Server_Fire();
->>>>>>> remotes/origin/Alpha_2:TowerDefence/Source/TowerDefence/Towers/Tower_Canon.h
 
 	void Fire();
 

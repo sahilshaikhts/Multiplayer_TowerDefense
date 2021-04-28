@@ -15,11 +15,7 @@ Description:TroopBase class is common class every troop class will derive from.I
 #pragma once
 
 #include "CoreMinimal.h"
-<<<<<<< HEAD:TowerDefence/Source/TowerDefence/Public/TroopBase.h
-#include "Inventory.h"
-=======
 #include "TowerDefence/Systems/Inventory.h"
->>>>>>> remotes/origin/Alpha_2:TowerDefence/Source/TowerDefence/Troops/TroopBase.h
 #include "GameFramework/Actor.h"
 #include "TroopBase.generated.h"
 
@@ -32,11 +28,7 @@ public:
 	MyEnums::Item unitType;
 	// Sets default values for this actor's properties
 	ATroopBase();
-<<<<<<< HEAD:TowerDefence/Source/TowerDefence/Public/TroopBase.h
-	class AMyPlayer* player;
-=======
 	class ANetwPlayer* player;
->>>>>>> remotes/origin/Alpha_2:TowerDefence/Source/TowerDefence/Troops/TroopBase.h
 	FTimerHandle SlowMoTimer;
 
 	UPROPERTY(VisibleAnywhere, Category = "Collider")
@@ -48,13 +40,9 @@ public:
 	UPROPERTY(EditAnywhere)
 		class UAIMovementComponent* movmentComponent;
 
-<<<<<<< HEAD:TowerDefence/Source/TowerDefence/Public/TroopBase.h
-	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "AudioComponent")
-=======
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "AduioComponent")
->>>>>>> remotes/origin/Alpha_2:TowerDefence/Source/TowerDefence/Troops/TroopBase.h
 		class UAudioComponent* AudioComponent;
-	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "AudioComponent")
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "AduioComponent")
 		class UAudioComponent* AudioComponent_2;
 
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Sound")

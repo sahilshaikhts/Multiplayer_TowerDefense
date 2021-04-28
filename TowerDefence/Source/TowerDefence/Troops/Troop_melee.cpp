@@ -14,11 +14,7 @@ ATroop_melee::ATroop_melee()
 	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
 
-<<<<<<< HEAD:TowerDefence/Source/TowerDefence/Private/Troop_melee.cpp
-	attackRate = 1.5f;
-=======
 	attackRate = 1;
->>>>>>> remotes/origin/Alpha_2:TowerDefence/Source/TowerDefence/Troops/Troop_melee.cpp
 	unitType = MyEnums::Item::troop_swordsMan;
 }
 
@@ -127,12 +123,8 @@ bool ATroop_melee::GetDamage(float value)
 			AudioComponent_2->SetPitchMultiplier(FMath::RandRange(0.8f, 1.0f));
 			AudioComponent_2->Play();
 			StartDestroy();
-<<<<<<< HEAD:TowerDefence/Source/TowerDefence/Private/Troop_melee.cpp
-		return false;
-=======
 			return false;
 		}
->>>>>>> remotes/origin/Alpha_2:TowerDefence/Source/TowerDefence/Troops/Troop_melee.cpp
 	}
 		return true;
 }

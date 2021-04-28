@@ -14,11 +14,7 @@ Description:TowerBase class is common class every tower class will derive from.I
 #pragma once
 
 #include "CoreMinimal.h"
-<<<<<<< HEAD:TowerDefence/Source/TowerDefence/Public/TowerBase.h
-#include "Inventory.h"
-=======
 #include "TowerDefence/Systems/Inventory.h"
->>>>>>> remotes/origin/Alpha_2:TowerDefence/Source/TowerDefence/Towers/TowerBase.h
 #include "GameFramework/Actor.h"
 #include "TowerBase.generated.h"
 
@@ -35,11 +31,7 @@ public:
 	UPROPERTY(VisibleAnywhere)
 		class UBoxComponent* collider;
 	UPROPERTY(EditAnywhere, Category = "Mesh")
-<<<<<<< HEAD:TowerDefence/Source/TowerDefence/Public/TowerBase.h
-		USkeletalMeshComponent* mesh;
-=======
 		UStaticMeshComponent* mesh;
->>>>>>> remotes/origin/Alpha_2:TowerDefence/Source/TowerDefence/Towers/TowerBase.h
 	UPROPERTY(VisibleAnywhere)
 		class USphereComponent* col_troopDetection;
 
@@ -49,17 +41,11 @@ public:
 
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Sound")
 		class USoundBase* sfx_fire;
-	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Sound")
-		class USoundBase* sfx_Destroy;
 	
 
 	bool enabled,fire, isAlive;
 	AActor* currentTarget;
-<<<<<<< HEAD:TowerDefence/Source/TowerDefence/Public/TowerBase.h
-	class AMyPlayer* player;
-=======
 	class ANetwPlayer* player;
->>>>>>> remotes/origin/Alpha_2:TowerDefence/Source/TowerDefence/Towers/TowerBase.h
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;

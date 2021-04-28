@@ -23,15 +23,10 @@ namespace MyEnums	//Custom enums
 	{
 		troop_swordsMan = 0,
 		troop_archer,
-<<<<<<< HEAD:TowerDefence/Source/TowerDefence/Public/Inventory.h
 		troop_giant,
 		tower_XBow,
 		tower_canon,
 		tower_chione,
-=======
-		tower_XBow,
-		tower_canon,
->>>>>>> remotes/origin/Alpha_2:TowerDefence/Source/TowerDefence/Systems/Inventory.h
 		TypesCount,
 		none
 	};
@@ -45,17 +40,10 @@ class TOWERDEFENCE_API AInventory : public AActor
 public:
 	bool isAttacker;
 
-<<<<<<< HEAD:TowerDefence/Source/TowerDefence/Public/Inventory.h
-	UPROPERTY( BlueprintReadWrite)
-	TArray<int> ItemList;//ItemList's index are in order as the Enum Item,the value's of at each index defines quantity
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite)
-=======
 	UPROPERTY( BlueprintReadWrite, replicated)
 	TArray<int> ItemList;//ItemList's index are in order as the Enum Item,the value's of at each index defines quantity
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite,replicated)
->>>>>>> remotes/origin/Alpha_2:TowerDefence/Source/TowerDefence/Systems/Inventory.h
 		TEnumAsByte<MyEnums::Item> selectedItem;
 protected:
 	virtual void BeginPlay() override;
@@ -76,10 +64,7 @@ public:
 		int GetItemCount(MyEnums::Item item); //Get number of items player have of a type
 	UFUNCTION(BlueprintCallable)
 		int GetItemCountByIndex(int itemIndex); //Get number of items player have of a type
-<<<<<<< HEAD:TowerDefence/Source/TowerDefence/Public/Inventory.h
-=======
 
->>>>>>> remotes/origin/Alpha_2:TowerDefence/Source/TowerDefence/Systems/Inventory.h
 	void RemoveItem(MyEnums::Item item);
 private:
 

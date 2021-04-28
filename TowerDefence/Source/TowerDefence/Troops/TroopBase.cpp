@@ -9,11 +9,7 @@
 #include "Components/AudioComponent.h"
 #include "Components/SkeletalMeshComponent.h"
 #include "Engine/World.h"
-<<<<<<< HEAD:TowerDefence/Source/TowerDefence/Private/TroopBase.cpp
-#include "MyPlayer.h"
-=======
 #include "TowerDefence/Player/NetwPlayer.h"
->>>>>>> remotes/origin/Alpha_2:TowerDefence/Source/TowerDefence/Troops/TroopBase.cpp
 // Sets default values
 ATroopBase::ATroopBase()
 {
@@ -55,11 +51,6 @@ ATroopBase::ATroopBase()
 	bAlwaysRelevant = true;
 	SetReplicateMovement(true);
 	SetReplicates(true);
-}
-
-bool ATroopBase::GetAttack()
-{
-	return attack;
 }
 
 bool ATroopBase::GetAttack()
@@ -123,13 +114,6 @@ void ATroopBase::CheckForTowers()
 				if (!currentTarget->isAlive)
 					currentTarget = nullptr;
 			}
-<<<<<<< HEAD:TowerDefence/Source/TowerDefence/Private/TroopBase.cpp
-
-			follow = true;
-		if (!currentTarget->isAlive)
-			currentTarget = nullptr;
-=======
->>>>>>> remotes/origin/Alpha_2:TowerDefence/Source/TowerDefence/Troops/TroopBase.cpp
 		}
 
 	}
@@ -142,24 +126,6 @@ bool ATroopBase::GetDamage(float value)
 }
 void ATroopBase::StartDestroy()
 {
-<<<<<<< HEAD:TowerDefence/Source/TowerDefence/Private/TroopBase.cpp
-	if (player != nullptr)
-		player->OnUnitKilled(unitType);
-
-	Destroy();
-}
-void ATroopBase::SlowMo()
-{
-	if (slowMoMultiplier == 1)
-	{
-		slowMoMultiplier = 0.5f;
-		GetWorld()->GetTimerManager().SetTimer(SlowMoTimer, this, &ATroopBase::SlowMo, 5, false);
-	}
-	else
-	{
-		slowMoMultiplier = 1;
-		GetWorld()->GetTimerManager().ClearTimer(SlowMoTimer);
-=======
 	if (GetLocalRole() == ROLE_Authority)
 	{
 		isAlive = false;
@@ -183,6 +149,5 @@ void ATroopBase::SlowMo()
 			slowMoMultiplier = 1;
 			GetWorld()->GetTimerManager().ClearTimer(SlowMoTimer);
 		}
->>>>>>> remotes/origin/Alpha_2:TowerDefence/Source/TowerDefence/Troops/TroopBase.cpp
 	}
 }

@@ -20,11 +20,7 @@ void ATower_Canon::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
-<<<<<<< HEAD:TowerDefence/Source/TowerDefence/Private/Tower_Canon.cpp
-	if (isAlive) 
-=======
 	if (isAlive && GetLocalRole() == ROLE_Authority)
->>>>>>> remotes/origin/Alpha_2:TowerDefence/Source/TowerDefence/Towers/Tower_Canon.cpp
 	{
 		CheckForTroops();
 
@@ -106,10 +102,6 @@ bool ATower_Canon::GetDamage(float value)
 		hp -= value;
 	else {
 
-<<<<<<< HEAD:TowerDefence/Source/TowerDefence/Private/Tower_Canon.cpp
-		StartDestroy();
-=======
->>>>>>> remotes/origin/Alpha_2:TowerDefence/Source/TowerDefence/Towers/Tower_Canon.cpp
 		isAlive = false;
 		StartDestroy();
 		return false;

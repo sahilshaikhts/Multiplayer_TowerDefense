@@ -33,10 +33,10 @@
 /NODEFAULTLIB:"LIBCD"
 /NODEFAULTLIB:"LIBCPD"
 /FUNCTIONPADMIN
-"D:\College\4rthSem\HighLevel2\Project\_Latest\W21_GAM1528_NoNameYet_1\TowerDefence\Intermediate\Build\Win64\TowerDefenceEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.obj"
-"D:\College\4rthSem\HighLevel2\Project\_Latest\W21_GAM1528_NoNameYet_1\TowerDefence\Plugins\GameFrwkSessionsPlugin\Intermediate\Build\Win64\UE4Editor\Development\GameFrwkSessionsPlugin\Module.GameFrwkSessionsPlugin.cpp.obj"
-"D:\College\4rthSem\HighLevel2\Project\_Latest\W21_GAM1528_NoNameYet_1\TowerDefence\Plugins\GameFrwkSessionsPlugin\Intermediate\Build\Win64\UE4Editor\Development\GameFrwkSessionsPlugin\Module.GameFrwkSessionsPlugin.gen.cpp.obj"
-"D:\College\4rthSem\HighLevel2\Project\_Latest\W21_GAM1528_NoNameYet_1\TowerDefence\Plugins\GameFrwkSessionsPlugin\Intermediate\Build\Win64\UE4Editor\Development\GameFrwkSessionsPlugin\Default.rc2.res"
+"D:\College\4rthSem\HighLevel2\Project\_Alpha_2\W21_GAM1528_NoNameYet\TowerDefence\Intermediate\Build\Win64\TowerDefenceEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.obj"
+"D:\College\4rthSem\HighLevel2\Project\_Alpha_2\W21_GAM1528_NoNameYet\TowerDefence\Plugins\GameFrwkSessionsPlugin\Intermediate\Build\Win64\UE4Editor\Development\GameFrwkSessionsPlugin\Module.GameFrwkSessionsPlugin.cpp.obj"
+"D:\College\4rthSem\HighLevel2\Project\_Alpha_2\W21_GAM1528_NoNameYet\TowerDefence\Plugins\GameFrwkSessionsPlugin\Intermediate\Build\Win64\UE4Editor\Development\GameFrwkSessionsPlugin\Module.GameFrwkSessionsPlugin.gen.cpp.obj"
+"D:\College\4rthSem\HighLevel2\Project\_Alpha_2\W21_GAM1528_NoNameYet\TowerDefence\Plugins\GameFrwkSessionsPlugin\Intermediate\Build\Win64\UE4Editor\Development\GameFrwkSessionsPlugin\Default.rc2.res"
 "delayimp.lib"
 "wininet.lib"
 "rpcrt4.lib"
@@ -71,8 +71,8 @@
 "C:\Program Files\Epic Games\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Development\Json\UE4Editor-Json.lib"
 "C:\Program Files\Epic Games\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Development\JsonUtilities\UE4Editor-JsonUtilities.lib"
 "C:\Program Files\Epic Games\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Development\SlateCore\UE4Editor-SlateCore.lib"
-/OUT:"D:\College\4rthSem\HighLevel2\Project\_Latest\W21_GAM1528_NoNameYet_1\TowerDefence\Plugins\GameFrwkSessionsPlugin\Binaries\Win64\UE4Editor-GameFrwkSessionsPlugin.dll"
-/IMPLIB:"D:\College\4rthSem\HighLevel2\Project\_Latest\W21_GAM1528_NoNameYet_1\TowerDefence\Plugins\GameFrwkSessionsPlugin\Intermediate\Build\Win64\UE4Editor\Development\GameFrwkSessionsPlugin\UE4Editor-GameFrwkSessionsPlugin.suppressed.lib"
-/PDB:"D:\College\4rthSem\HighLevel2\Project\_Latest\W21_GAM1528_NoNameYet_1\TowerDefence\Plugins\GameFrwkSessionsPlugin\Binaries\Win64\UE4Editor-GameFrwkSessionsPlugin.pdb"
+/OUT:"D:\College\4rthSem\HighLevel2\Project\_Alpha_2\W21_GAM1528_NoNameYet\TowerDefence\Plugins\GameFrwkSessionsPlugin\Binaries\Win64\UE4Editor-GameFrwkSessionsPlugin.dll"
+/IMPLIB:"D:\College\4rthSem\HighLevel2\Project\_Alpha_2\W21_GAM1528_NoNameYet\TowerDefence\Plugins\GameFrwkSessionsPlugin\Intermediate\Build\Win64\UE4Editor\Development\GameFrwkSessionsPlugin\UE4Editor-GameFrwkSessionsPlugin.suppressed.lib"
+/PDB:"D:\College\4rthSem\HighLevel2\Project\_Alpha_2\W21_GAM1528_NoNameYet\TowerDefence\Plugins\GameFrwkSessionsPlugin\Binaries\Win64\UE4Editor-GameFrwkSessionsPlugin.pdb"
 /ignore:4078
 /INCLUDE:IMPLEMENT_MODULE_GameFrwkSessionsPlugin

@@ -3,7 +3,7 @@
 
 #include "MainTower.h"
 #include "Components/StaticMeshComponent.h"
-#include <TowerDefence\Public\MyGameStateBase.h>
+#include "TowerDefence/GameStates/MyGameStateBase.h"
 
 
 void AMainTower::BeginPlay()

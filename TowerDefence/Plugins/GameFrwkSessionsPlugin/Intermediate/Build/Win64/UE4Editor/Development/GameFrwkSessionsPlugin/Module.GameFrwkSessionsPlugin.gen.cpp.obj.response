@@ -32,7 +32,7 @@
 /wd4244
 /wd4838
 /I .
-/I D:\College\4rthSem\HighLevel2\Project\_Latest\W21_GAM1528_NoNameYet_1\TowerDefence\Plugins\GameFrwkSessionsPlugin\Source\GameFrwkSessionsPlugin\Private
+/I D:\College\4rthSem\HighLevel2\Project\_Alpha_2\W21_GAM1528_NoNameYet\TowerDefence\Plugins\GameFrwkSessionsPlugin\Source\GameFrwkSessionsPlugin\Private
 /I ..\Intermediate\Build\Win64\UE4Editor\Inc\CoreUObject
 /I Runtime
 /I Runtime\CoreUObject\Public
@@ -231,10 +231,10 @@
 /I Runtime\Experimental\GeometryCollectionSimulationCore\Public
 /I ..\Intermediate\Build\Win64\UE4Editor\Inc\ClothingSystemRuntimeInterface
 /I Runtime\ClothingSystemRuntimeInterface\Public
-/I D:\College\4rthSem\HighLevel2\Project\_Latest\W21_GAM1528_NoNameYet_1\TowerDefence\Plugins\GameFrwkSessionsPlugin\Intermediate\Build\Win64\UE4Editor\Inc\GameFrwkSessionsPlugin
-/I D:\College\4rthSem\HighLevel2\Project\_Latest\W21_GAM1528_NoNameYet_1\TowerDefence\Plugins\GameFrwkSessionsPlugin\Source
-/I D:\College\4rthSem\HighLevel2\Project\_Latest\W21_GAM1528_NoNameYet_1\TowerDefence\Plugins\GameFrwkSessionsPlugin\Source\GameFrwkSessionsPlugin
-/I D:\College\4rthSem\HighLevel2\Project\_Latest\W21_GAM1528_NoNameYet_1\TowerDefence\Plugins\GameFrwkSessionsPlugin\Source\GameFrwkSessionsPlugin\Public
+/I D:\College\4rthSem\HighLevel2\Project\_Alpha_2\W21_GAM1528_NoNameYet\TowerDefence\Plugins\GameFrwkSessionsPlugin\Intermediate\Build\Win64\UE4Editor\Inc\GameFrwkSessionsPlugin
+/I D:\College\4rthSem\HighLevel2\Project\_Alpha_2\W21_GAM1528_NoNameYet\TowerDefence\Plugins\GameFrwkSessionsPlugin\Source
+/I D:\College\4rthSem\HighLevel2\Project\_Alpha_2\W21_GAM1528_NoNameYet\TowerDefence\Plugins\GameFrwkSessionsPlugin\Source\GameFrwkSessionsPlugin
+/I D:\College\4rthSem\HighLevel2\Project\_Alpha_2\W21_GAM1528_NoNameYet\TowerDefence\Plugins\GameFrwkSessionsPlugin\Source\GameFrwkSessionsPlugin\Public
 /I ..\Plugins\Online\OnlineSubsystem\Intermediate\Build\Win64\UE4Editor\Inc\OnlineSubsystem
 /I ..\Plugins\Online\OnlineSubsystem
 /I ..\Plugins\Online\OnlineSubsystem\Source
@@ -276,12 +276,12 @@
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt"
-/FI"D:\College\4rthSem\HighLevel2\Project\_Latest\W21_GAM1528_NoNameYet_1\TowerDefence\Intermediate\Build\Win64\TowerDefenceEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
-/Yu"D:\College\4rthSem\HighLevel2\Project\_Latest\W21_GAM1528_NoNameYet_1\TowerDefence\Intermediate\Build\Win64\TowerDefenceEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
-/Fp"D:\College\4rthSem\HighLevel2\Project\_Latest\W21_GAM1528_NoNameYet_1\TowerDefence\Intermediate\Build\Win64\TowerDefenceEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.pch"
-"D:\College\4rthSem\HighLevel2\Project\_Latest\W21_GAM1528_NoNameYet_1\TowerDefence\Plugins\GameFrwkSessionsPlugin\Intermediate\Build\Win64\UE4Editor\Development\GameFrwkSessionsPlugin\Module.GameFrwkSessionsPlugin.gen.cpp"
-/FI"D:\College\4rthSem\HighLevel2\Project\_Latest\W21_GAM1528_NoNameYet_1\TowerDefence\Plugins\GameFrwkSessionsPlugin\Intermediate\Build\Win64\UE4Editor\Development\GameFrwkSessionsPlugin\Definitions.GameFrwkSessionsPlugin.h"
-/Fo"D:\College\4rthSem\HighLevel2\Project\_Latest\W21_GAM1528_NoNameYet_1\TowerDefence\Plugins\GameFrwkSessionsPlugin\Intermediate\Build\Win64\UE4Editor\Development\GameFrwkSessionsPlugin\Module.GameFrwkSessionsPlugin.gen.cpp.obj"
+/FI"D:\College\4rthSem\HighLevel2\Project\_Alpha_2\W21_GAM1528_NoNameYet\TowerDefence\Intermediate\Build\Win64\TowerDefenceEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
+/Yu"D:\College\4rthSem\HighLevel2\Project\_Alpha_2\W21_GAM1528_NoNameYet\TowerDefence\Intermediate\Build\Win64\TowerDefenceEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
+/Fp"D:\College\4rthSem\HighLevel2\Project\_Alpha_2\W21_GAM1528_NoNameYet\TowerDefence\Intermediate\Build\Win64\TowerDefenceEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.pch"
+"D:\College\4rthSem\HighLevel2\Project\_Alpha_2\W21_GAM1528_NoNameYet\TowerDefence\Plugins\GameFrwkSessionsPlugin\Intermediate\Build\Win64\UE4Editor\Development\GameFrwkSessionsPlugin\Module.GameFrwkSessionsPlugin.gen.cpp"
+/FI"D:\College\4rthSem\HighLevel2\Project\_Alpha_2\W21_GAM1528_NoNameYet\TowerDefence\Plugins\GameFrwkSessionsPlugin\Intermediate\Build\Win64\UE4Editor\Development\GameFrwkSessionsPlugin\Definitions.GameFrwkSessionsPlugin.h"
+/Fo"D:\College\4rthSem\HighLevel2\Project\_Alpha_2\W21_GAM1528_NoNameYet\TowerDefence\Plugins\GameFrwkSessionsPlugin\Intermediate\Build\Win64\UE4Editor\Development\GameFrwkSessionsPlugin\Module.GameFrwkSessionsPlugin.gen.cpp.obj"
 /TP
 /GR-
 /W4

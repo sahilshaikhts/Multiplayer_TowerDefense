@@ -14,5 +14,15 @@
 				"CoreUObject"
 			]
 		}
+	],
+	"Plugins": [
+		{
+			"Name": "OnlineSubsystemSteam",
+			"Enabled": true
+		},
+		{
+			"Name": "GameFrwkSessionsPlugin",
+			"Enabled": true
+		}
 	]
 }

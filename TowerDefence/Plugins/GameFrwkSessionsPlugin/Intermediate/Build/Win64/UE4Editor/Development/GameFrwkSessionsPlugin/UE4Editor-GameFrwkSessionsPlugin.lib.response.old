@@ -1,0 +1,14 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UE4Editor-GameFrwkSessionsPlugin.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"D:\College\4rthSem\HighLevel2\Project\_Latest\W21_GAM1528_NoNameYet_1\TowerDefence\Intermediate\Build\Win64\TowerDefenceEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.obj"
+"D:\College\4rthSem\HighLevel2\Project\_Latest\W21_GAM1528_NoNameYet_1\TowerDefence\Plugins\GameFrwkSessionsPlugin\Intermediate\Build\Win64\UE4Editor\Development\GameFrwkSessionsPlugin\Module.GameFrwkSessionsPlugin.cpp.obj"
+"D:\College\4rthSem\HighLevel2\Project\_Latest\W21_GAM1528_NoNameYet_1\TowerDefence\Plugins\GameFrwkSessionsPlugin\Intermediate\Build\Win64\UE4Editor\Development\GameFrwkSessionsPlugin\Module.GameFrwkSessionsPlugin.gen.cpp.obj"
+"D:\College\4rthSem\HighLevel2\Project\_Latest\W21_GAM1528_NoNameYet_1\TowerDefence\Plugins\GameFrwkSessionsPlugin\Intermediate\Build\Win64\UE4Editor\Development\GameFrwkSessionsPlugin\Default.rc2.res"
+/OUT:"D:\College\4rthSem\HighLevel2\Project\_Latest\W21_GAM1528_NoNameYet_1\TowerDefence\Plugins\GameFrwkSessionsPlugin\Intermediate\Build\Win64\UE4Editor\Development\GameFrwkSessionsPlugin\UE4Editor-GameFrwkSessionsPlugin.lib"
+/INCLUDE:IMPLEMENT_MODULE_GameFrwkSessionsPlugin

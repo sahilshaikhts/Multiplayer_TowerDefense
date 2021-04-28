@@ -1,0 +1,11 @@
+{
+  "GameMaps": {
+    "maps": [
+      {
+        "name": "Map1",
+        "info": [ "/Game/Maps/Test", "placeholder", "placeholder" ]
+      }    
+    ]
+  }
+}
+
